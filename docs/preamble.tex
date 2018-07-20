@@ -1,0 +1,97 @@
+% preamble.tex
+%===============================================================================
+% A general preamble to use for most of my documents.  See preambles specific to
+%   particular journals or projects under separate headings
+%===============================================================================
+
+%===============================================================================
+% The following are useful packages that are ALWAYS USED.  See further below
+%   for optional packages (and options) that may or maynot be used.
+%===============================================================================
+%-------------------------------------------------------------------------------
+% American Math Society packages that allow use of particular symbols and fonts.
+%   For example, these are required to be able to use \eqref{} when referring to
+%   a labelled equation.
+%-------------------------------------------------------------------------------
+\usepackage{amssymb,amsmath,amsfonts}
+
+%-------------------------------------------------------------------------------
+% graphicx package controls aspects of graphics.
+%-------------------------------------------------------------------------------
+\usepackage{graphicx}
+
+
+%-------------------------------------------------------------------------------
+% natbib bibliography package.  This is currently set to use the author,year
+%   method rather than the numerical citation method.  In addition, the 
+%   parentheses are rounded rather than using square brackets.  Different
+%   biobliography styles can also be used -- this is currently set to my afs
+%   style.  Finally, the bibliography puncation can be controlled.  This is 
+%   currently set to show citations with starting and closing parentheses,
+%   a semi-colon between multiple citations, author-year, nothing between author
+%   and year, and comma between multiple years of same author.
+%-------------------------------------------------------------------------------
+\usepackage[authoryear,round]{natbib}
+  \bibliographystyle{c:/aaaWork/zGnrlLatex/afs}
+  \bibpunct{(}{)}{;}{a}{}{,}
+  
+%-------------------------------------------------------------------------------
+% ccaption package with the option below it is used to replace the colon with a
+%   period in table and figure captions.
+%-------------------------------------------------------------------------------
+\usepackage{ccaption}
+  \captiondelim{. }
+
+
+
+
+%===============================================================================
+%===============================================================================
+% some new commands
+%===============================================================================
+%===============================================================================
+%-------------------------------------------------------------------------------
+% Helps make summations, products, and integrals look better -- puts values
+%   above and below sigma, pi, or integral rather than behind it.
+%   Use \Sum_{i}^{n}
+%-------------------------------------------------------------------------------
+\newcommand{\Sum}{ 
+  \displaystyle\sum                         
+}
+
+\newcommand{\Prod}{
+  \displaystyle\prod
+}
+
+\newcommand{\Int}{
+  \displaystyle\int
+}
+
+%-------------------------------------------------------------------------------
+% Defines figure, table, etc references so you don't have to type Figure each
+%   time.  Note that the 'p' version puts the item in parentheses.
+%-------------------------------------------------------------------------------
+\newcommand{\figref}[1]{%
+Figure \ref{#1}%
+}
+
+\newcommand{\figrefp}[1]{%
+(Figure \ref{#1})%
+}
+
+\newcommand{\tabref}[1]{%
+Table \ref{#1}%
+}
+
+\newcommand{\tabrefp}[1]{%
+(Table \ref{#1})%
+}
+
+\newcommand{\sectref}[1]{%
+Section \ref{#1}%
+}
+
+\newcommand{\sectrefp}[1]{%
+(Section \ref{#1})%
+}
+
