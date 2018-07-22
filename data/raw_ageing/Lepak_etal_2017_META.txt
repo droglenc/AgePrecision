@@ -1,0 +1,17 @@
+FILE: Lepak_etal_2017
+SOURCE: Lepak T. A, D. H. Ogle, and M. R. Vinson. 2017. Age, year-class strength variability, and partial age validation of Kiyis from Lake Superior. North American Journal of Fisheries Management 37:1151-1160.
+
+VARIABLES:
+ID: Identification number unique to each fish
+tl: Total length (mm)
+sex: Fish sex
+scaleAge_TAL: Estimated age of scales by TAL reader
+scaleAge_DHO: Estimated age of scales by DHO reader
+scaleAge: Estimated consensus age of scales
+otoAge_TAL: Estimated age of otoliths by TAL reader
+otoAge_DHO: Estimated age of otoliths by DHO reader
+otoAge: Estimated consensus age of otoliths
+
+NOTES:
+* Only small number of scales were read by both readers (NAs shown for all scaleAge variables that were not aged).
+* Several otoliths were removed because unreadable or unuseable (most are not shown in the data file, but some are shown with NAs for all three otoAge variables).

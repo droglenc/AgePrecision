@@ -4,63 +4,162 @@ output:
   pdf_document:
     includes:
       in_header: preamble.tex
+    df_print: kable
+bibliography: AgePrecision.bib
+csl: american-fisheries-society.csl
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, comment="")
+library(FSA)
+data("WhitefishLC")
+WhitefishLC <- WhitefishLC[,c("fishID","tl","otolith1","otolith2")]
 ```
 
-## Background
+# Background
 
 Age estimation of fish is necessary for the assessment of fish population dynamics (e.g., recruitment, growth, and mortality) and stock structure. Ages are most often estimated from calcified structures. Those ages may vary among readers, among calcified structures, or among readings by the same reader. It is important to understand both the accuracy and precision of age estimates to better understand how biases and variability may affect estimates of population dynamic metrics.
 
-Accuracy is related to estimating the true age of the fish. Accuracy is related to validation which was extensively discussed by Campana (2001) and won’t be discussed further here.
+Accuracy is related to estimating the true age of the fish. Accuracy is related to validation which was extensively discussed by @campana_accuracy_2001 and won’t be discussed further here.
 
-Precision is related to the consistency or repeatability of age estimates among readings (i.e., among readers or among readings by the same reader at different times). Precision was also discussed extensively in Campana (2001) but will be discussed further here given comments and questions in Bauerlien et al. (2018).
+Precision is related to the consistency or repeatability of age estimates among readings (i.e., among readers or among readings by the same reader at different times). Precision was also discussed extensively in @campana_accuracy_2001 but will be discussed further here given comments and questions in Bauerlien et al. (2018).
 
-Campana (2001) described three measures of precision for age estimation analyses. Percent agreement is the percentage of fish for which the readers’ estimates of age perfectly agreed. Some authors have extended this concepts to the percentage of fish for which the readers’ estimates of age matched within a certain tolerance range (e.g., within two years).
+Suppose that $R$ age estimates are made on $n$ fish in a sample and, for simplicity, that $R$ is constant (e.g., always $R$ readers of the structure). Further suppose that $x_{ij}$ is the $i$th age estimate for the $j$th fish and that $\bar{x}_{j}$ is the mean of the $R$ age estimates for the $j$th fish. For example, the data may look like the following where `fishID` is a unique fish identification number, `tl` is the fish's total length (mm), and `otolith1` and `otolith2` are ages estimates made from otoliths by two readers.
 
-Absolute percent error (APE) is
+```{r echo=FALSE}
+rws <- c(1,10,20,30,50,66,88,90)
+knitr::kable(WhitefishLC[rws,],row.names=FALSE)
+```
 
-\[ APE = 100 * \frac{\Sum_{j=1}^{n}\Sum_{i=1}^{R}\frac{\left|x_{ij}-\bar{x}_{j}\right|}{\bar{x}_{j}}}{nR} \]
+There are at least four common measures of precision for an individual fish (say fish $j$) -- average absolute deviation (AAD),[^mad] standard deviation (SD), average percentage error (APE),[^ape] and coefficient of variation (CV).[^cv] These four measures are defined below.
 
-where $x_{ij}$ is the $i$th age for the $j$th fish, $\bar{x}_{j}$ is the mean age for the $j$th fish, $R$ is the number of times that each fish was aged (assumed to be the same for all fish), and $n$ is the number of aged fish in the sample. Thus, the APE is the average absolute deviation in ages among readers scaled (i.e., divided) by the mean age among readers averaged across all n fish.
+\[ AAD_{j} = \frac{\Sum_{i=1}^{R}\left|x_{ij}-\bar{x}_{j}\right|}{R} \]
 
-The coefficient of variation, which Ogle (2016) termed average coefficient of variation (ACV), is
+\[ SD_{j} = \sqrt{\frac{\Sum_{i=1}^{R}\left(x_{ij}-\bar{x}_{j}\right)^{2}}{R-1}} \]
 
-\[  ACV = 100 * \frac{\Sum_{j=1}^{n}\frac{s_{j}}{\bar{x}_{j}}}{n}  \]
+\[ APE_{j} = \frac{AAD_{j}}{\bar{x}_{j}} \]
 
-where $s_{j}$ is the standard deviation of the $R$ age estimates for the $j$th fish. Thus, the ACV is the coefficient of variation (i.e., the standard deviation scaled by the average age estimate) averaged across all $n$ fish.
+\[ CV_{j} = \frac{SD_{j}}{\bar{x}_{j}} \]
 
-The ACV is greater than the APE by a factor of $\sqrt(2)$ when $R$ = 2 (Kimura and Anderl 2005). Thus, functionally the APE and ACV are interchangeable when $R$ = 2 (McBride 2015). However, ACV may be more familiar and easier to interpret (Kimura and Anderl 2005) and appears to be the more common choice among analysts.
+From these formulae, it is seen that $APE_{j}$ is simply $AAD_{j}$ rescaled by dividing by the mean age estimate. Similarly, $CV_{j}$ is simply $SD_{j}$ rescaled in the same way. The thought process behind these rescalings is that if the error in age estimates increases with age then the measure of precision should be adjusted by age. In other words, a difference of one year on a 10-year-old fish will be treated the same as a difference of two years on a 20-year-old fish. Furthermore, Kimura and Anderly (2005) demonstrated that $CV_{j}=\sqrt{2}APE_{j}$ when $R$ = 2. Thus, $CV_{j}$ and $APE_{j}$ are simply constant multiples of each other when $R$ = 2. It follows then that $AAD_{j}$ and $SD_{j}$ are also constant multiples of each other when $R$ = 2. Kimura and Anderly (2005) note that the constant factor of $\sqrt{2}$ is approximately correct when $R$ &gt; 2.
 
-Bauerlien et al. (2018) introduced the mean absolute deviation (MAD), which we will call the average absolute deviation (AAD) here for consistency, as 
+Traditionally, the measures of precision for individual fish have been averaged across all $n$ fish in the sample to develop a single metric of precision. These summaries are shown below with the first "A" in each acronym meaning "average" (e.g., "average average absolution deviation" or "average coefficient of variation").
 
-\[ AAD = 100 * \frac{\Sum_{j=1}^{n}\Sum_{i=1}^{R}\left|x_{ij}-\bar{x}_{j}\right|}{nR}  \]
+\[ AAAD = \frac{\Sum_{j=1}^{n} AAD_{j}}{n} =  \frac{\Sum_{j=1}^{n}\Sum_{i=1}^{R}\left|x_{ij}-\bar{x}_{j}\right|}{nR} \]
 
-The AAD is very similar to the APE, except that the absolute deviations have not been rescaled by the mean age estimate.
+\[ ASD = \frac{\Sum_{j=1}^{n} SD_{j}}{n} = \frac{\Sum_{j=1}^{n}s_{j}}{n}  \]
 
-For completeness, one could also consider the average standard deviation (ASD) as
+\[ AAPE = \frac{\Sum_{j=1}^{n} APE_{j}}{n} = \frac{\Sum_{j=1}^{n}\Sum_{i=1}^{R}\frac{\left|x_{ij}-\bar{x}_{j}\right|}{\bar{x}_{j}}}{nR} \]
 
-\[  ASD = 100 * \frac{\Sum_{j=1}^{n}s_{j}}{n}  \]
+\[ ACV = \frac{\Sum_{j=1}^{n} CV_{j}}{n} = \frac{\Sum_{j=1}^{n}\frac{SD_{j}}{\bar{x}_{j}}}{n} \]
 
-The ASD is very similar to the ACV, except that the standard deviation has not been rescaled by the mean age estimate.
+Note that the $APE_{j}$ and $CV_{j}$ and thus the $AAPE$ and $ACV$ are usually multiplied by 100 and treated as a percentage.
+
+Finally, Kimura and Anderl (2005) suggest, based on distributional theory, that the divisor for $APE_{j}$ should be the median age estimate ($\tilde{x}_{j}$) rather than the mean age estimate. If this same argument is extended to the $CV_{j}$ then this gives rise to two new precision metrics
+
+\[ APE2_{j} = \frac{AAD_{j}}{\tilde{x}_{j}} \]
+
+\[ CV2_{j} = \frac{SD_{j}}{\tilde{x}_{j}}  \]
+
+These two metrics can be averaged across all fish to compute the overall measures of precision $AAPE2$ and $ACV2$. For $R$ = 2, $\bar{x}_{j}$ = $\tilde{x}_{j}$ and there will be no difference between $AAPE$ and $AAPE2$ or $ACV$ and $ACV2$. However, when $R$ &gt; 2, then using the median may remove the influence of an age estimate from a reader that is an outlier in comparison to the other readers.
+
+For example, the metrics for individual fish may look like the following.
+
+```{r echo=FALSE}
+ap1 <- agePrecision(~otolith1+otolith2,data=WhitefishLC)
+knitr::kable(ap1$detail[rws,],row.names=FALSE,digits=3)
+```
+
+and a summary across all $n$ fish may look like the following (note that $ACV2$ and $APE2$ are not shown because $R$ = 2).
+
+```{r echo=FALSE, results="hide"}
+tmp <- summary(ap1,what="precision")
+```
+```{r echo=FALSE}
+knitr::kable(tmp,row.names=FALSE,digits=3)
+```
 
 
-## Problem Statement
+# Problem Statement
 
-Precision is (anecdotally ... see below) most often measured by the ACV. The ACV is designed to address the issue that differences among age estimates of say one year for young fish is more important than the same differences for old fish. In other words, the measure of precision should be adjusted for the (estimated) age of the fish. However, two possible issues arise with the use of ACV. First, interpretation is made more difficult. For example, an ACV of 10% is more difficult to interpret than say an ASD of 1.2. In the latter, 1.2 can be interpreted as ages differing by 1.2 years on average. However, the analyst likely will convert the ACV to actual age differences for interpretation (e.g., "an ACV of 10% means differences of 1 year for age 10 fish but 2 years for age 20 fish"). Second, the ACV is meant to remove the effect of age on the measure of precision. However, it is possible that ACV is still related to the age of the fish. If ACV is related to the age of the fish then the practice of reporting a single ACV value (averaged across all fish and, thus, all ages) is misleading. As suggested by Bauerlien et al. (2018), the analyst should assess the relationship between any of the precision metrics and age before summarizing with a single value.
+Precision is (anecdotally ... see below) most often measured by the $ACV$. The $ACV$ is designed to address the issue that differences among age estimates of say one year for young fish is more important than the same one year difference for old fish. In other words, the measure of precision should be adjusted for the (estimated) age of the fish. However, two possible issues arise with the use of $ACV$. First, interpretation is made more difficult. For example, an $ACV$ of 10% is more difficult to interpret than say an $ASD$ of 1.2. In the latter, 1.2 can be interpreted as ages differing by 1.2 years on average. However, the analyst likely will convert the $ACV$ to actual age differences for interpretation (e.g., "an $ACV$ of 10% means differences of 1 year for age 10 fish but 2 years for age 20 fish"). Second, the $ACV$ is meant to remove the effect of age on the measure of precision. However, it is possible that $ACV$ is still related to the age of the fish. If $ACV$ is related to the age of the fish then the practice of reporting a single $ACV$ value (averaged across all fish and, thus, all ages) is misleading. As suggested by Bauerlien et al. (2018), the analyst should assess the relationship between any of the precision metrics and age before summarizing with a single value.
 
-Questions that we wish to consider are:
+Questions that we wish to consider with this research are:
 
 1. Which precision metric is most commonly used in the literature?
-1. What is the distribution of precision metrics found in the literature?
-1. Do authors test to determine if their chosen precision metric is related to age or not?
+1. What is the (statistical) distribution of precision metrics found in the literature?
+1. How often have authors tested if their chosen precision metric was related to age or not?
 1. How often are precision metrics (especially ACV) related to age?
-1. What kind of relationship (linear, quadratic, or more complicated) between precision metrics and age are most common?
+1. What kind of relationship (linear, quadratic, or more complicated) between precision metrics and age is most common?
 1. What are the relationships between the various precision metrics?
 1. Do other metrics of precision exist and are they useful to fisheries biologists?
 1. What advice should be given to fisheries biologists when choosing a precision metric?
 
 
-## Research Direction
+# Research Direction
+## Literature Review
+We will attempt to review as many studies as possible that examined the precision among readers or among multiple readings by the same reader of fish calcified structures. We will record (at least) the following information from each study will be recorded in a flat database (e.g., spreadsheet).
+
+* Study ID
+    * Author name(s) appended with publication year and, if more than one structure was used in the paper, structure type.
+    * e.g., Lepak_etal_2017_scales and Lepak_etal_2017_otoliths
+* PDF file name
+    * e.g., Lepak_etal_2017.pdf
+* Species name
+* Study site
+* Publication year
+* Structure
+* Number of readers ($R$)
+* Number of samples ($n$)
+* Age range (minimum and maximum among all readers)
+* Percent agreement (exact) ... `NA` if not reported
+* AAPE ... `NA` if not reported
+* ACV ... `NA` if not reported
+* ASD ... `NA` if not reported
+* AAAD ... `NA` if not reported
+* ACV2 ... `NA` if not reported
+* AAPE2 ... `NA` if not reported
+* Whether (or not) a relationship between a precision metric and age was examined (Y/N)
+* If a relationship with age was examined, what was that relationship (none, linear, quadratic, other)
+
+Citations will be stored in the [FishAgePrecision Group Zotero database](https://www.zotero.org/groups/2207212/fishageprecision). The flat database will be stored in a Github repository. Results from the flat database extracted from the publications will be used to answer the first three questions in the Problem Statement.
+
+
+## Re-Analysis of Past Studies
+We will attempt to obtain raw data on multiple age estimates of the same fish from as many sources as possible. We will the (re)analyze these data to record the following items.
+
+* Study ID
+    * Author name(s) appended with publication year and, if more than one structure was used in the paper, structure type.
+    * e.g., Lepak_etal_2017_scales and Lepak_etal_2017_otoliths
+* Species name
+* Study site
+* Structure
+* Number of readers ($R$)
+* Number of samples ($n$)
+* Age range (minimum and maximum among all readers)
+* Percent agreement (exact)
+* AAPE
+* ACV
+* ASD
+* AAAD
+* ACV2
+* AAPE2
+* Type of relationship between precision metrics and age was examined (none, linear, quadratic, other)
+    * May need to model heteroscedasticity here.
+
+Raw data files will be stored as CSV files with a corresponding meta-data text file (an example has been created for Lepak_etal_2017). The data will be initially processed with `agePrecision()` from the `FSA` package. The resulting object will then be saved as an RDS file for post-processing to produce a data.frame (and ultimately a flat database) of the items above.
+
+
+## Simulation Study
+
+XXX NEED TO THINK ABOUT THIS MORE XXX
+
+
+# References
+
+
+[^mad]: Some authors refer to this as the *mean absolute deviation* (MAD). We use AAD here instead for congruency with abbreviations for other methods.
+
+[^ape]: Traditionally, APE has been used for the average of what is called the $APE_{j}$ here. In other words, the traditional APE is equivalent to our AAPE.
+
+[^cv]: Traditionally, CV has been used for the average of what is called the $CV_{j}$ here. In other words, the traditional CV is equivalent to our ACV. This follows Ogle (2016).
