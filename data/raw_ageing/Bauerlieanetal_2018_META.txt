@@ -1,0 +1,16 @@
+FILE: Bauerlieanetal_2018
+SOURCE: Bauerlien, C. J., M. R. Cornett, E. A. Zielonka, D. P. Crane, and J. S. Bulak. 2018. Precision of calcified structures used for estimating age of Chain Pickerel Esox Niger. North American Journal of Fisheries Management 38:XXX-XXX.
+
+VARIABLES:
+Fish_ID: Identification number unique to each fish
+Structure: Calcified structure type (scales; otoliths; cleithra (whole and section); and anal, dorsal, pectoral, pelvic fin rays)
+Cory: Estimated age of the structure by Cory reader
+Emily: Estimated age of the structure by Emily reader
+Mike: Estimated age of the structure by Mike reader
+Rin: Estimated age of the structure by Rin reader
+Mean age: Mean age of the structure across all readers
+MAD: Mean absolute deviation of the structure across all readers
+CV: Coefficient of variation of the structure across all readers
+
+NOTES:
+* Mean age, MAD, and CV variables are not needed in our analyses.
