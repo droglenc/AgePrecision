@@ -1,0 +1,21 @@
+---
+title: "Fish Ageing Precision Articles"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: pdf_document
+bibliography: LitReview.bib
+csl: american-fisheries-society.csl
+---
+
+<div id="refs"></div>
+
+\newpage
+
+----
+
+## Ignore After This
+```{r echo=FALSE, results='asis'}
+df <- bibtex::read.bib("LitReview.bib")
+
+for (i in seq_along(df)) cat("@",names(df)[i],"\n",sep="")
+```
+
