@@ -1,0 +1,19 @@
+FILE: HerbstMarsden_2011
+SOURCE: Herbst, S. J. and J. E. Marsden. 2011. Comparison of precision and bias of scale, fin ray, and otolith age estimates for lake whitefish (Coregonus clupeaformis) in Lake Champlain. Journal of Great Lakes Research. 37:386-389.
+
+VARIABLES:
+fishID: Identification number unique to each fish
+tl: Total length (mm)
+sex: Fish sex
+scale1: Estimated age of scales by first reader
+scale2: Estimated age of scales by second reader
+scaleC: Estimated consensus age of scales
+finray1: Estimated age of finrays by first reader
+finray2: Estimated age of finrays by second reader
+finrayC: Estimated consensus age of finrays
+otolith1: Estimated age of otoliths by first reader
+otolith2: Estimated age of otoliths by second reader
+otolithC: Estimated consensus age of otoliths
+
+NOTES:
+* This is the WhitefishLC data.frame in the FSA package.
