@@ -39,30 +39,46 @@ precisionTests <- function(res,var,digits,alpha) {
   x <- res$detail$mean
   ## Fit linear and quadratic models, with and without modeling heteroscedasticity
   LM <- nlme::gls(y~x,method="ML")
-  LMHet <- nlme::gls(y~x,method="ML",weights=nlme::varPower(form=~x))
+  LMHet <- tryCatch(nlme::gls(y~x,method="ML",weights=nlme::varPower(form=~x)),
+                    error=function(e) NA)
   QM <- nlme::gls(y~x+I(x^2),method="ML")
-  QMHet <- nlme::gls(y~x+I(x^2),method="ML",weights=nlme::varPower(form=~x))
-  ## Need to model heteroscedasity in the linear model?
-  resHetInLM <- anova(LM,LMHet)
-  ## Need to model heteroscedasity in the quadratic model?
-  resHetInQM <- anova(QM,QMHet)
+  QMHet <- tryCatch(nlme::gls(y~x+I(x^2),method="ML",weights=nlme::varPower(form=~x)),
+                    error=function(e) NA)
   ## Need quadratic term, with no heteroscedasticity?
   resQMNoHet <- anova(LM,QM)
-  ## Need quadratic term, with heteroscedasticity?
-  resQMHet <- anova(LMHet,QMHet)
   ## Slope in linear model without heteroscedasticity
   resSlopeLMNoHet <- anova(LM)
-  ## Slope in linear model with heteroscedasticity
-  resSlopeLMHet <- anova(LMHet)
+  if (class(LMHet)=="gls") {
+    ## Need to model heteroscedasity in the linear model?
+    resHetInLM <- anova(LM,LMHet)
+    ## Slope in linear model with heteroscedasticity
+    resSlopeLMHet <- anova(LMHet)
+    ## Need quadratic term, with heteroscedasticity?
+    if (class(QMHet)=="gls") resQMHet <- anova(LMHet,QMHet)
+      else resQMHet <- NA
+  } else {
+    resHetInLM <- resSlopeLMHet <- NA
+    ## Need quadratic term, with heteroscedasticity?
+    if (class(QMHet)=="gls") resQMHet <- anova(LMHet,QMHet)
+    else resQMHet <- NA
+  }
+  ## Need to model heteroscedasity in the quadratic model?
+  if (class(QMHet)=="gls") resHetInQM <- anova(QM,QMHet)
+    else resHetInQM <- NA
   ## Put together
-  sum <- data.frame(HetInLM=round(resHetInLM[2,"p-value"],digits),
-                    HetInQM=round(resHetInQM[2,"p-value"],digits),
+  sum <- data.frame(HetInLM=ifelse("anova.lme" %in% class(resHetInLM),
+                                   round(resHetInLM[2,"p-value"],digits),NA),
+                    HetInQM=ifelse("anova.lme" %in% class(resHetInQM),
+                                   round(resHetInQM[2,"p-value"],digits),NA),
                     QMNoHet=round(resQMNoHet[2,"p-value"],digits),
-                    QMHet=round(resQMHet[2,"p-value"],digits),
+                    QMHet=ifelse("anova.lme" %in% class(resQMHet),
+                                 round(resQMHet[2,"p-value"],digits),NA),
                     SlopeLMNoHet=round(resSlopeLMNoHet[2,"p-value"],digits),
-                    SlopeLMHet=round(resSlopeLMHet[2,"p-value"],digits))
+                    SlopeLMHet=ifelse("anova.lme" %in% class(resSlopeLMHet),
+                                      round(resSlopeLMHet[2,"p-value"],digits),NA))
   sum$Hetero <- with(sum,
                      dplyr::case_when(
+                       is.na(HetInLM) & is.na(HetInQM) ~ "--",
                        HetInLM<alpha & HetInQM < alpha ~ "both",
                        HetInLM<alpha ~ "linear",
                        HetInQM<alpha ~ "quad",
@@ -83,11 +99,14 @@ precisionTests <- function(res,var,digits,alpha) {
   df <- data.frame(y,x)
   names(df) <- c(var,"mean")
   tmp <- seq(min(df$mean,na.rm=TRUE),max(df$mean,na.rm=TRUE),length.out=99)
-  preds <- data.frame(x=tmp,
-                      LM=predict(LM,data.frame(x=tmp)),
-                      LMHet=predict(LMHet,data.frame(x=tmp)),
-                      QM=predict(QM,data.frame(x=tmp)),
-                      QMHet=predict(QMHet,data.frame(x=tmp)))
+  LM.preds <- predict(LM,data.frame(x=tmp))
+  if (class(LMHet)=="gls") LMHet.preds <- predict(LMHet,data.frame(x=tmp))
+  else LMHet.preds <- NA
+  QM.preds <- predict(QM,data.frame(x=tmp))
+  if (class(QMHet)=="gls") QMHet.preds <- predict(QMHet,data.frame(x=tmp))
+  else QMHet.preds <- NA
+  preds <- data.frame(x=tmp,LM=LM.preds,LMHet=LMHet.preds,
+                      QM=QM.preds,QMHet=QMHet.preds)
   tmp <- list(tests=sum,df=df,LM=LM,LMHet=LMHet,QM=QM,QMHet=QMHet,preds=preds,var=var)
   class(tmp) <- "PrecisionTests"
   tmp
@@ -103,7 +122,7 @@ plot.PrecisionData <- function(x,...) {
   plot(x$df$mean,x$df[,x$var],xlab="Mean Age",ylab=x$var,
        pch=19,col=FSA::col2rgbt("black",1/10))
   lines(LM~x,data=x$preds,col="black",lwd=3)
-  lines(LMHet~x,data=x$preds,col="red",lwd=2,lty=2)
+  if (class(x$LMHet)=="gls") lines(LMHet~x,data=x$preds,col="red",lwd=2,lty=2)
   lines(QM~x,data=x$preds,col="blue",lwd=3)
-  lines(QMHet~x,data=x$preds,col="green",lwd=2,lty=2)
+  if (class(x$QMHet)=="gls") lines(QMHet~x,data=x$preds,col="green",lwd=2,lty=2)
 }
