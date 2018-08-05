@@ -1,7 +1,7 @@
 library(FSA)
 library(dplyr)
 
-precisionData <- function(res,studyID,
+precisionData <- function(res,studyID,species,
                           structure,structure2="",process="",
                           type,var=c("SD","CV","AAD","APE","CV2","APE2"),
                           notes="",digits=5,alpha=0.05) {
@@ -12,19 +12,19 @@ precisionData <- function(res,studyID,
   if (!type %in% poss_types) stop("'type' must be one of: ",poss_types)
   var <- match.arg(var)
   ## Prepare test specific information
-  pre <- data.frame(studyID=studyID,
+  pre <- data.frame(studyID=studyID,species=species,
                     structure=structure,structure2=structure2,process=process,
-                    type=type,var=var)
+                    type=type)
   
   ## Get precision tests done
   pt1 <- precisionTests(res,var=var,digits=digits,alpha=alpha)
-  tests <- cbind(pre,pt1$tests)
+  tests <- cbind(pre,var=var,pt1$tests)
   ## Prepare precision summary
   sum <- cbind(pre,summary(ap1,what="precision",show.prec2=TRUE),
-               age.min=min(res$detail$mean,na.rm=TRUE),
-               age.10=quantile(res$detail$mean,probs=0.1,na.rm=TRUE,names=FALSE),
-               age.90=quantile(res$detail$mean,probs=0.9,na.rm=TRUE,names=FALSE),
-               age.max=max(res$detail$mean,na.rm=TRUE))
+               agemin=min(res$detail$mean,na.rm=TRUE),
+               age10=quantile(res$detail$mean,probs=0.1,na.rm=TRUE,names=FALSE),
+               age90=quantile(res$detail$mean,probs=0.9,na.rm=TRUE,names=FALSE),
+               agemax=max(res$detail$mean,na.rm=TRUE))
   ## Return a list
   tmp <- list(sum=sum,tests=tests,df=pt1$df,
               LM=pt1$LM,LMHet=pt1$LMHet,QM=pt1$QM,QMHet=pt1$QMHet,

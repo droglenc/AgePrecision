@@ -1,5 +1,5 @@
 #### SETUP #####################################################################
-here::here()
+setwd(here::here())
 source("code/precisionData.R")
 
 nm <- ""       ## Name of study (actually name of file)

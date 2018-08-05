@@ -10,28 +10,37 @@ csl: american-fisheries-society.csl
 ---
 
 ```{r setup, include=FALSE}
+library(magrittr)
 knitr::opts_chunk$set(echo = TRUE, comment="")
-library(FSA)
-data("WhitefishLC")
+options(knitr.kable.NA="--")
+LRs <- readxl::read_excel(paste0(here::here(),"/data/Literature_Review.xlsx"),
+                          sheet="Study_Meta",na="NA")
+LRr <- readxl::read_excel(paste0(here::here(),"/data/Literature_Review.xlsx"),
+                          sheet="Results_Meta",na="NA")
+LRas <- readxl::read_excel(paste0(here::here(),"/data/Literature_Review.xlsx"),
+                           sheet="AnalysisSum_Meta",na="NA")
+LRat <- readxl::read_excel(paste0(here::here(),"/data/Literature_Review.xlsx"),
+                           sheet="AnalysisTests_Meta",na="NA")
+data("WhitefishLC",package="FSA")
 WhitefishLC <- WhitefishLC[,c("fishID","tl","otolith1","otolith2")]
 ```
 
 # Background
 
-Age estimation of fish is necessary for the assessment of fish population dynamics (e.g., recruitment, growth, and mortality) and stock structure. Ages are most often estimated from calcified structures. Those ages may vary among readers, among calcified structures, or among readings by the same reader. It is important to understand both the accuracy and precision of age estimates to better understand how biases and variability may affect estimates of population dynamic metrics.
+Age estimation of fish is necessary for the assessment of fish population dynamics (e.g., recruitment, growth, and mortality) and stock structure. Ages are most often estimated from calcified structures. Those ages may vary among readers, among readings by the same reader, or among calcified structures. It is important to understand both the accuracy and precision of age estimates to better understand how biases and variability may affect estimates of population dynamic metrics [@yule_how_2008; @hamel_variability_2016; @tyszko_comparing_2017].
 
-Accuracy is related to estimating the true age of the fish. Accuracy is related to validation which was extensively discussed by @campana_accuracy_2001 and won’t be discussed further here.
+Accuracy, or the ability to estimate the true age of a fish, is related to validation which was extensively discussed by @campana_accuracy_2001 and won’t be discussed further here. Precision is the consistency or repeatability of age estimates among readings (i.e., among readers or among readings by the same reader at different times). Precision was also discussed in @campana_accuracy_2001 but will be discussed further here given comments and questions in @bauerlien_precision_2018.
 
-Precision is related to the consistency or repeatability of age estimates among readings (i.e., among readers or among readings by the same reader at different times). Precision was also discussed extensively in @campana_accuracy_2001 but will be discussed further here given comments and questions in @bauerlien_precision_2018.
-
-Suppose that $R$ age estimates are made on $n$ fish in a sample and, for simplicity, that $R$ is constant (e.g., always $R$ readers of the structure). Further suppose that $x_{ij}$ is the $i$th age estimate for the $j$th fish and that $\bar{x}_{j}$ is the mean of the $R$ age estimates for the $j$th fish. For example, the data may look like the following where `fishID` is a unique fish identification number, `tl` is the fish's total length (mm), and `otolith1` and `otolith2` are ages estimates made from otoliths by two readers.
+Suppose that $R$ age estimates are made on $n$ fish in a sample and, for simplicity, that $R$ is constant (e.g., always $R$ readers of the structure). Further suppose that $x_{ij}$ is the $i$th age estimate for the $j$th fish. For example, the data may look like the following where `fishID` is a unique fish identification number, `tl` is the fish's total length (mm), and `otolith1` and `otolith2` are ages estimates made from otoliths by two readers.
 
 ```{r echo=FALSE}
 rws <- c(1,10,20,30,50,66,88,90)
-knitr::kable(WhitefishLC[rws,],row.names=FALSE)
+knitr::kable(WhitefishLC[rws,],format="latex",row.names=FALSE,booktabs=TRUE) %>%
+  kableExtra::kable_styling(latex_options=c("striped"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE)
 ```
 
-There are at least four common measures of precision for an individual fish (say fish $j$) -- average absolute deviation (AAD),[^mad] standard deviation (SD), average percentage error (APE),[^ape] and coefficient of variation (CV).[^cv] These four measures are defined below.
+There are four common measures of precision for an individual fish (say fish $j$) -- average absolute deviation (AAD),[^mad] standard deviation (SD), average percentage error (APE),[^ape] and coefficient of variation (CV)[^cv] -- as defined below:
 
 \[ AAD_{j} = \frac{\Sum_{i=1}^{R}\left|x_{ij}-\bar{x}_{j}\right|}{R} \]
 
@@ -41,7 +50,7 @@ There are at least four common measures of precision for an individual fish (say
 
 \[ CV_{j} = \frac{SD_{j}}{\bar{x}_{j}} \]
 
-From these formulae, it is seen that $APE_{j}$ is simply $AAD_{j}$ rescaled by dividing by the mean age estimate. Similarly, $CV_{j}$ is simply $SD_{j}$ rescaled in the same way. The thought process behind these rescalings is that if the error in age estimates increases with age then the measure of precision should be adjusted by age. In other words, a difference of one year on a 10-year-old fish will be treated the same as a difference of two years on a 20-year-old fish. Furthermore, @kimura_quality_2005 demonstrated that $CV_{j}=\sqrt{2}APE_{j}$ when $R$ = 2. Thus, $CV_{j}$ and $APE_{j}$ are simply constant multiples of each other when $R$ = 2. It follows then that $AAD_{j}$ and $SD_{j}$ are also constant multiples of each other when $R$ = 2. @kimura_quality_2005 noted that the constant factor of $\sqrt{2}$ is approximately correct when $R$ &gt; 2.
+where $\bar{x}_{j}$ is the mean of the $R$ age estimates for the $j$th fish. From these formulae, it is seen that $APE_{j}$ is simply $AAD_{j}$ rescaled by dividing by the mean age estimate. Similarly, $CV_{j}$ is simply $SD_{j}$ rescaled in the same way. The thought process behind these rescalings is that if the error in age estimates increases with age then the measure of precision should be adjusted by age. In other words, a difference of one year on a 10-year-old fish will be treated the same as a difference of two years on a 20-year-old fish. Furthermore, @kimura_quality_2005 demonstrated that $CV_{j}=\sqrt{2}APE_{j}$ when $R$ = 2. Thus, $CV_{j}$ and $APE_{j}$ are simply constant multiples of each other when $R$ = 2. It follows then that $AAD_{j}$ and $SD_{j}$ are also constant multiples of each other when $R$ = 2. @kimura_quality_2005 noted that the constant factor of $\sqrt{2}$ is approximately correct when $R$ &gt; 2.
 
 Traditionally, the measures of precision for individual fish have been averaged across all $n$ fish in the sample to develop a single metric of precision. These summaries are shown below with the first "A" in each acronym meaning "average" (e.g., "average average absolution deviation" or "average coefficient of variation").
 
@@ -67,95 +76,100 @@ Finally, @chang_statistical_1982 suggested the "Index of Precision" $D$ as
 
 \[ D_{j} = \frac{CV_{j}}{\sqrt{R}} \]
 
-However, note that when $R$ = 2 then $D_{j}$ = $APE_{j}$ because $CV_{j}=\sqrt{2}APE_{j}$ when $R$ = 2. This metric will be labelled as $AD$ when averaged across all $n$ fish.
+Note, however, if $R$ = 2 then $D_{j}$ = $APE_{j}$.[^dj] This metric will be labelled as $AD$ when averaged across all $n$ fish.
 
-For example, the metrics for individual fish may look like the following.
+For example, the metrics for individual fish may look like those in the following table:
 
 ```{r echo=FALSE}
-ap1 <- agePrecision(~otolith1+otolith2,data=WhitefishLC)
-knitr::kable(ap1$detail[rws,],row.names=FALSE,digits=3)
+ap1 <- FSA::agePrecision(~otolith1+otolith2,data=WhitefishLC)
+knitr::kable(ap1$detail[rws,],format="latex",row.names=FALSE,booktabs=TRUE,digits=3) %>%
+  kableExtra::kable_styling(latex_options=c("striped","scale_down"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE)
 ```
 
-and a summary across all $n$ fish may look like the following (note that $ACV2$, $APE2$, and $AD$ are not shown because $R$ = 2).
+and a summary across all $n$ fish may look like the following  table:[^tabler2]
 
 ```{r echo=FALSE, results="hide"}
 tmp <- summary(ap1,what="precision")
 ```
 ```{r echo=FALSE}
-knitr::kable(tmp,row.names=FALSE,digits=3)
+knitr::kable(tmp,format="latex",row.names=FALSE,booktabs=TRUE,digits=3) %>%
+  kableExtra::kable_styling(position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE)
 ```
 
+\newpage
 
 # Problem Statement
 
-Precision is (anecdotally ... see below) most often measured by the $ACV$. The $ACV$ is designed to address the issue that differences among age estimates of say one year for young fish is more important than the same one year difference for old fish. In other words, the measure of precision should be adjusted for the (estimated) age of the fish. However, two possible issues arise with the use of $ACV$. First, interpretation is made more difficult. For example, an $ACV$ of 10% is more difficult to interpret than say an $ASD$ of 1.2. In the latter, 1.2 can be interpreted as ages differing by 1.2 years on average. However, the analyst likely will convert the $ACV$ to actual age differences for interpretation (e.g., "an $ACV$ of 10% means differences of 1 year for age 10 fish but 2 years for age 20 fish"). Second, the $ACV$ is meant to remove the effect of age on the measure of precision. However, it is possible that $ACV$ is still related to the age of the fish. If $ACV$ is related to the age of the fish then the practice of reporting a single $ACV$ value (averaged across all fish and, thus, all ages) is misleading. As suggested by Bauerlien et al. (2018), the analyst should assess the relationship between any of the precision metrics and age before summarizing with a single value.
+Prior to @campana_accuracy_2001, $ACV$ was used slightly more than $APE$ as a precision metric. Since then, it appears that precision is most often measured by the $ACV$, largely based on the recommendation of @campana_accuracy_2001. The $ACV$ is designed to address the issue that differences among age estimates of say one year for young fish is more important than the same one year difference for old fish. In other words, the measure of precision should be adjusted for the (estimated) age of the fish. However, two possible issues arise with the $ACV$. First, interpretation is made more difficult. For example, an $ACV$ of 10% is more difficult to interpret than say an $ASD$ of 1.2. The analyst will likely convert the $ACV$ to a actual age differences for interpretation (e.g., "an $ACV$ of 10% means differences of 1 year for age 10 fish but 2 years for age 20 fish"). However, the $ASD$ of 1.2 can be directly interpreted as ages differing by 1.2 years on average. Second, the $ACV$ is meant to remove the effect of age on the measure of precision. However, it is possible that $ACV$ is still related to the age of the fish. If $ACV$ is related to the age of the fish then the practice of reporting a single $ACV$ value (averaged across all fish and, thus, all ages) is misleading. As suggested by Bauerlien et al. (2018), the analyst should assess the relationship between any of the precision metrics and age before summarizing with a single value. This implies that $ACV$ may not be the universally best precision metric.
 
 Questions that we wish to consider with this research are:
 
 1. Which precision metric is most commonly used in the literature?
 1. What is the (statistical) distribution of precision metrics found in the literature?
 1. How often have authors tested if their chosen precision metric was related to age or not?
+1. What are the relationships between the various precision metrics?
 1. How often are precision metrics (especially ACV) related to age?
 1. What kind of relationship (linear, quadratic, or more complicated) between precision metrics and age is most common?
-1. What are the relationships between the various precision metrics?
+1. Are any of the above affected by structure type, fish species, longevity, sample size, number of readings, etc.
 1. Do other metrics of precision exist and are they useful to fisheries biologists?
 1. What advice should be given to fisheries biologists when choosing a precision metric?
 
+\newpage
 
 # Research Direction
 ## Literature Review
-We will attempt to review as many studies as possible that examined the precision among readers or among multiple readings by the same reader of fish calcified structures. We will record (at least) the following information from each study will be recorded in a flat database (e.g., spreadsheet).
+We will attempt to review as many studies as possible that examined the precision of ages estimated from calcified structures within or between readers. The following general information about each study will be recorded in a flat database (e.g., spreadsheet):
 
-* Study ID (Author name(s) appended with publication year ... e.g., Lepaketal_2017)
-* Species name
-* Study site
-* Publication year
-* Structure (e.g., scales, otoliths, finrays, vetebrae, cleithra)
-* Structure2 (e.g., dorsal, pectoral, pelvic)
-* Process (e.g., whole, sectioned, crackburn)
-* Number of readers ($R$)
-* Number of samples ($n$)
-* Age range (minimum and maximum age among all readers)
-* Percent agreement (exact) ... `NA` if not reported
-* AAPE ... `NA` if not reported
-* ACV ... `NA` if not reported
-* ASD ... `NA` if not reported
-* AAAD ... `NA` if not reported
-* ACV2 ... `NA` if not reported
-* AAPE2 ... `NA` if not reported
-* Whether (or not) a relationship between a precision metric and age was examined (Y/N)
-* If a relationship with age was examined, what was that relationship (none, linear, quadratic, other)
+```{r echo=FALSE}
+knitr::kable(LRs,format="latex",row.names=FALSE,booktabs=TRUE) %>%
+  kableExtra::kable_styling(latex_options=c("striped","scale_down"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE) %>%
+  kableExtra::column_spec(1,bold=TRUE)
+```
 
-Citations will be stored in the [FishAgePrecision Group Zotero database](https://www.zotero.org/groups/2207212/fishageprecision). The flat database will be stored in a Github repository. Results from the flat database extracted from the publications will be used to answer the first three questions in the Problem Statement.
+In addition, the following specific information will be recorded in a second flat database:
+
+```{r echo=FALSE}
+knitr::kable(LRr[,-3],format="latex",row.names=FALSE,booktabs=TRUE) %>%
+  kableExtra::kable_styling(latex_options=c("striped","scale_down"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE) %>%
+  kableExtra::column_spec(1,bold=TRUE)
+```
+
+This database will have a separate row for each unique combination of species, general structure, specific structure, process, and type of calculation. For example, if one paper examined between- and within-reader precision for whole otoliths, sectioned otoliths, pectoral spines, and cleithra for three species of fish, then this study would populate 24 (two types of calculation $\times$ four specific structures $\times$ three species) rows in this flat database (each with the same study ID).
+
+Citations will be stored in the [FishAgePrecision Group Zotero database](https://www.zotero.org/groups/2207212/fishageprecision). The flat database will be stored in a Github repository. This information will be used to answer the first three and the seventh questions in the Problem Statement.
 
 
 ## Re-Analysis of Past Studies
-We will attempt to obtain raw data on multiple age estimates of the same fish from as many sources as possible. We will the (re)analyze these data to record the following items.
+We will attempt to obtain raw data on multiple age estimates of the same fish from as many sources as possible. General information about each study will be stored in the same flat database as for the literature review. In addition, we will analyze each data set to record two types of information. First, we will record the following information about mean ages and precision metrics for each data set.
 
-* Study ID (Author name(s) appended with publication year ... e.g., Lepaketal_2017)
-* Species name
-* Study site
-* Structure (e.g., scales, otoliths, finrays, vetebrae, cleithra)
-* Structure2 (e.g., dorsal, pectoral, pelvic)
-* Process (e.g., whole, sectioned, crackburn)
-* Number of readers ($R$)
-* Number of samples ($n$)
-* Age range (minimum, 10th percentile, 90th percentile, and maximum mean age among all readers)
-* Percent agreement (exact)
-* AAPE
-* ACV
-* ASD
-* AAAD
-* ACV2
-* AAPE2
-* AD
-* Type of relationship between precision metrics and age
-    * Fit linear and quadratic models with and without modeling heteroscedasticity (i.e., generalized least-squares models)
-        * Determine if heteroscedasticy needed to be modeled
-        * Determine if the quadratic term was needed
-        * Determine if a linear relatinship existed
+```{r echo=FALSE}
+knitr::kable(LRas[,-3],format="latex",row.names=FALSE,booktabs=TRUE) %>%
+  kableExtra::kable_styling(latex_options=c("striped","scale_down"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE) %>%
+  kableExtra::column_spec(1,bold=TRUE)
+```
 
-Raw data files will be stored as CSV files with a corresponding meta-data text file (an example has been created for Lepak_etal_2017). The data will be initially processed with `agePrecision()` from the `FSA` package. Information above will be extracted from this result using `precisionData()` written for this project. The resulting object will be saved as an RDS file for post-processing to produce a data.frame (and ultimately a flat database) of the items above.
+Additionally, we will examine the relationship between precision metrics and mean age for reach data set. We will fit the following four generalized least-squares (GLS) models for the relationship of a precision metric on mean age:
+
+1. Linear model assuming homoscedasticity for the precision metric relative to mean age.
+1. Linear model assuming heteroscedasticity for the precision metric relative to mean age follows a power function (i.e., either increasing or decreasing variance in the precision metric with increasing mean age).
+1. Quadratic model assuming homoscedasticity for the precision metric relative to mean age.
+1. Quadratic model assuming heteroscedasticity for the precision metric relative to mean age follows a power function.
+
+In situations with small sample sizes ($n <$ XXX) the two models with heteroscedasticity may not be able to be fit. Following fitting these models, we will determine if heteroscedasticity is present by comparing models 1 and 2 and models 3 and 4. We will then determine if the quadratic term is necessary by either comparing models 1 and 3 or models 2 and 4. Finally, if a quadratic term is not necessary then we will test for a significant linear relationship between the precision metric and mean age by testing that the slope in the linear model is zero or not. These set of tests will only be conducted with the $SD_{j}$ and $CV_{j}$ metrics given the tight and linear relationships between $AAD_{j}$ and $SD_{j}$ and between $APE_{j}$ and $CV_{j}$. The following information will be recorded from these tests.
+
+```{r echo=FALSE}
+knitr::kable(LRat[,-3],format="latex",row.names=FALSE,booktabs=TRUE) %>%
+  kableExtra::kable_styling(latex_options=c("striped","scale_down"),position="center") %>%
+  kableExtra::row_spec(0,bold=TRUE) %>%
+  kableExtra::column_spec(1,bold=TRUE)
+```
+
+Raw data files will be stored as CSV files with a corresponding meta-data text file, which will be named after the `studyID` variable (an example has been created for lepak_age_2017.CSV and lepak_age_2017_META.txt). Each data file will be initially processed with `agePrecision()` from the `FSA` package. Specific information (see below) will be extracted from this result using `precisionData()` written for this project and the resulting object will be saved as an RDS file for post-processing. All of the resulting RDS files will then be read and compiled to produce two data.frames that contain the precision metric summary information and the results of the tests for the relationship between the precision metrics and mean age. Results in these two data.frames will be used to answer the fourth through seventh questions in the Problem Statement.
 
 
 ## Simulation Study
@@ -168,6 +182,12 @@ XXX NEED TO THINK ABOUT THIS MORE XXX
 
 [^mad]: Some authors refer to this as the *mean absolute deviation* (MAD). We use AAD here instead for congruency with abbreviations for other methods.
 
-[^ape]: Traditionally, APE has been used for the average of what is called the $APE_{j}$ here. In other words, the traditional APE is equivalent to our AAPE.
+[^ape]: Traditionally, APE has been used for the average of the $APE_{j}$ here. In other words, the traditional APE is equivalent to our AAPE.
 
-[^cv]: Traditionally, CV has been used for the average of what is called the $CV_{j}$ here. In other words, the traditional CV is equivalent to our ACV. This follows Ogle (2016).
+[^cv]: Traditionally, CV has been used for the average of the $CV_{j}$ here. In other words, the traditional CV is equivalent to our ACV. This follows Ogle (2016).
+
+[^dj]: Because, when $R$ = 2, $CV_{j}=\sqrt{2}APE_{j}$ and the $\sqrt{2}$ in the numerator and denominator will cancel each other.
+
+[^tabler2]: Note that $AACV2$, $AAPE2$, and $AD$ are not shown because they are equal to $ACV$, $APE$, and $APE$ when $R = 2$.
+
+[^precanecdote]: Note in the [Research Direction](#research-direction) section that we propose a literature review to determine which precision metric is used most often.

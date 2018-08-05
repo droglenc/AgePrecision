@@ -1,4 +1,3 @@
-FILE: Bauerlieanetal_2018
 SOURCE: Bauerlien, C. J., M. R. Cornett, E. A. Zielonka, D. P. Crane, and J. S. Bulak. 2018. Precision of calcified structures used for estimating age of Chain Pickerel Esox Niger. North American Journal of Fisheries Management 38:XXX-XXX.
 
 VARIABLES:
