@@ -1,0 +1,18 @@
+---
+title: "Zotero Clean-Up"
+author: "Derek Ogle"
+date: "September 16, 2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+* **Title**
+    * All words should be lower-case except for those that would be usually capitalized (e.g., states, countries), fish common names, and the first letter of the genus in the scientific name. If most words are capitalized it may be quicker to right-click on the title, select "Transform Text", and select "Sentence case".
+    * Scientific names should begin with `<i>` and end with `</i>` (e.g., `<i>`Gymnocephalus cernuus`</i>`).
+    * Fix any obvious typos.
+* **Issue**
+    * Remove the issue number if one exists.
