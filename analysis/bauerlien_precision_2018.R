@@ -9,6 +9,7 @@ str(df)
 levels(df$Structure)
 
 species <- "Chain Pickerel"
+atype <- "between"
 
 ################################################################################
 strux <- "finrays"    ## Calcified strucure (e.g., scales, otoliths, finrays, spines)
@@ -21,18 +22,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -49,18 +50,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -77,18 +78,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -105,18 +106,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -133,18 +134,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -161,18 +162,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -189,18 +190,18 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
 
@@ -217,17 +218,17 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")  ## possible change to within
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))

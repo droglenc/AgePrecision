@@ -1,10 +1,14 @@
 #### SETUP #####################################################################
+cat("\014")
 setwd(here::here())
 source("code/precisionData.R")
 
 nm <- ""       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
+
+species <- ""
+atype <- "between"   # possibly change to "within"
 
 ## !!! Copy the code below if more than one structure of comparisons
 
@@ -20,18 +24,17 @@ df1 <- df %>%  ## Isolate the variables containing the ages
 ap1 <- agePrecision(~XXX+XXX,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="SD")  ## possible change to within
+                       type=atype,var="SD")
 plot(pt1SD)
 summary(pt1SD,what="tests")
 
 pt1CV <- precisionData(ap1,studyID=nm,
                        structure=strux,structure2=strux2,process=proc,
-                       type="between",var="CV")
+                       type=atype,var="CV")
 plot(pt1CV)
 summary(pt1CV,what="tests")
 
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
-saveRDS(res,paste0("data/results_precision/",nm,"_",strux,
+saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,".rds"))
-
