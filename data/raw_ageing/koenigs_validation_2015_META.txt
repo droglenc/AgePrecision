@@ -1,0 +1,15 @@
+SOURCE: Koenigs, R.P., R.M. Bruch, R.S. Stelzer, and K.K. Kamke. 2015. Validation of otolith ages for Walleye (Sander Vitreus) in the Winnebago system. Fisheries Research 167:13–21.
+
+VARIABLES:
+date: Capture date.
+id: Identification number unique to each fish
+sex: Fish sex
+mat: Fish maturity
+tl: Total length (mm)
+oto_Ryan: Estimated age of otoliths by Ryan reader
+oto_Eli: Estimated age of otoliths by Eli reader
+spine_Jack: Estimated age of spines by Jack reader
+spine_Ryan: Estimated age of spines by Ryan reader
+
+NOTES:
+* File generated from "WAE precision data for Dr. Ogle.xlsx" file provided by Ryan Koenigs.

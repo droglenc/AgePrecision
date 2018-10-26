@@ -1,0 +1,18 @@
+SOURCE: Koch, J.D., M.C. Quist, and K.A. Hansen. 2009. Precision of hard structures used to estimate age of Bowfin in the upper Mississippi River. North American Journal of Fisheries Management 29:506–511.
+
+VARIABLES:
+tl: Total length (mm)
+wt: Weight (g)
+sex: Sex of the fish
+mat: Maturity of the fish
+finray_R1: Estimated age of finray by R1 reader
+finray_R2: Estimated age of finray by R2 reader
+finray_R3: Estimated age of finray by R3 reader
+gular_R1: Estimated age of gular plate by R1 reader
+gular_R2: Estimated age of gular plate by R2 reader
+gular_R3: Estimated age of gular plate by R3 reader
+finray_C: Estimated CONSENSUS age of finrays
+gular_C: Estimated CONSENSUS age of gular plate
+
+NOTES:
+* File generated from "Jeff Koch_Ogle data request.xlsx" file provided by Jeff Koch.

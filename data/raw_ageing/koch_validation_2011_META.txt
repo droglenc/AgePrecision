@@ -1,0 +1,12 @@
+SOURCE: Koch, J.D., K.D. Steffensen, and M.A. Pegg. 2011. Validation of age estimates obtained from juvenile Pallid Sturgeon Scaphirhynchus Albus pectoral fin spines. Journal of Applied Ichthyology 27:209–212.
+
+VARIABLES:
+tl: Total length (mm)
+age_JK: Estimated age of pectoral spines by JK reader
+age_MP: Estimated age of pectoral spines by MP reader
+age_KS: Estimated age of pectoral spines by KS reader
+age_C: Estimated CONSENSUS age of pectoral spines
+age_T: Estimated TRUE age
+
+NOTES:
+* File generated from "Jeff Koch_Ogle data request.xlsx" file provided by Jeff Koch.

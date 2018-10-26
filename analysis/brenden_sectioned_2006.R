@@ -4,8 +4,7 @@ setwd(here::here())
 source("code/precisionData.R")
 
 nm <- "brenden_sectioned_2006"
-library(readxl)
-df <- read_excel(paste0("data/raw_ageing/",nm,".xls"),sheet = "Ages")
+df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df)
 
 species <- "Muskellunge"
@@ -18,8 +17,7 @@ proc <- "sectioned"
 
 
 df1 <- df %>%
-  rename(Final=`Final Ages`) %>%
-  select(ID,Brenden,Hale,Staples,Final) %>%
+  select(ID,Brenden,Hale,Staples) %>%
   filterD(complete.cases(.))
 
 ap1 <- agePrecision(~Brenden+Hale+Staples,data=df1)

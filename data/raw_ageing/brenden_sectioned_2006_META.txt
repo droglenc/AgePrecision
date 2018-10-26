@@ -1,14 +1,13 @@
-SOURCE: Brenden, T. O., E. M. Hallerman, and B. R. Murphy. 2006. Sectioned pelvic fin ray ageing of Muskellunge Esox Masquinongy from a Virginia river: Comparisons among readers, with cleithrum estimates, and with tag-recapture growth data. Fisheries Management and Ecology 13:31–37
+SOURCE: Brenden, T. O., E. M. Hallerman, and B. R. Murphy. 2006. Sectioned pelvic fin ray ageing of Muskellunge Esox Masquinongy from a Virginia river: Comparisons among readers, with cleithrum estimates, and with tag-recapture growth data. Fisheries Management and Ecology 13:31?37
 
 VARIABLES:
 ID: Identification number unique to each fish
 Brenden: Estimated age of the structure by Brenden reader
 Hale: Estimated age of the structure by Hale reader
 Staples: Estimated age of the structure by Staples reader
-Majority Age: Estimated age by majority of the readers
-Decided Upon Age: Estimated age if there was not a majority age
-Final Ages: Final consenus age.
+majority: Estimated age by majority of the readers
+consensus: Estimated age if there was not a majority age
+final: Final consenus age.
 
 NOTES:
-* All variables are in the "Ages" sheet
-* 
+* File generated from "brenden_sectioned_2006.xls" file provided by Travis Brenden.

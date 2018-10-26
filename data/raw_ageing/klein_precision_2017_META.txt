@@ -1,0 +1,26 @@
+SOURCE: Klein, Z.B., T.F. Bonvechio, B.R. Bowen, and M.C. Quist. 2017. Precision and accuracy of age estimates obtained from anal fin spines, dorsal fin spines, and sagittal otoliths for known-age Largemouth Bass. Southeastern Naturalist 16:225–234.
+
+VARIABLES:
+species: Species (all LMB for Largemouth Bass)
+id: Identifier unique to each fish
+tl: Total length (mm)
+wt: Weight (g)
+true_Age: Known age of the fish
+oto_Tim: Estimated age from otolith by Tim reader
+oto_Bryant: Estimated age from otolith by Bryant reader
+anal_MQ: Estimated age from anal spine by MQ reader
+anal_ZK: Estimated age from anal spine by ZK reader
+dorsal_MQ: Estimated age from dorsal spine by MQ reader
+dorsal_ZK: Estimated age from dorsal spine by ZK reader
+oto_C: Consensus estimated age from otolith
+anal_C: Consensus estimated age from anal spine
+dorsal_C: Consensus estimated age from dorsal spine
+otoConf_Tim: Confidence rating (0=none,3=complete) for the otolith age estimate by Tim reader
+otoConf_Bryant: Confidence rating (0=none,3=complete) for the otolith age estimate by Bryant reader
+analConf_MQ: Confidence rating (0=none,3=complete) for the anal spine age estimate by MQ reader
+analConf_ZK: Confidence rating (0=none,3=complete) for the anal spine age estimate by ZK reader
+dorsalConf_MQ: Confidence rating (0=none,3=complete) for the dorsal spine age estimate by MQ reader
+dorsalConf_ZK: Confidence rating (0=none,3=complete) for the dorsal spine age estimate by ZK reader
+
+NOTES:
+* File generated from "Klein et al._LMB data.xlsx" file provided by Zach Klein.
