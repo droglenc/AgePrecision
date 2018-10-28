@@ -4,7 +4,7 @@ setwd(here::here())
 source("code/precisionData.R")
 
 library(readxl)
-df <- read_excel(paste0("data/raw_ageing/originals/brenden_sectioned_2006.xls"),
+df <- read_excel("data/raw_ageing/originals/brenden_sectioned_2006.xls",
                  sheet = "Ages",
                  na=c("","excluded")) %>%
   select(-`X__1`) %>%

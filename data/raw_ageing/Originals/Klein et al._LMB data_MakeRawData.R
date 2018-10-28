@@ -24,7 +24,7 @@ df2 <- read_excel(paste0("data/raw_ageing/originals/",nm,".xlsx"),
   select(id,anal_MQ,anal_ZK,anal_C,analConf_MQ,analConf_ZK) %>%
   mutate(id=as.numeric(id))
 
-df <- right_join(df1,df2,id=id)
+df <- right_join(df1,df2,by="id")
 
 df3 <- read_excel(paste0("data/raw_ageing/originals/",nm,".xlsx"),
                   sheet="Raw data",range=cell_limits(c(2,20),c(NA,26)),
@@ -34,7 +34,7 @@ df3 <- read_excel(paste0("data/raw_ageing/originals/",nm,".xlsx"),
   select(id,dorsal_MQ,dorsal_ZK,dorsal_C,dorsalConf_MQ,dorsalConf_ZK) %>%
   mutate(id=as.numeric(id))
 
-df <- right_join(df,df3,id=id) %>%
+df <- right_join(df,df3,by="id") %>%
   select(species:true_Age,oto_Tim,oto_Bryant,anal_MQ,anal_ZK,dorsal_MQ,dorsal_ZK,
          contains("_C"),contains("Conf"))
 
