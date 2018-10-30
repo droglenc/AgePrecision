@@ -1,0 +1,18 @@
+SOURCE: Vandergoot, C. S., M. T. Bur, and K. A. Powell. 2008. Lake Erie Yellow Perch age estimation based on three structures: Precision, processing times, and management implications. North American Journal of Fisheries Management 28:563–571.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: Total length (mm)
+wt: Weight (g)
+aspine_NR: Estimated age of the anal spine by the novice reader
+aspine_IR: Estimated age of the anal spine by the intermediated experienced reader
+aspine_ER: Estimated age of the anal spine by the experienced reader
+otolith_NR: Estimated age of the otolith by the novice reader
+otolith_IR: Estimated age of the otolith by the intermediated experienced reader
+otolith_ER: Estimated age of the otolith by the experienced reader
+scale_NR: Estimated age of the scale by the novice reader
+scale_IR: Estimated age of the scale by the intermediated experienced reader
+scale_ER: Estimated age of the scale by the experienced reader
+
+NOTES:
+* File generated from "YEP Age Comparison Consensus Ages_Ogle.xlsx" file provided by Christopher Vandergoot.
