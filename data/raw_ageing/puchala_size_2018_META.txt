@@ -1,0 +1,16 @@
+SOURCE: Puchala, E.A., D.L. Parrish, and D.H. Ogle. 2018. Size and age of stonecats in Lake Champlain; estimating growth at the margin of their range to aid in population management. North American Journal of Fisheries Management 38.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: Total length (mm)
+sex: Sex of the fish
+spine_Betsy_1: First estimated age of spine by Betsy reader
+spine_Lee_1: First estimated age of spine by Lee reader
+spine_Alex_1: First estimated age of spine by Alex reader
+spine_Betsy_2: First estimated age of spine by Betsy reader
+spine_Lee_2: First estimated age of spine by Lee reader
+spine_Alex_2: First estimated age of spine by Alex reader
+spine_Consensus: Final consensus estimated age.
+
+NOTES:
+* File generated from "stonecatages.csv" file provided by Betsy Simard (nee Puchala).
