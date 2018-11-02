@@ -1,0 +1,13 @@
+SOURCE: Stewart, N.D., M.J. Dadswell, P. Leblanc, R.G. Bradford, C. Ceapa, and M.J W. Stokesbury. 2015. Age and growth of Atlantic Sturgeon from the Saint John River, New Brunswick, Canada. North American Journal of Fisheries Management 35:364–371.
+
+VARIABLES:
+id: Identification number unique to each fish
+loc: Location of capture
+gear: Capture gear
+tl: total length (cm)
+r1: Estimated age of the structure by r1 reader
+r2: Estimated age of the structure by r2 reader
+consensus: Estimated consensus age
+
+NOTES:
+* File generated from "Stewart et al 2014 - Data.xlsx" file provided by Michael Stokesbury and Nathan Stewart.

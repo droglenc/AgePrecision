@@ -1,4 +1,4 @@
-SOURCE: Brenden, T. O., E. M. Hallerman, and B. R. Murphy. 2006. Sectioned pelvic fin ray ageing of Muskellunge Esox Masquinongy from a Virginia river: Comparisons among readers, with cleithrum estimates, and with tag-recapture growth data. Fisheries Management and Ecology 13:31?37
+SOURCE: Brenden, T. O., E. M. Hallerman, and B. R. Murphy. 2006. Sectioned pelvic fin ray ageing of Muskellunge Esox Masquinongy from a Virginia river: Comparisons among readers, with cleithrum estimates, and with tag-recapture growth data. Fisheries Management and Ecology 13:31-37
 
 VARIABLES:
 ID: Identification number unique to each fish
