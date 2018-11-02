@@ -1,0 +1,17 @@
+SOURCE: Tyszko, S.M., and J.J. Pritt. 2017. Comparing otoliths and scales as structures used to estimate ages of Largemouth Bass: Consequences of biased age estimates. North American Journal of Fisheries Management 37:1075–1082.
+
+VARIABLES:
+id: Identification number unique to each fish
+species: Species of the fish
+locyr: A combination of the location (lake) where and year when the fish was captured.
+tl: Total length (mm)
+wt: Weight (g)
+scale_1: Estimated age of the scale by the first reader
+scale_2: Estimated age of the scale by the second reader
+scale_3: Estimated age of the scale by the third reader
+otolith_1: Estimated age of the otolith by the first reader
+otolith_2: Estimated age of the otolith by the second reader
+otolith_3: Estimated age of the otolith by the third reader
+
+NOTES:
+* File generated from "AllBassTyszkoPrittManuscript.csv" file provided by Stephen Tyszko.
