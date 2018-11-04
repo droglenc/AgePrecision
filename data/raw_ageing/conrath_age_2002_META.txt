@@ -1,0 +1,8 @@
+SOURCE: Conrath, C.L., J. Gelsleichter, and J.A. Musick. 2002. Age and growth of the Smooth Dogfish (Mustelus Canis) in the northwest Atlantic Ocean. Fishery Bulletin 100:674–682.
+
+VARIABLES:
+r1: Estimated age of the vertebrae by r1 reader
+r2: Estimated age of the vertebrae by r2 reader
+
+NOTES:
+* File generated from Table 1 by Derek Ogle.
