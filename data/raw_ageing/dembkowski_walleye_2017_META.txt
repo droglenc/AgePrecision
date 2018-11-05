@@ -1,0 +1,14 @@
+SOURCE: Dembkowski, D. J., D. A. Isermann, and R. P. Koenigs. 2017. Walleye age estimation using otoliths and dorsal spines: Preparation techniques and sampling guidelines based on sex and total length. Journal of Fish and Wildlife Management 8:474–486.
+
+VARIABLES:
+id: Identification number unique to each fish
+loc: Capture location name (waterbody)
+tl: Total length (mm)
+sex: Sex of the fish
+otolith_r1: Estimated age of the sectioned otolith by r1 reader
+otolith_r2: Estimated age of the sectioned otolith by r2 reader
+spine_r1: Estimated age of the sectioned dorsal spine by r1 reader
+spine_r2: Estimated age of the sectioned dorsal spine by r2 reader
+
+NOTES:
+* File generated from "Dembkowskietal_10.3996052017-jfwm-038.s1.xlsx" file available from the journal's webpage.

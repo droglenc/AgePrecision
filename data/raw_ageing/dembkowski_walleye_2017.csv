@@ -1,0 +1,736 @@
+id,loc,tl,sex,growth,otolith_r1,otolith_r2,spine_r1,spine_r2
+12191,Annabelle,462,F,mod,5,6,5,6
+12194,Annabelle,396,M,slow,6,7,6,6
+11924,Big,488,F,mod,6,6,5,6
+11918,Big,394,F,slow,6,6,7,6
+11921,Big,373,F,slow,7,6,8,7
+11922,Big,488,F,slow,8,8,7,7
+11926,Big,447,F,slow,8,8,7,7
+11923,Big,584,F,slow,13,13,11,11
+11927,Big,457,M,mod,5,5,5,6
+11919,Big,345,M,slow,5,5,4,4
+11920,Big,351,M,slow,5,5,4,6
+11925,Big,409,M,slow,7,6,6,7
+11902,Big Arbor Vitae,472,F,fast,4,4,4,6
+11933,Big Arbor Vitae,472,F,slow,7,7,7,7
+12984,Big Arbor Vitae,566,F,mod,9,9,11,11
+11988,Big Arbor Vitae,711,F,fast,11,11,12,11
+12983,Big Arbor Vitae,645,F,mod,15,15,14,14
+12904,Big Arbor Vitae,376,M,mod,3,2,3,4
+12905,Big Arbor Vitae,378,M,slow,4,3,4,5
+12902,Big Arbor Vitae,401,M,mod,4,4,4,5
+12901,Big Arbor Vitae,376,M,slow,5,4,5,6
+12903,Big Arbor Vitae,424,M,slow,6,5,6,6
+12906,Big Arbor Vitae,434,M,slow,6,5,5,6
+11901,Big Arbor Vitae,457,M,slow,7,8,7,8
+11909,Big Gibson,483,F,slow,7,7,7,7
+11908,Big Gibson,338,M,slow,3,3,2,3
+11284,Big Sand,340,M,fast,1,1,1,3
+11277,Big Sand,389,M,fast,2,2,2,3
+11287,Big Sand,437,M,fast,3,3,3,5
+11283,Big Sand,333,unk,fast,1,0,1,2
+11285,Big Sand,343,unk,fast,1,1,1,3
+11286,Big Sand,422,unk,fast,3,2,3,4
+11289,Big Sand,495,unk,mod,6,5,6,7
+11276,Big Sand,549,unk,fast,6,5,6,7
+11290,Big Sand,582,unk,mod,8,8,7,7
+11288,Big Sand,462,unk,slow,8,8,7,6
+11940,Butternut,460,F,mod,5,5,6,8
+11941,Butternut,406,F,slow,6,6,7,7
+11942,Butternut,533,F,mod,8,8,9,10
+11937,Butternut,391,F,slow,8,9,5,4
+11943,Butternut,622,F,mod,10,10,9,10
+11939,Butternut,673,F,mod,13,12,12,11
+11934,Butternut,310,M,slow,3,3,5,4
+11936,Butternut,315,M,slow,3,3,5,3
+11938,Butternut,389,M,slow,5,5,5,5
+11935,Butternut,376,M,slow,10,10,10,11
+16,Caldron Falls,455,F,fast,4,4,3,4
+14,Caldron Falls,594,F,fast,6,6,6,6
+17,Caldron Falls,648,F,fast,6,6,6,6
+20,Caldron Falls,569,F,fast,6,6,6,6
+3,Caldron Falls,572,F,fast,6,6,6,6
+1,Caldron Falls,597,F,mod,9,10,9,10
+6,Caldron Falls,643,F,fast,9,9,8,8
+7,Caldron Falls,635,F,mod,10,10,9,9
+12,Caldron Falls,630,F,mod,12,12,12,12
+4,Caldron Falls,394,M,mod,4,4,3,4
+11,Caldron Falls,404,M,mod,4,4,3,4
+9,Caldron Falls,411,M,mod,4,5,3,4
+5,Caldron Falls,419,M,mod,4,4,3,4
+10,Caldron Falls,457,M,fast,4,4,5,4
+19,Caldron Falls,460,M,fast,4,4,2,4
+18,Caldron Falls,455,M,mod,5,5,5,4
+15,Caldron Falls,465,M,mod,5,5,4,4
+13,Caldron Falls,541,M,slow,11,10,9,9
+8,Caldron Falls,597,M,mod,11,10,9,9
+2,Caldron Falls,665,M,mod,17,17,15,13
+11790,Chippewa,490,F,fast,3,4,3,4
+11792,Chippewa,475,F,mod,5,5,6,7
+11787,Chippewa,490,F,fast,5,5,5,5
+11796,Chippewa,361,M,mod,3,3,4,4
+11797,Chippewa,373,M,mod,3,3,3,4
+11800,Chippewa,368,M,slow,4,4,3,5
+11793,Chippewa,401,M,slow,5,5,4,5
+11794,Chippewa,460,M,mod,5,5,5,6
+11798,Chippewa,378,M,slow,5,5,4,4
+11791,Chippewa,406,M,slow,6,6,5,5
+11788,Chippewa,343,M,slow,7,7,8,8
+11795,Chippewa,401,M,slow,7,7,7,8
+11596,Cranberry,460,F,slow,6,6,6,7
+11599,Cranberry,528,F,fast,6,7,7,8
+12291,Cranberry,391,F,slow,7,6,8,8
+11598,Cranberry,630,F,fast,8,8,9,8
+11597,Cranberry,549,F,slow,10,10,8,7
+12797,Cranberry,290,M,slow,3,3,3,4
+12798,Cranberry,356,M,slow,4,4,5,6
+12799,Cranberry,389,M,slow,5,5,3,5
+12796,Cranberry,320,M,slow,5,5,5,6
+12800,Cranberry,389,M,slow,9,9,7,7
+2,Delavan,212,F,fast,0,0,0,0
+30,Delavan,294,F,fast,1,1,1,1
+15,Delavan,306,F,fast,1,1,1,1
+18,Delavan,313,F,fast,1,2,1,2
+10,Delavan,315,F,fast,1,1,2,1
+3,Delavan,316,F,fast,1,1,1,1
+12,Delavan,335,F,fast,1,1,1,1
+9,Delavan,337,F,fast,1,1,1,1
+40,Delavan,432,F,fast,3,3,3,3
+41,Delavan,441,F,fast,3,3,3,3
+24,Delavan,445,F,fast,3,3,3,3
+21,Delavan,454,F,fast,3,3,3,4
+44,Delavan,465,F,fast,3,3,7,9
+38,Delavan,466,F,fast,3,3,3,3
+37,Delavan,471,F,fast,3,4,3,4
+8,Delavan,397,F,fast,3,3,3,4
+7,Delavan,413,F,fast,3,2,3,3
+23,Delavan,454,F,mod,5,5,4,5
+39,Delavan,497,F,fast,5,6,6,7
+36,Delavan,510,F,fast,5,6,5,6
+45,Delavan,516,F,fast,5,6,5,5
+52,Delavan,519,F,fast,5,5,5,4
+28,Delavan,531,F,fast,5,5,5,5
+22,Delavan,587,F,fast,6,6,7,6
+26,Delavan,523,F,fast,6,6,6,6
+49,Delavan,571,F,fast,6,6,6,8
+51,Delavan,606,F,mod,10,10,8,8
+50,Delavan,545,F,slow,11,11,9,11
+53,Delavan,620,F,mod,12,11,12,11
+5,Delavan,194,M,mod,0,0,0,0
+16,Delavan,302,M,fast,1,1,1,1
+17,Delavan,307,M,fast,1,1,1,1
+11,Delavan,317,M,fast,1,1,1,1
+4,Delavan,319,M,fast,1,1,2,1
+27,Delavan,354,M,mod,3,3,3,3
+54,Delavan,362,M,mod,3,3,3,3
+20,Delavan,365,M,mod,3,3,3,3
+13,Delavan,381,M,mod,3,3,3,3
+48,Delavan,410,M,fast,3,3,3,4
+25,Delavan,412,M,fast,3,2,3,2
+55,Delavan,371,M,slow,4,3,3,3
+1,Delavan,381,M,slow,5,5,5,5
+42,Delavan,397,M,slow,5,5,4,5
+14,Delavan,410,M,slow,5,4,5,4
+19,Delavan,412,M,slow,5,5,5,5
+29,Delavan,412,M,slow,5,5,5,5
+6,Delavan,420,M,slow,5,5,5,5
+35,Delavan,433,M,mod,5,5,6,6
+46,Delavan,512,M,mod,7,6,6,6
+47,Delavan,478,M,slow,9,10,8,8
+43,Delavan,451,M,slow,10,11,8,7
+32,Delavan,449,M,slow,11,10,11,10
+34,Delavan,473,M,slow,13,12,12,11
+33,Delavan,490,M,slow,13,12,12,10
+31,Delavan,190,unk,mod,0,0,0,0
+12725,Duck,561,F,fast,5,5,6,7
+12555,Duck,457,F,mod,5,5,5,7
+12189,Duck,470,F,mod,5,5,5,5
+12490,Duck,470,F,mod,5,5,5,6
+12537,Duck,363,M,fast,2,2,2,2
+12546,Duck,373,M,fast,2,2,3,3
+12540,Duck,376,M,fast,2,2,2,4
+12551,Duck,399,M,fast,2,2,2,3
+12188,Duck,391,M,fast,3,3,3,3
+12512,Duck,409,M,fast,3,3,4,5
+12265,Dunn,615,F,slow,13,13,13,13
+12305,Dunn,432,unk,fast,2,2,2,4
+12941,Eagle,561,F,mod,7,7,7,8
+12939,Eagle,462,F,slow,8,8,8,10
+12948,Eagle,312,M,fast,1,2,2,3
+12950,Eagle,396,M,slow,5,5,5,6
+12951,Eagle,427,M,slow,5,5,5,5
+12937,Eagle,335,M,slow,5,5,7,7
+12949,Eagle,328,M,slow,6,6,6,6
+12938,Eagle,414,M,slow,10,10,10,10
+12947,Eagle,483,M,slow,10,10,10,11
+12946,Eagle,536,M,slow,11,10,9,10
+340,Green Bay,381,F,fast,1,2,1,2
+4,Green Bay,442,F,fast,2,2,2,3
+129,Green Bay,447,F,fast,2,2,2,2
+247,Green Bay,461,F,fast,2,2,2,3
+115,Green Bay,475,F,fast,2,2,2,3
+280,Green Bay,434,F,fast,3,3,4,4
+113,Green Bay,506,F,fast,3,3,3,3
+26,Green Bay,542,F,fast,3,3,4,3
+16,Green Bay,505,F,fast,4,4,4,4
+40,Green Bay,559,F,fast,4,4,4,4
+21,Green Bay,562,F,fast,4,4,4,4
+53,Green Bay,563,F,fast,5,5,5,5
+87,Green Bay,515,F,fast,5,5,5,5
+93,Green Bay,607,F,fast,6,6,6,6
+32,Green Bay,621,F,fast,6,6,6,6
+25,Green Bay,626,F,fast,7,7,7,7
+5,Green Bay,639,F,fast,7,7,8,6
+136,Green Bay,612,F,fast,7,6,7,6
+34,Green Bay,646,F,fast,8,7,8,7
+265,Green Bay,700,F,fast,9,9,9,9
+156,Green Bay,650,F,fast,10,10,10,9
+11,Green Bay,700,F,fast,10,10,10,9
+187,Green Bay,702,F,fast,10,10,10,9
+155,Green Bay,717,F,fast,10,10,10,9
+151,Green Bay,721,F,fast,10,10,10,10
+208,Green Bay,722,F,fast,10,9,10,10
+364,Green Bay,727,F,fast,10,10,10,10
+268,Green Bay,779,F,fast,10,9,11,9
+125,Green Bay,652,F,mod,11,10,12,11
+18,Green Bay,657,F,fast,11,10,10,8
+24,Green Bay,685,F,fast,12,12,13,11
+50,Green Bay,750,F,fast,13,12,13,12
+45,Green Bay,731,F,fast,16,16,15,14
+30,Green Bay,741,F,fast,19,19,18,16
+348,Green Bay,774,F,mod,26,26,18,18
+360,Green Bay,415,M,fast,2,2,2,2
+19,Green Bay,470,M,fast,2,2,2,2
+289,Green Bay,425,M,fast,3,3,3,3
+339,Green Bay,400,M,mod,4,4,4,4
+110,Green Bay,452,M,fast,4,5,4,4
+13,Green Bay,474,M,fast,4,3,4,3
+295,Green Bay,422,M,slow,5,5,5,5
+91,Green Bay,532,M,fast,5,4,4,4
+357,Green Bay,589,M,fast,6,6,6,6
+290,Green Bay,555,M,fast,6,6,6,6
+114,Green Bay,513,M,mod,7,7,7,7
+111,Green Bay,616,M,mod,10,10,6,8
+79,Green Bay,607,M,mod,12,12,11,9
+95,Green Bay,609,M,slow,13,13,10,12
+74,Green Bay,681,M,mod,18,20,15,14
+12972,Lac Courte Oreilles,592,F,mod,9,9,9,10
+12973,Lac Courte Oreilles,610,F,mod,9,9,9,10
+12969,Lac Courte Oreilles,318,M,mod,2,3,1,3
+12981,Lac Courte Oreilles,371,M,mod,3,3,3,4
+12979,Lac Courte Oreilles,389,M,mod,3,3,3,4
+12978,Lac Courte Oreilles,401,M,fast,3,2,3,5
+12982,Lac Courte Oreilles,450,M,slow,7,7,6,8
+12977,Lac Courte Oreilles,513,M,mod,7,7,7,9
+12970,Lac Courte Oreilles,521,M,slow,9,8,9,8
+12971,Lac Courte Oreilles,460,M,slow,9,9,8,7
+3,Lac Vieux Desert,491,F,mod,6,6,8,7
+69,Lac Vieux Desert,560,F,fast,6,6,7,6
+1,Lac Vieux Desert,430,F,slow,7,7,7,7
+51,Lac Vieux Desert,603,F,fast,8,9,8,7
+42,Lac Vieux Desert,600,F,mod,9,8,9,8
+59,Lac Vieux Desert,520,F,slow,9,10,10,9
+70,Lac Vieux Desert,619,F,fast,9,9,8,8
+2,Lac Vieux Desert,441,F,slow,9,10,10,9
+48,Lac Vieux Desert,497,F,slow,10,9,10,8
+60,Lac Vieux Desert,577,F,slow,12,12,12,11
+14,Lac Vieux Desert,242,M,fast,0,0,0,0
+8,Lac Vieux Desert,259,M,fast,0,0,0,0
+4,Lac Vieux Desert,318,M,mod,2,3,2,3
+38,Lac Vieux Desert,389,M,slow,5,6,6,6
+41,Lac Vieux Desert,430,M,mod,5,6,6,5
+62,Lac Vieux Desert,439,M,mod,5,5,8,6
+53,Lac Vieux Desert,412,M,slow,6,6,9,5
+33,Lac Vieux Desert,415,M,slow,6,7,6,5
+32,Lac Vieux Desert,419,M,slow,6,6,6,6
+54,Lac Vieux Desert,422,M,slow,6,6,6,6
+55,Lac Vieux Desert,424,M,slow,6,6,8,6
+45,Lac Vieux Desert,428,M,slow,6,6,6,5
+36,Lac Vieux Desert,430,M,slow,6,6,5,5
+61,Lac Vieux Desert,441,M,slow,6,6,6,6
+35,Lac Vieux Desert,449,M,slow,6,6,5,5
+29,Lac Vieux Desert,451,M,slow,6,6,6,5
+67,Lac Vieux Desert,484,M,mod,6,6,6,7
+34,Lac Vieux Desert,381,M,slow,6,6,6,5
+66,Lac Vieux Desert,386,M,slow,6,7,7,7
+56,Lac Vieux Desert,387,M,slow,6,5,5,5
+43,Lac Vieux Desert,394,M,slow,6,6,6,5
+31,Lac Vieux Desert,448,M,slow,7,8,7,7
+63,Lac Vieux Desert,373,M,slow,7,7,5,6
+44,Lac Vieux Desert,386,M,slow,7,6,5,5
+52,Lac Vieux Desert,388,M,slow,7,8,7,7
+30,Lac Vieux Desert,395,M,slow,7,6,6,5
+40,Lac Vieux Desert,406,M,slow,7,7,6,6
+64,Lac Vieux Desert,410,M,slow,7,6,5,6
+50,Lac Vieux Desert,422,M,slow,7,8,6,6
+39,Lac Vieux Desert,417,M,slow,8,9,8,8
+37,Lac Vieux Desert,427,M,slow,9,8,8,7
+58,Lac Vieux Desert,439,M,slow,9,10,9,10
+27,Lac Vieux Desert,470,M,slow,9,9,8,8
+71,Lac Vieux Desert,474,M,slow,9,8,7,7
+65,Lac Vieux Desert,448,M,slow,10,10,9,8
+49,Lac Vieux Desert,464,M,slow,10,10,10,8
+26,Lac Vieux Desert,472,M,slow,13,12,12,10
+47,Lac Vieux Desert,495,M,slow,14,15,11,11
+68,Lac Vieux Desert,466,M,slow,15,16,10,10
+10,Lac Vieux Desert,218,unk,fast,0,0,0,0
+22,Lac Vieux Desert,162,unk,mod,0,0,0,0
+23,Lac Vieux Desert,164,unk,mod,0,0,0,0
+21,Lac Vieux Desert,165,unk,mod,0,0,1,0
+19,Lac Vieux Desert,169,unk,mod,0,0,1,0
+17,Lac Vieux Desert,173,unk,mod,0,0,0,0
+16,Lac Vieux Desert,178,unk,mod,0,0,0,0
+13,Lac Vieux Desert,181,unk,mod,0,0,1,0
+12,Lac Vieux Desert,186,unk,mod,0,0,0,0
+20,Lac Vieux Desert,187,unk,mod,0,0,1,0
+7,Lac Vieux Desert,189,unk,mod,0,0,0,0
+6,Lac Vieux Desert,191,unk,mod,0,0,1,0
+15,Lac Vieux Desert,201,unk,fast,0,0,0,0
+11,Lac Vieux Desert,207,unk,fast,0,0,0,0
+18,Lac Vieux Desert,207,unk,fast,0,0,0,0
+9,Lac Vieux Desert,211,unk,fast,0,0,0,0
+25,Lac Vieux Desert,130,unk,slow,0,0,0,0
+24,Lac Vieux Desert,140,unk,slow,0,0,1,0
+11491,Mamie,427,F,slow,6,7,6,7
+12099,Mamie,457,F,slow,6,6,7,7
+12097,Mamie,549,F,mod,7,8,8,9
+12094,Mamie,597,F,fast,8,8,8,8
+12100,Mamie,599,F,fast,8,8,8,9
+12098,Mamie,546,F,slow,10,10,10,10
+11494,Mamie,648,F,mod,14,13,12,11
+12096,Mamie,310,M,slow,4,4,6,8
+12091,Mamie,351,M,slow,6,6,6,6
+12095,Mamie,361,M,slow,7,7,6,8
+12092,Mamie,401,M,slow,8,8,7,7
+12093,Mamie,411,unk,slow,5,5,5,6
+14,Mississippi River,208,unk,fast,0,0,0,0
+22,Mississippi River,173,unk,mod,0,0,0,0
+17,Mississippi River,196,unk,mod,0,0,0,0
+2,Mississippi River,292,unk,fast,1,2,3,3
+19,Mississippi River,300,unk,fast,1,1,6,2
+1,Mississippi River,312,unk,fast,1,1,3,2
+3,Mississippi River,315,unk,fast,1,1,2,2
+10,Mississippi River,325,unk,fast,1,1,1,2
+4,Mississippi River,251,unk,mod,1,1,3,2
+18,Mississippi River,269,unk,mod,1,1,3,2
+16,Mississippi River,279,unk,fast,1,1,2,2
+13,Mississippi River,371,unk,fast,2,2,3,2
+7,Mississippi River,394,unk,fast,2,2,3,3
+20,Mississippi River,345,unk,fast,2,2,2,3
+15,Mississippi River,353,unk,fast,2,2,2,3
+5,Mississippi River,358,unk,fast,2,2,2,3
+21,Mississippi River,455,unk,fast,3,3,3,3
+11,Mississippi River,351,unk,mod,3,3,3,3
+12,Mississippi River,406,unk,fast,3,3,4,4
+9,Mississippi River,409,unk,fast,3,3,3,3
+8,Mississippi River,414,unk,fast,3,3,6,4
+6,Mississippi River,419,unk,fast,3,3,3,3
+12907,Oxbow,462,F,slow,9,10,10,9
+12912,Oxbow,605,F,mod,10,9,9,10
+12917,Oxbow,640,F,mod,14,13,14,12
+12919,Oxbow,353,M,slow,4,4,4,4
+12920,Oxbow,325,M,slow,4,4,4,4
+12914,Oxbow,389,M,slow,5,6,7,6
+12915,Oxbow,394,M,slow,5,5,6,6
+12918,Oxbow,467,M,mod,6,6,6,7
+12913,Oxbow,472,M,mod,6,6,8,8
+12916,Oxbow,389,M,slow,6,6,5,7
+12921,Oxbow,340,M,slow,9,9,5,5
+12785,Pelican,564,F,fast,6,6,7,6
+12787,Pelican,602,F,fast,8,8,6,5
+12776,Pelican,330,M,fast,1,1,2,2
+12784,Pelican,363,M,mod,3,2,4,3
+12783,Pelican,373,M,slow,4,4,4,5
+12780,Pelican,391,M,mod,4,4,5,5
+12782,Pelican,422,M,mod,4,4,5,5
+12777,Pelican,432,M,mod,4,4,5,6
+12778,Pelican,389,M,slow,5,5,4,5
+12779,Pelican,472,M,slow,8,9,10,9
+12781,Pelican,478,M,slow,9,9,9,9
+12786,Pelican,615,unk,slow,13,12,12,12
+11984,Planting Ground,406,F,slow,5,5,5,5
+11982,Planting Ground,411,F,slow,6,6,6,6
+11987,Planting Ground,605,F,mod,9,9,8,8
+11988,Planting Ground,625,F,fast,9,10,11,10
+11986,Planting Ground,597,F,mod,11,10,10,9
+11985,Planting Ground,625,F,mod,13,13,13,11
+11981,Planting Ground,330,M,slow,4,4,4,5
+11979,Planting Ground,343,M,slow,4,3,6,6
+11980,Planting Ground,361,M,slow,6,6,6,6
+11983,Planting Ground,439,unk,slow,6,6,6,6
+12356,Red Cedar,366,M,fast,2,2,3,3
+12277,Red Cedar,356,M,mod,3,3,4,4
+12290,Red Cedar,358,M,slow,4,4,5,5
+12358,Red Cedar,371,M,slow,4,4,3,5
+12372,Red Cedar,401,M,slow,7,7,5,5
+11779,Round,523,F,mod,7,6,6,6
+11780,Round,561,F,mod,7,6,6,5
+11774,Round,366,M,slow,4,4,4,4
+11777,Round,386,M,slow,4,4,4,3
+11776,Round,373,M,slow,5,5,5,4
+11775,Round,424,M,slow,6,6,6,6
+11773,Round,445,M,slow,6,6,6,5
+11778,Round,488,M,mod,6,6,6,6
+11785,Round,579,M,mod,10,10,9,9
+11784,Round,536,M,slow,15,15,13,11
+11786,Round,559,M,slow,16,16,11,9
+12945,Scattering Rice,577,F,mod,10,10,15,13
+12940,Scattering Rice,612,F,slow,15,16,10,9
+12943,Scattering Rice,373,M,fast,2,3,3,4
+12944,Scattering Rice,318,M,slow,4,4,4,4
+12670,Shell,536,F,slow,10,9,8,4
+12289,Shell,325,M,mod,2,1,2,3
+12369,Shell,406,M,slow,5,4,5,5
+12316,Shell,417,M,slow,5,5,5,5
+12348,Shell,363,M,slow,5,5,5,5
+12351,Shell,351,M,slow,6,6,6,7
+12266,Shell,389,M,slow,7,6,4,4
+12137,Squirrel,495,F,slow,7,7,6,7
+12142,Squirrel,549,F,mod,8,8,8,9
+11763,Stone,490,F,fast,3,3,5,6
+11761,Stone,503,F,fast,3,2,4,5
+11769,Stone,574,F,fast,5,5,5,6
+11759,Stone,505,F,fast,5,5,5,5
+11758,Stone,594,F,fast,7,7,6,5
+11770,Stone,617,F,mod,10,10,9,7
+11760,Stone,401,M,fast,2,2,2,3
+11762,Stone,330,M,mod,2,2,3,3
+11757,Stone,353,M,fast,2,2,3,3
+11771,Stone,358,M,fast,2,2,2,3
+11767,Stone,417,M,fast,3,3,4,5
+11768,Stone,417,M,mod,4,4,4,5
+3565,Sturgeon Bay,402,F,fast,2,2,2,2
+3566,Sturgeon Bay,467,F,fast,3,3,3,3
+3570,Sturgeon Bay,503,F,fast,4,4,4,4
+3435,Sturgeon Bay,518,F,fast,4,4,4,4
+3548,Sturgeon Bay,519,F,fast,4,4,4,4
+3526,Sturgeon Bay,526,F,fast,4,4,4,6
+3552,Sturgeon Bay,533,F,fast,4,4,4,4
+3573,Sturgeon Bay,535,F,fast,4,4,4,4
+3539,Sturgeon Bay,536,F,fast,4,4,4,4
+3452,Sturgeon Bay,537,F,fast,4,4,4,4
+3516,Sturgeon Bay,537,F,fast,4,4,4,4
+3559,Sturgeon Bay,540,F,fast,4,4,4,4
+3536,Sturgeon Bay,553,F,fast,4,4,4,4
+3454,Sturgeon Bay,602,F,fast,4,5,5,5
+3578,Sturgeon Bay,406,F,mod,4,5,5,5
+3437,Sturgeon Bay,477,F,fast,4,4,4,4
+3575,Sturgeon Bay,533,F,fast,5,5,5,5
+3535,Sturgeon Bay,564,F,fast,5,5,5,5
+3460,Sturgeon Bay,565,F,fast,5,5,5,5
+3515,Sturgeon Bay,567,F,fast,5,4,4,5
+3441,Sturgeon Bay,569,F,fast,5,5,4,4
+3530,Sturgeon Bay,569,F,fast,5,5,5,5
+3549,Sturgeon Bay,569,F,fast,5,6,6,6
+3547,Sturgeon Bay,578,F,fast,5,5,5,5
+3456,Sturgeon Bay,605,F,fast,5,5,5,6
+3478,Sturgeon Bay,668,F,fast,5,5,9,9
+3541,Sturgeon Bay,483,F,fast,5,5,4,4
+3560,Sturgeon Bay,511,F,fast,5,5,5,5
+3550,Sturgeon Bay,528,F,fast,5,5,5,5
+3523,Sturgeon Bay,577,F,fast,6,5,5,5
+3512,Sturgeon Bay,581,F,fast,6,6,6,6
+3528,Sturgeon Bay,581,F,fast,6,6,6,6
+3503,Sturgeon Bay,587,F,fast,6,6,6,6
+3555,Sturgeon Bay,590,F,fast,6,6,6,6
+3511,Sturgeon Bay,593,F,fast,6,5,6,6
+3425,Sturgeon Bay,601,F,fast,6,6,6,6
+3442,Sturgeon Bay,603,F,fast,6,6,6,6
+3451,Sturgeon Bay,618,F,fast,6,6,5,6
+3418,Sturgeon Bay,622,F,fast,6,6,6,5
+3439,Sturgeon Bay,646,F,fast,6,7,7,6
+3420,Sturgeon Bay,647,F,fast,6,6,6,6
+3531,Sturgeon Bay,564,F,fast,6,6,6,6
+3423,Sturgeon Bay,584,F,fast,6,6,6,6
+3436,Sturgeon Bay,626,F,fast,7,8,7,7
+3470,Sturgeon Bay,650,F,fast,7,7,6,6
+3479,Sturgeon Bay,511,F,mod,7,7,4,4
+3538,Sturgeon Bay,558,F,mod,7,7,7,7
+3431,Sturgeon Bay,590,F,fast,7,7,7,7
+3554,Sturgeon Bay,595,F,fast,7,6,6,6
+3410,Sturgeon Bay,605,F,fast,7,6,6,6
+3444,Sturgeon Bay,608,F,fast,7,7,7,7
+3519,Sturgeon Bay,579,F,mod,8,7,6,6
+3524,Sturgeon Bay,592,F,fast,8,8,8,8
+3432,Sturgeon Bay,635,F,fast,8,9,9,9
+3443,Sturgeon Bay,684,F,fast,9,10,8,9
+3498,Sturgeon Bay,686,F,fast,9,9,9,9
+3455,Sturgeon Bay,611,F,mod,9,9,9,9
+3453,Sturgeon Bay,613,F,fast,9,10,9,9
+3406,Sturgeon Bay,626,F,fast,9,10,7,9
+3446,Sturgeon Bay,651,F,fast,9,10,10,10
+3494,Sturgeon Bay,586,F,mod,10,10,7,9
+3449,Sturgeon Bay,614,F,mod,10,10,10,10
+3424,Sturgeon Bay,621,F,mod,10,10,10,10
+3491,Sturgeon Bay,627,F,mod,10,10,10,10
+3448,Sturgeon Bay,630,F,mod,10,10,9,9
+3466,Sturgeon Bay,630,F,mod,10,10,8,8
+3465,Sturgeon Bay,632,F,mod,10,10,10,10
+3497,Sturgeon Bay,632,F,mod,10,9,9,9
+3457,Sturgeon Bay,640,F,fast,10,10,10,9
+3502,Sturgeon Bay,640,F,fast,10,10,10,10
+3440,Sturgeon Bay,653,F,fast,10,11,10,10
+3429,Sturgeon Bay,662,F,fast,10,9,10,10
+3471,Sturgeon Bay,666,F,fast,10,10,10,10
+3407,Sturgeon Bay,669,F,fast,10,10,10,10
+3508,Sturgeon Bay,680,F,fast,10,9,9,9
+3409,Sturgeon Bay,681,F,fast,10,10,10,10
+3412,Sturgeon Bay,683,F,fast,10,10,10,10
+3450,Sturgeon Bay,685,F,fast,10,10,10,10
+3505,Sturgeon Bay,688,F,fast,10,10,10,10
+3510,Sturgeon Bay,688,F,fast,10,10,10,10
+3417,Sturgeon Bay,693,F,fast,10,9,8,8
+3428,Sturgeon Bay,693,F,fast,10,10,10,10
+3415,Sturgeon Bay,694,F,fast,10,10,10,10
+3474,Sturgeon Bay,694,F,fast,10,9,9,10
+3496,Sturgeon Bay,694,F,fast,10,11,10,10
+3427,Sturgeon Bay,699,F,fast,10,10,10,9
+3426,Sturgeon Bay,707,F,fast,10,10,10,10
+3421,Sturgeon Bay,710,F,fast,10,9,10,9
+3411,Sturgeon Bay,711,F,fast,10,10,11,11
+3462,Sturgeon Bay,714,F,fast,10,10,9,10
+3522,Sturgeon Bay,732,F,fast,10,10,10,8
+3476,Sturgeon Bay,736,F,fast,10,10,9,9
+3561,Sturgeon Bay,737,F,fast,10,10,10,10
+3583,Sturgeon Bay,756,F,fast,10,9,8,8
+3529,Sturgeon Bay,758,F,fast,10,9,9,9
+3445,Sturgeon Bay,654,F,fast,10,11,10,10
+3501,Sturgeon Bay,630,F,mod,11,10,10,10
+3475,Sturgeon Bay,670,F,fast,11,10,10,10
+3402,Sturgeon Bay,725,F,fast,11,10,11,11
+3458,Sturgeon Bay,672,F,mod,12,12,12,12
+3422,Sturgeon Bay,696,F,fast,12,12,10,10
+3405,Sturgeon Bay,672,F,mod,13,13,13,13
+3468,Sturgeon Bay,681,F,mod,13,13,13,13
+3469,Sturgeon Bay,710,F,fast,13,13,14,14
+3463,Sturgeon Bay,754,F,fast,13,13,13,13
+3504,Sturgeon Bay,684,F,fast,14,13,13,13
+3493,Sturgeon Bay,646,F,mod,15,13,11,11
+3430,Sturgeon Bay,724,F,fast,15,15,15,15
+3557,Sturgeon Bay,731,F,fast,15,14,12,12
+3584,Sturgeon Bay,729,F,fast,16,15,16,16
+3521,Sturgeon Bay,755,F,fast,16,15,15,15
+3404,Sturgeon Bay,768,F,fast,17,17,14,14
+3438,Sturgeon Bay,773,F,fast,17,18,15,15
+3401,Sturgeon Bay,700,F,mod,18,18,15,16
+3408,Sturgeon Bay,720,F,fast,18,18,14,14
+3495,Sturgeon Bay,755,F,fast,18,18,16,16
+3556,Sturgeon Bay,761,F,fast,18,18,17,17
+3572,Sturgeon Bay,765,F,fast,18,17,17,17
+3492,Sturgeon Bay,780,F,fast,18,18,15,15
+3500,Sturgeon Bay,770,F,fast,19,18,17,17
+3461,Sturgeon Bay,797,F,fast,19,19,18,19
+3447,Sturgeon Bay,706,F,mod,22,23,20,20
+3403,Sturgeon Bay,710,F,mod,25,24,18,18
+3542,Sturgeon Bay,446,M,fast,3,3,3,3
+3574,Sturgeon Bay,451,M,fast,3,3,3,3
+3534,Sturgeon Bay,462,M,fast,3,4,4,4
+3533,Sturgeon Bay,478,M,fast,3,3,3,3
+3416,Sturgeon Bay,492,M,fast,3,3,3,3
+3532,Sturgeon Bay,532,M,fast,4,4,4,4
+3419,Sturgeon Bay,572,M,fast,5,5,6,6
+3580,Sturgeon Bay,489,M,fast,5,5,5,5
+3517,Sturgeon Bay,524,M,fast,5,5,5,5
+3540,Sturgeon Bay,528,M,fast,5,5,5,5
+3509,Sturgeon Bay,588,M,fast,6,6,6,6
+3576,Sturgeon Bay,486,M,mod,6,6,6,6
+3568,Sturgeon Bay,515,M,mod,6,6,6,6
+3571,Sturgeon Bay,527,M,fast,6,6,5,6
+3562,Sturgeon Bay,539,M,fast,6,6,5,6
+3513,Sturgeon Bay,545,M,fast,6,6,5,5
+3579,Sturgeon Bay,558,M,fast,6,6,6,5
+3577,Sturgeon Bay,560,M,fast,6,6,6,6
+3520,Sturgeon Bay,564,M,fast,6,6,6,6
+3464,Sturgeon Bay,573,M,fast,6,5,5,5
+3525,Sturgeon Bay,574,M,fast,6,6,6,6
+3564,Sturgeon Bay,575,M,fast,6,6,6,6
+3537,Sturgeon Bay,354,M,slow,6,6,6,6
+3472,Sturgeon Bay,518,M,mod,7,7,7,6
+3553,Sturgeon Bay,541,M,mod,7,6,6,6
+3558,Sturgeon Bay,563,M,mod,7,6,6,6
+3477,Sturgeon Bay,609,M,fast,8,8,8,8
+3459,Sturgeon Bay,571,M,mod,9,9,9,8
+3467,Sturgeon Bay,572,M,mod,9,10,8,8
+3581,Sturgeon Bay,490,M,slow,10,10,9,9
+3514,Sturgeon Bay,536,M,slow,10,10,8,8
+3582,Sturgeon Bay,541,M,slow,10,10,9,9
+3527,Sturgeon Bay,573,M,slow,10,10,9,9
+3507,Sturgeon Bay,583,M,mod,10,10,10,10
+3569,Sturgeon Bay,590,M,mod,10,10,10,10
+3543,Sturgeon Bay,592,M,mod,10,10,10,9
+3551,Sturgeon Bay,601,M,mod,10,10,8,9
+3473,Sturgeon Bay,603,M,mod,10,10,9,9
+3567,Sturgeon Bay,612,M,mod,10,10,8,8
+3544,Sturgeon Bay,619,M,mod,10,10,7,7
+3563,Sturgeon Bay,646,M,fast,10,10,10,10
+3433,Sturgeon Bay,664,M,fast,10,10,9,9
+3545,Sturgeon Bay,632,M,mod,13,13,10,10
+3506,Sturgeon Bay,658,M,mod,15,15,13,13
+3434,Sturgeon Bay,656,M,mod,17,17,11,12
+3413,Sturgeon Bay,622,M,mod,18,17,16,16
+3499,Sturgeon Bay,693,M,mod,19,19,16,16
+3546,Sturgeon Bay,628,M,mod,22,21,15,15
+11485,Tenderfoot,445,F,slow,8,7,7,7
+11488,Tenderfoot,668,F,fast,10,9,9,9
+12963,Trout,465,F,fast,4,4,5,6
+12965,Trout,538,F,slow,9,9,11,11
+12959,Trout,607,F,mod,9,9,9,9
+12958,Trout,645,F,fast,10,10,9,8
+12954,Trout,338,M,slow,3,3,3,2
+12964,Trout,361,M,mod,3,3,3,4
+12961,Trout,371,M,slow,4,4,4,4
+12956,Trout,419,M,slow,6,6,5,4
+12953,Trout,457,M,slow,6,7,6,5
+12966,Trout,406,M,slow,6,7,5,5
+12960,Trout,437,M,slow,10,10,11,10
+11970,Turtle Flambeau Flowage,478,F,slow,7,7,6,5
+11912,Turtle Flambeau Flowage,584,F,mod,10,10,12,10
+11966,Turtle Flambeau Flowage,312,M,slow,3,2,3,4
+11965,Turtle Flambeau Flowage,378,M,mod,3,3,3,3
+11967,Turtle Flambeau Flowage,384,M,mod,3,3,3,4
+11964,Turtle Flambeau Flowage,356,M,slow,4,4,4,4
+11968,Turtle Flambeau Flowage,386,M,slow,6,6,6,6
+11969,Turtle Flambeau Flowage,409,M,slow,6,6,7,6
+11972,Turtle Flambeau Flowage,465,M,slow,10,10,10,10
+11697,Twin Chain,569,F,fast,5,5,6,6
+11692,Twin Chain,500,F,slow,9,9,8,8
+11694,Twin Chain,617,F,fast,9,10,9,9
+11698,Twin Chain,378,M,slow,4,4,4,4
+11496,Twin Chain,419,M,mod,4,4,11,9
+11498,Twin Chain,323,M,slow,4,4,5,4
+11696,Twin Chain,465,M,slow,8,9,9,9
+11695,Twin Chain,536,M,slow,9,9,9,9
+11700,Twin Chain,373,M,slow,9,8,9,8
+11699,Twin Chain,432,M,slow,9,9,9,10
+66,Wausau,226,unk,mod,1,2,3,3
+53,Wausau,236,unk,mod,1,2,4,3
+72,Wausau,241,unk,mod,1,1,1,2
+37,Wausau,279,unk,fast,1,1,1,3
+8,Wausau,340,unk,mod,3,3,6,4
+30,Wausau,345,unk,mod,3,3,3,3
+51,Wausau,366,unk,mod,3,3,3,4
+26,Wausau,368,unk,mod,3,4,6,6
+52,Wausau,384,unk,mod,3,4,3,3
+43,Wausau,366,unk,mod,3,4,5,5
+40,Wausau,269,unk,slow,4,4,2,4
+44,Wausau,300,unk,slow,4,4,5,4
+54,Wausau,378,unk,slow,4,4,5,4
+68,Wausau,419,unk,mod,4,4,4,5
+39,Wausau,300,unk,slow,4,4,5,4
+29,Wausau,333,unk,slow,4,3,4,4
+3,Wausau,399,unk,slow,5,4,5,4
+21,Wausau,406,unk,slow,5,6,7,6
+9,Wausau,437,unk,mod,5,5,4,5
+18,Wausau,455,unk,mod,5,5,5,6
+14,Wausau,356,unk,slow,5,5,5,6
+41,Wausau,488,unk,fast,5,5,4,5
+5,Wausau,427,unk,slow,6,6,7,6
+13,Wausau,432,unk,slow,6,6,5,6
+71,Wausau,467,unk,mod,6,7,7,6
+62,Wausau,472,unk,mod,6,7,5,7
+11,Wausau,320,unk,slow,6,6,5,6
+34,Wausau,323,unk,slow,6,6,6,7
+50,Wausau,325,unk,slow,6,6,8,6
+12,Wausau,333,unk,slow,6,6,5,5
+32,Wausau,338,unk,slow,6,6,8,6
+4,Wausau,348,unk,slow,6,6,7,6
+28,Wausau,351,unk,slow,6,7,8,8
+19,Wausau,373,unk,slow,6,6,6,5
+2,Wausau,376,unk,slow,6,6,4,6
+25,Wausau,381,unk,slow,6,6,6,6
+31,Wausau,384,unk,slow,6,6,5,5
+69,Wausau,396,unk,slow,6,6,6,4
+49,Wausau,404,unk,slow,6,6,7,6
+46,Wausau,526,unk,mod,7,7,6,6
+55,Wausau,302,unk,slow,7,6,5,5
+10,Wausau,343,unk,slow,7,7,7,6
+20,Wausau,549,unk,mod,8,8,9,7
+47,Wausau,551,unk,mod,8,8,8,7
+1,Wausau,561,unk,mod,8,8,8,8
+67,Wausau,592,unk,fast,8,8,7,7
+48,Wausau,612,unk,fast,8,8,7,6
+23,Wausau,424,unk,slow,8,8,8,8
+60,Wausau,569,unk,mod,9,9,6,8
+74,Wausau,610,unk,mod,9,9,6,7
+35,Wausau,323,unk,slow,9,9,7,6
+7,Wausau,424,unk,slow,9,9,7,7
+27,Wausau,427,unk,slow,9,9,6,6
+17,Wausau,658,unk,fast,10,10,9,9
+70,Wausau,699,unk,fast,10,10,11,9
+45,Wausau,635,unk,mod,12,12,8,9
+24,Wausau,478,unk,slow,13,14,10,12
+65,Wausau,493,unk,slow,13,14,11,12
+61,Wausau,683,unk,mod,13,14,15,13
+63,Wausau,551,unk,slow,15,16,13,14
+15,Wausau,673,unk,mod,15,15,12,13
+16,Wausau,739,unk,fast,15,15,14,15
+76,Wausau,665,unk,mod,16,16,13,14
+64,Wausau,493,unk,slow,17,16,10,10
+6,Wausau,564,unk,slow,19,19,15,14
+9,Wisconsin River - Kilbourn,422,F,fast,2,2,4,2
+3,Wisconsin River - Kilbourn,483,F,fast,3,3,3,3
+13,Wisconsin River - Kilbourn,490,F,fast,3,3,5,3
+14,Wisconsin River - Kilbourn,503,F,fast,3,3,2,3
+15,Wisconsin River - Kilbourn,523,F,fast,3,3,4,3
+16,Wisconsin River - Kilbourn,549,F,fast,4,3,4,4
+1251,Wisconsin River - Kilbourn,549,F,fast,4,4,5,4
+4,Wisconsin River - Kilbourn,589,F,fast,4,4,7,5
+18,Wisconsin River - Kilbourn,625,F,fast,6,6,5,6
+1253,Wisconsin River - Kilbourn,630,F,fast,6,6,6,6
+5,Wisconsin River - Kilbourn,648,F,fast,6,6,6,6
+1250,Wisconsin River - Kilbourn,668,F,fast,8,8,7,6
+1242,Wisconsin River - Kilbourn,371,M,fast,2,2,1,2
+7,Wisconsin River - Kilbourn,417,M,fast,2,2,2,2
+1244,Wisconsin River - Kilbourn,417,M,fast,2,2,2,3
+8,Wisconsin River - Kilbourn,419,M,fast,2,2,4,3
+1248,Wisconsin River - Kilbourn,523,M,fast,2,2,2,2
+1,Wisconsin River - Kilbourn,361,M,fast,2,2,2,2
+10,Wisconsin River - Kilbourn,447,M,fast,3,3,2,3
+11,Wisconsin River - Kilbourn,455,M,fast,4,4,4,3
+1246,Wisconsin River - Kilbourn,485,M,fast,5,6,5,5
+12,Wisconsin River - Kilbourn,480,M,slow,8,8,6,8
+17,Wisconsin River - Kilbourn,551,M,mod,8,8,7,7
+1249,Wisconsin River - Kilbourn,627,M,mod,13,12,11,10
+1252,Wisconsin River - Kilbourn,625,M,mod,15,14,12,13
+1241,Wisconsin River - Kilbourn,343,unk,fast,1,1,1,2
+37,Wisconsin River - Prairie du Sac,373,F,fast,1,1,2,2
+16,Wisconsin River - Prairie du Sac,432,F,fast,3,4,3,3
+5,Wisconsin River - Prairie du Sac,463,F,fast,3,3,2,3
+14,Wisconsin River - Prairie du Sac,468,F,fast,3,3,3,3
+8,Wisconsin River - Prairie du Sac,481,F,fast,3,3,3,3
+15,Wisconsin River - Prairie du Sac,485,F,fast,3,3,2,3
+11,Wisconsin River - Prairie du Sac,501,F,fast,3,3,3,3
+38,Wisconsin River - Prairie du Sac,606,F,fast,7,7,8,6
+39,Wisconsin River - Prairie du Sac,701,F,fast,8,8,8,8
+6,Wisconsin River - Prairie du Sac,378,M,fast,2,2,2,2
+12,Wisconsin River - Prairie du Sac,397,M,fast,2,2,7,4
+33,Wisconsin River - Prairie du Sac,363,M,fast,2,2,3,3
+13,Wisconsin River - Prairie du Sac,427,M,fast,3,3,4,3
+23,Wisconsin River - Prairie du Sac,438,M,fast,3,3,2,4
+19,Wisconsin River - Prairie du Sac,447,M,fast,3,3,3,3
+4,Wisconsin River - Prairie du Sac,450,M,fast,3,3,3,3
+21,Wisconsin River - Prairie du Sac,398,M,fast,3,3,3,3
+24,Wisconsin River - Prairie du Sac,402,M,fast,3,3,3,3
+35,Wisconsin River - Prairie du Sac,409,M,fast,3,3,4,4
+10,Wisconsin River - Prairie du Sac,412,M,fast,3,3,2,3
+2,Wisconsin River - Prairie du Sac,484,M,fast,4,4,3,4
+41,Wisconsin River - Prairie du Sac,535,M,mod,7,7,4,4
+40,Wisconsin River - Prairie du Sac,510,M,slow,12,12,8,8
+26,Wisconsin River - Prairie du Sac,213,unk,fast,0,0,1,1
+29,Wisconsin River - Prairie du Sac,214,unk,fast,0,0,1,0
+31,Wisconsin River - Prairie du Sac,216,unk,fast,0,0,0,0
+27,Wisconsin River - Prairie du Sac,220,unk,fast,0,0,0,0
+30,Wisconsin River - Prairie du Sac,224,unk,fast,0,0,0,0
+3,Wisconsin River - Prairie du Sac,227,unk,fast,0,0,0,0
+36,Wisconsin River - Prairie du Sac,230,unk,fast,0,0,0,0
+28,Wisconsin River - Prairie du Sac,234,unk,fast,0,0,0,0
+25,Wisconsin River - Prairie du Sac,253,unk,fast,0,0,0,0
+32,Wisconsin River - Prairie du Sac,201,unk,fast,0,0,0,0
+20,Wisconsin River - Prairie du Sac,299,unk,fast,1,1,1,1
+1,Wisconsin River - Prairie du Sac,312,unk,fast,1,1,3,3
+34,Wisconsin River - Prairie du Sac,317,unk,fast,1,1,1,1
+18,Wisconsin River - Prairie du Sac,320,unk,fast,1,2,1,1
+7,Wisconsin River - Prairie du Sac,347,unk,fast,1,1,2,2
+17,Wisconsin River - Prairie du Sac,369,unk,fast,2,2,3,3
+22,Wisconsin River - Prairie du Sac,387,unk,fast,2,2,3,2
+9,Wisconsin River - Prairie du Sac,406,unk,fast,2,2,3,3
