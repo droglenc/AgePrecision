@@ -7,19 +7,17 @@ nm <- ""       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-species <- ""
-atype <- "between"   # possibly change to "within"
 
 ## !!! Copy the code below if more than one structure of comparisons
 
 #### XXXXXX ####################################################################
-strux <- ""    ## Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- ""   ## More about scturcture (e.g., dorsal, pectoral)
-proc <- ""     ## Process info (e.g., sectioned, crackburn, whole)
+species <- ""
+atype <- "between"  # possibly change to "within"
+strux <- ""         # Calcified strucure (e.g., scales, otolith, finray, spine)
+strux2 <- ""        # More about scturcture (e.g., dorsal, pectoral)
+proc <- ""          # Process info (e.g., sectioned, crackburn, whole)
 
-df1 <- df %>%  ## Isolate the variables containing the ages
-  select(starts_with("scale")) %>%
-  filterD(complete.cases(.))
+df1 <- df %>%       # Process the data to prepare for analysis
 
 ap1 <- agePrecision(~XXX+XXX,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,
