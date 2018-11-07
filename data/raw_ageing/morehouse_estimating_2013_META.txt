@@ -1,0 +1,18 @@
+SOURCE: Morehouse, R.L., S.B. Donabauer, and A.C. Grier. 2013. Estimating Largemouth Bass age: Precision and comparisons among scales, pectoral fin rays, and dorsal fin spines as nonlethal methods. Fisheries and Aquaculture Journal 4:074.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: Total length (mm)
+loc: Location (lake) of capture
+scales_Steve: Estimated age of scales by Steve reader
+scales_Angie: Estimated age of scales by Angie reader
+scales_Reid: Estimated age of scales by Reid reader
+rays_Steve: Estimated age of pectoral fin rays by Steve reader
+rays_Angie: Estimated age of pectoral fin rays by Angie reader
+rays_Reid: Estimated age of pectoral fin rays by Reid reader
+spines_Steve: Estimated age of dorsal spines by Steve reader
+spines_Angie: Estimated age of dorsal spines by Angie reader
+spines_Reid: Estimated age of dorsal spines by Reid reader
+
+NOTES:
+* File generated from "SP97AGES.TXT" and "SP99AGES.TXT" files provided by Jim Long.

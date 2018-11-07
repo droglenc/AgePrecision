@@ -15,7 +15,7 @@ df <- read_excel("data/raw_ageing/Originals/Stewart et al 2015 - Data.xlsx",na=c
          consensus="Age (Final)") %>%
   mutate(r2=ifelse(r2=="43-45",44,r2),
          r2=as.numeric(r2)) %>%
-  select(id,loc,gear,tl,r1,r2,consensus)
+  select(id,loc,tl,r1,r2,consensus)
 str(df)
 
 write.csv(df,file="data/raw_ageing/Stewart_et_al_2015.csv",

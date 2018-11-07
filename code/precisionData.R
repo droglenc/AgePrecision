@@ -6,7 +6,7 @@ precisionData <- function(res,studyID,species,
                           type,var=c("SD","CV","AAD","APE","CV2","APE2"),
                           notes="",digits=5,alpha=0.05) {
   ## Handle arguments
-  poss_struxs <- c("scales","otoliths","spines","finrays","vertebrae","cleithra")
+  poss_struxs <- c("scales","otoliths","spines","finrays","vertebrae","cleithra","gular plates")
   if (!structure %in% poss_struxs) stop("'structure' must one of: ",poss_struxs)
   poss_types <- c("between","within","structures")
   if (!type %in% poss_types) stop("'type' must be one of: ",poss_types)
@@ -37,11 +37,14 @@ precisionTests <- function(res,var,digits,alpha) {
   ## Get data
   y <- res$detail[,var]
   x <- res$detail$mean
+  if (all(y==0)) stop("All precision metrics are zero.",call.=FALSE)
   ## Fit linear and quadratic models, with and without modeling heteroscedasticity
-  LM <- nlme::gls(y~x,method="ML")
+  LM <- tryCatch(nlme::gls(y~x,method="ML"),
+                 error=function(e) NA)
   LMHet <- tryCatch(nlme::gls(y~x,method="ML",weights=nlme::varPower(form=~x)),
                     error=function(e) NA)
-  QM <- nlme::gls(y~x+I(x^2),method="ML")
+  QM <- tryCatch(nlme::gls(y~x+I(x^2),method="ML"),
+                 error=function(e) NA)
   QMHet <- tryCatch(nlme::gls(y~x+I(x^2),method="ML",weights=nlme::varPower(form=~x)),
                     error=function(e) NA)
   ## Need quadratic term, with no heteroscedasticity?
