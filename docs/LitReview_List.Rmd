@@ -1,9 +1,12 @@
 ---
 title: "Fish Ageing Precision Articles"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: pdf_document
-bibliography: LitReview.bib
 csl: american-fisheries-society.csl
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  pdf_document:
+  html_document:
+    df_print: paged
+bibliography: LitReview.bib
 ---
 
 <div id="refs"></div>
