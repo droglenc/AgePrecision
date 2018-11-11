@@ -1,0 +1,19 @@
+SOURCE: Blackwell, B.G., T.M. Kaufman, and T.S. Moos. 2016. An assessment of calcified structures for estimating Northern Pike ages. North American Journal of Fisheries Management 36:964–974.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: Total length (mm)
+wt: Weight (g)
+cleithra_section_R1: Estimated age of the sectioned cleithera by R1 reader
+cleithra_section_R2: Estimated age of the sectioned cleithera by R2 reader
+cleithra_whole_R1: Estimated age of the whole cleithera by R1 reader
+cleithra_whole_R2: Estimated age of the whole cleithera by R2 reader
+otolith_section_R1: Estimated age of the sectioned otolith by R1 reader
+otolith_section_R2: Estimated age of the sectioned otolith by R2 reader
+metapt_section_R1: Estimated age of the metapterygoid bones by R1 reader
+metapt_section_R2: Estimated age of the metapterygoid bones by R2 reader
+scale_section_R1: Estimated age of the scales by R1 reader
+scale_section_R2: Estimated age of the scales by R2 reader
+
+NOTES:
+* File generated from "2012 NOP ages for Ogle.xls" file provided by Brian Blackwell.
