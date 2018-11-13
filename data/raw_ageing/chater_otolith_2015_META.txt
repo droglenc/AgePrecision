@@ -1,0 +1,12 @@
+SOURCE: Chater, I., A. Romdhani, J.L. Dufour, K. Mahe, P. Francour, and N. Chakroun-Marzouk. 2015. Otolith growth and age estimation of Bastard Grunt, Pomadasys Incisus (Actinopterygii: Perciformes: Haemulidae), in the Gulf of Tunis (Central Mediterranean). Acta Ichthyologica et Piscatoria 45:57–63.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: Total length (mm)
+wt: Weight of the fish (g)
+sex: Sex of the fish
+otoliths_r1: Estimated age of the sectioned otolith by r1 reader
+otoliths_r2: Estimated age of the sectioned otolith by r2 reader
+
+NOTES:
+* File generated from "AGE READINGS POMADASYS INCISUS OF THE GULF OF TUNIS.xlsx" file provided by Ines Chater.
