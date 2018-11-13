@@ -15,4 +15,4 @@ spines_Angie: Estimated age of dorsal spines by Angie reader
 spines_Reid: Estimated age of dorsal spines by Reid reader
 
 NOTES:
-* File generated from "SP97AGES.TXT" and "SP99AGES.TXT" files provided by Jim Long.
+* File generated from "LMB_Aug_2010.xls" files provided by Reid Morehouse.
