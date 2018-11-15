@@ -1,0 +1,34 @@
+SOURCE: Gallagher, C.P., K.L. Howland, and R.J. Wastle. 2016. A comparison of different structures and methods for estimating age of northern-form Dolly Varden Salvelinus Malma Malma from the Canadian Arctic. Polar Biology 39:1257–1265.
+
+VARIABLES:
+species: Species (all Dolly Varden)
+stock: Location (all Rat River)
+id: Identification number unique to each fish
+year: Capture year
+whoto_RW_1: Estimated age of the whole otolith on the first read by RW (experienced) reader
+whoto_RW_2: Estimated age of the whole otolith on the second read by RW (experienced) reader
+whoto_RW_3: Estimated age of the whole otolith on the third read by RW (experienced) reader
+whoto_NSC_1: Estimated age of the whole otolith on the first read by NSC (inexperienced) reader
+whoto_NSC_2: Estimated age of the whole otolith on the second read by NSC (inexperienced) reader
+whoto_NSC_3: Estimated age of the whole otolith on the third read by NSC (inexperienced) reader
+sectoto_RW_1: Estimated age of the sectioned otolith on the first read by RW (experienced) reader
+sectoto_RW_2: Estimated age of the sectioned otolith on the second read by RW (experienced) reader
+sectoto_RW_3: Estimated age of the sectioned otolith on the third read by RW (experienced) reader
+sectoto_NSC_1: Estimated age of the sectioned otolith on the first read by NSC (inexperienced) reader
+sectoto_NSC_2: Estimated age of the sectioned otolith on the second read by NSC (inexperienced) reader
+sectoto_NSC_3: Estimated age of the sectioned otolith on the third read by NSC (inexperienced) reader
+pelvic_RW_1: Estimated age of the sectioned pelvic finray on the first read by RW (experienced) reader
+pelvic_RW_2: Estimated age of the sectioned pelvic finray on the second read by RW (experienced) reader
+pelvic_RW_3: Estimated age of the sectioned pelvic finray on the third read by RW (experienced) reader
+pelvic_NSC_1: Estimated age of the sectioned pelvic finray on the first read by NSC (inexperienced) reader
+pelvic_NSC_2: Estimated age of the sectioned pelvic finray on the second read by NSC (inexperienced) reader
+pelvic_NSC_3: Estimated age of the sectioned pelvic finray on the third read by NSC (inexperienced) reader
+pectoral_RW_1: Estimated age of the sectioned pectoral finray on the first read by RW (experienced) reader
+pectoral_RW_2: Estimated age of the sectioned pectoral finray on the second read by RW (experienced) reader
+pectoral_RW_3: Estimated age of the sectioned pectoral finray on the third read by RW (experienced) reader
+pectoral_NSC_1: Estimated age of the sectioned pectoral finray on the first read by NSC (inexperienced) reader
+pectoral_NSC_2: Estimated age of the sectioned pectoral finray on the second read by NSC (inexperienced) reader
+pectoral_NSC_3: Estimated age of the sectioned pectoral finray on the third read by NSC (inexperienced) reader
+
+NOTES:
+* File generated from "Raw data for Derek Ogle Nov 2018.xlsx" file provided by Colin Gallagher.

@@ -16,6 +16,7 @@ atype <- "between"  # possibly change to "within"
 strux <- ""         # Calcified strucure (e.g., scales, otolith, finray, spine)
 strux2 <- ""        # More about scturcture (e.g., dorsal, pectoral)
 proc <- ""          # Process info (e.g., sectioned, crackburn, whole)
+extra_suffix <- ""  # Extra suffix for name ... sometimes needed if above is not adequate
 
 df1 <- df %>%       # Process the data to prepare for analysis
   select(contains("")) %>%
@@ -37,4 +38,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
