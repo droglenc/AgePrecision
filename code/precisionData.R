@@ -7,7 +7,7 @@ precisionData <- function(res,studyID,species,
                           notes="",digits=5,alpha=0.05) {
   ## Handle arguments
   poss_struxs <- c("scales","otoliths","spines","finrays","vertebrae","cleithra",
-                   "gular plates","bones")
+                   "gular plates","bones","opercles")
   if (!structure %in% poss_struxs) stop("'structure' must one of: ",poss_struxs)
   poss_types <- c("between","within","structures")
   if (!type %in% poss_types) stop("'type' must be one of: ",poss_types)
