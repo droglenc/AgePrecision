@@ -1,888 +1,888 @@
-id,loc,year,scale_AT_1,scale_AT_2,scale_CH_1,scale_CH_2,scale_consensus,edgeIsAnnulus
-CHE_05_29_13_CHE 001,Chestatee R,2013,2,2,1,1,2,Yes
-CHE_05_29_13_CHE 002,Chestatee R,2013,3,3,3,3,3,Yes
-CHE_05_29_13_CHE 004,Chestatee R,2013,3,3,2,3,3,Yes
-CHE_05_29_13_CHE 005,Chestatee R,2013,3,3,3,3,3,Yes
-CHE_05_29_13_CHE 007,Chestatee R,2013,7,7,6,6,6,Yes
-CHE_05_29_13_CHE 008,Chestatee R,2013,5,6,4,6,5,No
-CHE_05_29_13_CHE 009,Chestatee R,2013,6,6,4,7,6,Yes
-CHE_05_29_13_CHE 010,Chestatee R,2013,5,5,4,5,5,No
-CHE_05_29_13_CHE 012,Chestatee R,2013,3,3,2,2,3,Yes
-CHE_05_29_13_CHE 013,Chestatee R,2013,7,8,5,7,7,Yes
-CHE_05_29_13_CHE 014,Chestatee R,2013,7,7,5,5,6,No
-CHE_05_29_13_CHE 015,Chestatee R,2013,6,8,6,7,7,Yes
-CHE_05_29_13_CHE 016,Chestatee R,2013,5,4,4,5,4,Yes
-CHE_05_29_13_CHE 017,Chestatee R,2013,6,6,4,6,5,Yes
-CHE_05_29_13_CHE 018,Chestatee R,2013,4,5,4,4,4,Yes
-CHE_05_29_13_CHE 019,Chestatee R,2013,3,3,3,3,3,No
-CHE_05_29_13_CHE 020,Chestatee R,2013,3,3,2,3,3,Yes
-CHE_05_29_13_CHE 021,Chestatee R,2013,2,2,1,1,2,Yes
-CHE_05_29_13_CHE 022,Chestatee R,2013,2,2,1,1,2,Yes
-CHE_05_29_13_CHE 023,Chestatee R,2013,6,6,5,6,6,Yes
-CHE_05_29_13_CHE 025,Chestatee R,2013,2,2,1,2,3,Yes
-CHE_05_29_13_CHE 026,Chestatee R,2013,2,2,0,0,1,Yes
-CHE_05_29_13_CHE 027,Chestatee R,2013,2,2,0,0,1,Yes
-CHE_05_29_13_CHE 028,Chestatee R,2013,6,6,5,6,6,No
-CHE_05_29_13_CHE 030,Chestatee R,2013,2,2,2,2,2,Yes
-CHE_05_29_13_CHE 031,Chestatee R,2013,3,3,3,3,3,Yes
-CHE_05_29_13_CHE 032,Chestatee R,2013,5,5,5,4,5,No
-CHE_05_29_13_CHE 033,Chestatee R,2013,5,5,4,4,5,Yes
-CHE_05_29_13_CHE 034,Chestatee R,2013,6,6,5,5,6,Yes
-CHE_05_29_13_CHE 035,Chestatee R,2013,4,5,3,4,5,Yes
-CHE_05_29_13_CHE 036,Chestatee R,2013,7,7,6,6,6,No
-CHE_05_29_13_CHE 037,Chestatee R,2013,3,3,3,4,3,Yes
-CHE_05_29_13_CHE 039,Chestatee R,2013,3,3,2,3,3,Yes
-CHE_05_29_13_CHE 040,Chestatee R,2013,6,6,5,5,6,No
-CHE_05_29_13_CHE 042,Chestatee R,2013,3,3,3,3,3,No
-CHE_05_29_13_CHE 043,Chestatee R,2013,3,3,3,5,4,Yes
-CHE_05_29_13_CHE 044,Chestatee R,2013,4,3,3,3,3,No
-CHA_05_05_13_CHA 001,Chattahoochee R,2013,2,2,1,2,2,No
-CHA_05_05_13_CHA 003,Chattahoochee R,2013,3,3,3,3,3,Yes
-CHA_05_05_13_CHA 004,Chattahoochee R,2013,4,4,4,4,4,No
-CHA_05_05_13_CHA 005,Chattahoochee R,2013,3,3,3,3,3,Yes
-CHA_05_05_13_CHA 006,Chattahoochee R,2013,6,6,6,6,6,No
-CHA_05_05_13_CHA 007,Chattahoochee R,2013,4,4,5,4,4,Yes
-CHA_05_05_13_CHA 008,Chattahoochee R,2013,10,11,8,9,12,Yes
-CHA_05_05_13_CHA 009,Chattahoochee R,2013,7,6,5,6,6,Yes
-CHA_05_05_13_CHA 010,Chattahoochee R,2013,6,6,6,7,6,Yes
-CHA_05_05_13_CHA 011,Chattahoochee R,2013,9,8,6,8,8,Yes
-CHA_05_05_13_CHA 012,Chattahoochee R,2013,9,10,7,8,9,No
-CHA_05_05_13_CHA 014,Chattahoochee R,2013,6,6,4,6,6,Yes
-CHA_05_05_13_CHA 015,Chattahoochee R,2013,6,6,5,6,6,No
-CHA_05_05_13_CHA 016,Chattahoochee R,2013,7,8,6,7,7,No
-CHA_05_05_13_CHA 017,Chattahoochee R,2013,2,2,2,2,2,Yes
-CHA_05_05_13_CHA 018,Chattahoochee R,2013,2,2,2,2,2,Yes
-CHA_05_05_13_CHA 019,Chattahoochee R,2013,4,4,4,4,4,Yes
-CHA_05_05_13_CHA 020,Chattahoochee R,2013,4,4,3,4,4,Yes
-CHA_05_05_13_CHA 022,Chattahoochee R,2013,7,7,5,7,7,Yes
-CHA_05_05_13_CHA 023,Chattahoochee R,2013,5,5,4,6,5,Yes
-CHA_05_05_13_CHA 024,Chattahoochee R,2013,5,5,4,4,4,No
-CHA_05_05_13_CHA 025,Chattahoochee R,2013,2,2,1,3,2,Yes
-CHA_05_05_13_CHA 026,Chattahoochee R,2013,2,2,2,2,2,Yes
-CHA_05_05_13_CHA 028,Chattahoochee R,2013,3,4,3,4,3,Yes
-CHA_05_05_13_CHA 029,Chattahoochee R,2013,2,2,2,2,2,Yes
-CHA_05_05_13_CHA 030,Chattahoochee R,2013,7,8,6,6,7,No
-CHA_05_05_13_CHA 031,Chattahoochee R,2013,3,3,3,4,3,Yes
-CHA_05_05_13_CHA 033,Chattahoochee R,2013,3,3,4,3,3,Yes
-CHA_05_05_13_CHA 035,Chattahoochee R,2013,2,2,1,2,2,Yes
-CHA_05_05_13_CHA 036,Chattahoochee R,2013,6,6,6,6,6,No
-CHA_05_05_13_CHA 037,Chattahoochee R,2013,11,10,8,8,9,No
-CHA_05_05_13_CHA 038,Chattahoochee R,2013,2,2,2,2,2,Yes
-CHA_05_05_13_CHA 039,Chattahoochee R,2013,6,7,6,7,7,Yes
-CHA_05_05_13_CHA 040,Chattahoochee R,2013,5,5,5,5,5,Yes
-CHA_05_05_13_CHA 041,Chattahoochee R,2013,6,6,5,6,6,Yes
-CHA_05_05_13_CHA 042,Chattahoochee R,2013,4,4,3,4,4,Yes
-CHA_05_05_13_CHA 047,Chattahoochee R,2013,7,7,7,7,7,Yes
-CHA_05_05_13_CHA 049,Chattahoochee R,2013,4,4,3,3,3,Yes
-BIG_11_11_13_BIG 001,Big Creek,2013,2,3,1,1,2,No (Fall)
-BIG_11_11_13_BIG 002,Big Creek,2013,2,2,1,1,1,No (Fall)
-BIG_11_11_13_BIG 003,Big Creek,2013,2,2,1,1,1,No (Fall)
-BIG_11_11_13_BIG 004,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 006,Big Creek,2013,3,3,2,2,2,No (Fall)
-BIG_11_11_13_BIG 007,Big Creek,2013,1,2,1,1,1,No (Fall)
-BIG_11_11_13_BIG 009,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 010,Big Creek,2013,2,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 011,Big Creek,2013,7,8,4,4,6,No (Fall)
-BIG_11_11_13_BIG 012,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 013,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 014,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 015,Big Creek,2013,2,2,2,2,2,No (Fall)
-BIG_11_11_13_BIG 016,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 017,Big Creek,2013,2,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 018,Big Creek,2013,2,3,2,2,2,No (Fall)
-BIG_11_11_13_BIG 019,Big Creek,2013,2,2,2,2,2,No (younger by one yr)
-BIG_11_11_13_BIG 020,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 021,Big Creek,2013,2,2,2,2,2,No (Fall)
-BIG_11_11_13_BIG 022,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 023,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 024,Big Creek,2013,2,2,2,2,2,No (Fall)
-BIG_11_11_13_BIG 025,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 026,Big Creek,2013,1,1,1,2,1,No (Fall)
-BIG_11_11_13_BIG 027,Big Creek,2013,2,2,1,2,2,No (Fall)
-BIG_11_11_13_BIG 029,Big Creek,2013,1,1,1,1,1,No (Fall)
-BIG_11_11_13_BIG 030,Big Creek,2013,1,1,1,2,1,No (Fall)
-BIG_11_11_13_BIG 031,Big Creek,2013,2,2,2,1,1,No (Fall)
-BIG_11_11_13_BIG 032,Big Creek,2013,1,1,1,1,1,No (Fall)
-CHE_05_19_14_569746,Chestatee R,2014,8,8,6,6,8,Yes
-CHE_05_19_14_574109,Chestatee R,2014,11,10,7,7,10,Yes
-CHE_05_19_14_567320,Chestatee R,2014,2,2,1,2,2,Yes
-CHE_05_19_14_578722,Chestatee R,2014,3,3,3,3,3,Yes
-CHE_05_19_14_572794,Chestatee R,2014,4,3,3,3,4,Yes
-CHE_05_19_14_560272,Chestatee R,2014,2,2,1,1,2,Yes
-CHE_05_19_14_572836,Chestatee R,2014,5,5,4,4,5,No
-CHE_05_19_14_573812,Chestatee R,2014,8,10,6,5,9,Yes
-CHE_05_19_14_324183,Chestatee R,2014,5,6,5,4,5,Yes
-CHE_05_19_14_563825,Chestatee R,2014,9,10,8,6,8,Yes
-CHE_05_19_14_557728,Chestatee R,2014,3,4,2,2,3,No
-CHE_05_19_14_562391,Chestatee R,2014,9,9,7,7,8,Yes
-CHE_05_19_14_549561,Chestatee R,2014,6,6,4,4,4,No
-CHE_05_19_14_551212,Chestatee R,2014,5,5,4,4,5,Yes
-CHE_05_19_14_567546,Chestatee R,2014,3,3,3,3,3,Yes
-CHE_05_19_14_553605,Chestatee R,2014,1,1,1,1,1,Yes
-CHE_05_19_14_568092,Chestatee R,2014,7,7,7,7,7,No
-CHE_05_19_14_549896,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_553913,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_571309,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_384458,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_548723,Chestatee R,2014,3,4,3,3,3,Yes
-CHE_05_19_14_553132,Chestatee R,2014,4,3,4,3,4,Yes
-CHE_05_19_14_320201,Chestatee R,2014,6,5,5,5,5,Yes
-CHE_05_19_14_553647,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_562993,Chestatee R,2014,3,4,3,3,3,Yes
-CHE_05_19_14_557675,Chestatee R,2014,6,6,6,6,6,No
-CHE_05_19_14_553942,Chestatee R,2014,3,3,3,3,3,Yes
-CHE_05_19_14_549590,Chestatee R,2014,4,4,3,3,3,Yes
-CHE_05_19_14_579393,Chestatee R,2014,8,8,6,6,8,Yes
-CHE_05_19_14_550882,Chestatee R,2014,2,2,2,2,2,Yes
-CHE_05_19_14_566663,Chestatee R,2014,4,3,4,3,4,No (younger by one yr)
-BIG_05_20_14_BIG 033,Big Creek,2014,2,2,2,2,2,No
-BIG_05_20_14_BIG 036,Big Creek,2014,3,2,2,2,2,Yes
-BIG_05_20_14_BIG 037,Big Creek,2014,2,1,1,1,2,Yes
-BIG_05_20_14_BIG 038,Big Creek,2014,2,1,1,1,1,No
-BIG_05_20_14_BIG 039,Big Creek,2014,2,2,1,1,2,Yes
-BIG_05_20_14_BIG 040,Big Creek,2014,3,2,2,2,3,Yes
-BIG_05_20_14_BIG 041,Big Creek,2014,8,8,5,6,6,Yes
-BIG_05_20_14_BIG 042,Big Creek,2014,2,2,1,1,2,Yes
-BIG_05_20_14_BIG 050,Big Creek,2014,6,8,7,7,7,Yes
-BIG_05_20_14_BIG 051,Big Creek,2014,9,10,9,8,9,Yes
-BIG_05_20_14_BIG 052,Big Creek,2014,9,10,9,8,10,Yes
-CHE_05_21_14_573865,Chestatee R,2014,5,5,5,5,5,Yes
-CHE_05_21_14_579479,Chestatee R,2014,5,5,5,5,5,Yes
-CHE_05_21_14_562271,Chestatee R,2014,2,2,1,1,1,Yes
-CHE_05_21_14_565097,Chestatee R,2014,8,8,8,8,8,Yes
-CHE_05_21_14_384615,Chestatee R,2014,8,8,7,7,8,Yes
-CHE_05_21_14_559526,Chestatee R,2014,5,6,5,5,6,Yes
-CHE_05_21_14_567301,Chestatee R,2014,3,3,3,3,3,Yes
-CHE_05_21_14_564176,Chestatee R,2014,4,4,5,4,5,Yes
-CHE_05_21_14_579838,Chestatee R,2014,7,6,5,5,5,No
-CHE_05_21_14_569952,Chestatee R,2014,3,3,3,3,3,Yes
-CHE_05_21_14_571202,Chestatee R,2014,13,14,10,10,12,Yes
-CHE_05_21_14_573547,Chestatee R,2014,6,6,4,5,6,No (younger by one yr)
-CHE_05_21_14_554563,Chestatee R,2014,5,4,4,4,5,No (younger by one yr)
-CHE_05_21_14_550934,Chestatee R,2014,9,8,6,7,9,Yes
-CHE_05_21_14_386172,Chestatee R,2014,5,5,5,6,5,No
-CHE_05_21_14_384438,Chestatee R,2014,3,3,3,4,3,Yes
-CHE_05_21_14_323553,Chestatee R,2014,4,4,4,4,4,Yes
-CHE_05_21_14_389515,Chestatee R,2014,2,2,1,2,2,Yes
-CHE_05_21_14_336846,Chestatee R,2014,2,2,1,2,2,Yes
-CHE_05_21_14_338873,Chestatee R,2014,2,2,1,2,1,No
-CHE_05_21_14_548541,Chestatee R,2014,3,2,2,2,2,No
-CHE_05_21_14_567250,Chestatee R,2014,1,2,1,1,1,No
-CHE_05_21_14_549347,Chestatee R,2014,2,2,1,2,2,Yes
-CHE_05_21_14_573944,Chestatee R,2014,3,3,2,2,3,Yes
-CHE_05_21_14_556818,Chestatee R,2014,3,3,2,2,3,Yes
-CHE_05_21_14_571269,Chestatee R,2014,7,5,4,4,6,Yes
-CHE_05_21_14_552128,Chestatee R,2014,6,6,5,5,6,Yes
-CHE_05_21_14_577316,Chestatee R,2014,8,7,6,6,6,Yes
-CHE_05_21_14_568284,Chestatee R,2014,4,4,3,3,4,Yes
-CHE_05_21_14_577689,Chestatee R,2014,6,4,3,4,4,Yes
-CHE_05_21_14_555186,Chestatee R,2014,3,2,2,2,2,Yes
-BIG_05_22_14_100784,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100744,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100769,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100708,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100759,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100751,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100722,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100736,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100754,Big Creek,2014,4,4,4,4,4,Yes
-BIG_05_22_14_100730,Big Creek,2014,3,3,2,2,2,Yes
-BIG_05_22_14_100767,Big Creek,2014,3,2,2,2,3,No (younger by one yr)
-BIG_05_22_14_100799,Big Creek,2014,3,2,2,2,2,Yes
-BIG_05_22_14_100712,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100749,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100740,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100728,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100773,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100706,Big Creek,2014,8,7,7,8,8,Yes
-BIG_05_22_14_100732,Big Creek,2014,5,5,5,6,5,Yes
-BIG_05_22_14_100748,Big Creek,2014,6,7,6,6,6,Yes
-BIG_05_22_14_100711,Big Creek,2014,10,8,8,8,8,No
-BIG_05_22_14_100785,Big Creek,2014,3,2,2,2,2,Yes
-BIG_05_22_14_100774,Big Creek,2014,3,3,3,3,3,Yes
-BIG_05_22_14_100779,Big Creek,2014,5,4,5,4,4,No
-BIG_05_22_14_100741,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100782,Big Creek,2014,8,8,7,7,6,Yes
-BIG_05_22_14_100701,Big Creek,2014,3,2,2,2,2,Yes
-BIG_05_22_14_100721,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100790,Big Creek,2014,9,9,9,10,8,Yes
-BIG_05_22_14_100734,Big Creek,2014,4,4,4,4,4,Yes
-BIG_05_22_14_100770,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100747,Big Creek,2014,9,7,8,9,8,Yes
-BIG_05_22_14_100764,Big Creek,2014,9,8,8,8,8,Yes
-BIG_05_22_14_100757,Big Creek,2014,4,4,3,4,3,Yes
-BIG_05_22_14_100709,Big Creek,2014,2,2,2,2,2,Yes
-BIG_05_22_14_100727,Big Creek,2014,2,3,2,3,2,Yes
-BIG_05_22_14_100771,Big Creek,2014,7,7,8,8,7,No
-BIG_05_22_14_100746,Big Creek,2014,7,7,7,7,7,Yes
-BIG_05_22_14_100700,Big Creek,2014,8,7,7,6,8,Yes
-BIG_05_22_14_100766,Big Creek,2014,2,2,2,2,2,Yes
-CHA_05_27_14_332427,Chattahoochee R,2014,4,4,4,4,4,Yes
-CHA_05_27_14_573321,Chattahoochee R,2014,6,7,7,7,7,Yes
-CHA_05_27_14_329210,Chattahoochee R,2014,6,6,6,6,6,Yes
-CHA_05_27_14_552982,Chattahoochee R,2014,2,2,2,2,2,Yes
-CHA_05_27_14_385285,Chattahoochee R,2014,8,9,11,10,9,Yes
-CHA_05_27_14_570670,Chattahoochee R,2014,9,10,9,9,9,Yes
-CHA_05_27_14_548786,Chattahoochee R,2014,5,5,6,6,7,No (younger by one yr)
-CHA_05_27_14_572206,Chattahoochee R,2014,4,4,5,4,4,Yes
-CHA_05_27_14_570367,Chattahoochee R,2014,5,4,5,4,4,Yes
-CHA_05_27_14_558424,Chattahoochee R,2014,5,5,6,5,5,Yes
-CHA_05_27_14_569027,Chattahoochee R,2014,7,7,7,7,7,Yes
-CHA_05_27_14_568330,Chattahoochee R,2014,4,5,6,6,4,Yes
-CHA_05_27_14_571363,Chattahoochee R,2014,11,11,11,10,11,Yes
-CHA_05_27_14_390048,Chattahoochee R,2014,8,8,8,8,8,Yes
-CHA_05_27_14_569301,Chattahoochee R,2014,6,8,9,7,8,Yes
-CHA_05_27_14_571693,Chattahoochee R,2014,6,7,7,6,7,Yes
-CHA_05_27_14_341588,Chattahoochee R,2014,7,7,8,7,7,No
-CHA_05_27_14_553502,Chattahoochee R,2014,9,12,10,11,11,Yes
-CHA_05_27_14_570203,Chattahoochee R,2014,3,3,4,3,3,Yes
-CHA_05_27_14_558981,Chattahoochee R,2014,4,5,6,5,5,Yes
-CHA_05_27_14_573249,Chattahoochee R,2014,2,1,1,1,1,No
-CHA_05_27_14_318907,Chattahoochee R,2014,9,10,9,10,10,Yes
-CHA_05_27_14_386853,Chattahoochee R,2014,8,8,8,8,8,Yes
-CHA_05_27_14_579302,Chattahoochee R,2014,2,2,2,2,2,Yes
-CHA_05_27_14_568927,Chattahoochee R,2014,5,5,6,5,5,Yes
-CHA_05_27_14_563008,Chattahoochee R,2014,6,6,7,7,7,Yes
-CHA_05_27_14_577252,Chattahoochee R,2014,6,7,8,7,7,No
-CHA_05_27_14_575630,Chattahoochee R,2014,5,5,6,6,6,Yes
-CHA_05_27_14_557865,Chattahoochee R,2014,4,5,5,6,4,No
-CHA_05_27_14_559426,Chattahoochee R,2014,7,8,6,7,7,Yes
-CHA_05_27_14_562319,Chattahoochee R,2014,6,9,7,7,8,Yes
-CHA_05_27_14_566748,Chattahoochee R,2014,4,4,4,5,4,Yes
-CHA_05_27_14_573963,Chattahoochee R,2014,3,3,3,3,3,Yes
-CHA_05_27_14_318622,Chattahoochee R,2014,5,5,5,5,5,Yes
-CHA_05_27_14_575746,Chattahoochee R,2014,6,8,6,7,8,Yes
-CHA_05_27_14_553956,Chattahoochee R,2014,5,5,4,4,3,Yes
-CHA_05_27_14_550695,Chattahoochee R,2014,3,3,3,3,3,Yes
-CHA_05_29_14_552654,Chattahoochee R,2014,3,3,3,3,3,Yes
-CHA_05_29_14_572750,Chattahoochee R,2014,7,8,7,7,7,Yes
-CHA_05_29_14_580523,Chattahoochee R,2014,4,4,4,4,4,Yes
-CHA_05_29_14_561894,Chattahoochee R,2014,4,4,4,4,4,Yes
-CHA_05_29_14_569183,Chattahoochee R,2014,4,5,5,4,4,Yes
-CHA_05_29_14_556746,Chattahoochee R,2014,5,5,5,5,5,Yes
-CHA_05_29_14_557810,Chattahoochee R,2014,3,2,2,2,2,No
-CHA_05_29_14_549641,Chattahoochee R,2014,4,6,5,5,4,Yes
-CHA_05_29_14_549383,Chattahoochee R,2014,3,4,3,3,3,No
-CHA_05_29_14_564819,Chattahoochee R,2014,6,8,6,7,6,Yes
-CHA_05_29_14_573317,Chattahoochee R,2014,3,2,2,2,2,Yes
-CHA_05_29_14_548946,Chattahoochee R,2014,7,8,7,8,7,Yes
-CHA_05_29_14_578646,Chattahoochee R,2014,10,11,8,10,7,Yes
-CHA_05_29_14_555582,Chattahoochee R,2014,5,8,7,8,8,Yes
-CHA_05_29_14_549135,Chattahoochee R,2014,4,6,5,5,5,Yes
-CHA_05_29_14_558032,Chattahoochee R,2014,4,3,4,4,3,Yes
-CHA_05_29_14_559464,Chattahoochee R,2014,7,8,6,7,7,Yes
-CHA_05_29_14_572144,Chattahoochee R,2014,9,11,8,8,8,Yes
-CHA_05_29_14_550513,Chattahoochee R,2014,7,9,7,7,7,Yes
-CHA_05_29_14_558275,Chattahoochee R,2014,7,8,7,6,7,Yes
-CHA_05_29_14_556895,Chattahoochee R,2014,5,6,6,5,4,No
-CHA_05_29_14_569146,Chattahoochee R,2014,2,2,2,2,2,Yes
-CHA_05_29_14_571930,Chattahoochee R,2014,11,11,9,11,11,Yes
-CHA_05_29_14_566307,Chattahoochee R,2014,2,2,2,2,2,Yes
-CHA_05_29_14_577797,Chattahoochee R,2014,2,2,3,3,2,Yes
-CHA_05_29_14_559709,Chattahoochee R,2014,2,1,2,2,1,No
-CHA_05_29_14_571658,Chattahoochee R,2014,4,4,4,4,4,Yes
-CHA_05_29_14_561310,Chattahoochee R,2014,4,4,4,4,4,Yes
-CHA_05_29_14_553481,Chattahoochee R,2014,2,1,1,2,1,Yes
-CHA_05_29_14_562920,Chattahoochee R,2014,1,1,1,1,1,Yes
-CHA_05_29_14_571229,Chattahoochee R,2014,11,14,13,13,11,Yes
-CHA_05_29_14_562209,Chattahoochee R,2014,4,4,5,5,5,No (younger by one yr)
-CHA_05_29_14_573658,Chattahoochee R,2014,3,3,4,4,3,Yes
-BIG_10_17_14_100769,Big Creek,2014,2,2,3,3,2,No (Fall)
-BIG_10_17_14_BIG 095,Big Creek,2014,3,2,3,3,3,No (younger by one yr)
-BIG_10_17_14_BIG 096,Big Creek,2014,3,2,3,3,3,No (younger by one yr)
-BIG_10_17_14_BIG 098,Big Creek,2014,2,2,3,3,3,No (younger by one yr)
-BIG_10_17_14_BIG 099,Big Creek,2014,2,2,3,3,3,No (younger by one yr)
-BIG_10_17_14_BIG 100,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 101,Big Creek,2014,1,2,2,2,2,No (Fall)
-BIG_10_17_14_BIG 102,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_100754,Big Creek,2014,5,6,6,6,5,No (Fall)
-BIG_10_17_14_100786,Big Creek,2014,2,2,3,3,2,No (Fall)
-BIG_10_17_14_100717,Big Creek,2014,2,2,3,4,3,No (Fall)
-BIG_10_17_14_BIG 103,Big Creek,2014,3,3,4,4,3,No (Fall)
-BIG_10_17_14_BIG 104,Big Creek,2014,1,1,2,2,1,No (younger by one yr)
-BIG_10_17_14_BIG 105,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 106,Big Creek,2014,1,1,1,1,1,No (younger by one yr)
-BIG_10_17_14_BIG 107,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 108,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 109,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 110,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_100779,Big Creek,2014,7,7,5,5,6,No (younger by one yr)
-BIG_10_17_14_100738,Big Creek,2014,2,3,3,3,3,No (younger by one yr)
-BIG_10_17_14_100732,Big Creek,2014,7,6,8,7,6,No (younger by one yr)
-BIG_10_17_14_BIG 111,Big Creek,2014,7,7,6,6,6,No (younger by one yr)
-BIG_10_17_14_BIG 112,Big Creek,2014,3,3,4,4,3,No (Fall)
-BIG_10_17_14_BIG 113,Big Creek,2014,3,3,3,3,3,No (Fall)
-BIG_10_17_14_BIG 115,Big Creek,2014,1,1,2,2,1,No (Fall)
-BIG_10_17_14_BIG 116,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 117,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 118,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 119,Big Creek,2014,0,0,0,1,0,No (Fall)
-BIG_10_17_14_BIG 120,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 121,Big Creek,2014,0,0,0,1,0,No (Fall)
-BIG_10_17_14_BIG 122,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 123,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 124,Big Creek,2014,0,0,1,0,0,No (Fall)
-BIG_10_17_14_BIG 125,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 126,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 127,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 128,Big Creek,2014,0,1,2,2,0,No (Fall)
-BIG_10_17_14_BIG 129,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 130,Big Creek,2014,3,3,4,4,3,No (Fall)
-BIG_10_17_14_BIG 131,Big Creek,2014,3,3,4,4,4,No (younger by one yr)
-BIG_10_17_14_BIG 132,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 133,Big Creek,2014,0,1,1,1,0,No (Fall)
-BIG_10_17_14_BIG 134,Big Creek,2014,0,1,1,1,0,No (Fall)
-BIG_10_17_14_BIG 135,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 136,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 137,Big Creek,2014,0,1,1,1,1,No (younger by one yr)
-BIG_10_17_14_BIG 138,Big Creek,2014,3,4,4,4,4,No (younger by one yr)
-BIG_10_17_14_BIG 139,Big Creek,2014,2,4,3,3,3,No (younger by one yr)
-BIG_10_17_14_BIG 140,Big Creek,2014,4,5,4,4,4,No (younger by one yr)
-BIG_10_17_14_BIG 141,Big Creek,2014,0,1,1,1,1,No (younger by one yr)
-BIG_10_17_14_BIG 142,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 143,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 144,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 145,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 146,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 147,Big Creek,2014,3,4,4,4,3,No (Fall)
-BIG_10_17_14_BIG 148,Big Creek,2014,3,2,3,4,2,No (Fall)
-BIG_10_17_14_BIG 149,Big Creek,2014,5,4,4,4,3,No (Fall)
-BIG_10_17_14_BIG 150,Big Creek,2014,3,4,4,3,3,No (Fall)
-BIG_10_17_14_BIG 151,Big Creek,2014,1,1,1,1,1,No (younger by one yr)
-BIG_10_17_14_BIG 152,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 153,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 154,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 155,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 156,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 157,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 158,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 161,Big Creek,2014,2,2,3,2,2,No (younger by one yr)
-BIG_10_17_14_BIG 162,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_17_14_BIG 163,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_17_14_BIG 164,Big Creek,2014,0,0,1,1,0,No (Fall)
-BIG_10_18_14_BIG 165,Big Creek,2014,3,3,3,3,3,No (younger by one yr)
-BIG_10_18_14_A 001,Big Creek,2014,3,3,3,3,3,No (younger by one yr)
-BIG_10_18_14_A 002,Big Creek,2014,2,3,2,2,2,No (Fall)
-BIG_10_18_14_A 003,Big Creek,2014,3,4,3,3,3,No (younger by one yr)
-BIG_10_18_14_A 004,Big Creek,2014,3,4,3,3,3,No (younger by one yr)
-BIG_10_18_14_BIG 166,Big Creek,2014,4,5,3,4,3,No (Fall)
-BIG_10_18_14_BIG 167,Big Creek,2014,3,3,2,3,3,No (younger by one yr)
-BIG_10_18_14_A 006,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 007,Big Creek,2014,1,1,0,0,1,No (younger by one yr)
-BIG_10_18_14_A 008,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 009,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_BIG 168,Big Creek,2014,4,4,3,3,3,No (Fall)
-BIG_10_18_14_A 010,Big Creek,2014,1,1,0,0,1,No (younger by one yr)
-BIG_10_18_14_A 011,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 012,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 013,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 014,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 015,Big Creek,2014,2,2,1,1,2,No (younger by one yr)
-BIG_10_18_14_A 016,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 017,Big Creek,2014,4,4,2,3,4,No (younger by two yrs)
-BIG_10_18_14_A 018,Big Creek,2014,2,3,2,2,2,No (Fall)
-BIG_10_18_14_A 019,Big Creek,2014,2,3,2,2,2,No (Fall)
-BIG_10_18_14_A 020,Big Creek,2014,1,1,0,0,1,No (younger by one yr)
-BIG_10_18_14_A 021,Big Creek,2014,1,1,1,0,1,No (younger by one yr)
-BIG_10_18_14_A 022,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 023,Big Creek,2014,3,4,3,3,4,No (younger by one yr)
-BIG_10_18_14_A 024,Big Creek,2014,3,3,2,2,3,No (younger by one yr)
-BIG_10_18_14_A 025,Big Creek,2014,3,3,3,3,3,No (younger by one yr)
-BIG_10_18_14_A 026,Big Creek,2014,3,4,2,2,4,No (younger by two yrs)
-BIG_10_18_14_A 027,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 028,Big Creek,2014,2,1,1,2,1,No (younger by one yr)
-BIG_10_18_14_A 029,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 030,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 031,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 032,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 033,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 034,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 035,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 036,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 037,Big Creek,2014,10,9,8,6,9,No (younger by two yrs)
-BIG_10_18_14_A 038,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 039,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 040,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 041,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 042,Big Creek,2014,1,1,0,1,1,No (younger by one yr)
-BIG_10_18_14_A 043,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 044,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 045,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 046,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 047,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 048,Big Creek,2014,3,2,3,2,3,No (younger by one yr)
-BIG_10_18_14_A 049,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 050,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 051,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 052,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 053,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 054,Big Creek,2014,1,0,0,0,0,No (Fall)
-BIG_10_18_14_A 055,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 056,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 057,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 058,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 059,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 060,Big Creek,2014,0,1,0,0,0,No (Fall)
-BIG_10_18_14_A 061,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 062,Big Creek,2014,4,3,3,3,3,No (Fall)
-BIG_10_18_14_A 063,Big Creek,2014,0,0,0,1,0,No (Fall)
-BIG_10_18_14_A 064,Big Creek,2014,0,0,0,0,0,No (Fall)
-BIG_10_18_14_A 065,Big Creek,2014,11,11,12,12,12,No (Fall)
-BIG_05_13_15_051518,Big Creek,2015,2,3,2,2,2,Yes
-BIG_05_13_15_100759,Big Creek,2015,4,5,3,3,3,No
-BIG_05_13_15_051542,Big Creek,2015,3,2,2,2,2,Yes
-BIG_05_13_15_100707,Big Creek,2015,2,3,2,2,2,Yes
-BIG_05_13_15_051535,Big Creek,2015,1,2,1,2,1,Yes
-BIG_05_13_15_051591,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051488,Big Creek,2015,1,1,0,1,1,Yes
-BIG_05_13_15_100717,Big Creek,2015,3,4,3,3,3,Yes
-BIG_05_13_15_051550,Big Creek,2015,2,2,2,2,2,Yes
-BIG_05_13_15_051553,Big Creek,2015,3,3,3,3,3,Yes
-BIG_05_13_15_051458,Big Creek,2015,1,0,0,0,1,Yes
-BIG_05_13_15_051520,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051528,Big Creek,2015,1,1,1,0,1,Yes
-BIG_05_13_15_051536,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051422,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051564,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051523,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051484,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051577,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051562,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051521,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051589,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051509,Big Creek,2015,8,9,7,7,8,Yes
-BIG_05_13_15_100732,Big Creek,2015,10,9,8,7,9,Yes
-BIG_05_13_15_051414,Big Creek,2015,2,3,2,2,2,Yes
-BIG_05_13_15_051449,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051543,Big Creek,2015,1,1,1,0,1,Yes
-BIG_05_13_15_051515,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051541,Big Creek,2015,1,0,0,0,0,No
-BIG_05_13_15_051572,Big Creek,2015,1,0,0,0,0,No
-BIG_05_13_15_100703,Big Creek,2015,9,9,7,7,8,Yes
-BIG_05_13_15_051571,Big Creek,2015,10,8,6,6,7,Yes
-BIG_05_13_15_051504,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_100711,Big Creek,2015,10,12,9,9,11,Yes
-BIG_05_13_15_100721,Big Creek,2015,5,4,3,3,4,Yes
-BIG_05_13_15_051453,Big Creek,2015,3,3,3,2,3,Yes
-BIG_05_13_15_051567,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051568,Big Creek,2015,1,1,0,0,0,No
-BIG_05_13_15_051560,Big Creek,2015,2,2,1,1,1,Yes
-BIG_05_13_15_100750,Big Creek,2015,11,9,7,7,8,Yes
-BIG_05_13_15_051584,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051462,Big Creek,2015,0,1,0,0,0,No
-BIG_05_13_15_051466,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_13_15_051533,Big Creek,2015,0,0,0,0,0,No
-BIG_05_13_15_051522,Big Creek,2015,11,8,8,7,8,Yes
-BIG_05_13_15_051510,Big Creek,2015,10,10,8,9,12,Yes
-BIG_05_13_15_051569,Big Creek,2015,5,3,2,2,3,Yes
-BIG_05_13_15_100727,Big Creek,2015,5,4,3,3,4,Yes
-BIG_05_13_15_051511,Big Creek,2015,0,0,0,0,0,No
-BIG_05_13_15_051583,Big Creek,2015,0,0,0,0,0,No
-BIG_05_13_15_051574,Big Creek,2015,1,0,0,0,0,No
-BIG_05_15_15_100748,Big Creek,2015,10,8,6,6,6,No
-BIG_05_15_15_051514,Big Creek,2015,2,2,1,1,1,Yes
-BIG_05_15_15_051516,Big Creek,2015,0,0,0,0,0,No
-BIG_05_15_15_051540,Big Creek,2015,8,5,4,5,4,No
-BIG_05_15_15_100772,Big Creek,2015,2,2,2,2,2,Yes
-BIG_05_15_15_051599,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051582,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_051408,Big Creek,2015,1,1,0,0,1,Yes
-BIG_05_15_15_100778,Big Creek,2015,9,7,8,8,9,Yes
-BIG_05_15_15_100754,Big Creek,2015,8,5,5,6,6,Yes
-BIG_05_15_15_051559,Big Creek,2015,6,4,4,4,4,Yes
-BIG_05_15_15_051474,Big Creek,2015,3,2,2,2,2,Yes
-BIG_05_15_15_051596,Big Creek,2015,4,3,3,4,3,Yes
-BIG_05_15_15_100786,Big Creek,2015,2,2,2,1,2,Yes
-BIG_05_15_15_051448,Big Creek,2015,2,1,1,1,1,Yes
-BIG_05_15_15_051565,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051505,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_100742,Big Creek,2015,12,11,9,9,10,Yes
-BIG_05_15_15_051587,Big Creek,2015,3,3,3,2,3,Yes
-BIG_05_15_15_051503,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051563,Big Creek,2015,1,1,1,1,1,yes
-BIG_05_15_15_051450,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051484,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_100732,Big Creek,2015,9,7,6,7,7,Yes
-BIG_05_15_15_100774,Big Creek,2015,6,5,4,4,5,Yes
-BIG_05_15_15_051498,Big Creek,2015,5,4,3,4,4,Yes
-BIG_05_15_15_051467,Big Creek,2015,3,3,2,2,2,Yes
-BIG_05_15_15_100712,Big Creek,2015,4,3,3,3,3,Yes
-BIG_05_15_15_051434,Big Creek,2015,3,3,2,2,3,Yes
-BIG_05_15_15_100705,Big Creek,2015,2,2,2,2,2,Yes
-BIG_05_15_15_051593,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_051530,Big Creek,2015,11,9,8,8,8,Yes
-BIG_05_15_15_100729,Big Creek,2015,4,4,3,3,3,Yes
-BIG_05_15_15_051570,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_051485,Big Creek,2015,5,4,3,3,3,No
-BIG_05_15_15_051539,Big Creek,2015,4,4,3,3,3,Yes
-BIG_05_15_15_051594,Big Creek,2015,1,1,1,0,0,No
-BIG_05_15_15_051508,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051579,Big Creek,2015,1,1,1,0,0,No
-BIG_05_15_15_051546,Big Creek,2015,1,1,1,0,1,Yes
-BIG_05_15_15_051527,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_051590,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_100760,Big Creek,2015,10,10,9,8,9,Yes
-BIG_05_15_15_051526,Big Creek,2015,2,2,2,2,2,No (younger by one yr)
-BIG_05_15_15_051532,Big Creek,2015,4,3,3,3,2,Yes
-BIG_05_15_15_051556,Big Creek,2015,1,1,1,1,1,Yes
-BIG_05_15_15_051555,Big Creek,2015,1,1,0,0,0,No
-BIG_05_15_15_051506,Big Creek,2015,2,1,1,1,1,Yes
-BIG_05_15_15_lastfish,Big Creek,2015,5,4,3,3,3,No
-CHE_05_12_15_565146,Chestatee R,2015,5,5,4,4,4,Yes
-CHE_05_12_15_562993,Chestatee R,2015,6,5,6,6,5,Yes
-CHE_05_12_15_572287,Chestatee R,2015,11,10,9,8,8,Yes
-CHE_05_12_15_549094,Chestatee R,2015,5,4,4,4,4,Yes
-CHE_05_12_15_579063,Chestatee R,2015,3,3,3,3,3,Yes
-CHE_05_12_15_576779,Chestatee R,2015,6,4,5,5,5,Yes
-CHE_05_12_15_548634,Chestatee R,2015,4,5,5,4,4,Yes
-CHE_05_12_15_329536,Chestatee R,2015,4,4,4,4,4,Yes
-CHE_05_12_15_573063,Chestatee R,2015,5,4,4,4,3,Yes
-CHE_05_12_15_340885,Chestatee R,2015,4,3,3,3,3,Yes
-CHE_05_12_15_381825,Chestatee R,2015,3,3,3,2,3,Yes
-CHE_05_12_15_554563,Chestatee R,2015,5,5,5,5,5,Yes
-CHE_05_12_15_561446,Chestatee R,2015,8,8,6,6,6,Yes
-CHE_05_12_15_548247,Chestatee R,2015,10,10,9,9,9,No
-CHE_05_12_15_559220,Chestatee R,2015,6,5,4,4,4,Yes
-CHE_05_12_15_381215,Chestatee R,2015,5,4,4,4,4,Yes
-CHE_05_12_15_574281,Chestatee R,2015,5,4,4,4,4,Yes
-CHE_05_12_15_555619,Chestatee R,2015,8,9,10,9,10,Yes
-CHE_05_12_15_566441,Chestatee R,2015,7,7,6,6,6,Yes
-CHE_05_12_15_571751,Chestatee R,2015,6,8,6,6,7,Yes
-CHE_05_12_15_555449,Chestatee R,2015,2,3,3,3,3,Yes
-CHE_05_12_15_548878,Chestatee R,2015,9,8,7,8,9,Yes
-CHE_05_12_15_323553,Chestatee R,2015,4,3,4,4,4,Yes
-CHE_05_12_15_569346,Chestatee R,2015,3,3,3,3,3,Yes
-CHE_05_12_15_569507,Chestatee R,2015,4,4,4,3,4,Yes
-CHE_05_12_15_547808,Chestatee R,2015,6,7,4,4,5,Yes
-CHE_05_12_15_549561,Chestatee R,2015,6,6,5,5,6,Yes
-CHE_05_12_15_555362,Chestatee R,2015,6,6,7,6,6,Yes
-CHE_05_12_15_322401,Chestatee R,2015,3,2,2,2,2,Yes
-CHE_05_12_15_389950,Chestatee R,2015,3,3,2,2,3,Yes
-CHE_05_12_15_575011,Chestatee R,2015,8,7,6,6,8,Yes
-CHE_05_12_15_557642,Chestatee R,2015,4,4,4,4,4,Yes
-CHE_05_12_15_568355,Chestatee R,2015,7,9,7,7,7,No
-CHE_05_12_15_561798,Chestatee R,2015,6,7,6,6,8,Yes
-CHE_05_12_15_553670,Chestatee R,2015,3,3,2,2,3,Yes
-CHE_05_12_15_322265,Chestatee R,2015,3,3,2,2,3,Yes
-CHE_05_12_15_571309,Chestatee R,2015,3,3,2,2,3,Yes
-CHE_05_12_15_384458,Chestatee R,2015,2,3,2,2,2,Yes
-CHE_05_12_15_568005,Chestatee R,2015,4,3,2,2,2,Yes
-CHE_05_14_15_580024,Chestatee R,2015,8,8,6,7,7,Yes
-CHE_05_14_15_549505,Chestatee R,2015,3,3,2,3,3,Yes
-CHE_05_14_15_572287,Chestatee R,2015,11,10,10,10,10,Yes
-CHE_05_14_15_564379,Chestatee R,2015,5,4,4,4,4,Yes
-CHE_05_18_15_552819,Chestatee R,2015,6,6,5,6,6,Yes
-CHE_05_18_15_564568,Chestatee R,2015,2,2,2,2,2,Yes
-CHE_05_18_15_387225,Chestatee R,2015,9,9,6,6,8,Yes
-CHE_05_18_15_559467,Chestatee R,2015,7,6,6,5,6,Yes
-CHE_05_18_15_315739,Chestatee R,2015,3,3,3,2,3,Yes
-CHE_05_18_15_557868,Chestatee R,2015,3,3,2,2,3,Yes
-CHE_05_18_15_548351,Chestatee R,2015,9,8,7,7,8,Yes
-CHE_05_18_15_553003,Chestatee R,2015,3,3,3,3,3,Yes
-CHE_05_18_15_557549,Chestatee R,2015,1,1,1,0,1,Yes
-CHE_05_18_15_567301,Chestatee R,2015,4,4,4,4,4,Yes
-CHE_05_18_15_565097,Chestatee R,2015,11,10,10,8,10,Yes
-CHE_05_18_15_553913,Chestatee R,2015,3,3,3,3,3,Yes
-CHE_05_18_15_576266,Chestatee R,2015,2,2,2,2,2,No
-CHE_05_18_15_551560,Chestatee R,2015,3,2,2,2,2,Yes
-CHE_05_18_15_573812,Chestatee R,2015,9,9,9,9,9,Yes
-CHE_05_18_15_569727,Chestatee R,2015,3,3,3,3,3,Yes
-CHE_05_18_15_572997,Chestatee R,2015,4,4,4,4,4,Yes
-CHE_05_18_15_556481,Chestatee R,2015,3,2,2,2,2,Yes
-CHE_05_18_15_579054,Chestatee R,2015,2,2,3,2,2,Yes
-CHA_05_18_15_560928,Chattahoochee R,2015,10,9,7,7,7,No
-CHA_05_18_15_567037,Chattahoochee R,2015,12,9,8,9,8,No
-CHA_05_18_15_005564,Chattahoochee R,2015,5,5,4,4,4,No
-CHA_05_18_15_005554,Chattahoochee R,2015,11,10,9,9,9,Yes
-CHA_05_18_15_558981,Chattahoochee R,2015,6,6,6,5,6,Yes
-CHA_05_18_15_005857,Chattahoochee R,2015,4,3,3,3,3,Yes
-CHA_05_18_15_005884,Chattahoochee R,2015,3,3,2,3,3,Yes
-CHA_05_18_15_549641,Chattahoochee R,2015,6,5,4,5,5,Yes
-CHA_05_18_15_005509,Chattahoochee R,2015,2,1,1,2,2,Yes
-CHA_05_18_15_005823,Chattahoochee R,2015,11,9,7,9,9,No
-CHA_05_18_15_005652,Chattahoochee R,2015,11,9,9,8,12,No (younger by one yr)
-CHA_05_18_15_005891,Chattahoochee R,2015,4,3,3,4,3,Yes
-CHA_05_18_15_558424,Chattahoochee R,2015,7,5,5,4,5,Yes
-CHA_05_18_15_005793,Chattahoochee R,2015,5,5,4,5,5,Yes
-CHA_05_18_15_005523,Chattahoochee R,2015,5,5,5,5,5,Yes
-CHA_05_18_15_005754,Chattahoochee R,2015,6,7,6,6,6,Yes
-CHA_05_18_15_005820,Chattahoochee R,2015,7,6,5,5,5,No
-CHA_05_18_15_005640,Chattahoochee R,2015,7,6,5,5,6,Yes
-CHA_05_18_15_570367,Chattahoochee R,2015,5,5,5,4,5,Yes
-CHA_05_18_15_005648,Chattahoochee R,2015,4,3,4,4,3,Yes
-CHA_05_18_15_005709,Chattahoochee R,2015,4,4,3,3,3,Yes
-CHA_05_18_15_005759,Chattahoochee R,2015,5,4,4,4,4,Yes
-CHA_05_18_15_005798,Chattahoochee R,2015,3,3,3,3,3,Yes
-CHA_05_18_15_005912,Chattahoochee R,2015,2,3,2,2,2,Yes
-CHA_05_20_15_005516,Chattahoochee R,2015,3,3,2,3,3,Yes
-CHA_05_20_15_005868,Chattahoochee R,2015,11,10,7,8,9,Yes
-CHA_05_20_15_005792,Chattahoochee R,2015,3,3,3,3,3,Yes
-CHA_05_20_15_005616,Chattahoochee R,2015,4,3,3,4,3,Yes
-CHA_05_20_15_005832,Chattahoochee R,2015,8,7,6,6,6,Yes
-CHA_05_20_15_005629,Chattahoochee R,2015,9,8,7,8,11,Yes
-CHA_05_20_15_005747,Chattahoochee R,2015,6,6,6,6,6,Yes
-CHA_05_20_15_005921,Chattahoochee R,2015,8,8,7,7,8,Yes
-CHA_05_20_15_570367,Chattahoochee R,2015,4,4,5,5,5,Yes
-CHA_05_20_15_005757,Chattahoochee R,2015,8,9,7,7,10,No (younger by one yr)
-CHA_05_20_15_005883,Chattahoochee R,2015,3,4,2,2,2,Yes
-CHA_05_20_15_005631,Chattahoochee R,2015,5,5,4,4,4,Yes
-CHA_05_20_15_005965,Chattahoochee R,2015,5,5,5,5,5,Yes
-CHA_05_20_15_005776,Chattahoochee R,2015,9,8,10,9,9,No
-CHA_05_20_15_005635,Chattahoochee R,2015,4,3,4,4,3,Yes
-CHA_05_20_15_005938,Chattahoochee R,2015,8,9,8,8,8,No
-CHA_05_20_15_005871,Chattahoochee R,2015,5,4,5,5,5,Yes
-CHA_05_20_15_005843,Chattahoochee R,2015,2,3,3,3,3,Yes
-CHA_05_20_15_005807,Chattahoochee R,2015,1,1,0,0,1,Yes
-BIG_05_16_16_051517,Big Creek,2016,4,4,4,4,4,yes
-BIG_05_16_16_051599,Big Creek,2016,3,2,3,2,2,no
-BIG_05_16_16_051586,Big Creek,2016,2,2,2,2,2,yes
-BIG_05_16_16_051502,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051598,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051534,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051547,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051538,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051551,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051592,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051554,Big Creek,2016,1,1,2,1,1,no
-BIG_05_16_16_051585,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051552,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051578,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051597,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051545,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051581,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051537,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051561,Big Creek,2016,2,2,2,1,1,no
-BIG_05_16_16_051576,Big Creek,2016,1,1,2,1,1,no
-BIG_05_16_16_051566,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061522,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061544,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061542,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061558,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061548,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061582,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061516,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061586,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061518,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061555,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061506,Big Creek,2016,10,9,11,9,9,yes (assumed)
-BIG_05_16_16_100754,Big Creek,2016,8,9,7,7,7,yes
-BIG_05_16_16_051559,Big Creek,2016,6,6,8,5,5,yes (assumed)
-BIG_05_16_16_051596,Big Creek,2016,6,6,6,6,6,yes
-BIG_05_16_16_061543,Big Creek,2016,4,4,4,3,3,no
-BIG_05_16_16_061502,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061503,Big Creek,2016,2,2,2,2,2,yes
-BIG_05_16_16_061545,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061520,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061597,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061519,Big Creek,2016,1,0,1,1,1,no
-BIG_05_16_16_061579,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061537,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061527,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061535,Big Creek,2016,1,1,2,1,1,no
-BIG_05_16_16_061598,Big Creek,2016,1,2,1,1,1,no
-BIG_05_16_16_061533,Big Creek,2016,1,2,1,1,1,no
-BIG_05_16_16_061505,Big Creek,2016,1,2,1,1,1,no
-BIG_05_16_16_061592,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061546,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061512,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061588,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061510,Big Creek,2016,1,2,1,1,1,no
-BIG_05_16_16_061549,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061509,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061547,Big Creek,2016,1,1,0,1,1,no
-BIG_05_16_16_061569,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061587,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061591,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061541,Big Creek,2016,9,9,8,8,7,no
-BIG_05_16_16_100738,Big Creek,2016,5,5,5,5,5,yes
-BIG_05_16_16_051498,Big Creek,2016,5,4,4,4,4,yes (assumed)
-BIG_05_16_16_061551,Big Creek,2016,3,2,2,2,2,no
-BIG_05_16_16_061570,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061532,Big Creek,2016,3,3,3,3,3,yes
-BIG_05_16_16_051439,Big Creek,2016,2,2,2,1,2,yes
-BIG_05_16_16_051572,Big Creek,2016,2,1,2,1,1,no
-BIG_05_16_16_061504,Big Creek,2016,3,3,3,2,3,yes
-BIG_05_16_16_061530,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061599,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061578,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061540,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061562,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061528,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061538,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061559,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061573,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061500,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061508,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061513,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061511,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061575,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061568,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061536,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061590,Big Creek,2016,11,11,12,10,11,yes (assumed)
-BIG_05_16_16_061523,Big Creek,2016,7,7,7,7,7,yes
-BIG_05_16_16_061561,Big Creek,2016,9,11,10,9,10,yes (assumed)
-BIG_05_16_16_051530,Big Creek,2016,7,7,8,7,7,yes
-BIG_05_16_16_100774,Big Creek,2016,6,5,6,6,5,yes (assumed)
-BIG_05_16_16_100727,Big Creek,2016,6,5,5,5,5,yes
-BIG_05_16_16_100729,Big Creek,2016,5,5,5,4,5,yes
-BIG_05_16_16_051453,Big Creek,2016,5,4,4,4,4,yes (assumed)
-BIG_05_16_16_061594,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051504,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051568,Big Creek,2016,2,2,1,1,1,yes (assumed)
-BIG_05_16_16_061581,Big Creek,2016,2,2,2,2,2,yes
-BIG_05_16_16_061595,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061552,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061550,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061593,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061566,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061514,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061531,Big Creek,2016,9,9,8,8,8,yes
-BIG_05_16_16_051485,Big Creek,2016,5,5,5,5,5,yes
-BIG_05_16_16_100721,Big Creek,2016,5,5,5,5,5,yes
-BIG_05_16_16_100794,Big Creek,2016,5,6,6,5,5,yes
-BIG_05_16_16_061564,Big Creek,2016,2,3,2,2,2,no
-BIG_05_16_16_051590,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_061553,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_061517,Big Creek,2016,3,3,3,2,2,yes
-BIG_05_16_16_061526,Big Creek,2016,2,1,1,1,1,no
-BIG_05_16_16_061576,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061515,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061571,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061557,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061563,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061521,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_051510,Big Creek,2016,9,8,10,9,9,yes
-BIG_05_16_16_061577,Big Creek,2016,8,8,6,7,8,yes
-BIG_05_16_16_100768,Big Creek,2016,7,6,7,6,7,yes
-BIG_05_16_16_061539,Big Creek,2016,4,4,5,5,4,no
-BIG_05_16_16_051532,Big Creek,2016,4,4,4,6,4,no
-BIG_05_16_16_061524,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051575,Big Creek,2016,5,5,6,6,6,no
-BIG_05_16_16_061529,Big Creek,2016,5,5,5,5,5,yes
-BIG_05_16_16_051579,Big Creek,2016,2,2,2,2,2,no
-BIG_05_16_16_051448,Big Creek,2016,3,2,2,2,2,no
-BIG_05_16_16_061572,Big Creek,2016,1,1,1,1,1,no
-BIG_05_16_16_061567,Big Creek,2016,3,3,2,3,2,yes (assumed)
-BIG_05_16_16_061507,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG269,Big Creek,2016,5,5,5,5,5,yes
-BIG_05_19_16_BIG270,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG273,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG275,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG276,Big Creek,2016,4,4,4,4,4,yes
-BIG_05_19_16_BIG277,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG278,Big Creek,2016,6,6,6,6,6,yes
-BIG_05_19_16_BIG279,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG280,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG284,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG285,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_100701,Big Creek,2016,4,4,4,4,4,no
-BIG_05_19_16_BIG287,Big Creek,2016,4,3,4,3,4,yes
-BIG_05_19_16_BIG331,Big Creek,2016,2,2,3,2,2,no
-BIG_05_19_16_BIG332,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG317,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG322,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG320,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG299,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG313,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG305,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG316,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_100711,Big Creek,2016,9,9,8,10,9,yes (assumed)
-BIG_05_19_16_100778,Big Creek,2016,7,7,8,8,6,yes
-BIG_05_19_16_100774,Big Creek,2016,6,6,6,6,6,yes (assumed)
-BIG_05_19_16_BIG295,Big Creek,2016,7,7,9,7,7,yes
-BIG_05_19_16_BIG286,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG311,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG289,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG297,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG293,Big Creek,2016,2,2,2,2,2,no
-BIG_05_19_16_BIG294,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_051466,Big Creek,2016,2,2,2,2,2,no
-BIG_05_19_16_100703,Big Creek,2016,8,7,7,7,7,yes
-BIG_05_19_16_BIG321,Big Creek,2016,6,4,5,5,5,no
-BIG_05_19_16_BIG325,Big Creek,2016,6,7,7,6,6,yes
-BIG_05_19_16_051510,Big Creek,2016,10,10,9,9,9,yes (assumed)
-BIG_05_19_16_100747,Big Creek,2016,8,6,8,9,7,yes (assumed)
-BIG_05_19_16_BIG309,Big Creek,2016,2,2,2,2,2,no
-BIG_05_19_16_BIG303,Big Creek,2016,1,1,1,1,1,no
-BIG_05_19_16_BIG301,Big Creek,2016,8,8,7,7,8,yes
-BIG_05_19_16_051532,Big Creek,2016,3,3,4,4,3,yes
-BIG_05_19_16_051480,Big Creek,2016,2,2,2,2,2,no
-BIG_05_19_16_051564,Big Creek,2016,2,2,2,2,2,no
-BIG_05_19_16_BIG300,Big Creek,2016,1,2,1,1,1,no
-BIG_05_19_16_BIG291,Big Creek,2016,1,1,1,1,1,no
-CHE_05_17_16_005665,Chestatee R,2016,9,10,9,9,8,yes
-CHE_05_17_16_564379,Chestatee R,2016,7,6,6,7,5,yes (assumed)
-CHE_05_17_16_577316,Chestatee R,2016,6,5,6,6,6,no
-CHE_05_17_16_005622,Chestatee R,2016,5,5,4,4,4,no
-CHE_05_17_16_005876,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_17_16_548634,Chestatee R,2016,7,7,7,7,7,yes
-CHE_05_17_16_005538,Chestatee R,2016,4,4,5,3,4,yes
-CHE_05_17_16_005944,Chestatee R,2016,11,11,11,10,10,no
-CHE_05_17_16_005653,Chestatee R,2016,3,4,4,4,4,no
-CHE_05_17_16_565146,Chestatee R,2016,2,3,2,2,2,no
-CHE_05_17_16_005500,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_17_16_572002,Chestatee R,2016,10,10,12,10,10,yes
-CHE_05_17_16_579478,Chestatee R,2016,5,6,8,6,7,no
-CHE_05_17_16_005584,Chestatee R,2016,7,6,7,7,7,yes
-CHE_05_17_16_005663,Chestatee R,2016,6,6,7,6,6,yes
-CHE_05_17_16_005888,Chestatee R,2016,8,8,9,7,9,yes
-CHE_05_17_16_565097,Chestatee R,2016,9,8,10,10,10,yes
-CHE_05_17_16_005620,Chestatee R,2016,5,4,4,5,4,no
-CHE_05_17_16_005979,Chestatee R,2016,5,4,5,5,5,no
-CHE_05_17_16_573812,Chestatee R,2016,7,8,8,8,8,yes
-CHE_05_17_16_005863,Chestatee R,2016,5,5,6,5,5,no
-CHE_05_17_16_005901,Chestatee R,2016,6,6,5,6,6,yes
-CHE_05_17_16_005638,Chestatee R,2016,4,4,4,5,4,yes
-CHE_05_17_16_005749,Chestatee R,2016,6,4,5,5,5,no
-CHE_05_17_16_005958,Chestatee R,2016,4,4,5,4,4,yes (assumed)
-CHE_05_17_16_568005,Chestatee R,2016,3,3,3,3,3,yes
-CHE_05_17_16_005875,Chestatee R,2016,5,4,5,5,5,no
-CHE_05_17_16_561446,Chestatee R,2016,7,6,6,5,5,yes (assumed)
-CHE_05_17_16_005795,Chestatee R,2016,1,1,2,2,1,no
-CHE_05_17_16_579838,Chestatee R,2016,6,5,6,6,7,yes
-CHE_05_17_16_005681,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_17_16_005963,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_17_16_005968,Chestatee R,2016,2,2,2,1,2,no
-CHE_05_17_16_340885,Chestatee R,2016,3,3,3,3,3,no
-CHE_05_17_16_005641,Chestatee R,2016,5,4,5,4,5,yes
-CHE_05_17_16_323553,Chestatee R,2016,5,5,5,4,6,yes
-CHE_05_17_16_005942,Chestatee R,2016,3,3,3,3,3,yes
-CHE_05_17_16_005562,Chestatee R,2016,4,3,4,3,3,no
-CHE_05_17_16_005808,Chestatee R,2016,5,4,5,4,5,yes
-CHE_05_17_16_387225,Chestatee R,2016,6,6,6,6,6,yes (assumed)
-CHE_05_17_16_573063,Chestatee R,2016,3,3,4,3,3,no
-CHE_05_17_16_005720,Chestatee R,2016,4,4,4,4,4,yes
-CHE_05_18_16_CHE01,Chestatee R,2016,7,9,8,7,7,yes
-CHE_05_18_16_CHE02,Chestatee R,2016,5,4,5,4,4,yes
-CHE_05_18_16_CHE03,Chestatee R,2016,6,5,6,5,6,yes
-CHE_05_18_16_CHE04,Chestatee R,2016,1,1,1,1,1,no
-CHE_05_18_16_552128,Chestatee R,2016,5,6,6,5,6,yes
-CHE_05_18_16_CHE05,Chestatee R,2016,1,2,1,2,1,yes (assumed)
-CHE_05_18_16_569746,Chestatee R,2016,7,8,7,6,7,yes
-CHE_05_18_16_557675,Chestatee R,2016,6,7,6,5,6,yes
-CHE_05_18_16_CHE07,Chestatee R,2016,2,2,2,2,2,yes
-CHE_05_18_16_CHE08,Chestatee R,2016,1,1,1,1,1,no
-CHE_05_18_16_CHE09,Chestatee R,2016,4,4,4,4,4,no
-CHE_05_18_16_CHE10,Chestatee R,2016,8,8,7,7,9,yes
-CHE_05_18_16_CHE11,Chestatee R,2016,9,10,8,8,9,yes
-CHE_05_18_16_548878,Chestatee R,2016,8,9,8,8,8,yes (assumed)
-CHE_05_18_16_557642,Chestatee R,2016,4,4,4,3,4,yes
-CHE_05_18_16_548247,Chestatee R,2016,10,11,10,9,9,yes (assumed)
-CHE_05_18_16_565097,Chestatee R,2016,10,10,9,9,10,yes
-CHE_05_18_16_CHE12,Chestatee R,2016,3,3,3,3,3,no
-CHE_05_18_16_548351,Chestatee R,2016,9,8,8,7,8,yes (assumed)
-CHE_05_18_16_572002,Chestatee R,2016,10,9,9,8,9,yes (assumed)
-CHE_05_18_16_CHE13,Chestatee R,2016,1,1,1,1,1,no
-CHE_05_18_16_555449,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_18_16_CHE14,Chestatee R,2016,1,1,1,1,1,no
-CHE_05_18_16_CHE15,Chestatee R,2016,1,2,1,1,1,no
-CHE_05_18_16_CHE16,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_18_16_336846,Chestatee R,2016,3,2,2,2,3,yes
-CHE_05_18_16_CHE17,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_18_16_CHE18,Chestatee R,2016,5,5,5,5,5,yes
-CHE_05_18_16_CHE19,Chestatee R,2016,7,8,7,7,7,yes
-CHE_05_18_16_CHE20,Chestatee R,2016,2,2,2,2,2,no
-CHE_05_18_16_CHE21,Chestatee R,2016,2,2,2,1,2,no
-CHE_05_18_16_CHE22,Chestatee R,2016,1,1,1,1,1,no
-CHE_05_18_16_CHE23,Chestatee R,2016,1,1,0,1,1,no
-CHE_05_18_16_CHE24,Chestatee R,2016,10,10,9,8,7,yes (assumed)
+id,loc,mon,year,scales_AT_1,scales_AT_2,scales_AT_final,scales_CH_1,scales_CH_2,scales_CH_final,scales_CONSENSUS,edgeIsAnnulus
+CHE 001,Chestatee R,May,2013,2,2,2,1,1,1,2,Yes
+CHE 002,Chestatee R,May,2013,3,3,3,3,3,3,3,Yes
+CHE 004,Chestatee R,May,2013,3,3,3,2,3,3,3,Yes
+CHE 005,Chestatee R,May,2013,3,3,3,3,3,3,3,Yes
+CHE 007,Chestatee R,May,2013,7,7,7,6,6,6,6,Yes
+CHE 008,Chestatee R,May,2013,5,6,6,4,6,5,5,No
+CHE 009,Chestatee R,May,2013,6,6,6,4,7,6,6,Yes
+CHE 010,Chestatee R,May,2013,5,5,5,4,5,5,5,No
+CHE 012,Chestatee R,May,2013,3,3,3,2,2,2,3,Yes
+CHE 013,Chestatee R,May,2013,7,8,8,5,7,7,7,Yes
+CHE 014,Chestatee R,May,2013,7,7,7,5,5,5,6,No
+CHE 015,Chestatee R,May,2013,6,8,7,6,7,7,7,Yes
+CHE 016,Chestatee R,May,2013,5,4,4,4,5,4,4,Yes
+CHE 017,Chestatee R,May,2013,6,6,6,4,6,5,5,Yes
+CHE 018,Chestatee R,May,2013,4,5,4,4,4,4,4,Yes
+CHE 019,Chestatee R,May,2013,3,3,3,3,3,3,3,No
+CHE 020,Chestatee R,May,2013,3,3,3,2,3,2,3,Yes
+CHE 021,Chestatee R,May,2013,2,2,2,1,1,1,2,Yes
+CHE 022,Chestatee R,May,2013,2,2,2,1,1,1,2,Yes
+CHE 023,Chestatee R,May,2013,6,6,6,5,6,6,6,Yes
+CHE 025,Chestatee R,May,2013,2,2,2,1,2,1,3,Yes
+CHE 026,Chestatee R,May,2013,2,2,1,0,0,0,1,Yes
+CHE 027,Chestatee R,May,2013,2,2,1,0,0,0,1,Yes
+CHE 028,Chestatee R,May,2013,6,6,6,5,6,6,6,No
+CHE 030,Chestatee R,May,2013,2,2,2,2,2,2,2,Yes
+CHE 031,Chestatee R,May,2013,3,3,3,3,3,3,3,Yes
+CHE 032,Chestatee R,May,2013,5,5,5,5,4,5,5,No
+CHE 033,Chestatee R,May,2013,5,5,5,4,4,4,5,Yes
+CHE 034,Chestatee R,May,2013,6,6,6,5,5,5,6,Yes
+CHE 035,Chestatee R,May,2013,4,5,5,3,4,4,5,Yes
+CHE 036,Chestatee R,May,2013,7,7,7,6,6,6,6,No
+CHE 037,Chestatee R,May,2013,3,3,3,3,4,3,3,Yes
+CHE 039,Chestatee R,May,2013,3,3,3,2,3,2,3,Yes
+CHE 040,Chestatee R,May,2013,6,6,6,5,5,5,6,No
+CHE 042,Chestatee R,May,2013,3,3,3,3,3,3,3,No
+CHE 043,Chestatee R,May,2013,3,3,3,3,5,4,4,Yes
+CHE 044,Chestatee R,May,2013,4,3,3,3,3,3,3,No
+CHA 001,Chattahoochee R,May,2013,2,2,2,1,2,2,2,No
+CHA 003,Chattahoochee R,May,2013,3,3,3,3,3,3,3,Yes
+CHA 004,Chattahoochee R,May,2013,4,4,4,4,4,4,4,No
+CHA 005,Chattahoochee R,May,2013,3,3,3,3,3,3,3,Yes
+CHA 006,Chattahoochee R,May,2013,6,6,6,6,6,6,6,No
+CHA 007,Chattahoochee R,May,2013,4,4,4,5,4,4,4,Yes
+CHA 008,Chattahoochee R,May,2013,10,11,11,8,9,9,12,Yes
+CHA 009,Chattahoochee R,May,2013,7,6,6,5,6,6,6,Yes
+CHA 010,Chattahoochee R,May,2013,6,6,6,6,7,6,6,Yes
+CHA 011,Chattahoochee R,May,2013,9,8,8,6,8,8,8,Yes
+CHA 012,Chattahoochee R,May,2013,9,10,10,7,8,8,9,No
+CHA 014,Chattahoochee R,May,2013,6,6,6,4,6,6,6,Yes
+CHA 015,Chattahoochee R,May,2013,6,6,6,5,6,6,6,No
+CHA 016,Chattahoochee R,May,2013,7,8,7,6,7,6,7,No
+CHA 017,Chattahoochee R,May,2013,2,2,2,2,2,2,2,Yes
+CHA 018,Chattahoochee R,May,2013,2,2,2,2,2,2,2,Yes
+CHA 019,Chattahoochee R,May,2013,4,4,4,4,4,4,4,Yes
+CHA 020,Chattahoochee R,May,2013,4,4,4,3,4,4,4,Yes
+CHA 022,Chattahoochee R,May,2013,7,7,7,5,7,7,7,Yes
+CHA 023,Chattahoochee R,May,2013,5,5,5,4,6,6,5,Yes
+CHA 024,Chattahoochee R,May,2013,5,5,5,4,4,4,4,No
+CHA 025,Chattahoochee R,May,2013,2,2,2,1,3,3,2,Yes
+CHA 026,Chattahoochee R,May,2013,2,2,2,2,2,2,2,Yes
+CHA 028,Chattahoochee R,May,2013,3,4,3,3,4,4,3,Yes
+CHA 029,Chattahoochee R,May,2013,2,2,2,2,2,2,2,Yes
+CHA 030,Chattahoochee R,May,2013,7,8,7,6,6,6,7,No
+CHA 031,Chattahoochee R,May,2013,3,3,3,3,4,4,3,Yes
+CHA 033,Chattahoochee R,May,2013,3,3,3,4,3,4,3,Yes
+CHA 035,Chattahoochee R,May,2013,2,2,2,1,2,2,2,Yes
+CHA 036,Chattahoochee R,May,2013,6,6,6,6,6,6,6,No
+CHA 037,Chattahoochee R,May,2013,11,10,10,8,8,8,9,No
+CHA 038,Chattahoochee R,May,2013,2,2,2,2,2,2,2,Yes
+CHA 039,Chattahoochee R,May,2013,6,7,7,6,7,7,7,Yes
+CHA 040,Chattahoochee R,May,2013,5,5,5,5,5,5,5,Yes
+CHA 041,Chattahoochee R,May,2013,6,6,6,5,6,6,6,Yes
+CHA 042,Chattahoochee R,May,2013,4,4,4,3,4,4,4,Yes
+CHA 047,Chattahoochee R,May,2013,7,7,7,7,7,7,7,Yes
+CHA 049,Chattahoochee R,May,2013,4,4,4,3,3,3,3,Yes
+BIG 001,Big Creek,November,2013,2,3,2,1,1,1,2,No (Fall)
+BIG 002,Big Creek,November,2013,2,2,2,1,1,1,1,No (Fall)
+BIG 003,Big Creek,November,2013,2,2,2,1,1,1,1,No (Fall)
+BIG 004,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 006,Big Creek,November,2013,3,3,3,2,2,2,2,No (Fall)
+BIG 007,Big Creek,November,2013,1,2,1,1,1,1,1,No (Fall)
+BIG 009,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 010,Big Creek,November,2013,2,1,1,1,1,1,1,No (Fall)
+BIG 011,Big Creek,November,2013,7,8,7,4,4,4,6,No (Fall)
+BIG 012,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 013,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 014,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 015,Big Creek,November,2013,2,2,2,2,2,2,2,No (Fall)
+BIG 016,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 017,Big Creek,November,2013,2,1,2,1,1,1,1,No (Fall)
+BIG 018,Big Creek,November,2013,2,3,2,2,2,2,2,No (Fall)
+BIG 019,Big Creek,November,2013,2,2,2,2,2,2,2,No (younger by one yr)
+BIG 020,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 021,Big Creek,November,2013,2,2,2,2,2,2,2,No (Fall)
+BIG 022,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 023,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 024,Big Creek,November,2013,2,2,2,2,2,2,2,No (Fall)
+BIG 025,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 026,Big Creek,November,2013,1,1,1,1,2,2,1,No (Fall)
+BIG 027,Big Creek,November,2013,2,2,2,1,2,2,2,No (Fall)
+BIG 029,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+BIG 030,Big Creek,November,2013,1,1,1,1,2,1,1,No (Fall)
+BIG 031,Big Creek,November,2013,2,2,2,2,1,1,1,No (Fall)
+BIG 032,Big Creek,November,2013,1,1,1,1,1,1,1,No (Fall)
+569746,Chestatee R,May,2014,8,8,8,6,6,6,8,Yes
+574109,Chestatee R,May,2014,11,10,11,7,7,7,10,Yes
+567320,Chestatee R,May,2014,2,2,2,1,2,2,2,Yes
+578722,Chestatee R,May,2014,3,3,3,3,3,3,3,Yes
+572794,Chestatee R,May,2014,4,3,4,3,3,3,4,Yes
+560272,Chestatee R,May,2014,2,2,2,1,1,1,2,Yes
+572836,Chestatee R,May,2014,5,5,5,4,4,4,5,No
+573812,Chestatee R,May,2014,8,10,10,6,5,6,9,Yes
+324183,Chestatee R,May,2014,5,6,6,5,4,5,5,Yes
+563825,Chestatee R,May,2014,9,10,9,8,6,7,8,Yes
+557728,Chestatee R,May,2014,3,4,3,2,2,2,3,No
+562391,Chestatee R,May,2014,9,9,9,7,7,7,8,Yes
+549561,Chestatee R,May,2014,6,6,6,4,4,4,4,No
+551212,Chestatee R,May,2014,5,5,5,4,4,4,5,Yes
+567546,Chestatee R,May,2014,3,3,3,3,3,3,3,Yes
+553605,Chestatee R,May,2014,1,1,1,1,1,1,1,Yes
+568092,Chestatee R,May,2014,7,7,7,7,7,7,7,No
+549896,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+553913,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+571309,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+384458,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+548723,Chestatee R,May,2014,3,4,4,3,3,3,3,Yes
+553132,Chestatee R,May,2014,4,3,4,4,3,4,4,Yes
+320201,Chestatee R,May,2014,6,5,6,5,5,5,5,Yes
+553647,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+562993,Chestatee R,May,2014,3,4,4,3,3,3,3,Yes
+557675,Chestatee R,May,2014,6,6,6,6,6,6,6,No
+553942,Chestatee R,May,2014,3,3,3,3,3,3,3,Yes
+549590,Chestatee R,May,2014,4,4,4,3,3,3,3,Yes
+579393,Chestatee R,May,2014,8,8,8,6,6,6,8,Yes
+550882,Chestatee R,May,2014,2,2,2,2,2,2,2,Yes
+566663,Chestatee R,May,2014,4,3,2,4,3,4,4,No (younger by one yr)
+BIG 033,Big Creek,May,2014,2,2,2,2,2,2,2,No
+BIG 036,Big Creek,May,2014,3,2,2,2,2,2,2,Yes
+BIG 037,Big Creek,May,2014,2,1,2,1,1,1,2,Yes
+BIG 038,Big Creek,May,2014,2,1,2,1,1,1,1,No
+BIG 039,Big Creek,May,2014,2,2,2,1,1,1,2,Yes
+BIG 040,Big Creek,May,2014,3,2,3,2,2,2,3,Yes
+BIG 041,Big Creek,May,2014,8,8,8,5,6,5,6,Yes
+BIG 042,Big Creek,May,2014,2,2,2,1,1,1,2,Yes
+BIG 050,Big Creek,May,2014,6,8,8,7,7,7,7,Yes
+BIG 051,Big Creek,May,2014,9,10,11,9,8,9,9,Yes
+BIG 052,Big Creek,May,2014,9,10,10,9,8,9,10,Yes
+573865,Chestatee R,May,2014,5,5,5,5,5,5,5,Yes
+579479,Chestatee R,May,2014,5,5,5,5,5,5,5,Yes
+562271,Chestatee R,May,2014,2,2,2,1,1,1,1,Yes
+565097,Chestatee R,May,2014,8,8,8,8,8,8,8,Yes
+384615,Chestatee R,May,2014,8,8,8,7,7,7,8,Yes
+559526,Chestatee R,May,2014,5,6,7,5,5,5,6,Yes
+567301,Chestatee R,May,2014,3,3,3,3,3,3,3,Yes
+564176,Chestatee R,May,2014,4,4,4,5,4,5,5,Yes
+579838,Chestatee R,May,2014,7,6,5,5,5,5,5,No
+569952,Chestatee R,May,2014,3,3,3,3,3,3,3,Yes
+571202,Chestatee R,May,2014,13,14,14,10,10,10,12,Yes
+573547,Chestatee R,May,2014,6,6,6,4,5,5,6,No (younger by one yr)
+554563,Chestatee R,May,2014,5,4,5,4,4,4,5,No (younger by one yr)
+550934,Chestatee R,May,2014,9,8,8,6,7,7,9,Yes
+386172,Chestatee R,May,2014,5,5,5,5,6,5,5,No
+384438,Chestatee R,May,2014,3,3,3,3,4,3,3,Yes
+323553,Chestatee R,May,2014,4,4,4,4,4,4,4,Yes
+389515,Chestatee R,May,2014,2,2,2,1,2,1,2,Yes
+336846,Chestatee R,May,2014,2,2,2,1,2,2,2,Yes
+338873,Chestatee R,May,2014,2,2,2,1,2,1,1,No
+548541,Chestatee R,May,2014,3,2,2,2,2,2,2,No
+567250,Chestatee R,May,2014,1,2,1,1,1,1,1,No
+549347,Chestatee R,May,2014,2,2,2,1,2,2,2,Yes
+573944,Chestatee R,May,2014,3,3,3,2,2,2,3,Yes
+556818,Chestatee R,May,2014,3,3,3,2,2,2,3,Yes
+571269,Chestatee R,May,2014,7,5,6,4,4,4,6,Yes
+552128,Chestatee R,May,2014,6,6,6,5,5,5,6,Yes
+577316,Chestatee R,May,2014,8,7,6,6,6,6,6,Yes
+568284,Chestatee R,May,2014,4,4,4,3,3,3,4,Yes
+577689,Chestatee R,May,2014,6,4,4,3,4,4,4,Yes
+555186,Chestatee R,May,2014,3,2,2,2,2,2,2,Yes
+100784,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100744,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100769,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100708,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100759,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100751,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100722,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100736,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100754,Big Creek,May,2014,4,4,4,4,4,4,4,Yes
+100730,Big Creek,May,2014,3,3,3,2,2,2,2,Yes
+100767,Big Creek,May,2014,3,2,3,2,2,2,3,No (younger by one yr)
+100799,Big Creek,May,2014,3,2,1,2,2,2,2,Yes
+100712,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100749,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100740,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100728,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100773,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100706,Big Creek,May,2014,8,7,8,7,8,8,8,Yes
+100732,Big Creek,May,2014,5,5,5,5,6,5,5,Yes
+100748,Big Creek,May,2014,6,7,6,6,6,6,6,Yes
+100711,Big Creek,May,2014,10,8,8,8,8,8,8,No
+100785,Big Creek,May,2014,3,2,2,2,2,2,2,Yes
+100774,Big Creek,May,2014,3,3,3,3,3,3,3,Yes
+100779,Big Creek,May,2014,5,4,4,5,4,4,4,No
+100741,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100782,Big Creek,May,2014,8,8,8,7,7,7,6,Yes
+100701,Big Creek,May,2014,3,2,2,2,2,2,2,Yes
+100721,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100790,Big Creek,May,2014,9,9,9,9,10,10,8,Yes
+100734,Big Creek,May,2014,4,4,4,4,4,4,4,Yes
+100770,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100747,Big Creek,May,2014,9,7,8,8,9,8,8,Yes
+100764,Big Creek,May,2014,9,8,9,8,8,8,8,Yes
+100757,Big Creek,May,2014,4,4,4,3,4,3,3,Yes
+100709,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+100727,Big Creek,May,2014,2,3,2,2,3,2,2,Yes
+100771,Big Creek,May,2014,7,7,7,8,8,8,7,No
+100746,Big Creek,May,2014,7,7,7,7,7,7,7,Yes
+100700,Big Creek,May,2014,8,7,8,7,6,7,8,Yes
+100766,Big Creek,May,2014,2,2,2,2,2,2,2,Yes
+332427,Chattahoochee R,May,2014,4,4,4,4,4,4,4,Yes
+573321,Chattahoochee R,May,2014,6,7,7,7,7,7,7,Yes
+329210,Chattahoochee R,May,2014,6,6,6,6,6,6,6,Yes
+552982,Chattahoochee R,May,2014,2,2,2,2,2,2,2,Yes
+385285,Chattahoochee R,May,2014,8,9,9,11,10,10,9,Yes
+570670,Chattahoochee R,May,2014,9,10,9,9,9,9,9,Yes
+548786,Chattahoochee R,May,2014,5,5,5,6,6,6,7,No (younger by one yr)
+572206,Chattahoochee R,May,2014,4,4,4,5,4,5,4,Yes
+570367,Chattahoochee R,May,2014,5,4,4,5,4,4,4,Yes
+558424,Chattahoochee R,May,2014,5,5,5,6,5,5,5,Yes
+569027,Chattahoochee R,May,2014,7,7,7,7,7,7,7,Yes
+568330,Chattahoochee R,May,2014,4,5,5,6,6,6,4,Yes
+571363,Chattahoochee R,May,2014,11,11,11,11,10,10,11,Yes
+390048,Chattahoochee R,May,2014,8,8,8,8,8,8,8,Yes
+569301,Chattahoochee R,May,2014,6,8,8,9,7,8,8,Yes
+571693,Chattahoochee R,May,2014,6,7,8,7,6,6,7,Yes
+341588,Chattahoochee R,May,2014,7,7,7,8,7,8,7,No
+553502,Chattahoochee R,May,2014,9,12,11,10,11,11,11,Yes
+570203,Chattahoochee R,May,2014,3,3,3,4,3,4,3,Yes
+558981,Chattahoochee R,May,2014,4,5,5,6,5,5,5,Yes
+573249,Chattahoochee R,May,2014,2,1,2,1,1,1,1,No
+318907,Chattahoochee R,May,2014,9,10,10,9,10,10,10,Yes
+386853,Chattahoochee R,May,2014,8,8,8,8,8,8,8,Yes
+579302,Chattahoochee R,May,2014,2,2,2,2,2,2,2,Yes
+568927,Chattahoochee R,May,2014,5,5,5,6,5,5,5,Yes
+563008,Chattahoochee R,May,2014,6,6,6,7,7,7,7,Yes
+577252,Chattahoochee R,May,2014,6,7,8,8,7,7,7,No
+575630,Chattahoochee R,May,2014,5,5,5,6,6,6,6,Yes
+557865,Chattahoochee R,May,2014,4,5,4,5,6,5,4,No
+559426,Chattahoochee R,May,2014,7,8,7,6,7,7,7,Yes
+562319,Chattahoochee R,May,2014,6,9,8,7,7,7,8,Yes
+566748,Chattahoochee R,May,2014,4,4,4,4,5,4,4,Yes
+573963,Chattahoochee R,May,2014,3,3,3,3,3,3,3,Yes
+318622,Chattahoochee R,May,2014,5,5,5,5,5,5,5,Yes
+575746,Chattahoochee R,May,2014,6,8,8,6,7,7,8,Yes
+553956,Chattahoochee R,May,2014,5,5,5,4,4,4,3,Yes
+550695,Chattahoochee R,May,2014,3,3,3,3,3,3,3,Yes
+552654,Chattahoochee R,May,2014,3,3,3,3,3,3,3,Yes
+572750,Chattahoochee R,May,2014,7,8,7,7,7,7,7,Yes
+580523,Chattahoochee R,May,2014,4,4,4,4,4,4,4,Yes
+561894,Chattahoochee R,May,2014,4,4,4,4,4,4,4,Yes
+569183,Chattahoochee R,May,2014,4,5,4,5,4,4,4,Yes
+556746,Chattahoochee R,May,2014,5,5,5,5,5,5,5,Yes
+557810,Chattahoochee R,May,2014,3,2,2,2,2,2,2,No
+549641,Chattahoochee R,May,2014,4,6,4,5,5,5,4,Yes
+549383,Chattahoochee R,May,2014,3,4,3,3,3,3,3,No
+564819,Chattahoochee R,May,2014,6,8,6,6,7,6,6,Yes
+573317,Chattahoochee R,May,2014,3,2,2,2,2,2,2,Yes
+548946,Chattahoochee R,May,2014,7,8,7,7,8,7,7,Yes
+578646,Chattahoochee R,May,2014,10,11,10,8,10,9,7,Yes
+555582,Chattahoochee R,May,2014,5,8,8,7,8,8,8,Yes
+549135,Chattahoochee R,May,2014,4,6,7,5,5,5,5,Yes
+558032,Chattahoochee R,May,2014,4,3,3,4,4,4,3,Yes
+559464,Chattahoochee R,May,2014,7,8,7,6,7,7,7,Yes
+572144,Chattahoochee R,May,2014,9,11,9,8,8,8,8,Yes
+550513,Chattahoochee R,May,2014,7,9,7,7,7,7,7,Yes
+558275,Chattahoochee R,May,2014,7,8,7,7,6,7,7,Yes
+556895,Chattahoochee R,May,2014,5,6,5,6,5,6,4,No
+569146,Chattahoochee R,May,2014,2,2,2,2,2,2,2,Yes
+571930,Chattahoochee R,May,2014,11,11,11,9,11,11,11,Yes
+566307,Chattahoochee R,May,2014,2,2,2,2,2,2,2,Yes
+577797,Chattahoochee R,May,2014,2,2,2,3,3,3,2,Yes
+559709,Chattahoochee R,May,2014,2,1,1,2,2,2,1,No
+571658,Chattahoochee R,May,2014,4,4,4,4,4,4,4,Yes
+561310,Chattahoochee R,May,2014,4,4,4,4,4,4,4,Yes
+553481,Chattahoochee R,May,2014,2,1,1,1,2,1,1,Yes
+562920,Chattahoochee R,May,2014,1,1,1,1,1,1,1,Yes
+571229,Chattahoochee R,May,2014,11,14,11,13,13,13,11,Yes
+562209,Chattahoochee R,May,2014,4,4,4,5,5,5,5,No (younger by one yr)
+573658,Chattahoochee R,May,2014,3,3,3,4,4,4,3,Yes
+100769,Big Creek,October,2014,2,2,2,3,3,3,2,No (Fall)
+BIG 095,Big Creek,October,2014,3,2,3,3,3,3,3,No (younger by one yr)
+BIG 096,Big Creek,October,2014,3,2,3,3,3,3,3,No (younger by one yr)
+BIG 098,Big Creek,October,2014,2,2,2,3,3,3,3,No (younger by one yr)
+BIG 099,Big Creek,October,2014,2,2,2,3,3,3,3,No (younger by one yr)
+BIG 100,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 101,Big Creek,October,2014,1,2,2,2,2,2,2,No (Fall)
+BIG 102,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+100754,Big Creek,October,2014,5,6,5,6,6,6,5,No (Fall)
+100786,Big Creek,October,2014,2,2,2,3,3,3,2,No (Fall)
+100717,Big Creek,October,2014,2,2,2,3,4,3,3,No (Fall)
+BIG 103,Big Creek,October,2014,3,3,3,4,4,4,3,No (Fall)
+BIG 104,Big Creek,October,2014,1,1,1,2,2,2,1,No (younger by one yr)
+BIG 105,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 106,Big Creek,October,2014,1,1,1,1,1,1,1,No (younger by one yr)
+BIG 107,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 108,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 109,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 110,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+100779,Big Creek,October,2014,7,7,7,5,5,5,6,No (younger by one yr)
+100738,Big Creek,October,2014,2,3,3,3,3,3,3,No (younger by one yr)
+100732,Big Creek,October,2014,7,6,7,8,7,6,6,No (younger by one yr)
+BIG 111,Big Creek,October,2014,7,7,7,6,6,6,6,No (younger by one yr)
+BIG 112,Big Creek,October,2014,3,3,3,4,4,4,3,No (Fall)
+BIG 113,Big Creek,October,2014,3,3,3,3,3,3,3,No (Fall)
+BIG 115,Big Creek,October,2014,1,1,1,2,2,2,1,No (Fall)
+BIG 116,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 117,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 118,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 119,Big Creek,October,2014,0,0,0,0,1,1,0,No (Fall)
+BIG 120,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 121,Big Creek,October,2014,0,0,0,0,1,0,0,No (Fall)
+BIG 122,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 123,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 124,Big Creek,October,2014,0,0,0,1,0,1,0,No (Fall)
+BIG 125,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 126,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 127,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 128,Big Creek,October,2014,0,1,0,2,2,2,0,No (Fall)
+BIG 129,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 130,Big Creek,October,2014,3,3,3,4,4,4,3,No (Fall)
+BIG 131,Big Creek,October,2014,3,3,3,4,4,4,4,No (younger by one yr)
+BIG 132,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 133,Big Creek,October,2014,0,1,0,1,1,1,0,No (Fall)
+BIG 134,Big Creek,October,2014,0,1,0,1,1,1,0,No (Fall)
+BIG 135,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 136,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 137,Big Creek,October,2014,0,1,0,1,1,1,1,No (younger by one yr)
+BIG 138,Big Creek,October,2014,3,4,3,4,4,4,4,No (younger by one yr)
+BIG 139,Big Creek,October,2014,2,4,5,3,3,3,3,No (younger by one yr)
+BIG 140,Big Creek,October,2014,4,5,4,4,4,4,4,No (younger by one yr)
+BIG 141,Big Creek,October,2014,0,1,0,1,1,1,1,No (younger by one yr)
+BIG 142,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 143,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 144,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 145,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 146,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 147,Big Creek,October,2014,3,4,3,4,4,4,3,No (Fall)
+BIG 148,Big Creek,October,2014,3,2,2,3,4,3,2,No (Fall)
+BIG 149,Big Creek,October,2014,5,4,3,4,4,4,3,No (Fall)
+BIG 150,Big Creek,October,2014,3,4,3,4,3,4,3,No (Fall)
+BIG 151,Big Creek,October,2014,1,1,1,1,1,1,1,No (younger by one yr)
+BIG 152,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 153,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 154,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 155,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 156,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 157,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 158,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 161,Big Creek,October,2014,2,2,2,3,2,3,2,No (younger by one yr)
+BIG 162,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 163,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 164,Big Creek,October,2014,0,0,0,1,1,1,0,No (Fall)
+BIG 165,Big Creek,October,2014,3,3,3,3,3,3,3,No (younger by one yr)
+A 001,Big Creek,October,2014,3,3,3,3,3,3,3,No (younger by one yr)
+A 002,Big Creek,October,2014,2,3,3,2,2,2,2,No (Fall)
+A 003,Big Creek,October,2014,3,4,2,3,3,3,3,No (younger by one yr)
+A 004,Big Creek,October,2014,3,4,3,3,3,3,3,No (younger by one yr)
+BIG 166,Big Creek,October,2014,4,5,3,3,4,3,3,No (Fall)
+BIG 167,Big Creek,October,2014,3,3,3,2,3,2,3,No (younger by one yr)
+A 006,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 007,Big Creek,October,2014,1,1,1,0,0,0,1,No (younger by one yr)
+A 008,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 009,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+BIG 168,Big Creek,October,2014,4,4,4,3,3,3,3,No (Fall)
+A 010,Big Creek,October,2014,1,1,1,0,0,0,1,No (younger by one yr)
+A 011,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 012,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 013,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 014,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 015,Big Creek,October,2014,2,2,2,1,1,1,2,No (younger by one yr)
+A 016,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 017,Big Creek,October,2014,4,4,4,2,3,2,4,No (younger by two yrs)
+A 018,Big Creek,October,2014,2,3,2,2,2,2,2,No (Fall)
+A 019,Big Creek,October,2014,2,3,2,2,2,2,2,No (Fall)
+A 020,Big Creek,October,2014,1,1,1,0,0,0,1,No (younger by one yr)
+A 021,Big Creek,October,2014,1,1,1,1,0,1,1,No (younger by one yr)
+A 022,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 023,Big Creek,October,2014,3,4,2,3,3,3,4,No (younger by one yr)
+A 024,Big Creek,October,2014,3,3,3,2,2,2,3,No (younger by one yr)
+A 025,Big Creek,October,2014,3,3,3,3,3,3,3,No (younger by one yr)
+A 026,Big Creek,October,2014,3,4,3,2,2,2,4,No (younger by two yrs)
+A 027,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 028,Big Creek,October,2014,2,1,1,1,2,1,1,No (younger by one yr)
+A 029,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 030,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 031,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 032,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 033,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 034,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 035,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 036,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 037,Big Creek,October,2014,10,9,10,8,6,7,9,No (younger by two yrs)
+A 038,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 039,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 040,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 041,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 042,Big Creek,October,2014,1,1,1,0,1,1,1,No (younger by one yr)
+A 043,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 044,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 045,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 046,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 047,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 048,Big Creek,October,2014,3,2,4,3,2,2,3,No (younger by one yr)
+A 049,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 050,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 051,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 052,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 053,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 054,Big Creek,October,2014,1,0,0,0,0,0,0,No (Fall)
+A 055,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 056,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 057,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 058,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 059,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 060,Big Creek,October,2014,0,1,0,0,0,0,0,No (Fall)
+A 061,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 062,Big Creek,October,2014,4,3,3,3,3,3,3,No (Fall)
+A 063,Big Creek,October,2014,0,0,0,0,1,0,0,No (Fall)
+A 064,Big Creek,October,2014,0,0,0,0,0,0,0,No (Fall)
+A 065,Big Creek,October,2014,11,11,11,12,12,12,12,No (Fall)
+051518,Big Creek,May,2015,2,3,3,2,2,2,2,Yes
+100759,Big Creek,May,2015,4,5,4,3,3,3,3,No
+051542,Big Creek,May,2015,3,2,2,2,2,2,2,Yes
+100707,Big Creek,May,2015,2,3,3,2,2,2,2,Yes
+051535,Big Creek,May,2015,1,2,1,1,2,1,1,Yes
+051591,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051488,Big Creek,May,2015,1,1,1,0,1,0,1,Yes
+100717,Big Creek,May,2015,3,4,3,3,3,3,3,Yes
+051550,Big Creek,May,2015,2,2,2,2,2,2,2,Yes
+051553,Big Creek,May,2015,3,3,3,3,3,3,3,Yes
+051458,Big Creek,May,2015,1,0,1,0,0,0,1,Yes
+051520,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051528,Big Creek,May,2015,1,1,1,1,0,0,1,Yes
+051536,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051422,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051564,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051523,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051484,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051577,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051562,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051521,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051589,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051509,Big Creek,May,2015,8,9,8,7,7,7,8,Yes
+100732,Big Creek,May,2015,10,9,9,8,7,7,9,Yes
+051414,Big Creek,May,2015,2,3,2,2,2,2,2,Yes
+051449,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051543,Big Creek,May,2015,1,1,1,1,0,0,1,Yes
+051515,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051541,Big Creek,May,2015,1,0,1,0,0,0,0,No
+051572,Big Creek,May,2015,1,0,1,0,0,0,0,No
+100703,Big Creek,May,2015,9,9,9,7,7,7,8,Yes
+051571,Big Creek,May,2015,10,8,7,6,6,6,7,Yes
+051504,Big Creek,May,2015,1,1,1,0,0,0,0,No
+100711,Big Creek,May,2015,10,12,11,9,9,9,11,Yes
+100721,Big Creek,May,2015,5,4,4,3,3,3,4,Yes
+051453,Big Creek,May,2015,3,3,3,3,2,3,3,Yes
+051567,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051568,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051560,Big Creek,May,2015,2,2,2,1,1,1,1,Yes
+100750,Big Creek,May,2015,11,9,9,7,7,7,8,Yes
+051584,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051462,Big Creek,May,2015,0,1,1,0,0,0,0,No
+051466,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051533,Big Creek,May,2015,0,0,0,0,0,0,0,No
+051522,Big Creek,May,2015,11,8,9,8,7,7,8,Yes
+051510,Big Creek,May,2015,10,10,10,8,9,8,12,Yes
+051569,Big Creek,May,2015,5,3,3,2,2,2,3,Yes
+100727,Big Creek,May,2015,5,4,4,3,3,3,4,Yes
+051511,Big Creek,May,2015,0,0,0,0,0,0,0,No
+051583,Big Creek,May,2015,0,0,0,0,0,0,0,No
+051574,Big Creek,May,2015,1,0,1,0,0,0,0,No
+100748,Big Creek,May,2015,10,8,8,6,6,6,6,No
+051514,Big Creek,May,2015,2,2,2,1,1,1,1,Yes
+051516,Big Creek,May,2015,0,0,0,0,0,0,0,No
+051540,Big Creek,May,2015,8,5,6,4,5,5,4,No
+100772,Big Creek,May,2015,2,2,2,2,2,2,2,Yes
+051599,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051582,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051408,Big Creek,May,2015,1,1,1,0,0,0,1,Yes
+100778,Big Creek,May,2015,9,7,10,8,8,8,9,Yes
+100754,Big Creek,May,2015,8,5,6,5,6,6,6,Yes
+051559,Big Creek,May,2015,6,4,4,4,4,4,4,Yes
+051474,Big Creek,May,2015,3,2,2,2,2,2,2,Yes
+051596,Big Creek,May,2015,4,3,3,3,4,4,3,Yes
+100786,Big Creek,May,2015,2,2,2,2,1,2,2,Yes
+051448,Big Creek,May,2015,2,1,1,1,1,1,1,Yes
+051565,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051505,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+100742,Big Creek,May,2015,12,11,11,9,9,9,10,Yes
+051587,Big Creek,May,2015,3,3,3,3,2,2,3,Yes
+051503,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051563,Big Creek,May,2015,1,1,1,1,1,1,1,yes
+051450,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051484,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+100732,Big Creek,May,2015,9,7,7,6,7,7,7,Yes
+100774,Big Creek,May,2015,6,5,5,4,4,4,5,Yes
+051498,Big Creek,May,2015,5,4,4,3,4,4,4,Yes
+051467,Big Creek,May,2015,3,3,3,2,2,2,2,Yes
+100712,Big Creek,May,2015,4,3,3,3,3,3,3,Yes
+051434,Big Creek,May,2015,3,3,3,2,2,2,3,Yes
+100705,Big Creek,May,2015,2,2,2,2,2,2,2,Yes
+051593,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051530,Big Creek,May,2015,11,9,8,8,8,8,8,Yes
+100729,Big Creek,May,2015,4,4,4,3,3,3,3,Yes
+051570,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051485,Big Creek,May,2015,5,4,3,3,3,3,3,No
+051539,Big Creek,May,2015,4,4,4,3,3,3,3,Yes
+051594,Big Creek,May,2015,1,1,1,1,0,0,0,No
+051508,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051579,Big Creek,May,2015,1,1,1,1,0,0,0,No
+051546,Big Creek,May,2015,1,1,1,1,0,0,1,Yes
+051527,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051590,Big Creek,May,2015,1,1,1,0,0,0,0,No
+100760,Big Creek,May,2015,10,10,10,9,8,9,9,Yes
+051526,Big Creek,May,2015,2,2,2,2,2,2,2,No (younger by one yr)
+051532,Big Creek,May,2015,4,3,2,3,3,3,2,Yes
+051556,Big Creek,May,2015,1,1,1,1,1,1,1,Yes
+051555,Big Creek,May,2015,1,1,1,0,0,0,0,No
+051506,Big Creek,May,2015,2,1,1,1,1,1,1,Yes
+lastfish,Big Creek,May,2015,5,4,4,3,3,3,3,No
+565146,Chestatee R,May,2015,5,5,5,4,4,4,4,Yes
+562993,Chestatee R,May,2015,6,5,5,6,6,6,5,Yes
+572287,Chestatee R,May,2015,11,10,9,9,8,8,8,Yes
+549094,Chestatee R,May,2015,5,4,4,4,4,4,4,Yes
+579063,Chestatee R,May,2015,3,3,3,3,3,3,3,Yes
+576779,Chestatee R,May,2015,6,4,4,5,5,5,5,Yes
+548634,Chestatee R,May,2015,4,5,4,5,4,4,4,Yes
+329536,Chestatee R,May,2015,4,4,4,4,4,4,4,Yes
+573063,Chestatee R,May,2015,5,4,3,4,4,4,3,Yes
+340885,Chestatee R,May,2015,4,3,3,3,3,3,3,Yes
+381825,Chestatee R,May,2015,3,3,3,3,2,2,3,Yes
+554563,Chestatee R,May,2015,5,5,5,5,5,5,5,Yes
+561446,Chestatee R,May,2015,8,8,8,6,6,6,6,Yes
+548247,Chestatee R,May,2015,10,10,10,9,9,9,9,No
+559220,Chestatee R,May,2015,6,5,4,4,4,4,4,Yes
+381215,Chestatee R,May,2015,5,4,4,4,4,4,4,Yes
+574281,Chestatee R,May,2015,5,4,4,4,4,4,4,Yes
+555619,Chestatee R,May,2015,8,9,9,10,9,11,10,Yes
+566441,Chestatee R,May,2015,7,7,7,6,6,6,6,Yes
+571751,Chestatee R,May,2015,6,8,7,6,6,6,7,Yes
+555449,Chestatee R,May,2015,2,3,2,3,3,3,3,Yes
+548878,Chestatee R,May,2015,9,8,9,7,8,8,9,Yes
+323553,Chestatee R,May,2015,4,3,4,4,4,4,4,Yes
+569346,Chestatee R,May,2015,3,3,3,3,3,3,3,Yes
+569507,Chestatee R,May,2015,4,4,4,4,3,4,4,Yes
+547808,Chestatee R,May,2015,6,7,6,4,4,4,5,Yes
+549561,Chestatee R,May,2015,6,6,6,5,5,5,6,Yes
+555362,Chestatee R,May,2015,6,6,6,7,6,6,6,Yes
+322401,Chestatee R,May,2015,3,2,2,2,2,2,2,Yes
+389950,Chestatee R,May,2015,3,3,3,2,2,2,3,Yes
+575011,Chestatee R,May,2015,8,7,8,6,6,6,8,Yes
+557642,Chestatee R,May,2015,4,4,4,4,4,4,4,Yes
+568355,Chestatee R,May,2015,7,9,7,7,7,7,7,No
+561798,Chestatee R,May,2015,6,7,7,6,6,6,8,Yes
+553670,Chestatee R,May,2015,3,3,3,2,2,2,3,Yes
+322265,Chestatee R,May,2015,3,3,3,2,2,2,3,Yes
+571309,Chestatee R,May,2015,3,3,3,2,2,2,3,Yes
+384458,Chestatee R,May,2015,2,3,2,2,2,2,2,Yes
+568005,Chestatee R,May,2015,4,3,2,2,2,2,2,Yes
+580024,Chestatee R,May,2015,8,8,8,6,7,6,7,Yes
+549505,Chestatee R,May,2015,3,3,3,2,3,3,3,Yes
+572287,Chestatee R,May,2015,11,10,10,10,10,10,10,Yes
+564379,Chestatee R,May,2015,5,4,4,4,4,4,4,Yes
+552819,Chestatee R,May,2015,6,6,6,5,6,6,6,Yes
+564568,Chestatee R,May,2015,2,2,2,2,2,2,2,Yes
+387225,Chestatee R,May,2015,9,9,9,6,6,6,8,Yes
+559467,Chestatee R,May,2015,7,6,6,6,5,6,6,Yes
+315739,Chestatee R,May,2015,3,3,3,3,2,2,3,Yes
+557868,Chestatee R,May,2015,3,3,3,2,2,2,3,Yes
+548351,Chestatee R,May,2015,9,8,8,7,7,7,8,Yes
+553003,Chestatee R,May,2015,3,3,3,3,3,3,3,Yes
+557549,Chestatee R,May,2015,1,1,1,1,0,0,1,Yes
+567301,Chestatee R,May,2015,4,4,4,4,4,4,4,Yes
+565097,Chestatee R,May,2015,11,10,11,10,8,9,10,Yes
+553913,Chestatee R,May,2015,3,3,3,3,3,3,3,Yes
+576266,Chestatee R,May,2015,2,2,2,2,2,2,2,No
+551560,Chestatee R,May,2015,3,2,2,2,2,2,2,Yes
+573812,Chestatee R,May,2015,9,9,9,9,9,9,9,Yes
+569727,Chestatee R,May,2015,3,3,3,3,3,3,3,Yes
+572997,Chestatee R,May,2015,4,4,4,4,4,4,4,Yes
+556481,Chestatee R,May,2015,3,2,2,2,2,2,2,Yes
+579054,Chestatee R,May,2015,2,2,2,3,2,2,2,Yes
+560928,Chattahoochee R,May,2015,10,9,9,7,7,7,7,No
+567037,Chattahoochee R,May,2015,12,9,9,8,9,8,8,No
+005564,Chattahoochee R,May,2015,5,5,5,4,4,4,4,No
+005554,Chattahoochee R,May,2015,11,10,9,9,9,9,9,Yes
+558981,Chattahoochee R,May,2015,6,6,6,6,5,5,6,Yes
+005857,Chattahoochee R,May,2015,4,3,2,3,3,3,3,Yes
+005884,Chattahoochee R,May,2015,3,3,3,2,3,2,3,Yes
+549641,Chattahoochee R,May,2015,6,5,5,4,5,4,5,Yes
+005509,Chattahoochee R,May,2015,2,1,2,1,2,1,2,Yes
+005823,Chattahoochee R,May,2015,11,9,10,7,9,7,9,No
+005652,Chattahoochee R,May,2015,11,9,10,9,8,9,12,No (younger by one yr)
+005891,Chattahoochee R,May,2015,4,3,3,3,4,3,3,Yes
+558424,Chattahoochee R,May,2015,7,5,5,5,4,5,5,Yes
+005793,Chattahoochee R,May,2015,5,5,5,4,5,4,5,Yes
+005523,Chattahoochee R,May,2015,5,5,5,5,5,5,5,Yes
+005754,Chattahoochee R,May,2015,6,7,6,6,6,6,6,Yes
+005820,Chattahoochee R,May,2015,7,6,6,5,5,5,5,No
+005640,Chattahoochee R,May,2015,7,6,4,5,5,5,6,Yes
+570367,Chattahoochee R,May,2015,5,5,5,5,4,5,5,Yes
+005648,Chattahoochee R,May,2015,4,3,3,4,4,4,3,Yes
+005709,Chattahoochee R,May,2015,4,4,4,3,3,3,3,Yes
+005759,Chattahoochee R,May,2015,5,4,4,4,4,4,4,Yes
+005798,Chattahoochee R,May,2015,3,3,3,3,3,3,3,Yes
+005912,Chattahoochee R,May,2015,2,3,2,2,2,2,2,Yes
+005516,Chattahoochee R,May,2015,3,3,3,2,3,2,3,Yes
+005868,Chattahoochee R,May,2015,11,10,9,7,8,9,9,Yes
+005792,Chattahoochee R,May,2015,3,3,3,3,3,3,3,Yes
+005616,Chattahoochee R,May,2015,4,3,2,3,4,3,3,Yes
+005832,Chattahoochee R,May,2015,8,7,6,6,6,6,6,Yes
+005629,Chattahoochee R,May,2015,9,8,9,7,8,8,11,Yes
+005747,Chattahoochee R,May,2015,6,6,6,6,6,6,6,Yes
+005921,Chattahoochee R,May,2015,8,8,8,7,7,7,8,Yes
+570367,Chattahoochee R,May,2015,4,4,4,5,5,5,5,Yes
+005757,Chattahoochee R,May,2015,8,9,9,7,7,7,10,No (younger by one yr)
+005883,Chattahoochee R,May,2015,3,4,2,2,2,2,2,Yes
+005631,Chattahoochee R,May,2015,5,5,5,4,4,4,4,Yes
+005965,Chattahoochee R,May,2015,5,5,5,5,5,5,5,Yes
+005776,Chattahoochee R,May,2015,9,8,10,10,9,9,9,No
+005635,Chattahoochee R,May,2015,4,3,3,4,4,4,3,Yes
+005938,Chattahoochee R,May,2015,8,9,9,8,8,8,8,No
+005871,Chattahoochee R,May,2015,5,4,5,5,5,5,5,Yes
+005843,Chattahoochee R,May,2015,2,3,3,3,3,3,3,Yes
+005807,Chattahoochee R,May,2015,1,1,1,0,0,0,1,Yes
+051517,Big Creek,May,2016,4,4,4,4,4,4,4,yes
+051599,Big Creek,May,2016,3,2,2,3,2,2,2,no
+051586,Big Creek,May,2016,2,2,2,2,2,2,2,yes
+051502,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051598,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051534,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051547,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051538,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051551,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051592,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051554,Big Creek,May,2016,1,1,1,2,1,1,1,no
+051585,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051552,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051578,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051597,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051545,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051581,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051537,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051561,Big Creek,May,2016,2,2,2,2,1,1,1,no
+051576,Big Creek,May,2016,1,1,1,2,1,1,1,no
+051566,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061522,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061544,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061542,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061558,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061548,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061582,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061516,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061586,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061518,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061555,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061506,Big Creek,May,2016,10,9,9,11,9,9,9,yes (assumed)
+100754,Big Creek,May,2016,8,9,7,7,7,7,7,yes
+051559,Big Creek,May,2016,6,6,6,8,5,5,5,yes (assumed)
+051596,Big Creek,May,2016,6,6,6,6,6,6,6,yes
+061543,Big Creek,May,2016,4,4,4,4,3,3,3,no
+061502,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061503,Big Creek,May,2016,2,2,2,2,2,2,2,yes
+061545,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061520,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061597,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061519,Big Creek,May,2016,1,0,0,1,1,1,1,no
+061579,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061537,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061527,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061535,Big Creek,May,2016,1,1,1,2,1,1,1,no
+061598,Big Creek,May,2016,1,2,1,1,1,1,1,no
+061533,Big Creek,May,2016,1,2,1,1,1,1,1,no
+061505,Big Creek,May,2016,1,2,1,1,1,1,1,no
+061592,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061546,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061512,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061588,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061510,Big Creek,May,2016,1,2,1,1,1,1,1,no
+061549,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061509,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061547,Big Creek,May,2016,1,1,1,0,1,1,1,no
+061569,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061587,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061591,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061541,Big Creek,May,2016,9,9,9,8,8,8,7,no
+100738,Big Creek,May,2016,5,5,5,5,5,5,5,yes
+051498,Big Creek,May,2016,5,4,4,4,4,4,4,yes (assumed)
+061551,Big Creek,May,2016,3,2,2,2,2,2,2,no
+061570,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061532,Big Creek,May,2016,3,3,3,3,3,3,3,yes
+051439,Big Creek,May,2016,2,2,2,2,1,1,2,yes
+051572,Big Creek,May,2016,2,1,1,2,1,1,1,no
+061504,Big Creek,May,2016,3,3,3,3,2,2,3,yes
+061530,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061599,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061578,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061540,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061562,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061528,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061538,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061559,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061573,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061500,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061508,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061513,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061511,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061575,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061568,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061536,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061590,Big Creek,May,2016,11,11,11,12,10,11,11,yes (assumed)
+061523,Big Creek,May,2016,7,7,7,7,7,7,7,yes
+061561,Big Creek,May,2016,9,11,10,10,9,9,10,yes (assumed)
+051530,Big Creek,May,2016,7,7,7,8,7,7,7,yes
+100774,Big Creek,May,2016,6,5,5,6,6,6,5,yes (assumed)
+100727,Big Creek,May,2016,6,5,5,5,5,5,5,yes
+100729,Big Creek,May,2016,5,5,5,5,4,4,5,yes
+051453,Big Creek,May,2016,5,4,4,4,4,4,4,yes (assumed)
+061594,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051504,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051568,Big Creek,May,2016,2,2,2,1,1,1,1,yes (assumed)
+061581,Big Creek,May,2016,2,2,2,2,2,2,2,yes
+061595,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061552,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061550,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061593,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061566,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061514,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061531,Big Creek,May,2016,9,9,9,8,8,8,8,yes
+051485,Big Creek,May,2016,5,5,5,5,5,5,5,yes
+100721,Big Creek,May,2016,5,5,5,5,5,5,5,yes
+100794,Big Creek,May,2016,5,6,5,6,5,5,5,yes
+061564,Big Creek,May,2016,2,3,2,2,2,2,2,no
+051590,Big Creek,May,2016,2,2,2,2,2,2,2,no
+061553,Big Creek,May,2016,2,2,2,2,2,2,2,no
+061517,Big Creek,May,2016,3,3,3,3,2,2,2,yes
+061526,Big Creek,May,2016,2,1,1,1,1,1,1,no
+061576,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061515,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061571,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061557,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061563,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061521,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051510,Big Creek,May,2016,9,8,9,10,9,9,9,yes
+061577,Big Creek,May,2016,8,8,8,6,7,7,8,yes
+100768,Big Creek,May,2016,7,6,6,7,6,7,7,yes
+061539,Big Creek,May,2016,4,4,4,5,5,5,4,no
+051532,Big Creek,May,2016,4,4,4,4,6,4,4,no
+061524,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051575,Big Creek,May,2016,5,5,5,6,6,6,6,no
+061529,Big Creek,May,2016,5,5,5,5,5,5,5,yes
+051579,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051448,Big Creek,May,2016,3,2,3,2,2,2,2,no
+061572,Big Creek,May,2016,1,1,1,1,1,1,1,no
+061567,Big Creek,May,2016,3,3,3,2,3,2,2,yes (assumed)
+061507,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG269,Big Creek,May,2016,5,5,5,5,5,5,5,yes
+BIG270,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG273,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG275,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG276,Big Creek,May,2016,4,4,4,4,4,4,4,yes
+BIG277,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG278,Big Creek,May,2016,6,6,6,6,6,6,6,yes
+BIG279,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG280,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG284,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG285,Big Creek,May,2016,1,1,1,1,1,1,1,no
+100701,Big Creek,May,2016,4,4,4,4,4,4,4,no
+BIG287,Big Creek,May,2016,4,3,4,4,3,3,4,yes
+BIG331,Big Creek,May,2016,2,2,2,3,2,2,2,no
+BIG332,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG317,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG322,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG320,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG299,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG313,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG305,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG316,Big Creek,May,2016,1,1,1,1,1,1,1,no
+100711,Big Creek,May,2016,9,9,9,8,10,9,9,yes (assumed)
+100778,Big Creek,May,2016,7,7,7,8,8,8,6,yes
+100774,Big Creek,May,2016,6,6,6,6,6,6,6,yes (assumed)
+BIG295,Big Creek,May,2016,7,7,7,9,7,7,7,yes
+BIG286,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG311,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG289,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG297,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG293,Big Creek,May,2016,2,2,2,2,2,2,2,no
+BIG294,Big Creek,May,2016,1,1,1,1,1,1,1,no
+051466,Big Creek,May,2016,2,2,2,2,2,2,2,no
+100703,Big Creek,May,2016,8,7,8,7,7,7,7,yes
+BIG321,Big Creek,May,2016,6,4,5,5,5,5,5,no
+BIG325,Big Creek,May,2016,6,7,6,7,6,5,6,yes
+051510,Big Creek,May,2016,10,10,10,9,9,9,9,yes (assumed)
+100747,Big Creek,May,2016,8,6,7,8,9,7,7,yes (assumed)
+BIG309,Big Creek,May,2016,2,2,2,2,2,2,2,no
+BIG303,Big Creek,May,2016,1,1,1,1,1,1,1,no
+BIG301,Big Creek,May,2016,8,8,8,7,7,7,8,yes
+051532,Big Creek,May,2016,3,3,3,4,4,4,3,yes
+051480,Big Creek,May,2016,2,2,2,2,2,2,2,no
+051564,Big Creek,May,2016,2,2,2,2,2,2,2,no
+BIG300,Big Creek,May,2016,1,2,1,1,1,1,1,no
+BIG291,Big Creek,May,2016,1,1,1,1,1,1,1,no
+005665,Chestatee R,May,2016,9,10,8,9,9,9,8,yes
+564379,Chestatee R,May,2016,7,6,6,6,7,5,5,yes (assumed)
+577316,Chestatee R,May,2016,6,5,7,6,6,6,6,no
+005622,Chestatee R,May,2016,5,5,5,4,4,4,4,no
+005876,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+548634,Chestatee R,May,2016,7,7,7,7,7,7,7,yes
+005538,Chestatee R,May,2016,4,4,4,5,3,4,4,yes
+005944,Chestatee R,May,2016,11,11,11,11,10,10,10,no
+005653,Chestatee R,May,2016,3,4,4,4,4,4,4,no
+565146,Chestatee R,May,2016,2,3,3,2,2,2,2,no
+005500,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+572002,Chestatee R,May,2016,10,10,10,12,10,10,10,yes
+579478,Chestatee R,May,2016,5,6,6,8,6,7,7,no
+005584,Chestatee R,May,2016,7,6,7,7,7,7,7,yes
+005663,Chestatee R,May,2016,6,6,6,7,6,6,6,yes
+005888,Chestatee R,May,2016,8,8,8,9,7,7,9,yes
+565097,Chestatee R,May,2016,9,8,10,10,10,10,10,yes
+005620,Chestatee R,May,2016,5,4,4,4,5,4,4,no
+005979,Chestatee R,May,2016,5,4,4,5,5,5,5,no
+573812,Chestatee R,May,2016,7,8,8,8,8,8,8,yes
+005863,Chestatee R,May,2016,5,5,5,6,5,5,5,no
+005901,Chestatee R,May,2016,6,6,6,5,6,5,6,yes
+005638,Chestatee R,May,2016,4,4,4,4,5,4,4,yes
+005749,Chestatee R,May,2016,6,4,5,5,5,5,5,no
+005958,Chestatee R,May,2016,4,4,4,5,4,4,4,yes (assumed)
+568005,Chestatee R,May,2016,3,3,3,3,3,3,3,yes
+005875,Chestatee R,May,2016,5,4,5,5,5,5,5,no
+561446,Chestatee R,May,2016,7,6,7,6,5,5,5,yes (assumed)
+005795,Chestatee R,May,2016,1,1,1,2,2,2,1,no
+579838,Chestatee R,May,2016,6,5,7,6,6,6,7,yes
+005681,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+005963,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+005968,Chestatee R,May,2016,2,2,2,2,1,1,2,no
+340885,Chestatee R,May,2016,3,3,3,3,3,3,3,no
+005641,Chestatee R,May,2016,5,4,5,5,4,5,5,yes
+323553,Chestatee R,May,2016,5,5,5,5,4,4,6,yes
+005942,Chestatee R,May,2016,3,3,3,3,3,3,3,yes
+005562,Chestatee R,May,2016,4,3,3,4,3,3,3,no
+005808,Chestatee R,May,2016,5,4,5,5,4,4,5,yes
+387225,Chestatee R,May,2016,6,6,6,6,6,6,6,yes (assumed)
+573063,Chestatee R,May,2016,3,3,3,4,3,3,3,no
+005720,Chestatee R,May,2016,4,4,4,4,4,4,4,yes
+CHE01,Chestatee R,May,2016,7,9,6,8,7,7,7,yes
+CHE02,Chestatee R,May,2016,5,4,4,5,4,4,4,yes
+CHE03,Chestatee R,May,2016,6,5,5,6,5,4,6,yes
+CHE04,Chestatee R,May,2016,1,1,1,1,1,1,1,no
+552128,Chestatee R,May,2016,5,6,5,6,5,4,6,yes
+CHE05,Chestatee R,May,2016,1,2,1,1,2,1,1,yes (assumed)
+569746,Chestatee R,May,2016,7,8,7,7,6,6,7,yes
+557675,Chestatee R,May,2016,6,7,6,6,5,6,6,yes
+CHE07,Chestatee R,May,2016,2,2,2,2,2,2,2,yes
+CHE08,Chestatee R,May,2016,1,1,1,1,1,1,1,no
+CHE09,Chestatee R,May,2016,4,4,4,4,4,4,4,no
+CHE10,Chestatee R,May,2016,8,8,8,7,7,7,9,yes
+CHE11,Chestatee R,May,2016,9,10,9,8,8,8,9,yes
+548878,Chestatee R,May,2016,8,9,8,8,8,8,8,yes (assumed)
+557642,Chestatee R,May,2016,4,4,4,4,3,4,4,yes
+548247,Chestatee R,May,2016,10,11,9,10,9,9,9,yes (assumed)
+565097,Chestatee R,May,2016,10,10,10,9,9,9,10,yes
+CHE12,Chestatee R,May,2016,3,3,3,3,3,3,3,no
+548351,Chestatee R,May,2016,9,8,8,8,7,8,8,yes (assumed)
+572002,Chestatee R,May,2016,10,9,9,9,8,9,9,yes (assumed)
+CHE13,Chestatee R,May,2016,1,1,1,1,1,1,1,no
+555449,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+CHE14,Chestatee R,May,2016,1,1,1,1,1,1,1,no
+CHE15,Chestatee R,May,2016,1,2,1,1,1,1,1,no
+CHE16,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+336846,Chestatee R,May,2016,3,2,3,2,2,2,3,yes
+CHE17,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+CHE18,Chestatee R,May,2016,5,5,5,5,5,5,5,yes
+CHE19,Chestatee R,May,2016,7,8,7,7,7,7,7,yes
+CHE20,Chestatee R,May,2016,2,2,2,2,2,2,2,no
+CHE21,Chestatee R,May,2016,2,2,2,2,1,1,2,no
+CHE22,Chestatee R,May,2016,1,1,1,1,1,1,1,no
+CHE23,Chestatee R,May,2016,1,1,1,0,1,1,1,no
+CHE24,Chestatee R,May,2016,10,10,10,9,8,8,7,yes (assumed)
