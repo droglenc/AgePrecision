@@ -1,4 +1,4 @@
-id,Fin_R1,Fin_R2,Fin_R3,Otolith_R1,Otolith_R2,Otolith_R3,Scale_R1,Scale_R2,Scale_R3
+id,finrays_R1,finrays_R2,finrays_R3,otoliths_R1,otoliths_R2,otoliths_R3,scales_R1,scales_R2,scales_R3
 1002,7,7,8,8,8,8,8,7,7
 1011,7,8,9,9,9,9,7,7,7
 1014-1,11,11,12,12,12,12,12,12,12

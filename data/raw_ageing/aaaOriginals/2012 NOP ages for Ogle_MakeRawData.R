@@ -1,9 +1,10 @@
 cat("\014")
 setwd(here::here())
-source("code/precisionData.R")
 library(readxl)
- 
-df <- read_excel("data/raw_ageing/originals/2012 NOP ages for Ogle.xlsx",
+library(dplyr)
+pth <- "data/raw_ageing/aaaOriginals/"
+
+df <- read_excel(paste0(pth,"2012 NOP ages for Ogle.xlsx"),
                  sheet = "NOP ages",skip=3,na=c("",".")) %>% 
   rename(id=ID,tl=TL,wt=Wt,
          cleithra_section_R1=`R1 SC age`,
@@ -22,8 +23,9 @@ df <- read_excel("data/raw_ageing/originals/2012 NOP ages for Ogle.xlsx",
          scale_R2=`R2 Scale age`,
          scale_R3=`R3 Scale age`) %>%
   select(-contains("R3")) %>% ## R3 was only used for discrepancies with R1 and R2
-  select(id,tl,wt,contains("cleithra"),contains("otolith"),contains("metapt"),contains("scale"))
-str(df)
+  select(id,tl,wt,contains("cleithra"),contains("otolith"),
+         contains("metapt"),contains("scale"))
+df
 write.csv(df,file="data/raw_ageing/blackwell_assessment_2016.csv",
           quote=FALSE,row.names=FALSE)
 

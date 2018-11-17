@@ -1,10 +1,10 @@
-#### SETUP #####################################################################
-cat("\014")
+cat("\014"); rm(list=ls())
 setwd(here::here())
-library(dplyr)
 library(readxl)
+library(dplyr)
+pth <- "data/raw_ageing/aaaOriginals/"
 
-df <- read_excel("data/raw_ageing/originals/Raw data for Derek Ogle Nov 2018.xlsx") %>%
+df <- read_excel(paste0(pth,"Raw data for Derek Ogle Nov 2018.xlsx")) %>%
   rename(species=Species,stock=Stock,id=`ID #`,year=`Sampling year`,
          whoto_RW_1=`RW Otolith age 1 (whole)`,
          whoto_RW_2=`RW Otolith age 2 (whole)`,
@@ -29,7 +29,10 @@ df <- read_excel("data/raw_ageing/originals/Raw data for Derek Ogle Nov 2018.xls
          pectoral_RW_3=`RW Pectoral fin age 3`,
          pectoral_NSC_1=`NSC pectoral fin age 1`,
          pectoral_NSC_2=`NSC pectoral fin age 2`,
-         pectoral_NSC_3=`NSC pectoral fin age 3`)
+         pectoral_NSC_3=`NSC pectoral fin age 3`) %>%
+  select(id,species,stock,year,contains("whoto"),
+         contains("sectoto"),contains("pelvic"),contains("pectoral"))
+df
 
 write.csv(df,file="data/raw_ageing/gallagher_comparison_2016.csv",
           quote=FALSE,row.names=FALSE)

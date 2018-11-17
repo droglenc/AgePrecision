@@ -1,4 +1,4 @@
-id,year,river,tl,wt,sex,scales_R1,scales_R2,scales_R3,anal_R1,anal_R2,anal_R3,otolith_R1,otolith_R2,otolith_R3,cleithra_R1,cleithra_R2,cleithra_R3
+id,year,river,tl,wt,sex,scales_R1,scales_R2,scales_R3,anal_R1,anal_R2,anal_R3,otoliths_R1,otoliths_R2,otoliths_R3,cleithra_R1,cleithra_R2,cleithra_R3
 BH1,2011,Barkhausen,NA,NA,Unknown,NA,NA,NA,NA,NA,NA,2,2,2,NA,NA,NA
 BH1,2011,Barkhausen,NA,NA,NA,NA,NA,NA,NA,NA,NA,2,2,2,NA,NA,NA
 BH10,2011,Barkhausen,NA,NA,Unknown,NA,NA,NA,NA,NA,NA,2,2,2,NA,NA,NA

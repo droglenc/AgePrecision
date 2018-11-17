@@ -1,4 +1,4 @@
-id,stream,species,date,tl,wt,sex,mat,r1,r2,r3
+id,stream,species,date,tl,wt,sex,mat,otoliths_R1,otoliths_R2,otoliths_R3
 102,Ash Creek,Brown Trout,2015-10-14,136,22,Unknown,Immature,1,1,1
 43,Ash Creek,Brown Trout,2015-10-07,138,25,Unknown,Immature,1,1,1
 69,Ash Creek,Brown Trout,2015-10-14,141,30,Male,NA,1,1,1

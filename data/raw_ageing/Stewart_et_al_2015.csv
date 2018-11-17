@@ -1,4 +1,4 @@
-id,loc,tl,r1,r2,consensus
+id,loc,tl,spines_R1,spines_R2,spines_CONSENSUS
 74-13,Oak Point,21.713,NA,1,1
 79-15,Evandale,25.2106,1,NA,1
 80-16,Long Reach,29.9105,2,NA,2
