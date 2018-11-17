@@ -6,7 +6,7 @@ pth <- "data/raw_ageing/aaaOriginals/"
 
 ## Did not include confidence ratings
 df <- read_excel(paste0(pth,"Klein et al._LMB data.xlsx"),
-                 sheet="Raw data",na=c("","N/A"),skip=1) %>%
+                 sheet="Raw data",na=c("","N/A","..","."),skip=1) %>%
   rename(id=`Structure ID`,species=`Species`,
          tl=`TL (mm)`,wt=`WT (g)`,true_Age=`True (known) Age`,
          otoliths_Tim=`Tim Age Estimate`,otoliths_Bryant=`Bryant Age Estimate`,

@@ -10,24 +10,24 @@ str(df)
 
 ( ly <- unique(df$locyr) )
 
-## !!! Copy the code below if more than one structure of comparisons
 #### XXXXXX ####################################################################
 ## Cycle through each location for scales
-species <- "Largemouth  Bass"
+species <- "Largemouth Bass"
 atype <- "between"
 strux <- "scales"
 strux2 <- ""
 proc <- "pressed-mounted"
 
 for (i in (ly)) {
+  cat(i,"\n")
   extra_suffix <- i
   
   df1 <- df %>%
     filterD(locyr==i) %>%
-    select(contains("scale")) %>%
+    select(contains("scales")) %>%
     filterD(complete.cases(.))
   
-  ap1 <- agePrecision(~scale_1+scale_2+scale_3,data=df1)
+  ap1 <- agePrecision(~scales_R1+scales_R2+scales_R3,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,
                          type=atype,var="SD")
@@ -43,21 +43,22 @@ for (i in (ly)) {
 
 #### XXXXXX ####################################################################
 ## Cycle through each location for scales
-species <- "Largemouth  Bass"
+species <- "Largemouth Bass"
 atype <- "between"
 strux <- "otoliths"
 strux2 <- "sagittae"
 proc <- "broken-burnt"
 
 for (i in (ly)) {
+  cat(i,"\n")
   extra_suffix <- i
   
   df1 <- df %>%
     filterD(locyr==i) %>%
-    select(contains("otolith")) %>%
+    select(contains("otoliths")) %>%
     filterD(complete.cases(.))
   
-  ap1 <- agePrecision(~otolith_1+otolith_2+otolith_3,data=df1)
+  ap1 <- agePrecision(~otoliths_R1+otoliths_R2+otoliths_R3,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,
                          type=atype,var="SD")

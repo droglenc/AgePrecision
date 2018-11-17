@@ -9,18 +9,16 @@ str(df)
 
 species <- "Muskellunge"
 atype <- "between"
-
-#### PELVIC FIN RAYS ###########################################################
 strux <- "finrays"
 strux2 <- "pelvic"
 proc <- "sectioned"
-
+extra_suffix <- ""
 
 df1 <- df %>%
-  select(ID,Brenden,Hale,Staples) %>%
+  select(contains("finrays")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~Brenden+Hale+Staples,data=df1)
+ap1 <- agePrecision(~finrays_Brenden+finrays_Hale+finrays_Staples,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -36,5 +34,6 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 

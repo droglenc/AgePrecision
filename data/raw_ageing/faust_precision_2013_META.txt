@@ -4,10 +4,12 @@ VARIABLES:
 id: Identification unique to each fish
 loc: Location (lake) of capture
 tl: Total length (mm)
-structure: Calcified structure used to estimate age
-R1: Estimated age of the structure by R1 reader
-R2: Estimated age of the structure by R2 reader
-R3: Estimated age of the structure by R3 reader
+otoliths_R1: Estimated age of the otoliths by R1 reader
+otoliths_R2: Estimated age of the otoliths by R2 reader
+otoliths_R3: Estimated age of the otoliths by R3 reader
+cleithra_R1: Estimated age of the cleithra by R1 reader
+cleithra_R2: Estimated age of the cleithra by R2 reader
+cleithra_R3: Estimated age of the cleithra by R3 reader
 
 NOTES:
 * File generated from "Faust et al. 2013 supplemental data.xlsx" file available from the journal.

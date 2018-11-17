@@ -3,13 +3,13 @@ SOURCE: Long, J.M., C.T. Holley, and A.T. Taylor. 2018. Evaluation of ageing acc
 VARIABLES:
 id: Identification number unique to each fish
 loc: Location of capture
-scale_AT_1: First estimated annuli count of scales by AT reader
-scale_AT_2: Second estimated annuli count of scales by AT reader
-scale_AT_final: Final estimated annuli count of scales by AT reader
-scale_CH_1: First estimated annuli count of scales by CH reader
-scale_CH_2: Second estimated annuli count of scales by CH reader
-scale_CH_final: Final estimated annuli count of scales by CH reader
-scale_consensus: Consensus annuli count from scales
+scales_AT_1: First estimated annuli count of scales by AT reader
+scales_AT_2: Second estimated annuli count of scales by AT reader
+scales_AT_final: Final estimated annuli count of scales by AT reader
+scales_CH_1: First estimated annuli count of scales by CH reader
+scales_CH_2: Second estimated annuli count of scales by CH reader
+scales_CH_final: Final estimated annuli count of scales by CH reader
+scale_CONSENSUS: Consensus annuli count from scales
 edgeIsAnnulus: Whether or not the scale margin was considered an annulus
 
 NOTES:

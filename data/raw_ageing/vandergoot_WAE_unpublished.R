@@ -7,16 +7,7 @@ nm <- "vandergoot_WAE_unpublished"       ## Name of study (actually name of file
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-
-## !!! Copy the code below if more than one structure of comparisons
 #### XXXXXX ####################################################################
-## Enter species name
-##       analysis type ("between" or "within")
-##       calcified structure (e.g., scales, otoliths, finrays, spines)
-##       More about scturcture (e.g., dorsal, pectoral)
-##       Process info (e.g., sectioned, crackburn, whole)
-##       Possible extra suffix for name ... sometimes needed if above is not
-##         adequate to make a unique filename (i.e., with "within" data)
 species <- "Walleye"
 atype <- "between"
 strux <- "otoliths"
@@ -25,10 +16,10 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("otolith")) %>%
+  select(contains("otoliths")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~otolith_CV+otolith_RZ+otolith_LB,data=df1)
+ap1 <- agePrecision(~otoliths_CV+otoliths_RZ+otoliths_LB,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -56,10 +47,10 @@ proc <- "pressed"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("scale")) %>%
+  select(contains("scales")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~scale_IR+scale_KK,data=df1)
+ap1 <- agePrecision(~scales_IR+scales_KK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -81,16 +72,16 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 #### XXXXXX ####################################################################
 species <- "Walleye"
 atype <- "between"
-strux <- "spine"
+strux <- "spines"
 strux2 <- "dorsal"
 proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("spine")) %>%
+  select(contains("spines")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~spine_WF+spine_TS,data=df1)
+ap1 <- agePrecision(~spines_WF+spines_TS,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

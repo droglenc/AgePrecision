@@ -13,9 +13,9 @@ scales_R3: Estimated age of scales by R3 reader
 anal_R1: Estimated age of anal fin ray by R1 reader
 anal_R2: Estimated age of anal fin ray by R2 reader
 anal_R3: Estimated age of anal fin ray by R3 reader
-otolith_R1: Estimated age of otolith by R1 reader
-otolith_R2: Estimated age of otolith by R2 reader
-otolith_R3: Estimated age of otolith by R3 reader
+otoliths_R1: Estimated age of otolith by R1 reader
+otoliths_R2: Estimated age of otolith by R2 reader
+otoliths_R3: Estimated age of otolith by R3 reader
 cleithra_R1: Estimated age of cleithra by R1 reader
 cleithra_R2: Estimated age of cleithra by R2 reader
 cleithra_R3: Estimated age of cleithra by R3 reader

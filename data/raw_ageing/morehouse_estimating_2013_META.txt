@@ -7,9 +7,9 @@ loc: Location (lake) of capture
 scales_Steve: Estimated age of scales by Steve reader
 scales_Angie: Estimated age of scales by Angie reader
 scales_Reid: Estimated age of scales by Reid reader
-rays_Steve: Estimated age of pectoral fin rays by Steve reader
-rays_Angie: Estimated age of pectoral fin rays by Angie reader
-rays_Reid: Estimated age of pectoral fin rays by Reid reader
+finrays_Steve: Estimated age of pectoral fin rays by Steve reader
+finrays_Angie: Estimated age of pectoral fin rays by Angie reader
+finrays_Reid: Estimated age of pectoral fin rays by Reid reader
 spines_Steve: Estimated age of dorsal spines by Steve reader
 spines_Angie: Estimated age of dorsal spines by Angie reader
 spines_Reid: Estimated age of dorsal spines by Reid reader

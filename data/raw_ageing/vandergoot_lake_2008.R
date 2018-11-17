@@ -7,16 +7,7 @@ nm <- "vandergoot_lake_2008"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-
-## !!! Copy the code below if more than one structure of comparisons
 #### XXXXXX ####################################################################
-## Enter species name
-##       analysis type ("between" or "within")
-##       calcified structure (e.g., scales, otoliths, finrays, spines)
-##       More about scturcture (e.g., dorsal, pectoral)
-##       Process info (e.g., sectioned, crackburn, whole)
-##       Possible extra suffix for name ... sometimes needed if above is not
-##         adequate to make a unique filename (i.e., with "within" data)
 species <- "Yellow Perch"
 atype <- "between"
 strux <- "scales"
@@ -25,10 +16,10 @@ proc <- ""
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("scale")) %>%
+  select(contains("scales")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~scale_NR+scale_IR+scale_ER,data=df1)
+ap1 <- agePrecision(~scales_NR+scales_IR+scales_ER,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -56,10 +47,10 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("aspine")) %>%
+  select(contains("spines")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~aspine_NR+aspine_IR+aspine_ER,data=df1)
+ap1 <- agePrecision(~spines_NR+spines_IR+spines_ER,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -83,14 +74,14 @@ species <- "Yellow Perch"
 atype <- "between"
 strux <- "otoliths"
 strux2 <- "sagittae"
-proc <- "cracke"
+proc <- "cracked"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(contains("otolith")) %>%
+  select(contains("otoliths")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~otolith_NR+otolith_IR+otolith_ER,data=df1)
+ap1 <- agePrecision(~otoliths_NR+otoliths_IR+otoliths_ER,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

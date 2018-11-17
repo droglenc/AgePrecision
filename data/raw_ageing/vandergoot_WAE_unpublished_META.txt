@@ -4,13 +4,13 @@ VARIABLES:
 id: Identification number unique to each fish
 tl: Total length (mm)
 wt: Weight (g)
-otolith_CV: Estimated age of the otolith by the CV reader
-otolith_RZ: Estimated age of the otolith by the RZ reader
-otolith_LB: Estimated age of the otolith by the LB reader
-scale_IR: Estimated age of the scale by the IR reader
-scale_KK: Estimated age of the scale by the KK reader
-spine_WF: Estimated age of the spine by the WF reader
-spine_TS: Estimated age of the spine by the TS reader
+otoliths_CV: Estimated age of the otolith by the CV reader
+otoliths_RZ: Estimated age of the otolith by the RZ reader
+otoliths_LB: Estimated age of the otolith by the LB reader
+scales_IR: Estimated age of the scale by the IR reader
+scales_KK: Estimated age of the scale by the KK reader
+spines_WF: Estimated age of the spine by the WF reader
+spines_TS: Estimated age of the spine by the TS reader
 
 NOTES:
 * File generated from "Interagency Age Comparison 2003_Ogle.xlsx" file provided by Christopher Vandergoot.

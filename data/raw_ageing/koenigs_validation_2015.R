@@ -14,8 +14,13 @@ atype <- "between"
 strux <- "otoliths"
 strux2 <- "saggitae"
 proc <- "sectioned"
+extra_suffix <- ""
 
-ap1 <- agePrecision(~oto_Ryan+oto_Eli,data=df)
+df1 <- df %>%
+  select(contains("otoliths")) %>%
+  filterD(complete.cases(.))
+
+ap1 <- agePrecision(~otoliths_Ryan+otoliths_Eli,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -31,7 +36,8 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 
@@ -39,8 +45,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 strux <- "spines"
 strux2 <- "dorsal"
 proc <- "sectioned"
+extra_suffix <- ""
 
-ap2 <- agePrecision(~spine_Ryan+spine_Jack,data=df)
+df1 <- df %>%
+  select(contains("spines")) %>%
+  filterD(complete.cases(.))
+
+ap2 <- agePrecision(~spines_Ryan+spines_Jack,data=df)
 pt2SD <- precisionData(ap2,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -56,5 +67,5 @@ summary(pt2CV,what="tests")
 res <- list(sum=pt2SD$sum,tests=rbind(pt2SD$tests,pt2CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
-
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

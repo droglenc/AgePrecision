@@ -3,21 +3,23 @@ cat("\014"); rm(list=ls())
 setwd(here::here())
 source("code/precisionData.R")
 
-nm <- "faust_muskellunge_2015"       ## Name of study (actually name of file)
+nm <- "koch_validation_2011"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-species <- "Muskellunge"
+#### XXXXXX ####################################################################
+species <- "Pallid Sturgeon"
 atype <- "between"
-strux <- "cleithra"
-strux2 <- "NA"
-proc <- "whole"
+strux <- "spines"
+strux2 <- "pectoral"
+proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
+  select(contains("spines")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~cleithra_R1+cleithra_R2+cleithra_R3,data=df1)
+ap1 <- agePrecision(~spines_JK+spines_MP+spines_KS,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -35,4 +37,3 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
                    ifelse(proc=="","","_"),proc,
                    ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
-

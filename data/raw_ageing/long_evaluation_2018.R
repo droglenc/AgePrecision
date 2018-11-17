@@ -24,9 +24,9 @@ proc <- "mounted"
 extra_suffix <- "R1"
 
 df1 <- df %>%
-  select(scale_AT_1,scale_AT_2) %>%
+  select(scales_AT_1,scales_AT_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~scale_AT_1+scale_AT_2,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~scales_AT_1+scales_AT_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -55,9 +55,9 @@ proc <- "mounted"
 extra_suffix <- "R2"
 
 df1 <- df %>%
-  select(scale_CH_1,scale_CH_2) %>%
+  select(scales_CH_1,scales_CH_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~scale_CH_1+scale_CH_2,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~scales_CH_1+scales_CH_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -90,7 +90,7 @@ df1 <- df %>%
   select(contains("2")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~scale_AT_2+scale_CH_2,data=df1)
+ap1 <- agePrecision(~scales_AT_2+scales_CH_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

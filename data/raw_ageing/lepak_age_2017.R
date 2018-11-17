@@ -14,6 +14,8 @@ atype <- "between"
 strux <- "scales"
 strux2 <- ""
 proc <- ""
+extra_suffix <- ""
+
 df1 <- df %>%
   select(starts_with("scale")) %>%
   filterD(complete.cases(.))
@@ -34,14 +36,16 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 #### otoliths ##################################################################
 strux <- "otoliths"
 strux2 <- "saggitae"
 proc <- "sectioned"
-  
+extra_suffix <- ""
+
 df1 <- df %>%
   select(starts_with("oto")) %>%
   filterD(complete.cases(.))
@@ -62,4 +66,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

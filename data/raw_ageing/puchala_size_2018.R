@@ -17,9 +17,9 @@ proc <- "sectioned"
 extra_suffix <- "Betsy"
 
 df1 <- df %>%
-  select(spine_Betsy_1,spine_Betsy_2) %>%
+  select(spines_Betsy_1,spines_Betsy_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~spine_Betsy_1+spine_Betsy_2,data=df1)
+ap1 <- agePrecision(~spines_Betsy_1+spines_Betsy_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -47,9 +47,9 @@ proc <- "sectioned"
 extra_suffix <- "Lee"
 
 df1 <- df %>%
-  select(spine_Lee_1,spine_Lee_2) %>%
+  select(spines_Lee_1,spines_Lee_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~spine_Lee_1+spine_Lee_2,data=df1)
+ap1 <- agePrecision(~spines_Lee_1+spines_Lee_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -77,9 +77,9 @@ proc <- "sectioned"
 extra_suffix <- "Alex"
 
 df1 <- df %>%
-  select(spine_Alex_1,spine_Alex_2) %>%
+  select(spines_Alex_1,spines_Alex_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~spine_Alex_1+spine_Alex_2,data=df1)
+ap1 <- agePrecision(~spines_Alex_1+spines_Alex_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -107,9 +107,9 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  select(spine_Alex_2,spine_Betsy_2,spine_Lee_2) %>%
+  select(spines_Alex_2,spines_Betsy_2,spines_Lee_2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~spine_Alex_2+spine_Betsy_2+spine_Lee_2,data=df1)
+ap1 <- agePrecision(~spines_Alex_2+spines_Betsy_2+spines_Lee_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

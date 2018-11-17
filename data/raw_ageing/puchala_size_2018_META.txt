@@ -4,13 +4,13 @@ VARIABLES:
 id: Identification number unique to each fish
 tl: Total length (mm)
 sex: Sex of the fish
-spine_Betsy_1: First estimated age of spine by Betsy reader
-spine_Lee_1: First estimated age of spine by Lee reader
-spine_Alex_1: First estimated age of spine by Alex reader
-spine_Betsy_2: First estimated age of spine by Betsy reader
-spine_Lee_2: First estimated age of spine by Lee reader
-spine_Alex_2: First estimated age of spine by Alex reader
-spine_Consensus: Final consensus estimated age.
+spines_Betsy_1: First estimated age of spine by Betsy reader
+spines_Lee_1: First estimated age of spine by Lee reader
+spines_Alex_1: First estimated age of spine by Alex reader
+spines_Betsy_2: First estimated age of spine by Betsy reader
+spines_Lee_2: First estimated age of spine by Lee reader
+spines_Alex_2: First estimated age of spine by Alex reader
+spines_CONSENSUS: Final consensus estimated age.
 
 NOTES:
 * File generated from "stonecatages.csv" file provided by Betsy Simard (nee Puchala).

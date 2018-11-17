@@ -15,16 +15,17 @@ str(df)
 
 #### XXXXXX ####################################################################
 species <- "Bowfin"
-atype <- "between"  # possibly change to "within"
-strux <- "finrays"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pectoral"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
+atype <- "between"
+strux <- "finrays"
+strux2 <- "pectoral"
+proc <- "sectioned"
+extra_suffix <- ""
 
-df1 <- df %>%       # Process the data to prepare for analysis
-  select(contains("finray_R")) %>%
+df1 <- df %>%
+  select(contains("finrays_R")) %>%
   filterD(complete.cases(.))
   
-ap1 <- agePrecision(~finray_R1+finray_R2+finray_R3,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~finrays_R1+finrays_R2+finrays_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -40,21 +41,23 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 #### XXXXXX ####################################################################
 species <- "Bowfin"
-atype <- "between"  # possibly change to "within"
-strux <- "gular plates"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- ""        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "whole"          # Process info (e.g., sectioned, crackburn, whole)
+atype <- "between"
+strux <- "gular plates"
+strux2 <- ""
+proc <- "whole"
+extra_suffix <- ""
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("gular_R")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~gular_R1+gular_R2+gular_R3,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~gular_R1+gular_R2+gular_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -70,4 +73,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

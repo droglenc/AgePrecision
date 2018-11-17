@@ -7,20 +7,18 @@ nm <- "Stewart_et_al_2015"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-
-## !!! Copy the code below if more than one structure of comparisons
-
 #### XXXXXX ####################################################################
 species <- "Atlantic Sturgeon"
-atype <- "between"  # possibly change to "within"
-strux <- "spines"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pectoral"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
+atype <- "between"
+strux <- "spines"
+strux2 <- "pectoral"
+proc <- "sectioned"
+extra_suffix <- ""
 
-df1 <- df %>%       # Process the data to prepare for analysis
-  select(r1,r2) %>%
+df1 <- df %>%
+  select(spines_R1,spines_R2) %>%
   filterD(complete.cases(.))
-ap1 <- agePrecision(~r1+r2,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~spines_R1+spines_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -36,4 +34,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

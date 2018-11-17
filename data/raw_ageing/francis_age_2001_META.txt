@@ -1,8 +1,8 @@
 SOURCE: Francis, M.P., C.Ó. Maolagáin, and D. Stevens. 2001. Age, growth, and sexual maturity of two New Zealand endemic skates, Dipturus Nasutus and D. Innominatus. New Zealand Journal of Marine and Freshwater Research 35:831–842.
 
 VARIABLES:
-r1: Estimated age of the structure by r1 reader
-r2: Estimated age of the structure by r2 reader
+vertebrae_R1: Estimated age of the vertebrae by R1 reader
+vertebrae_R2: Estimated age of the vertebrae by R2 reader
 species: Species of fish
 
 NOTES:

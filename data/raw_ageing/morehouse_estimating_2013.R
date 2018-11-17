@@ -56,9 +56,9 @@ for (i in lk) {
   extra_suffix <- i
   df1 <- df %>%
     filterD(loc==i) %>%
-    select(rays_Steve,rays_Angie,rays_Reid) %>%
+    select(finrays_Steve,finrays_Angie,finrays_Reid) %>%
     filterD(complete.cases(.))
-  ap1 <- agePrecision(~rays_Steve+rays_Angie+rays_Reid,data=df1)
+  ap1 <- agePrecision(~finrays_Steve+finrays_Angie+finrays_Reid,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,
                          type=atype,var="SD")

@@ -2,11 +2,11 @@ SOURCE: Koch, J.D., K.D. Steffensen, and M.A. Pegg. 2011. Validation of age esti
 
 VARIABLES:
 tl: Total length (mm)
-age_JK: Estimated age of pectoral spines by JK reader
-age_MP: Estimated age of pectoral spines by MP reader
-age_KS: Estimated age of pectoral spines by KS reader
-age_C: Estimated CONSENSUS age of pectoral spines
 age_T: Estimated TRUE age
+spines_JK: Estimated age of pectoral spines by JK reader
+spines_MP: Estimated age of pectoral spines by MP reader
+spines_KS: Estimated age of pectoral spines by KS reader
+spines_CONSENSUS: CONSENSUS Estimated age of pectoral spines
 
 NOTES:
 * File generated from "Jeff Koch_Ogle data request.xlsx" file provided by Jeff Koch.

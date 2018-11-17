@@ -6,19 +6,8 @@ source("code/precisionData.R")
 nm <- "faust_precision_2013"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
-xtabs(~loc+structure,data=df)
 
-
-## !!! Copy the code below if more than one structure of comparisons
 #### XXXXXX ####################################################################
-## Enter species name
-##       analysis type ("between" or "within")
-##       calcified structure (e.g., scales, otoliths, finrays, spines)
-##       More about scturcture (e.g., dorsal, pectoral)
-##       Process info (e.g., sectioned, crackburn, whole)
-##       Possible extra suffix for name ... sometimes needed if above is not
-##         adequate to make a unique filename (e.g., with "within" data or
-##         with multiple water bodies)
 species <- "Northern Pike"
 atype <- "between"
 strux <- "otoliths"
@@ -27,11 +16,11 @@ proc <- "sectioned"
 extra_suffix <- "CL"
 
 df1 <- df %>%
-  filterD(loc=="Cable Lake",structure=="Otolith") %>%
-  select(R1,R2,R3) %>%
+  filterD(loc=="Cable Lake") %>%
+  select(contains("Otolith")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~R1+R2+R3,data=df1)
+ap1 <- agePrecision(~otoliths_R1+otoliths_R2+otoliths_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -59,11 +48,11 @@ proc <- "whole"
 extra_suffix <- "CL"
 
 df1 <- df %>%
-  filterD(loc=="Cable Lake",structure=="Cleithrum") %>%
-  select(R1,R2,R3) %>%
+  filterD(loc=="Cable Lake") %>%
+  select(contains("cleithra")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~R1+R2+R3,data=df1)
+ap1 <- agePrecision(~cleithra_R1+cleithra_R2+cleithra_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -91,11 +80,11 @@ proc <- "sectioned"
 extra_suffix <- "DL"
 
 df1 <- df %>%
-  filterD(loc=="Devils Lake",structure=="Otolith") %>%
-  select(R1,R2,R3) %>%
+  filterD(loc=="Devils Lake") %>%
+  select(contains("otoliths")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~R1+R2+R3,data=df1)
+ap1 <- agePrecision(~otoliths_R1+otoliths_R2+otoliths_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -123,11 +112,11 @@ proc <- "whole"
 extra_suffix <- "DL"
 
 df1 <- df %>%
-  filterD(loc=="Devils Lake",structure=="Cleithrum") %>%
-  select(R1,R2,R3) %>%
+  filterD(loc=="Devils Lake") %>%
+  select(contains("cleithra")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~R1+R2+R3,data=df1)
+ap1 <- agePrecision(~cleithra_R1+cleithra_R2+cleithra_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

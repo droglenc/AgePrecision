@@ -4,7 +4,6 @@ setwd(here::here())
 source("code/precisionData.R")
 
 nm <- "francis_age_2001"       ## Name of study (actually name of file)
-
 atype <- "between"
 
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -16,10 +15,12 @@ species <- "Rough Skate"
 strux <- "vertebrae"
 strux2 <- ""
 proc <- "Sectioned"
+extra_suffix <- ""
+
 df1 <- df %>%
   filterD(species=="Rough Skate")
 
-ap1 <- agePrecision(~r1+r2,data=df1)
+ap1 <- agePrecision(~vertebrae_R1+vertebrae_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -35,7 +36,8 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 #### ROUGH SKATES ##############################################################
@@ -43,10 +45,12 @@ species <- "Smooth Skate"
 strux <- "vertebrae"
 strux2 <- ""
 proc <- "Sectioned"
+extra_suffix <- ""
+
 df1 <- df %>%
   filterD(species=="Smooth Skate")
 
-ap1 <- agePrecision(~r1+r2,data=df1)
+ap1 <- agePrecision(~vertebrae_R1+vertebrae_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -62,4 +66,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

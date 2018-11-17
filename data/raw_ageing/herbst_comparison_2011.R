@@ -13,9 +13,10 @@ atype <- "between"
 strux <- "scales"
 strux2 <- ""
 proc <- ""
+extra_suffix <- ""
 
 df1 <- df %>%
-  select(starts_with("scale")) %>%
+  select(contains("scale")) %>%
   filterD(complete.cases(.))
 
 ap1 <- agePrecision(~scale1+scale2,data=df1)
@@ -34,16 +35,18 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 #### otoliths ##################################################################
 strux <- "otoliths"
 strux2 <- ""
 proc <- "crackburn"
+extra_suffix <- ""
 
 df1 <- df %>%
-  select(starts_with("otolith")) %>%
+  select(contains("otolith")) %>%
   filterD(complete.cases(.))
 
 ap1 <- agePrecision(~otolith1+otolith2,data=df1)
@@ -62,7 +65,8 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))
 
 
 
@@ -70,9 +74,10 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 strux <- "finrays"
 strux2 <- "dorsal"
 proc <- "sectioned"
+extra_suffix <- ""
 
 df1 <- df %>%
-  select(starts_with("finray")) %>%
+  select(contains("finray")) %>%
   filterD(complete.cases(.))
 
 ap1 <- agePrecision(~finray1+finray2,data=df1)
@@ -91,4 +96,5 @@ summary(pt1CV,what="tests")
 res <- list(sum=pt1SD$sum,tests=rbind(pt1SD$tests,pt1CV$tests))
 saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
                    ifelse(strux2=="","","_"),strux2,
-                   ifelse(proc=="","","_"),proc,".rds"))
+                   ifelse(proc=="","","_"),proc,
+                   ifelse(extra_suffix=="","","_"),extra_suffix,".rds"))

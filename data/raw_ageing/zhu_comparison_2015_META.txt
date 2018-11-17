@@ -2,15 +2,15 @@ SOURCE: Zhu, X., R.J. Wastle, K.L. Howland, D.J. Leonard, S. Mann, T.J. Carmicha
 
 VARIABLES:
 id: Identification number unique to each fish
-Fin_R1: Estimated age of the pectoral fin ray on the first read
-Fin_R2: Estimated age of the pectoral fin ray on the second read
-Fin_R3: Estimated age of the pectoral fin ray on the third read
-Otolith_R1: Estimated age of the otolith on the first read
-Otolith_R2: Estimated age of the otolith on the second read
-Otolith_R3: Estimated age of the otolith on the third read
-Scale_R1: Estimated age of the scale on the first read
-Scale_R2: Estimated age of the scale on the second read
-Scale_R3: Estimated age of the scale on the third read
+finrays_R1: Estimated age of the pectoral fin ray on the first read
+finrays_R2: Estimated age of the pectoral fin ray on the second read
+finrays_R3: Estimated age of the pectoral fin ray on the third read
+otoliths_R1: Estimated age of the otolith on the first read
+otoliths_R2: Estimated age of the otolith on the second read
+otoliths_R3: Estimated age of the otolith on the third read
+scales_R1: Estimated age of the scale on the first read
+scales_R2: Estimated age of the scale on the second read
+scales_R3: Estimated age of the scale on the third read
 
 NOTES:
 * File generated from "AgeComp_LKWF_2012.xlsx" file provided by Xinhua Zhu.

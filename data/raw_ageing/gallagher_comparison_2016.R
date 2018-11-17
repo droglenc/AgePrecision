@@ -12,13 +12,13 @@ str(df)
 
 #### WITHIN RW READER ##########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "otoliths"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "saggitae"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "whole"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "RW"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "otoliths"
+strux2 <- "saggitae"
+proc <- "whole"
+extra_suffix <- "RW"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("whoto_RW")) %>%
   filterD(complete.cases(.))
 
@@ -43,13 +43,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN RW READER ##########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "otoliths"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "saggitae"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "RW"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "otoliths"
+strux2 <- "saggitae"
+proc <- "sectioned"
+extra_suffix <- "RW"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("sectoto_RW")) %>%
   filterD(complete.cases(.))
 
@@ -74,13 +74,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN RW READER ##########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "finrays"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pectoral"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "RW"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "finrays"
+strux2 <- "pectoral"
+proc <- "sectioned"
+extra_suffix <- "RW"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("pectoral_RW")) %>%
   filterD(complete.cases(.))
 
@@ -105,13 +105,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN RW READER ##########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "finrays"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pelvic"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "RW"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "finrays"
+strux2 <- "pelvic"
+proc <- "sectioned"
+extra_suffix <- "RW"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("pelvic_RW")) %>%
   filterD(complete.cases(.))
 
@@ -139,13 +139,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN NSC READER #########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "otoliths"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "saggitae"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "whole"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "NSC"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "otoliths"
+strux2 <- "saggitae"
+proc <- "whole"
+extra_suffix <- "NSC"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("whoto_NSC")) %>%
   filterD(complete.cases(.))
 
@@ -170,13 +170,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN NSC READER #########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "otoliths"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "saggitae"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "NSC"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "otoliths"
+strux2 <- "saggitae"
+proc <- "sectioned"
+extra_suffix <- "NSC"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("sectoto_NSC")) %>%
   filterD(complete.cases(.))
 
@@ -201,13 +201,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN NSC READER #########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "finrays"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pectoral"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "NSC"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "finrays"
+strux2 <- "pectoral"
+proc <- "sectioned"
+extra_suffix <- "NSC"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("pectoral_NSC")) %>%
   filterD(complete.cases(.))
 
@@ -232,13 +232,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 
 #### WITHIN NSC READER #########################################################
 species <- "Dolly Varden"
-atype <- "within"  # possibly change to "within"
-strux <- "finrays"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "pelvic"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- "NSC"  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "within"
+strux <- "finrays"
+strux2 <- "pelvic"
+proc <- "sectioned"
+extra_suffix <- "NSC"
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("pelvic_NSC")) %>%
   filterD(complete.cases(.))
 
@@ -267,13 +267,13 @@ saveRDS(res,paste0("data/results_precision/",nm,"_",species,"_",strux,
 ## This uses all six reads (three from each reader) ... not sure about this so
 ## I did not output these results.
 species <- "Dolly Varden"
-atype <- "between"  # possibly change to "within"
-strux <- "otoliths"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- "saggitae"        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "whole"          # Process info (e.g., sectioned, crackburn, whole)
-extra_suffix <- ""  # Extra suffix for name ... sometimes needed if above is not adequate
+atype <- "between"
+strux <- "otoliths"
+strux2 <- "saggitae"
+proc <- "whole"
+extra_suffix <- ""
 
-df1 <- df %>%       # Process the data to prepare for analysis
+df1 <- df %>%
   select(contains("whoto")) %>%
   filterD(complete.cases(.)) %>%
   mutate(whoto_RW=rowMeans(select(.,contains("RW"))),

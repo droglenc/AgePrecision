@@ -7,19 +7,15 @@ nm <- "conrath_age_2002" # Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
 str(df) 
 
-
-## !!! Copy the code below if more than one structure of comparisons
-
-#### XXXXXX ####################################################################
 species <- "Smooth Dogfish"
-atype <- "between"  # possibly change to "within"
-strux <- "vertebrae"         # Calcified strucure (e.g., scales, otolith, finray, spine)
-strux2 <- ""        # More about scturcture (e.g., dorsal, pectoral)
-proc <- "sectioned"          # Process info (e.g., sectioned, crackburn, whole)
+atype <- "between"
+strux <- "vertebrae"
+strux2 <- ""
+proc <- "sectioned"
 
-df1 <- df       # Process the data to prepare for analysis
+df1 <- df
 
-ap1 <- agePrecision(~r1+r2,data=df1)   ## include the variable names here
+ap1 <- agePrecision(~vertebrae_R1+vertebrae_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

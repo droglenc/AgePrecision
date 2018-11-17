@@ -13,18 +13,18 @@ df <- read_excel(paste0(pth,"2012 NOP ages for Ogle.xlsx"),
          cleithra_whole_R1=`R1 WC age`,
          cleithra_whole_R2=`R2 WC age`,
          cleithra_whole_R3=`R3 WC age`,
-         otolith_section_R1=`R1 O age`,
-         otolith_section_R2=`R2 O age`,
-         otolith_section_R3=`R3 O age`,
+         otoliths_R1=`R1 O age`,
+         otoliths_R2=`R2 O age`,
+         otoliths_R3=`R3 O age`,
          metapt_R1=`R1 M age`,
          metapt_R2=`R2 M age`,
          metapt_R3=`R3 M age`,
-         scale_R1=`R1 Scale age`,
-         scale_R2=`R2 Scale age`,
-         scale_R3=`R3 Scale age`) %>%
+         scales_R1=`R1 Scale age`,
+         scales_R2=`R2 Scale age`,
+         scales_R3=`R3 Scale age`) %>%
   select(-contains("R3")) %>% ## R3 was only used for discrepancies with R1 and R2
-  select(id,tl,wt,contains("cleithra"),contains("otolith"),
-         contains("metapt"),contains("scale"))
+  select(id,tl,wt,contains("cleithra"),contains("otoliths"),
+         contains("metapt"),contains("scales"))
 df
 write.csv(df,file="data/raw_ageing/blackwell_assessment_2016.csv",
           quote=FALSE,row.names=FALSE)
