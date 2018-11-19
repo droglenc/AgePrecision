@@ -1,0 +1,13 @@
+SOURCE: Glass, W. R., L. D. Corkum, and N. E. Mandrak. 2011. Pectoral fin ray aging: An evaluation of a non-lethal method for aging gars and its application to a population of the threatened Spotted Gar. Environmental Biology of Fishes 90:235–242.
+
+VARIABLES:
+id: Identification number unique to each fish
+finrays_R1: Estimated age of the pectoral fin ray by the R1 reader
+finrays_R2: Estimated age of the pectoral fin ray by the R2 reader
+branchio_R1: Estimated age of the branchiostegal ray by the R1 reader
+branchio_R2: Estimated age of the branchiostegal ray by the R2 reader
+otoliths_R1: Estimated age of the otolith by the R1 reader
+otoliths_R2: Estimated age of the otolith by the R2 reader
+
+NOTES:
+* File created from Table 1 in the paper.
