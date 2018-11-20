@@ -35,6 +35,10 @@ abline(h=sqrt(2),col="blue")
 #as.data.frame(df)[c(116,146,310,337),
 #                  c("studyID","species","structure","process","APE","ACV")]
 
+plot(AD~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
+plot(AD~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"))
+
+
 plot(PA0~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
 plot(PA1~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
 plot(PA1~PA0,data=df,pch=21,bg=ifelse(R==2,"green","red"))
@@ -43,3 +47,6 @@ hist(~ACV,data=df,w=2)
 hist(ACV~class,data=df,w=2)
 boxplot(ACV~class,data=df)
 Summarize(ACV~class,data=df)
+Summarize(ACV~R,data=df)
+Summarize(APE~R,data=df)
+
