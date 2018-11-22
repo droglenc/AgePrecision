@@ -50,3 +50,4 @@ Summarize(ACV~class,data=df)
 Summarize(ACV~R,data=df)
 Summarize(APE~R,data=df)
 
+xtabs(~order+class,data=df)

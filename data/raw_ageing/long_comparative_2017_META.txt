@@ -1,0 +1,14 @@
+SOURCE: Long, J.M., and A.A. Nealis. 2017. Comparative precision of age estimates from two southern reservoir populations of Paddlefish [Polyodon spathula (Walbaum, 1792)]. Journal of Applied Ichthyology 33:819–820.
+
+VARIABLES:
+id: Identification number unique to each fish
+loc: Location of capture
+efl: Eye-to-fork length (mm)
+wt: Weight (g)
+sex: Sex.
+maxillae_EB: Estimated annuli count of the maxillae by EB reader
+maxillae_BJ: Estimated annuli count of the maxillae by BJ reader
+maxillae_AN: Estimated annuli count of the maxillae by AN reader
+
+NOTES:
+* File generated from "age precision data.xlsx" file provided by Jim Long.
