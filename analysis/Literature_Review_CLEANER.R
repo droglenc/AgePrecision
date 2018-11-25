@@ -14,6 +14,8 @@ xtabs(~process+structure,data=df)
 xtabs(~type,data=df)
 xtabs(~checkbias,data=df)
 xtabs(~biasmethod+checkbias,data=df)  # should not be a "no" column
+xtabs(~order+class,data=df)
+
 
 # check for NAs or odd values
 Summarize(~R,data=df,digits=1)
@@ -21,19 +23,19 @@ Summarize(~n,data=df,digits=1)
 
 
 # Should be a straightline with a slope of sqrt(2) for all R=2 comparisons
-plot(APE~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
-abline(a=0,b=1/sqrt(2),col="blue")
-plot(APE~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"),xlim=c(0,20),ylim=c(0,20))
-abline(a=0,b=1/sqrt(2),col="blue")
-
+plot(ACV~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"))
+abline(a=0,b=sqrt(2),col="blue")
+abline(a=0,b=1,col="red",lty=2)
+plot(ACV~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"),xlim=c(0,20),ylim=c(0,25))
+abline(a=0,b=sqrt(2),col="blue")
+abline(a=0,b=1,col="red",lty=2)
 
 plot(I(ACV/APE)~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"),ylim=c(1.1,1.6))
 abline(h=sqrt(2),col="blue")
 
 # use this to find off values
 #with(df,identify(ACV,ACV/APE))
-#as.data.frame(df)[c(116,146,310,337),
-#                  c("studyID","species","structure","process","APE","ACV")]
+#as.data.frame(df)[c(319,346),c("studyID","species","structure","process","APE","ACV")]
 
 plot(AD~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
 plot(AD~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"))
@@ -50,4 +52,3 @@ Summarize(ACV~class,data=df)
 Summarize(ACV~R,data=df)
 Summarize(APE~R,data=df)
 
-xtabs(~order+class,data=df)
