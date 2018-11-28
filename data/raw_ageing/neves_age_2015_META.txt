@@ -1,0 +1,13 @@
+SOURCE: Neves, A., V. Sequeira, A. R. Vieira, R. B. Paiva, and L. S. Gordo. 2015. Age and growth of Small Red Scorpionfish, Scorpaena notata (Actinopterygii: Scorpaeniformes: Scorpaenidae), a common discard species from the Portuguese fishery. Acta Ichthyologica et Piscatoria 45:13–20.
+
+VARIABLES:
+sex: Sex of the fish
+tl: Total length (mm)
+otoliths_R3_1: Estimated age of otolith by R3 reader on the first reading.
+otoliths_R3_1: Estimated age of otolith by R3 reader on the second reading (this should
+                 be compared to R1 and R2).
+otoliths_R1: Estimated age of otolith by R1 reader
+otoliths_R2: Estimated age of otolith by R2 reader
+
+NOTES:
+* File generated from "Scorpaena_notata_data_Neves_etal.xlsx" file provided by Ana Neves.

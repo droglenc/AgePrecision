@@ -1,0 +1,15 @@
+SOURCE: Fernando, A. V., C. R. Peacock, B. W. Baker, and M. A. Eggleton. 2014. Ageing precision and error analysis of whole-view and sectioned otoliths in Largemouth Bass and Spotted Bass. Journal of the Southeastern Association of Fish and Wildlife Agencies 1:75–82.
+
+VARIABLES:
+ID: Identification number unique to each fish
+year: Capture year
+age_TRUE: The true age of the fish
+wholeoto_CONSENSUS: Consensus estimated age of the whole otoliths
+wholeoto_R1: Consensus estimated age of the whole otoliths by the R1 reader
+wholeoto_R2: Consensus estimated age of the whole otoliths by the R2 reader
+sectoto_CONSENSUS: Consensus estimated age of the sectioned otoliths
+sectoto_R1: Consensus estimated age of the sectioned otoliths by the R1 reader
+sectoto_R2: Consensus estimated age of the sectioned otoliths by the R2 reader
+
+NOTES:
+* File generated from "LMB_Aging Agreement Dataset_to DOgle_27Nov18.xls" file provided by Michael Eggleton.

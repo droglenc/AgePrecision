@@ -1,0 +1,18 @@
+SOURCE: Klein, Z. B., M. M. Terrazas, and M. C. Quist. 2014. Age estimation of Burbot using pectoral fin rays, branchiostegal rays and otoliths. Intermountain Journal of Sciences 20:57–67.
+
+VARIABLES:
+id: Identifier unique to each fish
+tl: Total length (mm)
+wt: Weight (g)
+branchio_MT: Estimated age from branchiostegal rays by MT reader
+branchio_MT: Estimated age from branchiostegal rays by ZK reader
+branchio_CONSENSUS: Consensus estimated age from branchiostegal rays
+finrays_MT: Estimated age from pectoral fin rays by MT reader
+finrays_MT: Estimated age from pectoral fin rays by ZK reader
+finrays_CONSENSUS: Consensus estimated age frompectoral fin rays
+otoliths_MT: Estimated age from otoliths by MT reader
+otoliths_MT: Estimated age from otoliths by ZK reader
+otoliths_CONSENSUS: Consensus estimated age from otoliths
+
+NOTES:
+* File generated from "Klein_Burbotdata.xlsx" file provided by Zach Klein.

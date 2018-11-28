@@ -1,0 +1,10 @@
+SOURCE: Barada, T.J., A.J. Blank, and M.A. Pegg. 2011. Bias, precision, and processing time of otoliths and pectoral spines used for age estimation of Channel Catfish. American Fisheries Society Symposium 77:723–731.
+
+VARIABLES:
+age_Aaron: Estimated age by the Aaron reader
+age_Tony: Estimated age by the Tony reader
+strux: Calcified structure (otoliths or spines)
+year: Year of capture
+
+NOTES:
+* File generated from "CCAT age data_Ogle request .xlsx" file provided by Tony Barad.
