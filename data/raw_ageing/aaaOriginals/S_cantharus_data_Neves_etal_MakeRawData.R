@@ -15,7 +15,7 @@ write.csv(dfB,file="data/raw_ageing/neves_modelling_2017_B.csv",
 
 dfW <- read_excel(paste0(pth,"S_cantharus_data_Neves_etal.xlsx"),
                   sheet="Between reads") %>%
-  rename(tl=`TL (cm)`,sex=Sex,otoliths_R1=`1st read`,otoliths_R2=`2nd read`) %>%
+  rename(tl=`TL (cm)`,sex=Sex,otoliths_R2=`2st read`,otoliths_R3=`3nd read`) %>%
   mutate(tl=tl*10)
 str(dfW)
 

@@ -54,7 +54,7 @@ df1 <- df %>%
   select(contains("otoliths")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~otoliths_R1+otoliths_R2,data=df1)
+ap1 <- agePrecision(~otoliths_R2+otoliths_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
