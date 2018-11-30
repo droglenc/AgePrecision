@@ -35,7 +35,7 @@ abline(h=sqrt(2),col="blue")
 
 # use this to find off values
 #with(df,identify(ACV,ACV/APE))
-#as.data.frame(df)[c(319,346),c("studyID","species","structure","process","APE","ACV")]
+#as.data.frame(df)[c(1068),c("studyID","species","structure","process","APE","ACV")]
 
 plot(AD~ACV,data=df,pch=21,bg=ifelse(R==2,"green","red"))
 plot(AD~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"))
