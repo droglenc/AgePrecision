@@ -1,0 +1,10 @@
+SOURCE: Robillard, S. R., and J. E. Marsden. 1996. Comparison of otolith and scale ages for Yellow Perch from Lake Michigan. Journal of Great Lakes Research 22:429–435.
+
+VARIABLES:
+strux: Calcified structure (otoliths or scales)
+reader: Reader identifier (R1, R2, or R3)
+read_1: First estimated age of the structure by the reader
+read_2: Second estimated age of the structure by the reader
+
+NOTES:
+* Data created from results in Figure 3 of Robillard and Marsden (1996).
