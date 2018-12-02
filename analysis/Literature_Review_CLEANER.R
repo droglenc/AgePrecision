@@ -14,8 +14,11 @@ xtabs(~process+structure,data=df)
 xtabs(~type,data=df)
 xtabs(~checkbias,data=df)
 xtabs(~biasmethod+checkbias,data=df)  # should not be a "no" column
+xtabs(~class,data=df)
 xtabs(~order+class,data=df)
-
+any(is.na(df$class))
+any(is.na(df$order))
+any(is.na(df$family))
 
 # check for NAs or odd values
 Summarize(~R,data=df,digits=1)
@@ -52,3 +55,31 @@ Summarize(ACV~class,data=df)
 Summarize(ACV~R,data=df)
 Summarize(APE~R,data=df)
 
+
+## Messing with ggplot
+library(ggplot2)
+theme_set(theme_bw())
+
+ggplot(df,aes(x=ACV,fill=class)) +
+  geom_density(alpha=0.3)
+
+ggplot(df,aes(y=ACV,x=class,color=class)) +
+  geom_violin(fill="white") +
+  scale_color_brewer(palette="Dark2") +
+  theme(legend.position="none")
+
+### Need to collapse some orders
+ggplot(df,aes(y=ACV,x=order,color=order)) +
+  geom_violin(fill="white") +
+  scale_color_brewer(palette="Dark2")
+
+
+
+ggplot(df,aes(x=ACV)) +
+  geom_density(fill="black",alpha=0.3) +
+  facet_wrap(~class,ncol=1)
+
+xtabs(~order,data=df)
+
+ggplot(df,aes(x=ACV,fill=order)) +
+  geom_density(alpha=0.3)
