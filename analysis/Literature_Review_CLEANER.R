@@ -1,9 +1,9 @@
-## Scripts to help "clean" the literature review data
+## Scripts to help "clean" the literature review data ----
 cat("\014")
 setwd(here::here())
 library(FSA)
 
-## Create the literature review database
+## Create the literature review database ----
 source("analysis/Literature_Review.R")
 str(df)
 
@@ -20,12 +20,12 @@ any(is.na(df$class))
 any(is.na(df$order))
 any(is.na(df$family))
 
-# check for NAs or odd values
+# check for NAs or odd values ----
 Summarize(~R,data=df,digits=1)
 Summarize(~n,data=df,digits=1)
 
 
-# Should be a straightline with a slope of sqrt(2) for all R=2 comparisons
+# Should be a straightline with a slope of sqrt(2) for all R=2 comparisons ----
 plot(ACV~APE,data=df,pch=21,bg=ifelse(R==2,"green","red"))
 abline(a=0,b=sqrt(2),col="blue")
 abline(a=0,b=1,col="red",lty=2)
@@ -56,7 +56,7 @@ Summarize(ACV~R,data=df)
 Summarize(APE~R,data=df)
 
 
-## Messing with ggplot
+## Messing with ggplot ----
 library(ggplot2)
 theme_set(theme_bw())
 

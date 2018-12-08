@@ -1,0 +1,15 @@
+SOURCE: Logsdon, D. E. 2007. Use of unsectioned dorsal spines for estimating Walleye ages. North American Journal of Fisheries Management 27:1112–1118.
+
+VARIABLES:
+id: Identification number unique to each fish
+loc: Capture location ("East Upper Red" or "Mille Lacs")
+date: Capture date
+tl: Total length (mm)
+sex: Fish sex
+spines_Dale: Estimated age of spines by Dale reader
+spines_Steve: Estimated age of spines by Steve reader
+otoliths_Dale: Estimated age of otoliths by Dale reader
+otoliths_Mgmt: Estimated age of otoliths by Mgmt reader
+
+NOTES:
+* File generated from "Age assignments.xlsx" file provided by Dale Logsdon.
