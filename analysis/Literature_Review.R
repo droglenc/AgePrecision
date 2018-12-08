@@ -37,3 +37,5 @@ df <- left_join(df,res,by="studyID") %>%
 rm(tmp,fish,res,fn)
 
 
+##   Creating new variables
+

@@ -5,3 +5,7 @@
 ## Don't need results_precision folder because it can be updated from code
 data/results_precision/*
 .httr-oauth
+
+## Data that should not be made publicly available
+data/raw_ageing/DONTSHARE*
+data/raw_ageing/aaaOriginals/Lozano*
