@@ -4,6 +4,9 @@
 .Ruserdata
 ## Don't need results_precision folder because it can be updated from code
 data/results_precision/*
+
+## Don't need Excel file because it comes from GoogleSheets
+data/Literature_Review.xlsx
 .httr-oauth
 
 ## Data that should not be made publicly available
