@@ -1,0 +1,28 @@
+SOURCE: Buckmeier, D. L., N. G. Smith, and K. S. Reeves. 2012. Utility of Alligator Gar age estimates from otoliths, pectoral fin rays, and scales. Transactions of the American Fisheries Society 141:1510–1519.
+
+VARIABLES:
+ID: Identification number unique to each fish
+tl: Total length (mm)
+sex: Sex
+age_Known: Known age
+date: Harvest date (date of capture)
+year: Capture year
+otolith_Dave1: Estimated age of the otoliths on the first reading by Dave reader
+otolith_Nate1: Estimated age of the otoliths on the first reading by Nate reader
+otolith_Dave2: Estimated age of the otoliths on the second reading by Dave reader
+otolith_Nate2: Estimated age of the otoliths on the second reading by Nate reader
+otolith_CONSENSUS: Consensus estimated age of the otoliths.
+scale_Dave1: Estimated age of the scales on the first reading by Dave reader
+scale_Nate1: Estimated age of the scales on the first reading by Nate reader
+scale_Dave2: Estimated age of the scales on the second reading by Dave reader
+scale_Nate2: Estimated age of the scales on the second reading by Nate reader
+scale_CONSENSUS: Consensus estimated age of the scales.
+finray_Dave1: Estimated age of the finrays on the first reading by Dave reader
+finray_Nate1: Estimated age of the finrays on the first reading by Nate reader
+finray_Dave2: Estimated age of the finrays on the second reading by Dave reader
+finray_Nate2: Estimated age of the finrays on the second reading by Nate reader
+finray_CONSENSUS: Consensus estimated age of the finrays.
+
+
+NOTES:
+* File generated from "Reader Agreement Data for Ogle 12102018.xlsx" file provided by David Buckmeier.

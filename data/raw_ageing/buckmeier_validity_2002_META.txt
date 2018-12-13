@@ -1,0 +1,16 @@
+SOURCE: Buckmeier, D. L., N. G. Smith, and K. S. Reeves. 2012. Utility of Alligator Gar age estimates from otoliths, pectoral fin rays, and scales. Transactions of the American Fisheries Society 141:1510–1519.
+
+VARIABLES:
+ID: Identification number unique to each fish
+date: Date of capture)
+tl: Total length (mm)
+age_KNOWN: Known age
+artic_John: Estimated age of the pectoral articulating joint by John reader
+spine_John: Estimated age of the pectoral spine by John reader
+otolith_John: Estimated age of the otoliths by John reader
+artic_Bob: Estimated age of the pectoral articulating joint by Bob reader
+spine_Bob: Estimated age of the pectoral spine by Bob reader
+otolith_Bob: Estimated age of the otoliths by Bob reader
+
+NOTES:
+* File generated from "catfish TLage.xls" file provided by David Buckmeier.
