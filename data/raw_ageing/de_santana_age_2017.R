@@ -17,11 +17,10 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(strux=="otoliths") %>%
-  select(contains("read")) %>%
+  select(contains("otolith")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~read_1+read_2,data=df1)
+ap1 <- agePrecision(~otolith_R1+otolith_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")
@@ -50,11 +49,10 @@ proc <- "mounted"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(strux=="scales") %>%
-  select(contains("read")) %>%
+  select(contains("scales")) %>%
   filterD(complete.cases(.))
 
-ap1 <- agePrecision(~read_1+read_2,data=df1)
+ap1 <- agePrecision(~scales_R1+scales_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
                        type=atype,var="SD")

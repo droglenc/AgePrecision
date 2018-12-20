@@ -1,9 +1,13 @@
-SOURCE: de Santana, H. S., and C. V. Minte-Vera. 2017. Age and growth of Prochilodus Lineatus in a spatially structured population: Is there concordance between otoliths and scales? Environmental Biology of Fishes 100:223–235.
+SOURCE: de Santana, H.S., and C.V. Minte-Vera. 2017. Age and growth of Prochilodus Lineatus in a spatially structured population: Is there concordance between otoliths and scales? Environmental Biology of Fishes 100:223–235.
 
 VARIABLES:
-strux: Calcified structure (otoliths or scales)
-read_1: First estimated age of the structure by the reader
-read_2: Second estimated age of the structure by the reader
+id: Identification number unique to each fish.
+tl: Total length (mm).
+sl: Standard length (mm).
+otolith_R1: Estimated age from the otoliths on the first read.
+otolith_R1: Estimated age from the otoliths on the second read.
+scale_R1: Estimated age from the scales on the first read.
+scale_R1: Estimated age from the scales on the second read.
 
 NOTES:
-* Data created from results in Figures 5 and 6 of de Santana and Minte-Vera (2017).
+* Data created from "Data_Santana_Prochilodus.xlsx" file provided by Herick de Santana.
