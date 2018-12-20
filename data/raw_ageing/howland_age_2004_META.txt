@@ -1,0 +1,23 @@
+SOURCE: Howland, K.L., M. Gendron, W.M. Tonn, and R.F. Tallman. 2004. Age determination of a long-lived coregonid from the Canadian North: Comparison of otoliths, fin rays and scales in Inconnu (Stenodus Leucichthys). Annales Zoologici Fennici 41:205–214.
+
+VARIABLES:
+id: Identifier unique to each fish
+year: Year of capture.
+day: Julian day of capture
+fl: Fork length (mm)
+sex: Sex of the fish
+scale_MG1: Estimated age from scales by MG reader on first read.
+scale_MG2: Estimated age from scales by MG reader on second read.
+scale_KH1: Estimated age from scales by KH reader on first read.
+scale_KH2: Estimated age from scales by KH reader on second read.
+otolith_MG1: Estimated age from otoliths by MG reader on first read.
+otolith_MG2: Estimated age from otoliths by MG reader on second read.
+otolith_KH1: Estimated age from otoliths by KH reader on first read.
+otolith_KH2: Estimated age from otoliths by KH reader on second read.
+finray_MG1: Estimated age from finrays by MG reader on first read.
+finray_MG2: Estimated age from finrays by MG reader on second read.
+finray_KH1: Estimated age from finrays by KH reader on first read.
+finray_KH2: Estimated age from finrays by KH reader on second read.
+
+NOTES:
+* File generated from "Agcomp2_all.xls" file provided by Kimberly Howland.
