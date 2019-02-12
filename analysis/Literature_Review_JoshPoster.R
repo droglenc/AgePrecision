@@ -2,17 +2,17 @@ cat("\014")
 setwd(here::here())
 library(plyr)
 library(dplyr)
-library(readxl)
+library(magrittr)
 
 fn <- googledrive::as_id("https://docs.google.com/spreadsheets/d/1RY6DQyi-zCfg_BQ2l_cZRZC_fA6PI3zutFIMIvJfbw8/edit?ts=5bac4a12#gid=0")
 googledrive::drive_download(file=fn,path="data/Literature_Review",overwrite=TRUE)
 
 ## Make the overall database
 ##   Read fish names
-fish <- read_excel("data/Literature_Review.xlsx",sheet="FishNames") %>%
+fish <- readxl::read_excel("data/Literature_Review.xlsx",sheet="FishNames") %>%
   select(-sciname)
 ##   Read results and append on fish name info
-tmp <- read_excel("data/Literature_Review.xlsx",sheet="Results_Meta")
+tmp <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Results_Meta")
 res <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Results",
                           na=c("-",""),col_types=tmp$RType) %>%
   select(-notes)
