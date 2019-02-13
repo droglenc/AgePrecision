@@ -169,6 +169,7 @@ NCStats::percTable(studies_that_used_ACV,digits=1)
 ( used_ACV_by_continent <- xtabs(~continent2+ACVused,data=tmp2) )
 NCStats::percTable(used_ACV_by_continent,margin=1,digits=1)
 
+
 ( chi_ACV_by_continent <- chisq.test(used_ACV_by_continent) )
 
 
@@ -260,7 +261,7 @@ FSA::Summarize(ACVmod~Rcat,data=df2,digits=1)
 Rsum <- group_by(df2,Rcat) %>%
   summarize(n=n()) %>%
   mutate(ACVmod=Inf,
-         lets=c("AC","B","BC"),
+         lets=c("A","B","AB"),
          lbl=paste0("\nn=",n,"  ",lets," "))
 
 Rcomp <- ggplot(data=df2,aes(x=Rcat,y=ACVmod)) +
