@@ -244,7 +244,7 @@ Classcomp <- ggplot(data=df2c,aes(x=class,y=ACVmod)) +
   geom_violin(fill=NA,draw_quantiles=c(0.25,0.75),lwd=1) +
   scale_y_continuous(name="",expand=c(0.01,0),
                      limits=ACV_limts,breaks=ACV_breaks) +
-  scale_x_discrete(name="",labels=c("Actin-\nopteri","Elasmo-\nbranchii")) +
+  scale_x_discrete(name="",labels=c("Actinop-\nterygii","Elasmo-\nbranchii")) +
   geom_text(data=Classsum,aes(x=class,y=ACVmod,label=lbl),size=results_text_size,hjust=1.1) +
   geom_text(label=paste0("K-W ",FSA::kPvalue(Class.KW$p.value,latex=FALSE,digits=3)),
             x=Inf,y=Inf,hjust=1.2,vjust=1.2,size=results_text_size) +
