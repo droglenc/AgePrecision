@@ -3,10 +3,6 @@ setwd(here::here())
 library(dplyr)
 cat("\014")
 
-###  Download file from GoogleDrive
-fn <- googledrive::as_id("https://docs.google.com/spreadsheets/d/1RY6DQyi-zCfg_BQ2l_cZRZC_fA6PI3zutFIMIvJfbw8/edit?ts=5bac4a12#gid=0")
-googledrive::drive_download(file=fn,path="data/Literature_Review",overwrite=TRUE)
-
 ### Setup some factor codes
 NAS <- c("-","")
 lvls_type <- c("between","within","both")
@@ -19,27 +15,25 @@ lvls_strux2 <- c("sagittae","lapillae","asterisci","statoliths",
 
 
 ## Overall database ----
+fn <- "https://docs.google.com/spreadsheets/d/1RY6DQyi-zCfg_BQ2l_cZRZC_fA6PI3zutFIMIvJfbw8/edit?ts=5bac4a12#gid=0"
 ###  Read fish names
-fish <- readxl::read_excel("data/Literature_Review.xlsx",sheet="FishNames") %>%
+fish <- googlesheets4::read_sheet(fn,sheet="FishNames") %>%
   dplyr::select(-sciname)
 
 ###  Read results and append on fish name info
-tmp <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Results_Meta")
-res <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Results",
-                          na=NAS,col_types=tmp$RType) %>%
+res <- googlesheets4::read_sheet(fn,sheet="Results",na=NAS) %>%
   dplyr::select(-notes) %>%
   dplyr::left_join(fish,by="species")
 
 ###  Read study info and append on results
-tmp <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Study_Meta")
-df <- readxl::read_excel("data/Literature_Review.xlsx",sheet="Study",
-                         na=NAS,col_types=tmp$RType) %>%
-  dplyr::select(-notes,-OrigFile) %>%
+df <- googlesheets4::read_sheet(fn,sheet="Study",na=NAS) %>%
+  dplyr::select(-(notes:OrigFile)) %>%
   dplyr::left_join(res,by="studyID") %>%
   dplyr::filter(USE=="yes") %>%
   dplyr::select(-USE) %>%
   dplyr::mutate(structure=factor(structure,levels=lvls_strux1),
-         structure2=factor(structure2,levels=lvls_strux2))
+         structure2=factor(structure2,levels=lvls_strux2)) %>%
+  as.data.frame()
 
 ###  Clean up
 rm(tmp,fish,res,fn,NAS)

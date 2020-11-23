@@ -14,8 +14,15 @@ bibliography: LitReview.bib
 
 ## Ignore After This
 ```{r echo=FALSE, results='asis'}
-df <- bibtex::read.bib("LitReview.bib")
+## Must export zotero libraries to bib files first (set Format to BibTeX an
+## use a Character Encoding of Unicode (UTF-8))
+df1 <- bibtex::read.bib("Completed_beforeGordy.bib")
+bibtex::write.bib(df1,file="LitReview.bib")
+df2 <- bibtex::read.bib("Completed_byGordy.bib")
+bibtex::write.bib(df2,file="LitReview.bib",append=TRUE)
+cits <- c(names(df1),names(df2))
+cits <- cits[order(cits)]
 
-for (i in seq_along(df)) cat("@",names(df)[i],"\n",sep="")
+for (i in seq_along(cits)) cat("@",cits[i],"\n",sep="")
 ```
 
