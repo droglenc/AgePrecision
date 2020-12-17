@@ -101,6 +101,7 @@ study <- study %>%
     exprnc=factor(exprnc,levels=c("yes","no")),
     continent=FSA::mapvalues(country,from=loc_old,to=loc_new1),
     continent2=FSA::mapvalues(continent,from=loc_new1a,to=loc_new2))
+
 ### Check continent and continent2 match
 xtabs(~continent+continent2,data=study)
 
