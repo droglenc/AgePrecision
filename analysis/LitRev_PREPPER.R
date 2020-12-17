@@ -37,7 +37,7 @@ n_new <- c("0-199","200-399",rep("400+",length(n_old)-2))
 
 
 ## Create database ----
-fn <- "https://docs.google.com/spreadsheets/d/1RY6DQyi-zCfg_BQ2l_cZRZC_fA6PI3zutFIMIvJfbw8/edit?ts=5bac4a12#gid=0"
+fn <- "https://docs.google.com/spreadsheets/d/1xXJhTcd1-IlshWydIheBeqeNzTg4gqBzUm685sTgTY0/edit?usp=sharing"
 
 ###  Read fish names and prepare variables
 fish <- googlesheets4::read_sheet(fn,sheet="FishNames") %>%
@@ -81,14 +81,16 @@ study <- googlesheets4::read_sheet(fn,sheet="Study",na=NAS) %>%
 #####  Create some mapvalue categories
 loc_old <- unique(study$country)
 loc_old <- loc_old[order(loc_old)]
-loc_new1 <- c("Africa","SCAmer","Aus/NZ","Europe","Africa","SCAmer","Canada",
-              "Asia","Europe","SCAmer","Europe","SCAmer","Europe","Asia","Asia",
-              "Europe","Europe","Asia","SCAmer","Aus/NZ","Europe","Asia",
-              "Europe","Africa","Europe","Africa","Asia","Europe","Europe",
-              "Asia","Africa","Europe","Africa","Europe","USA")
+loc_new1 <- c("Africa","Africa","other","SCAmer","Aus/NZ","Europe","Africa",
+              "SCAmer","SCAmer","Europe","USA/Can","Asia","SCAmer","Europe","SCAmer",
+              "Africa","Africa","SCAmer","Europe","SCAmer","Europe","Europe",
+              "SCAmer","Asia","Asia","Europe","Europe","Asia","Africa",
+              "SCAmer","other","Aus/NZ","Europe","Asia","Aus/NZ","Europe","Europe",
+              "Africa","Europe","Europe","Africa","Asia","Europe","Europe","Asia","Asia",
+              "Africa","Europe","Africa","Europe","USA/Can","USA/Can","other")
 loc_new1a <- unique(loc_new1)
 loc_new1a <- loc_new1a[order(loc_new1a)]
-loc_new2 <- c("other","Eur/Asia","Aus/NZ","USA/Can","Eur/Asia","other","USA/Can")
+loc_new2 <- c("other","Eur/Asia","Aus/NZ","Eur/Asia","other","other","USA/Can")
 #####  check it out
 cbind(loc_old,loc_new1)
 cbind(loc_new1a,loc_new2)
@@ -98,7 +100,9 @@ study <- study %>%
     marine=factor(marine,levels=c("yes","no")),
     exprnc=factor(exprnc,levels=c("yes","no")),
     continent=FSA::mapvalues(country,from=loc_old,to=loc_new1),
-    continent2=FSA::mapvalues(continent,from=unique(loc_new1),to=loc_new2))
+    continent2=FSA::mapvalues(continent,from=loc_new1a,to=loc_new2))
+### Check continent and continent2 match
+xtabs(~continent+continent2,data=study)
 
 ### Combine all three together into one data.frame
 LR <- dplyr::right_join(study,res,by="studyID") %>%
