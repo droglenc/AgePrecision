@@ -19,7 +19,7 @@ cat("\014")
 NAS <- c("-","")
 lvls_type <- c("between","within","both")
 lvls_strux1 <- c("otoliths","spines","finrays","scales","vertebrae",
-                 "thorns","other")
+                 "thorns","cleithra","opercles","other")
 lvls_strux2 <- c("sagittae","lapillae","asterisci","statoliths",
                  "anal","dorsal","pectoral","pelvic","caudal",
                  "branchiostegal rays","gular plate","metapterygoid",
@@ -28,10 +28,16 @@ lvls_strux2 <- c("sagittae","lapillae","asterisci","statoliths",
 
 class_old <- c("Actinopteri","Elasmobranchii","Holocephali","Petromyzonti")
 class_new <- c("Actinopteri","Elasmobranchii","other","other")
-strux_old <- lvls_strux1
-strux_new <- c("otoliths","spines","finrays","scales","vertebrae","other","other")
+strux1_old <- lvls_strux1
+strux1_new <- c("otoliths","spines","finrays","scales","vertebrae","other","other","other","other")
+lvls_strux1new <- c("otoliths","spines","finrays","scales","vertebrae","other")
+strux1_newp <- c("otoliths","spines+finrays","spines+finrays","scales","vertebrae",
+                  "other")
+lvls_strux1newp <- c("otoliths","spines+finrays","scales","vertebrae","other")
+
 R_old <- c("2","3","4","5","6","9")
-R_new <- c("2","3","4+","4+","4+","4+")
+R_new3 <- c("2","3+","3+","3+","3+","3+")
+R_new4 <- c("2","3","4+","4+","4+","4+")
 n_old <- seq(0,3200,200)
 n_new <- c("0-199","200-399",rep("400+",length(n_old)-2))
 
@@ -49,15 +55,18 @@ fish <- googlesheets4::read_sheet(fn,sheet="FishNames") %>%
 res <- googlesheets4::read_sheet(fn,sheet="Results",na=NAS) %>%
   dplyr::select(-notes) %>%
   dplyr::mutate(
-    structure=FSA::mapvalues(structure,from=strux_old,to=strux_new),
-    structure=factor(structure,levels=lvls_strux1),
+    structure=FSA::mapvalues(structure,from=strux1_old,to=strux1_new),
+    structure=factor(structure,levels=lvls_strux1new),
     structure2=factor(structure2,levels=lvls_strux2),
+    structurep=FSA::mapvalues(structure,from=lvls_strux1new,to=strux1_newp),
+    structurep=factor(structurep,levels=lvls_strux1newp),
     type=factor(type,levels=c("between","within","both")),
-    Rcat=FSA::mapvalues(factor(R),from=R_old,to=R_new),
+    Rcat3=FSA::mapvalues(factor(R),from=R_old,to=R_new3),
+    Rcat4=FSA::mapvalues(factor(R),from=R_old,to=R_new4),
     ncat=FSA::mapvalues(FSA::lencat(n,w=200,as.fact=TRUE),from=n_old,to=n_new),
     agemaxcat=FSA::lencat(agemax,w=10,as.fact=TRUE),
     agerange=agemax-agemin,
-    agerangecat=FSA::lencat(agerange,breaks=c("0-10"=0,"10-20"=10,"20+"=20),
+    agerangecat=FSA::lencat(agerange,breaks=c("0-10"=0,"10-20"=10,"20-30"=20,"30-40"=30,"40-50"=40,"50-60"=50,"60-70"=60,"70-80"=70,"80-90"=80,"90-100"=90,"100-110"=100,"110-120"=110),
                             use.names=TRUE),
     ACVused=factor(ifelse(!is.na(ACV),"yes","no"),levels=c("yes","no")),
     ## determine if both ACV and APE were used
@@ -71,7 +80,7 @@ res <- googlesheets4::read_sheet(fn,sheet="Results",na=NAS) %>%
     logACVmod=log(ACVmod),
     checkbias=factor(checkbias,levels=c("yes","no")),
     biaspresent=factor(biaspresent,levels=c("yes","no")),
-    checkrelage=factor(checkrelage,levels=c("yes","no")),
+    checkrelage=factor(checkrelage,levels=c("yes","no"))
   )
 
 ###  Read study info and prepare variables
@@ -112,9 +121,9 @@ LR <- dplyr::right_join(study,res,by="studyID") %>%
   dplyr::select(
     studyID,pubyear,country,continent,continent2,marine,exprnc,
     species,family,order,class,class1,
-    structure,structure2,process,
+    structure,structure2,structurep,process,
     agemin,agemax,agemaxcat,agerange,agerangecat,
-    type,R,Rcat,n,ncat,
+    type,R,Rcat3,Rcat4,n,ncat,
     APE,logAPE,ACV,logACV,ACVmod,logACVmod,ACVmodused,bothACVnAPEused,
     PA0,PA1,ASD,AAD,APE2,ACV2,AD,
     checkbias,biasmethod,biaspresent,
