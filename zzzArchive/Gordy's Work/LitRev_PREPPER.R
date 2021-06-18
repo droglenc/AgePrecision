@@ -11,8 +11,8 @@
 #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 
 ## Setup ----
+usethis::use_blank_slate(scope="project")
 library(dplyr)
-cat("\014")
 
 ### Read main files ... doing this here to minimize the number of calls to
 ###   googlesheets when troubleshooting; i.e., just run this and then modify

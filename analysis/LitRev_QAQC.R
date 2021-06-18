@@ -1,14 +1,18 @@
-## Scripts to help "clean" the literature review data ----
-cat("\014")
-library(FSA)
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+#= This reads the flat file in LitReview.RData and uses a variety of         =#
+#=   summaries to help screen the raw data for "errors".                     =#
+#=                                                                           =#
+#= If the data on GoogleSheets was changed then source LitReview_PREPPER.R   =#
+#=   to recreate the literature review database. This script is not run once =#
+#=   the data in GoogleSheet has been deemed adequately "clean."             =#
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
+usethis::use_blank_slate(scope="project")
 
 ## Get the literature review database ----
-# If the data on GoogleSheets was changed then source LitReview_PREPPER.R to
-# recreate the literature review database.
 load("data/LitReview.RData")
 str(LR)
 
-# check for non-standard entries
+# check for non-standard entries ----
 xtabs(~structure,data=LR)
 xtabs(~structure2+structure,data=LR)
 # pectoral and caudal scales used correctly for Quist 2007 paper
@@ -43,7 +47,8 @@ plot(ACV~APE,data=LR,pch=21,bg=ifelse(R==2,"green","red"),xlim=c(0,20),ylim=c(0,
 abline(a=0,b=sqrt(2),col="blue")
 abline(a=0,b=1,col="red",lty=2)
 
-plot(I(ACV/APE)~ACV,data=filterD(LR,R==2),pch=21,bg=ifelse(R==2,"green","red"),ylim=c(1.2,1.6),xlim=c(0,30))
+plot(I(ACV/APE)~ACV,data=dplyr::filter(LR,R==2),
+     pch=21,bg=ifelse(R==2,"green","red"),ylim=c(1.2,1.6),xlim=c(0,30))
 abline(h=sqrt(2),col="blue")
 
 # use this to find off values
@@ -63,11 +68,11 @@ abline(a=0,b=1,col="blue")
 #with(LR,identify(PA0,PA1))
 LR[c(1123),c("studyID","species","structure","process","PA0","PA1")]
 
-hist(~ACV,data=LR,w=2)
-hist(ACV~class,data=LR,w=2)
+FSA:::hist.formula(~ACV,data=LR,w=2)
+FSA:::hist.formula(ACV~class,data=LR,w=2)
 boxplot(ACV~class,data=LR)
-Summarize(ACV~class,data=LR) #Petromyzonti papers only using APE
-Summarize(ACV~R,data=LR)
-Summarize(APE~R,data=LR)
+FSA::Summarize(ACV~class,data=LR) #Petromyzonti papers only using APE
+FSA::Summarize(ACV~R,data=LR)
+FSA::Summarize(APE~R,data=LR)
 
-hist(~n,data=LR,w=25,xlim=c(0,500))
+FSA:::hist.formula(~n,data=LR,w=25,xlim=c(0,500))
