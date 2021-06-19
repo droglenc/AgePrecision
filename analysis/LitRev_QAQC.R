@@ -6,7 +6,7 @@
 #=   to recreate the literature review database. This script is not run once =#
 #=   the data in GoogleSheet has been deemed adequately "clean."             =#
 #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
-usethis::use_blank_slate(scope="project")
+cat("\014")
 
 ## Get the literature review database ----
 load("data/LitReview.RData")

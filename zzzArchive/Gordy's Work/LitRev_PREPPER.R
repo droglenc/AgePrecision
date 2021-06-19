@@ -11,7 +11,7 @@
 #=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#
 
 ## Setup ----
-usethis::use_blank_slate(scope="project")
+cat("\014")
 library(dplyr)
 
 ### Read main files ... doing this here to minimize the number of calls to
@@ -40,6 +40,7 @@ classes <- data.frame(
 
 unique(res$type)
 lvls_type <- c("between","within","both")
+lvls_type <- FSA::capFirst(lvls_type,which="first")
 
 unique(res$structure)
 structures <- data.frame(
@@ -47,7 +48,9 @@ structures <- data.frame(
         "thorns","cleithra","opercles","other"),
   new=c("otoliths","spines","finrays","scales","vertebrae",
          "other","other","other","other")
-)
+) %>%
+  mutate(old=FSA::capFirst(old,which="first"),
+         new=FSA::capFirst(new,which="first"))
 # Use this to set levels later ... levels=unique(structures$new)
 
 unique(res$structure2)
@@ -57,9 +60,11 @@ structures2 <- c("sagittae","lapillae","asterisci","statoliths",
                  "gular plate","maxillae","medial nuchais","metapterygoid",
                  "pectoral articulating process","postcleithra","scute",
                  "sphenoid","subopercular","vomerine tooth plate")
+structures2 <- FSA::capFirst(structures2,which="first")
 
 processes2 <- c("whole","ground/sectioned","cracked","etched",
                 "other","unknown")
+processes2 <- FSA::capFirst(processes2,which="first")
 
 unique(res$R)
 Rs <- data.frame(
@@ -107,6 +112,7 @@ lvls_yn <- c("yes","no")
 ### Prepare fish names
 fish2 <- fish %>%
   dplyr::mutate(
+    class=FSA::capFirst(class,which="first"),
     class=factor(class,levels=classes$old),
     class1=plyr::mapvalues(class,from=classes$old,to=classes$new)
   )
@@ -114,10 +120,13 @@ fish2 <- fish %>%
 ### Prepare main results
 res2 <- res %>%
   dplyr::mutate(
+    type=FSA::capFirst(type,which="first"),
     type=factor(type,levels=lvls_type),
 
+    structure=FSA::capFirst(structure,which="first"),
     structure=plyr::mapvalues(structure,from=structures$old,to=structures$new),
     structure=factor(structure,levels=unique(structures$new)),
+    structure2=FSA::capFirst(structure2,which="first"),
     structure2=factor(structure2,levels=structures2),
     
     process2=case_when(
@@ -129,6 +138,7 @@ res2 <- res %>%
       stringr::str_starts(process,"unknown") ~ "unknown",
       TRUE ~ "other"
     ),
+    process2=FSA::capFirst(process2,which="first"),
     process2=factor(process2,levels=processes2),
     
     Rcat3=plyr::mapvalues(R,from=Rs$old,to=Rs$new3),
@@ -186,8 +196,9 @@ study2 <- study %>%
 ### Combine all three together into one data.frame
 tmp <- dplyr::right_join(study2,res2,by="studyID") %>%
   dplyr::left_join(fish2,by="species")
-### Rearrange the variables
+# Filter to between 1995 and 2020 (inclusive) and rearrange the variables
 LR <- tmp %>%
+  dplyr::filter(pubyear>=1995,pubyear<=2020) %>%
   dplyr::select(
     studyID,pubyear,country,continent,continent2,marine,exprnc,
     species,family,order,class,class1,
