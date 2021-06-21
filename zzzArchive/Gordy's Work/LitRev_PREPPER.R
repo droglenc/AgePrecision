@@ -196,11 +196,19 @@ study2 <- study %>%
 ### Combine all three together into one data.frame
 tmp <- dplyr::right_join(study2,res2,by="studyID") %>%
   dplyr::left_join(fish2,by="species")
-# Filter to between 1995 and 2020 (inclusive) and rearrange the variables
+# Filter to between 1996 and 2020 (inclusive), add a 5 year window variable,
+#   and rearrange the variables
 LR <- tmp %>%
-  dplyr::filter(pubyear>=1995,pubyear<=2020) %>%
+  dplyr::filter(pubyear>=1996,pubyear<=2020) %>%
+  dplyr::mutate(pubyear5=FSA::lencat(pubyear,startcat=1996,w=5),
+                pubyear5=plyr::mapvalues(pubyear5,
+                                         from=c(1996,2001,2006,2011,2016),
+                                         to=c("1996-2000","2001-05","2006-10",
+                                              "2011-15","2016-20")),
+                pubyear5=factor(pubyear5,levels=c("1996-2000","2001-05","2006-10",
+                                                  "2011-15","2016-20"))) %>%
   dplyr::select(
-    studyID,pubyear,country,continent,continent2,marine,exprnc,
+    studyID,pubyear,pubyear5,country,continent,continent2,marine,exprnc,
     species,family,order,class,class1,
     structure,structure2,process,process2,
     agemin,agemax,agemaxcat,agerange,agerangecat,

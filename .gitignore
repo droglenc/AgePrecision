@@ -3,8 +3,9 @@
 .RData
 .Ruserdata
 
-## Don't need results_precision folder because it can be updated from code
+## Don't need these folders because they can be updated from code
 data/results_precision/*
+docs/Figs/*
 
 ## Don't need Excel file because it comes from GoogleSheets
 .httr-oauth
