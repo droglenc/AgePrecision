@@ -5,8 +5,8 @@ theme_LR <- theme_bw(base_size=10) +
         axis.text=element_text(size=8,color="black"),
         axis.title=element_text(size=10,color="black"),
         # control facet look
-        strip.text=element_text(color="white",face="bold",size=10),
-        strip.background=element_rect(fill="black",linetype="solid"),
+        strip.text=element_text(color="black",face="bold",size=10),
+        strip.background=element_rect(fill="gray80",color="black",linetype="solid"),
         strip.text.x=element_text(margin=margin(1,0,1,0)),
         strip.text.y=element_text(margin=margin(0,2,0,2)),
         # put a border around the panel

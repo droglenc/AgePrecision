@@ -44,9 +44,9 @@ lvls_type <- FSA::capFirst(lvls_type,which="first")
 
 unique(res$structure)
 structures <- data.frame(
-  old=c("otoliths","spines","finrays","scales","vertebrae",
+  old=c("otoliths","scales","finrays","spines","vertebrae",
         "thorns","cleithra","opercles","other"),
-  new=c("otoliths","spines","finrays","scales","vertebrae",
+  new=c("otoliths","scales","finrays","spines","vertebrae",
          "other","other","other","other")
 ) %>%
   mutate(old=FSA::capFirst(old,which="first"),

@@ -34,15 +34,17 @@ bibliography: GeneralResources.bib
 knitr::opts_chunk$set(echo=FALSE, results="hide",message=FALSE,warning=FALSE)
 wdir <- here::here()
 library(ggplot2)
+library(patchwork)
 library(dplyr)
 source(file.path(wdir,"code","ggplot_theme.R"))  # Get ggplot theme
 # figure widths and heights for 1- and 2-column figures
-fw1 <- fh1 <- 3.5
+fw1 <- fh1 <- 7.25/2
 fw2 <- 7.25
 fh2 <- 7.25*(3/4)
 # toggle on to save TIFF/PDF files
 saveTIFFs <- TRUE
 savePDFs <- TRUE
+showFigLabels <- FALSE
 # setup captioning (need github version ... remotes::install_github('adletaw/captioner')  )
 figs <- captioner::captioner(prefix="Figure",suffix=".")
 
@@ -62,7 +64,15 @@ LRBS <- LR %>%
   group_by(studyID,pubyear,pubyear5) %>%
   summarize(across(c(APE,ACV,APE2,ACV2,AD,AAD,ASD,PA0,PA1),
                    ~!all(is.na(.)))) %>%
-  mutate(PA=PA0 | PA1) %>%
+  mutate(PA=PA0 | PA1,
+         PA_alone=ifelse(!PA,NA,!(APE | ACV | AD)),
+         PA_with=ifelse(!PA,NA,(APE | ACV | AD)),
+         APE_noACV=ifelse(!APE,NA,APE & !ACV),
+         APE_wACV=ifelse(!APE,NA,APE & ACV),
+         ACV_noAPE=ifelse(!ACV,NA,ACV & !APE),
+         ACV_wAPE=ifelse(!ACV,NA,ACV & APE),
+         AD_alone=ifelse(!AD,NA,!(APE | ACV)),
+         AD_wAPEorACV=ifelse(!AD,NA,(APE | ACV))) %>%
   ungroup()
 ```
 
@@ -70,6 +80,9 @@ LRBS <- LR %>%
 ###### Department of Mathematical Sciences and Department of Natural Resources, Northland College, 1411 Ellis Ave, Ashland, WI 54806
 
 ##### Joshua XX. Lyons
+###### Department of Natural Resources, Northland College, 1411 Ellis Ave, Ashland, WI 54806
+
+##### Gordon XX. Scott
 ###### Department of Natural Resources, Northland College, 1411 Ellis Ave, Ashland, WI 54806
 
 ####### Running head: Age Precision Metrics Review
@@ -114,7 +127,7 @@ When $R\!=\!2$, $ACV=\sqrt{2}\times APE$ [@changStatisticalMethodEvaluating1982;
 
 Percent agreement, $APE$, and $ACV$ are the most commonly used measures of precision [@campanaAccuracyPrecisionQuality2001; @morisonQualityIssuesUse2005]. Percent agreement has been criticized as a useful composite measure of precision, largely because it varies widely among species and among ages within a species [@beamishMethodComparingPrecision1981; @kimuraBetweenreaderBiasVariability1991; @campanaGraphicalStatisticalMethods1995; @campanaAccuracyPrecisionQuality2001; @maceinaCurrentStatusReview2007]. Despite these critiques and likely due to its simplicity, @morisonQualityIssuesUse2005 found that 49% of 53 laboratories from 23 countries used percent agreement as a measure of precision among estimated ages. @beamishMethodComparingPrecision1981 proposed the $APE$ to address the shortcomings of the percent agreement. @changStatisticalMethodEvaluating1982 introduced $ACV$, though he called it $CV$, as a better alternative to the $APE$ because the standard deviation is a better estimator (unbiased and consistent) of variability than the absolute deviation, though @kimuraBetweenreaderBiasVariability1991 noted that this was only true if the age estimates were normally distributed.
 
-In a review of 131 papers that reported precision values for fish age estimates, @campanaAccuracyPrecisionQuality2001 found that most papers used the ACV (57%) to measure precision, though APE and ACV were used almost equally for studies of annual age and ACV was used predominantly (84%) when estimating daily age from otoliths. The median and modal ACV across 117 studies deemed to have valid precision estimates were 7.6% and 5%, respectively. No significant differences in precision were found among calcified structures used to estimate annual age. @campanaAccuracyPrecisionQuality2001 reiterated that there is a direct conversion between ACV and APE when $R\!=\!2$ and that both measures are "equally sensitive to precision differences among agers." From this, @campanaAccuracyPrecisionQuality2001 stated "it is not self-evident that one measure [APE or ACV] is to be preferred over the other." From his literature review and informal discussions with scientists from fish ageing laboratories, @campanaAccuracyPrecisionQuality2001 concluded that an ACV of 5% would represent reasonable precision for many fish of moderate longevity and complexity of structure interpretation.
+In a review of 131 papers that reported precision values for fish age estimates, @campanaAccuracyPrecisionQuality2001 found that most papers used the $ACV$ (57%) to measure precision, though $APE$ and $ACV$ were used almost equally for studies of annual age and $ACV$ was used predominantly (84%) when estimating daily age from otoliths. The median and modal $ACV$ across 117 studies deemed to have valid precision estimates were 7.6% and 5%, respectively. No significant differences in precision were found among calcified structures used to estimate annual age. @campanaAccuracyPrecisionQuality2001 reiterated that there is a direct conversion between $ACV$ and $APE$ when $R\!=\!2$ and that both measures are "equally sensitive to precision differences among agers." From this, @campanaAccuracyPrecisionQuality2001 stated "it is not self-evident that one measure [APE or ACV] is to be preferred over the other." From his literature review and informal discussions with scientists from fish ageing laboratories, @campanaAccuracyPrecisionQuality2001 concluded that an $ACV$ of 5% would represent reasonable precision for many fish of moderate longevity and complexity of structure interpretation.
 
 Other metrics of precision have been proposed or could be derived using similar logic. @changStatisticalMethodEvaluating1982 also introduced the index of precision for the $j$th fish as $D_{j}=\frac{ACV_{j}}{\sqrt{R}}$. @kimuraQualityControlAge2005 suggested, based on distributional theory, that the median age estimate for the $j$th fish ($\tilde{x}_{j}$) should be used instead of $\bar{x}_{j}$ for $PE_{j}$. Presumably the same argument can be applied to $CV_{j}$. This change results in a modified percent error and coefficient of variation for the $j$th fish; i.e., 
 
@@ -126,11 +139,11 @@ $$CV_{j}^{*} = \frac{\sqrt{\frac{\sum_{i=1}^{R}\,\left(x_{ij}-\bar{x}_{j}\right)
 
 Not suprisingly there are predictable relationships between several of these measures. When $R\!=\!2$, $ASD=\sqrt{2}\times AAD$, $ACV=ACV^{*}$ and $APE=APE^{*}$ because $\bar{x}_{j}=\tilde{x}_{j}$, and $APE=D$ [@campanaGraphicalStatisticalMethods1995]. Thus, when $R\!=\!2$, $ACV$, $APE$, $ACV^{*}$, $APE^{*}$, and $D$ provide functionally the same information about precision among age estimates. Similarly, $AAD$ and $ASD$ provide functionally the same information about precision among $R\!=\!2$ age estimates. For $R\!>\!2$, $ACV$ and $D$ are proportional and, thus, do not provide functionally different information about precision among age estimates.
 
-It has been more than two decades since @campanaAccuracyPrecisionQuality2001 reviewed the use of precision metrics in the published literature and made recommendation for their use. It has also been 15 years since @maceinaCurrentStatusReview2007 reported on a survey of fisheries scientists with respect to their use of precision metrics. In relatively recent years, @bauerlienPrecisionCalcifiedStructures2018 suggested that using a single summary precision metric may not be good practice and @buckmeierValidationAnnualDaily2017 described how the ASD may be more appropriate than the ACV in some instances. Given the length of time since the last synthetic review of precision metrics and these newly raised questions, we report here on our comprehensive review of papers published since 2002 that reported age precision metrics and our extended analyses of data from multiple age interpretations reported in a variety of published papers. Our overall goal is to summarize the use and value of precision metrics since 2001, show results for precision metrics that are not typically used in the literature, and to provide specific recommendations on the use of precision metrics with respect to fish ageing studies. Specifically, we will answer the following questions from our review of the literature:
+It has been more than two decades since @campanaAccuracyPrecisionQuality2001 reviewed the use of precision metrics in the published literature and made recommendation for their use. It has also been 15 years since @maceinaCurrentStatusReview2007 reported on a survey of fisheries scientists with respect to their use of precision metrics. In relatively recent years, @bauerlienPrecisionCalcifiedStructures2018 suggested that using a single summary precision metric may not be good practice and @buckmeierValidationAnnualDaily2017 described how the ASD may be more appropriate than the $ACV$ in some instances. Given the length of time since the last synthetic review of precision metrics and these newly raised questions, we report here on our comprehensive review of papers published since 2002 that reported age precision metrics and our extended analyses of data from multiple age interpretations reported in a variety of published papers. Our overall goal is to summarize the use and value of precision metrics since 2001, show results for precision metrics that are not typically used in the literature, and to provide specific recommendations on the use of precision metrics with respect to fish ageing studies. Specifically, we will answer the following questions from our review of the literature:
 
 1. How often are each of the seven precision metrics introduced above used?
-1. What is the distribution and summary statistics of ACV values reported in the literature?
-1. Do ACV values reported in the literature differ by type of comparison (between or within interpreter), number of repeated interpretations (i.e., $R$), calcified structure, range of ages, sample size, or other characteristics of the fish (e.g., taxonomic category) or study (e.g., preparation method for the structure).
+1. What is the distribution and summary statistics of $ACV$ values reported in the literature?
+1. Do $ACV$ values reported in the literature differ by type of comparison (between or within interpreter), number of repeated interpretations (i.e., $R$), calcified structure, range of ages, sample size, or other characteristics of the fish (e.g., taxonomic category) or study (e.g., preparation method for the structure).
 1. How often did the authors check for no bias before computing the precision metric?
 1. How often did the authors check for a relationship between the precision metric and age?
 1. How often was the precision metric related to age (when this relationship was examined)?
@@ -156,9 +169,12 @@ Under the *a priori* assumptions that only percent agreement, $APE$, and $ACV$ w
 # [A]Results
 ## [B]Literature Review
 
-#### Sample Characteristics
 ```{r CALC_n_by_year}
-## Sample size by years ----
+## Overall sample sizes
+LR_n <- nrow(LR)
+LRBS_n <- nrow(LRBS)
+
+## Sample size by years
 SUMLR_n_years <- LR %>%
   group_by(pubyear,pubyear5) %>%
   summarize(n=n()) %>%
@@ -186,40 +202,10 @@ SUM_n_years5 <- SUMLR_n_years5 %>%
   mutate(nlbl=paste0(n_ests," estimates in\n",n_pubs," publications"))
 SUM_n_years5
 ```
-
-TEXT HERE
-```{r Figure_n_by_year, fig.width=fw2, fig.height=fh2}
-ggplot() +
-  geom_bar(data=SUMLR_n_years,mapping=aes(x=pubyear,y=n,fill="Estimates"),
-           stat="identity",color="black",width=0.8,size=0.3) +
-  geom_bar(data=SUMLRBS_n_years,mapping=aes(x=pubyear,y=n,fill="Publications"),
-           stat="identity",width=0.6,size=0.05) +
-  scale_y_continuous(name="Frequency",expand=expansion(mult=c(0,0.1)),
-                     breaks=seq(0,100,10)) +
-  scale_x_continuous(name="Publication Year",expand=expansion(mult=0.02),
-                     breaks=seq(1995,2020,5)) +
-  scale_fill_manual(values=c("Publications"="gray30","Estimates"="gray70")) +
-  geom_segment(data=SUM_n_years5,mapping=aes(x=minyr-0.4,xend=maxyr+0.4,
-                                               y=maxn+3,yend=maxn+3)) +
-  geom_text(data=SUM_n_years5,
-            mapping=aes(x=(minyr+maxyr)/2,y=maxn+3,label=nlbl),
-            vjust=-0.1,size=3) +
-  theme(legend.position=c(0,1),legend.justification=c(0,1),legend.box="none")
-
-fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
-if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
-                      width=fw2,height=fh2,units="in")
-if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
-                      width=fw2,height=fh2,units="in")
-figs(name= knitr::opts_current$get()$label,"Number of individual estimates and number of publications with precision estimates by year from 1996-2020 used in the literature review. Number of estimates and publications were also shown for five year periods.")
-```
-
-`r figs("Figure_n_by_year")`
-
 ```{r CALC_n_by_class_structure}
 ## Sample size by class ----
 ## Removed holocephali and petromyzonti because n was so small
-tmp <- xtabs(~class,data=LR)
+xclass <- xtabs(~class,data=LR)
 
 SUMLR_n_class_strux <- LR %>%
   filter(class %in% c("Actinopteri","Elasmobranchii")) %>%
@@ -230,37 +216,26 @@ SUMLR_n_class_strux <- LR %>%
   ungroup()
 SUMLR_n_class_strux
 ```
-
-```{r Figure_n_by_class_structure, fig.width=fw1, fig.height=fh1}
-ggplot(data=SUMLR_n_class_strux,
-       mapping=aes(x=structure,y=n,fill=class)) +
-  geom_bar(stat="identity",color="black",width=0.8,size=0.3) +
-  scale_y_continuous(name="Frequency of Precision Estimates",
-                     expand=expansion(mult=c(0,0.05))) +
-  scale_x_discrete(name="Calcified Structure") +
-  scale_fill_manual(values=c("Actinopteri"="gray70",
-                             "Elasmobranchii"="gray30")) +
-  theme(legend.position=c(1,1),legend.justification=c(1,1),legend.box="none")
-
-fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
-if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
-                      width=fw2,height=fh2,units="in")
-if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
-                      width=fw2,height=fh2,units="in")
-figs(name=knitr::opts_current$get()$label,paste("Number of individual precision estimates by calcified structure type separated by major taxonomic class.",FSA::kCounts(tmp[['Holocephali']],capitalize=TRUE),"and",FSA::kCounts(tmp[['Petromyzonti']]),"estimates for Holocephali and Petromyzonti are not included."))
+```{r CALC_n_by_class_structure_year5}
+## Removed holocephali and petromyzonti because n was so small
+SUMLR_n_class_strux_year5 <- LR %>%
+  filter(class %in% c("Actinopteri","Elasmobranchii")) %>%
+  group_by(class,pubyear5,structure) %>%
+  summarize(n=n()) %>%
+  mutate(Percent=n/sum(n)*100,
+         plbl=paste0(formatC(Percent,format="f",digits=0),"%")) %>%
+  ungroup()
+SUMLR_n_class_strux_year5
 ```
-
-`r figs("Figure_n_by_class_structure")`
-
 ```{r CALC_P_by_type_structure}
 ## Sample size by type ----
 ## Removed "both" because n was so small
-tmp <- xtabs(~type,data=LR)
+xtype <- xtabs(~type,data=LR)
 
-tmp1 <- xtabs(~structure+type,data=droplevels(filter(LR,type!="Both")))
-( chi <- chisq.test(tmp1) )
-tmp2 <- NCStats::chisqPostHoc(chi)
-tmp2$comparison[which(tmp2$adj.p<0.05)]
+xstruxtype1 <- xtabs(~structure+type,data=droplevels(filter(LR,type!="Both")))
+( chistruxtype <- chisq.test(xstruxtype1) )
+chistruxtype2 <- NCStats::chisqPostHoc(chistruxtype)
+chistruxtype2$comparison[which(chistruxtype2$adj.p<0.05)]
 
 SUM_np_strux_type <- LR %>%
   filter(type!="Both") %>%
@@ -270,73 +245,23 @@ SUM_np_strux_type <- LR %>%
   ungroup()
 SUM_np_strux_type2 <- SUM_np_strux_type %>%
   filter(type=="Within") %>%
-  mutate(lets=c("b","bc","bc","c","a","ab"),
+  mutate(lets=c("b","c","bc","bc","a","ab"),
          plbl=paste0(formatC(perc,format="f",digits=0),"%"),
          nlbl=paste0("n=",freq))
 ```
-
-```{r Figure_P_by_type_structure, fig.width=fw1, fig.height=fh1}
-ggplot() +
-  geom_bar(data=SUM_np_strux_type,mapping=aes(x=structure,y=perc,fill=type),
-           stat="identity",color="black",width=0.8,size=0.3) +
-  scale_y_continuous(name="Percentage of Precision Estimates",
-                     expand=expansion(mult=c(0,0.04))) +
-  scale_x_discrete(name="Calcified Structure") +
-  scale_fill_manual(values=c("Between"="gray70","Within"="gray30")) +
-  annotate(geom="text",x=1,y=100,label="Between",
-           angle=90,size=2.5,hjust=1.1) +
-  annotate(geom="text",x=1,y=0,label="Within",
-           angle=90,size=2.5,color="white",hjust=-0.1) +
-  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=perc,label=plbl),
-            vjust=-0.3,size=2.5) +
-  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=perc,label=lets),
-            vjust=1.3,size=2.5,color="white") +
-  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=100,label=nlbl),
-            vjust=-0.3,size=2.5) +
-  theme(legend.position="none")
-
-fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
-if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
-                      width=fw2,height=fh2,units="in")
-if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
-                      width=fw2,height=fh2,units="in")
-figs(name=knitr::opts_current$get()$label,paste("Percentage of individual precision estimates within calcified structure types that were within-reader estimates. Structures with the same letters have statistically equal percent of within-reader estimates. Overall sample size for each structure is shown above the bars.",FSA::kCounts(tmp[["Both"]],capitalize=TRUE),"estimates that combined within- and between-reader estimates are not included."))
-```
-
-`r figs("Figure_P_by_type_structure")`
-
-```{r CALC_n_by_R}
+```{r CALC_Sum_R}
+## Sample size by R
 SUMLR_n_R <- LR %>%
   group_by(Rcat4) %>%
   summarize(freq=n()) %>%
   mutate(perc=freq/sum(freq)*100)
-```
 
-```{r Figure_n_by_R, fig.width=fw1, fig.height=fh1}
-ggplot(data=SUMLR_n_R,mapping=aes(x=Rcat4,y=freq)) +
-  geom_bar(stat="identity",color="black",fill="gray30",width=0.8,size=0.3) +
-  scale_x_discrete(name="R (Number of Repeated Readings)") +
-  scale_y_continuous(name="Frequency of Precision Estimates",
-                     expand=expansion(mult=c(0,0.02)))
-
-fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
-if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
-                      width=fw2,height=fh2,units="in")
-if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
-                      width=fw2,height=fh2,units="in")
-figs(name=knitr::opts_current$get()$label,paste("Number of individual precision estimates by the number of repeated readings (R). The maximum number of repeated readings was R=9."))
-```
-
-`r figs("Figure_n_by_R")`
-
-```{r CALC_P_by_R_year}
-## Sample size by R
-tmp <- xtabs(~pubyear5+Rcat4,data=LR)
-chisq.test(tmp)
-tmp <- xtabs(~pubyear5+Rcat3,data=LR)
-chi1 <- chisq.test(tmp)
-NCStats::chisqPostHoc(chi1)
-
+## Sample size by R by year5
+xyearR4 <- xtabs(~pubyear5+Rcat4,data=LR)
+chisq.test(xyearR4)
+xyearR3 <- xtabs(~pubyear5+Rcat3,data=LR)
+chiyearR3 <- chisq.test(xyearR3)
+NCStats::chisqPostHoc(chiyearR3)
 
 SUMLR_n_R_year5 <- LR %>%
   group_by(pubyear5,Rcat4) %>%
@@ -348,40 +273,94 @@ SUMLR_n_R_year5a <- SUMLR_n_R_year5 %>%
   mutate(nlbl=paste0("n=",freq))
 ```
 
-```{r Figure_P_by_R_year, fig.width=fw1, fig.height=fh1}
-ggplot() +
-  geom_bar(data=SUMLR_n_R_year5,mapping=aes(x=pubyear5,y=perc,fill=Rcat4),
-           stat="identity",color="black",width=0.8,size=0.3,
-           position=position_stack(reverse=TRUE)) +
-  scale_x_discrete(name="R (Number of Repeated Readings)") +
-  scale_y_continuous(name="Frequency of Precision Estimates",
-                     expand=expansion(mult=c(0,0.04))) +
-  scale_fill_manual(values=c("2"="gray20","3"="gray50","4+"="gray80")) +
-  geom_text(data=SUMLR_n_R_year5a,mapping=aes(x=pubyear5,y=100,label=nlbl),
-            vjust=-0.3,size=2.5) +
-  annotate(geom="text",x=1,y=58/2,label="R=2",size=2.5,color="white") +
-  annotate(geom="text",x=1,y=58+42/2,label="R=3",size=2.5) +
-  annotate(geom="text",x=5,y=100-8.75/2,label="R=4+",size=2.5) +
-  theme(legend.position="none")
 
-fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
-if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
-                      width=fw2,height=fh2,units="in")
-if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
-                      width=fw2,height=fh2,units="in")
-figs(name=knitr::opts_current$get()$label,paste("Percentage of individual precision estimates within each 5-year period by the number of repeated readings (R)."))
+The final literature review data consisted of `r LR_n` individual precision assessments from `r LRBS_n` papers published between 1996 and 2020. The number of papers with precision assessments generally increased over this 25 year period (`r figs("Figure_n_by_year",display="cite")`). Otoliths were the most commonly assessed calcified structure (`r SUMLR_n_class_strux[1,"plbl"]` of all assessments for Actinopteri), though vertebrae were most commonly assessed among elasmobranchs (`r SUMLR_n_class_strux[8,"plbl"]` of all assessments for Elasmobranchii; `r figs("Figure_n_by_class_structure",display="cite")`). The number of precision assessments for Actinopteri increased in the late 2000s, primarily due to increased assessments of scales, spines, and fin rays, and then again in the late 2010s due to more otolith assessments (`r figs("Figure_n_by_class_structure",display="cite")`). The number of precision assessments for Elasomabranchii was fairly constant over the 25 years, though the assessment of spines increased beginning in the late 2000s (`r figs("Figure_n_by_class_structure",display="cite")`). Most assessments were between-readers rather than within-readers, with the exception that `r SUM_np_strux_type2[5,"plbl"]` of assessments with vertebrae were within-readers (`r figs("Figure_P_by_type_structure",display="cite")`). The majority of assessments were between two readings (`r RES(SUMLR_n_R[[1,"perc"]],digits=0)`%; `r figs("Figure_Sum_R",display="cite")`). The percentage of assessments using two readings increased to a peak in the late 2000s and decreased into the 2010s, primarily replaced with assessments among three readings, though assessments with four or more readings were more prevalent in the late 2010s (`r figs("Figure_Sum_R",display="cite")`).
+
+
+```{r CALC_Sum_Metrics}
+# Number/Percent metrics used across all STUDIES
+SUMLRBS_n_Metrics <- LRBS %>%
+  summarize(n=n(),across(c(PA,APE,ACV,APE2,ACV2,AD,AAD,ASD,
+                           PA_alone,PA_with,APE_noACV,APE_wACV,
+                           ACV_noAPE,ACV_wAPE,AD_alone,AD_wAPEorACV),
+                         sum,na.rm=TRUE)) %>%
+  as.data.frame()
+SUMLRBS_n_Metrics
+## ASD and APE* were in only 1 pub each, ACV and AAD were in 0 ... thus removed
+
+SUMLRBS_P_Metrics <- SUMLRBS_n_Metrics %>%
+  select(PA,ACV,APE,AD) %>%
+  tidyr::pivot_longer(everything(),names_to="Metric",values_to="Freq") %>%
+  mutate(Metric=factor(Metric,levels=c("PA","ACV","APE","AD")),
+         Percent=Freq/SUMLRBS_n_Metrics$n*100,
+         plbl=paste0(formatC(Percent,format="f",digits=0),"%"))
+SUMLRBS_P_Metrics
+
+SUMLRBS_P_Metrics2 <- SUMLRBS_n_Metrics %>%
+  mutate(PA_alone=PA_alone/PA*100,PA_other=PA_with/PA*100,
+         ACV_alone=ACV_noAPE/ACV*100,ACV_other=ACV_wAPE/ACV*100,
+         APE_alone=APE_noACV/APE*100,APE_other=APE_wACV/APE*100,
+         AD_alone=AD_alone/AD*100,AD_other=AD_wAPEorACV/AD*100) %>%
+  select(contains(c("alone","other"))) %>%
+  tidyr::pivot_longer(everything(),values_to="Percent") %>%
+  mutate(Metric=sub("_.*","",name),
+         Metric=factor(Metric,levels=c("PA","ACV","APE","AD")),
+         CUSE=sub(".*_","",name),
+         clbl=c("Only\nPA","","Without\nAPE","Without\nACV",
+                "With APE,\nACV, or AD","With APE","With ACV","With APE\nor ACV"),
+         clbl=paste0(clbl,"\n(",formatC(Percent,format="f",digits=0),"%)"),
+         clbly=ifelse(CUSE=="alone",Percent/2,100-Percent+Percent/2)) %>%
+  select(Metric,CUSE,Percent,clbl,clbly)
+SUMLRBS_P_Metrics2
+
+SUMLRBS_P_Metrics3 <- LRBS %>%
+  group_by(pubyear5) %>%
+  summarize(n=n(),
+            n_APE_noACV=sum(APE_noACV,na.rm=TRUE),
+            n_APE=sum(APE),
+            n_ACV=sum(ACV)) %>%
+  mutate(p_APE_noACV=n_APE_noACV/n*100,
+         p_APE=n_APE/n*100,
+         p_ACV=n_ACV/n*100) %>%
+  select(pubyear5,n,p_APE_noACV,p_APE,p_ACV) %>%
+  tidyr::pivot_longer(-(pubyear5:n),names_to="Metric",values_to="Percent")
+SUMLRBS_P_Metrics3
 ```
 
-`r figs("Figure_P_by_R_year")`
+The $ACV$ was the most used precision metric, though the $APE$ and $PA$ were used nearly as much (`r figs("Figure_MetricsUsed",display="cite")`). The $PA$ was most often used simultaneously with either the $ACV$, $APE$, or $AD$ and, thus, was used rarely by itself (`r RES(SUMLRBS_P_Metrics2[[1,"Percent"]],digits=0)`% of studies that used $PA$). The $ACV$ and $APE$ were commonly used together with `r RES(SUMLRBS_P_Metrics2[[6,"Percent"]],digits=0)`% of studies that used $ACV$ also using $APE$ and `r RES(SUMLRBS_P_Metrics2[[7,"Percent"]],digits=0)`% of studies that used $APE$ also using $ACV$. The percent of studies that used the $ACV$ generally increased from 1996 to 2020, whereas the percent of studies that used the $APE$ was fairly steady before increasing in the late 2010s (`r figs("Figure_MetricsUsed_Year",display="cite")`). However, the percent of studies that used the $APE$ without also using the $ACV$ declined two approximately 20% from the early to late 2000s and has stayed steady since then (`r figs("Figure_MetricsUsed_Year",display="cite")`). The $AD$ was used rarely and always with either the $ACV$ or $APE$ (`r figs("Figure_MetricsUsed",display="cite")`). The $ASD$ and $APE^{*}$ were each used in only one study, and $AAD$ and $ACV^{*}$ were not used in any studies.
 
 
 
 
+```{r CALC_ACVSUM}
+LR_ACV_noNA <- filter(LR,!is.na(ACVmod))
+
+LRSUM_ACV <- LR_ACV_noNA %>%
+  summarize(n=n(),
+            mdn=median(ACVmod),
+            D1=stats::quantile(ACVmod,probs=0.10),
+            Q1=stats::quantile(ACVmod,probs=0.25),
+            Q3=stats::quantile(ACVmod,probs=0.75),
+            D9=stats::quantile(ACVmod,probs=0.90))
 
 
 
+kruskal.test(ACVmod~structure,data=LR_ACV_noNA)
+tmp <- FSA::dunnTest(ACVmod~structure,data=LR_ACV_noNA)
+tmp$res$Comparison[which(tmp$res$P.adj<0.05)]
 
-
+LRSUM_ACV_strux <- LR_ACV_noNA %>%
+  group_by(structure) %>%
+  summarize(n=n(),
+            mdn=median(ACVmod),
+            Q1=stats::quantile(ACVmod,probs=0.25),
+            Q3=stats::quantile(ACVmod,probs=0.75)) %>%
+  mutate(nlbl=paste0("n=",n),
+         nx=40,
+         lets=c("a","d","bcd","b","bc","cd"),
+         mdnlbl=paste0(formatC(mdn,format="f",digits=1)," (",lets,")"))
+LRSUM_ACV_strux
+```
 
 
 
@@ -401,6 +380,293 @@ figs(name=knitr::opts_current$get()$label,paste("Percentage of individual precis
 ######## WILL BE FLESHED OUT
 
 
+
+
+# Figures
+
+```{r Figure_n_by_year, fig.width=fw2, fig.height=fh2}
+ggplot() +
+  geom_bar(data=SUMLR_n_years,mapping=aes(x=pubyear,y=n,fill="Assessments"),
+           stat="identity",color="black",width=0.8,size=0.3) +
+  geom_bar(data=SUMLRBS_n_years,mapping=aes(x=pubyear,y=n,fill="Publications"),
+           stat="identity",width=0.6,size=0.05) +
+  scale_y_continuous(name="Frequency of Publications or Assessments",
+                     expand=expansion(mult=c(0,0.1)),breaks=seq(0,100,10)) +
+  scale_x_continuous(name="Publication Year",
+                     expand=expansion(mult=0.02),breaks=seq(1995,2020,5)) +
+  scale_fill_manual(values=c("Publications"="gray30","Assessments"="gray70")) +
+  geom_segment(data=SUM_n_years5,mapping=aes(x=minyr-0.4,xend=maxyr+0.4,
+                                               y=maxn+3,yend=maxn+3)) +
+  geom_text(data=SUM_n_years5,
+            mapping=aes(x=(minyr+maxyr)/2,y=maxn+3,label=nlbl),
+            vjust=-0.1,size=3) +
+  theme(legend.position=c(0,1),legend.justification=c(0,1),legend.box="none")
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw2,height=fh2,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw2,height=fh2,units="in")
+figs(name= knitr::opts_current$get()$label,"Number of individual assessments and number of publications with precision assessments by year from 1996-2020 used in the literature review. Total number of assessments and publications are also shown for five year periods.")
+```
+
+`r if (showFigLabels) figs("Figure_n_by_year") else figs("Figure_n_by_year",display="cite")`
+
+\newpage
+
+```{r Figure_n_by_class_structure, fig.width=fw2, fig.height=fh1}
+P1 <- ggplot(data=SUMLR_n_class_strux,
+       mapping=aes(x=structure,y=n,fill=class)) +
+  geom_bar(stat="identity",color="black",width=0.8,size=0.3) +
+  scale_y_continuous(name="Frequency of Precision Assessments",
+                     expand=expansion(mult=c(0,0.05))) +
+  scale_x_discrete(name="Calcified Structure") +
+  scale_fill_manual(values=c("Actinopteri"="gray70",
+                             "Elasmobranchii"="gray30")) +
+  theme(legend.position=c(1,1),legend.justification=c(1,1),legend.box="none")
+
+P2 <- ggplot(data=SUMLR_n_class_strux_year5,mapping=aes(x=pubyear5,y=n,fill=structure)) +
+  geom_bar(stat="identity",size=0.3,width=0.8,color="black",
+           position=position_stack(reverse=TRUE)) +
+  facet_wrap(vars(class),scales="free_y",nrow=2) +
+  scale_y_continuous(name="Frequency of Precision Assessments",
+                     expand=expansion(mult=c(0,0.07))) +
+  scale_x_discrete(name="Publication Years") +
+  scale_fill_manual(values=c("Otoliths"="gray10",
+                             "Scales"="gray50",
+                             "Vertebrae"="gray30",
+                             "Spines"="gray70",
+                             "Finrays"="gray90",
+                             "Other"="white"),
+                    guide=guide_legend(reverse=TRUE)) +
+  theme(legend.position=c(0,1.05),legend.justification=c(0,1),legend.box="none",
+        legend.key.size=unit(3,"mm"))
+
+P1+P2
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw2,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw2,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Number of individual precision assessments by primary calcified structure types separated by major taxonomic class (Left) and further separated by five year periods (Right).",FSA::kCounts(xclass[['Holocephali']],capitalize=TRUE),"and",FSA::kCounts(xclass[['Petromyzonti']]),"assessments for Holocephali and Petromyzonti are not included."))
+```
+
+`r if (showFigLabels) figs("Figure_n_by_class_structure") else figs("Figure_n_by_class_structure",display="cite")`
+
+\newpage
+
+```{r Figure_P_by_type_structure, fig.width=fw1, fig.height=fh1}
+ggplot() +
+  geom_bar(data=SUM_np_strux_type,mapping=aes(x=structure,y=perc,fill=type),
+           stat="identity",color="black",width=0.8,size=0.3) +
+  scale_y_continuous(name="Percentage of Precision Assessments",
+                     expand=expansion(mult=c(0,0.04))) +
+  scale_x_discrete(name="Calcified Structure") +
+  scale_fill_manual(values=c("Between"="gray70","Within"="gray30")) +
+  annotate(geom="text",x=1,y=100,label="Between",
+           angle=90,size=2.5,hjust=1.1) +
+  annotate(geom="text",x=1,y=0,label="Within",
+           angle=90,size=2.5,color="white",hjust=-0.1) +
+  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=perc,label=plbl),
+            vjust=-0.3,size=2.5) +
+  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=perc,label=lets),
+            vjust=1.3,size=2.5,color="white") +
+  geom_text(data=SUM_np_strux_type2,mapping=aes(x=structure,y=100,label=nlbl),
+            vjust=-0.3,size=2.5) +
+  theme(legend.position="none")
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw1,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw1,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Percentage of individual precision assessments within calcified structure types that were within-reader assessments. Structures with the same letters have statistically equal percent of within-reader assessments. Overall sample size for each structure is shown above the bars.",FSA::kCounts(xtype[["Both"]],capitalize=TRUE),"observations that combined within- and between-reader assessments are not included."))
+```
+
+`r if (showFigLabels) figs("Figure_P_by_type_structure") else figs("Figure_P_by_type_structure",display="cite")`
+
+\newpage
+
+```{r Figure_Sum_R, fig.width=fw2, fig.height=fh1}
+R1 <- ggplot(data=SUMLR_n_R,mapping=aes(x=Rcat4,y=freq,fill=Rcat4)) +
+  geom_bar(stat="identity",color="black",width=0.8,size=0.3) +
+  scale_x_discrete(name="R (Number of Repeated Readings)") +
+  scale_y_continuous(name="Frequency of Precision Assessments",
+                     breaks=seq(0,900,100),
+                     expand=expansion(mult=c(0,0.05))) +
+  scale_fill_manual(values=c("2"="gray20","3"="gray50","4+"="gray80")) +
+#  annotate(geom="text",x=-Inf,y=Inf,label="A",hjust=-0.3,vjust=1.3,size=3.5) +
+  theme(legend.position="none")
+
+R2 <- ggplot() +
+  geom_bar(data=SUMLR_n_R_year5,mapping=aes(x=pubyear5,y=perc,fill=Rcat4),
+           stat="identity",color="black",width=0.8,size=0.3,
+           position=position_stack(reverse=TRUE)) +
+  scale_x_discrete(name="Publication Year",expand=expansion(mult=0.15)) +
+  scale_y_continuous(name="Percentage of Precision Assessments",
+                     expand=expansion(mult=c(0,0.07))) +
+  scale_fill_manual(values=c("2"="gray20","3"="gray50","4+"="gray80")) +
+  geom_text(data=SUMLR_n_R_year5a,mapping=aes(x=pubyear5,y=100,label=nlbl),
+            vjust=-0.3,size=2.5) +
+  annotate(geom="text",x=1,y=58/2,label="R=2",size=2.5,color="white") +
+  annotate(geom="text",x=1,y=58+42/2,label="R=3",size=2.5) +
+  annotate(geom="text",x=5,y=100-8.75/2,label="R=4+",size=2.5) +
+#  annotate(geom="text",x=-Inf,y=Inf,label="B",hjust=-0.3,vjust=1.3,size=3.5) +
+  theme(legend.position="none")
+
+R1 + R2
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw2,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw2,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Number of individual precision assessments by the number of repeated readings (Left) and further separated by five year period (Right) . The maximum number of repeated readings was R=9."))
+```
+
+`r if (showFigLabels) figs("Figure_Sum_R") else figs("Figure_Sum_R",display="cite")`
+
+\newpage
+
+```{r Figure_MetricsUsed, fig.width=fw2, fig.height=fh1}
+P1 <- ggplot(data=SUMLRBS_P_Metrics,mapping=aes(x=Metric,y=Freq)) +
+  geom_bar(stat="identity",color="black",fill="gray70",width=0.8,size=0.3) +
+  scale_x_discrete(name="Precision Metric") +
+  scale_y_continuous(name="Number of Studies",expand=expansion(mult=c(0,0.05))) +
+  geom_text(mapping=aes(label=plbl),vjust=-0.4,size=2.5)
+
+P2 <- ggplot(data=SUMLRBS_P_Metrics2) +
+  geom_bar(mapping=aes(x=Metric,y=Percent,fill=CUSE),
+           stat="identity",color="black",width=0.8,size=0.3,
+           position=position_stack(reverse=TRUE)) +
+  scale_x_discrete(name="Precision Metric") +
+  scale_y_continuous(name="Percentage of Studies",expand=expansion(mult=c(0,0.01))) +
+  geom_text(mapping=aes(x=Metric,y=clbly,label=clbl,color=CUSE),size=2.5) +
+  scale_fill_manual(values=c("alone"="gray30","other"="gray70")) +
+  scale_color_manual(values=c("alone"="white","other"="black")) +
+  theme(legend.position="none")
+
+P1 + P2
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw2,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw2,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Number of studies that used each of the main precision metrics (Left) and the percentage of studies using each metric separated by how the metric was used relative to the other main metrics (Right). Note that $PA$=Percent Agreement, $ACV$=Average Coefficient of Variation, $APE$=Average Percent Error, $AD$=Average Index of Precisions."))
+```
+
+`r if (showFigLabels) figs("Figure_MetricsUsed") else figs("Figure_MetricsUsed",display="cite")`
+
+\newpage
+
+```{r Figure_MetricsUsed_Year, fig.width=fw1, fig.height=fh1}
+ggplot(data=SUMLRBS_P_Metrics3,mapping=aes(x=pubyear5,y=Percent,
+                                           group=Metric,color=Metric)) +
+  geom_line(mapping=aes(linetype=Metric),size=1.25) +
+  geom_point(pch=21,fill="white",size=1.25) +
+  scale_x_discrete(name="Publication Year") +
+  scale_y_continuous(name="Percentage of Studies",breaks=seq(20,80,10)) +
+  scale_color_manual(values=c("p_ACV"="black",
+                              "p_APE"="gray50","p_APE_noACV"="gray50")) +
+  scale_linetype_manual(values=c("p_ACV"="solid",
+                                 "p_APE"="solid","p_APE_noACV"="dashed")) +
+  annotate(geom="text",x=3.25,y=73,label="Used ACV",size=2.5) +
+  annotate(geom="text",x=3.2,y=47,label="Used APE",size=2.5) +
+  annotate(geom="text",x=3.9,y=22,label="Used APE without ACV",size=2.5) +
+  theme(legend.position="none")
+  
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw1,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw1,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Percentage of studies that used the Average Coefficient of Variation ($ACV$), Average Percent Error ($APE$), or the $APE$ alone without also using the $ACV$ by five year period."))
+```
+
+`r if (showFigLabels) figs("Figure_MetricsUsed_Year") else figs("Figure_MetricsUsed_Year",display="cite")`
+
+\newpage
+
+```{r Figure_ACVSUM, fig.width=fw2, fig.height=fh1}
+
+lbl <- paste0("n=",LRSUM_ACV$n,"\n10th=",RES(LRSUM_ACV$D1),
+              "\n25th=",RES(LRSUM_ACV$Q1),"\n50th=",RES(LRSUM_ACV$mdn),
+              "\n75th=",RES(LRSUM_ACV$Q3),"\n90th=",RES(LRSUM_ACV$D9))
+
+P1 <- ggplot() + 
+  ggdist::stat_halfeye(data=LR_ACV_noNA,mapping=aes(x=ACVmod),
+                       fill="gray70",adjust=0.5,
+                       .width=0,point_colour=NA,slab_color="gray60") +
+  geom_point(data=LR_ACV_noNA,mapping=aes(x=ACVmod,y=0),
+             shape=108,size=2,alpha=0.3,position=position_nudge(y=-0.01)) +
+  geom_point(data=LRSUM_ACV,mapping=aes(y=0,x=mdn),
+             shape=25,size=1,fill="black",position=position_nudge(y=0.025)) +
+  geom_text(data=LRSUM_ACV,mapping=aes(y=0,x=mdn,label=RES(mdn)),
+            size=2.5,position=position_nudge(y=0.075)) +
+  geom_segment(data=LRSUM_ACV,mapping=aes(y=0,yend=0,x=Q1,xend=Q3),
+               size=1) +
+  scale_y_continuous(name="Density",expand=expansion(mult=0.01)) +
+  scale_x_continuous(name="ACV (%)",expand=expansion(mult=0.01)) +
+  annotate(geom="text",x=Inf,y=Inf,label=lbl,vjust=1.2,hjust=1.2,size=2.5) +
+  theme(axis.text.y=element_blank())
+
+P2 <- ggplot() + 
+  ggdist::stat_halfeye(data=LR_ACV_noNA,mapping=aes(y=structure,x=ACVmod),
+                       fill="gray70",adjust=0.5,height=0.9,justification=0,
+                       .width=0,point_colour=NA,slab_color="gray60") +
+  geom_point(data=LR_ACV_noNA,mapping=aes(y=structure,x=ACVmod),
+             shape=108,size=2,alpha=0.3,position=position_nudge(y=-0.05)) +
+  geom_point(data=LRSUM_ACV_strux,mapping=aes(y=structure,x=mdn),
+             shape=25,size=1,fill="black",position=position_nudge(y=0.075)) +
+  geom_segment(data=LRSUM_ACV_strux,
+               mapping=aes(y=structure,yend=structure,x=Q1,xend=Q3),
+               size=1) +
+  geom_text(data=LRSUM_ACV_strux,mapping=aes(y=structure,x=mdn,label=mdnlbl),
+            nudge_y=0.075,vjust=-0.5,hjust=0.5,size=2.5) +
+  geom_text(data=LRSUM_ACV_strux,mapping=aes(y=structure,x=nx,label=nlbl),
+            nudge_y=0.075,vjust=-0.5,hjust=0,size=2.5) +
+  scale_y_discrete(name="Calcified Structure",limits=rev) +
+  scale_x_continuous(name="ACV (%)",expand=expansion(mult=0.01)) +
+  coord_cartesian(ylim=c(1.4,NA),clip="off")
+
+P1 + P2
+
+fn <- file.path(wdir,"docs","Figs",knitr::opts_current$get()$label)
+if (saveTIFFs) ggsave(file=paste0(fn,".tiff"),dpi=300,scale=1,
+                      width=fw2,height=fh1,units="in")
+if (savePDFs) ggsave(file=paste0(fn,".pdf"),dpi=1000,scale=1,
+                      width=fw2,height=fh1,units="in")
+figs(name=knitr::opts_current$get()$label,paste("Density distribution and individual values (vertical marks) of Average Coefficient of Variation ($ACV$) values for all assessment (Left) and for assessments by main calcified structure types (Right). The median value is shown and marked with a triangle. The inter-quartile range (first to third quartile) is shown by the black horizontal bar. Calcified structures with different letters have significantly different medians. Note that this includes all Average Percent Error ($APE$) values for two readings ($R$=2) converted to $ACV$ values."))
+```
+
+`r if (showFigLabels) figs("Figure_ACVSUM") else figs("Figure_ACVSUM",display="cite")`
+
+
+```{asis, echo=!showFigLabels}
+\newpage
+# Figure Captions
+```
+
+`r if (!showFigLabels) figs("Figure_n_by_year")`
+
+`r if (!showFigLabels) figs("Figure_n_by_class_structure")`
+
+`r if (!showFigLabels) figs("Figure_P_by_type_structure")`
+
+`r if (!showFigLabels) figs("Figure_Sum_R")`
+
+`r if (!showFigLabels) figs("Figure_MetricsUsed")`
+
+`r if (!showFigLabels) figs("Figure_MetricsUsed_Year")`
+
+`r if (!showFigLabels) figs("Figure_ACVSUM")`
+
+\newpage
+
+
 # [A]References
 
 ######## Need to fix species capitalization
+
