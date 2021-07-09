@@ -12,7 +12,6 @@ docs/Figs/*
 data/Literature_Review.xlsx
 
 ## Don't need Zotero exports (which I did to free up storage)
-zzzArchive/Zotero_*
 
 ## Data that should not be made publicly available
 data/raw_ageing/DONTSHARE*
