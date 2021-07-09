@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "fernando_ageing_2014"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -19,7 +19,7 @@ extra_suffix <- "04_05"
 df1 <- df %>%
   filter(year<2008) %>%
   select(wholeoto_R1,wholeoto_R2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~wholeoto_R1+wholeoto_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -52,7 +52,7 @@ extra_suffix <- "10"
 df1 <- df %>%
   filter(year>2008) %>%
   select(wholeoto_R1,wholeoto_R2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~wholeoto_R1+wholeoto_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -85,7 +85,7 @@ extra_suffix <- "04_05"
 df1 <- df %>%
   filter(year<2008) %>%
   select(sectoto_R1,sectoto_R2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_R1+sectoto_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -118,7 +118,7 @@ extra_suffix <- "10"
 df1 <- df %>%
   filter(year>2008) %>%
   select(sectoto_R1,sectoto_R2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_R1+sectoto_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

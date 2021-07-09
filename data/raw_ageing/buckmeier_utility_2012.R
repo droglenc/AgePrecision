@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "buckmeier_utility_2012"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,7 +18,7 @@ extra_suffix <- "FirstReads"
 
 df1 <- df %>%
   select(finray_Dave1,finray_Nate1) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~finray_Dave1+finray_Nate1,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,7 +50,7 @@ extra_suffix <- "FirstReads"
 
 df1 <- df %>%
   select(otolith_Dave1,otolith_Nate1) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otolith_Dave1+otolith_Nate1,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,7 +82,7 @@ extra_suffix <- "FirstReads"
 
 df1 <- df %>%
   select(scale_Dave1,scale_Nate1) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scale_Dave1+scale_Nate1,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

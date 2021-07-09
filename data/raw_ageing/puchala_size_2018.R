@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "puchala_size_2018"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,7 +18,7 @@ extra_suffix <- "Betsy"
 
 df1 <- df %>%
   select(spines_Betsy_1,spines_Betsy_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~spines_Betsy_1+spines_Betsy_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
@@ -48,7 +48,7 @@ extra_suffix <- "Lee"
 
 df1 <- df %>%
   select(spines_Lee_1,spines_Lee_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~spines_Lee_1+spines_Lee_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
@@ -78,7 +78,7 @@ extra_suffix <- "Alex"
 
 df1 <- df %>%
   select(spines_Alex_1,spines_Alex_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~spines_Alex_1+spines_Alex_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
@@ -108,7 +108,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(spines_Alex_2,spines_Betsy_2,spines_Lee_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~spines_Alex_2+spines_Betsy_2+spines_Lee_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,

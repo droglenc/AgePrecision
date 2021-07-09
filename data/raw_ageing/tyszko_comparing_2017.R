@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "tyszko_comparing_2017"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"),stringsAsFactors=FALSE) %>%
@@ -23,9 +23,9 @@ for (i in (ly)) {
   extra_suffix <- i
   
   df1 <- df %>%
-    filterD(locyr==i) %>%
+    filter(locyr==i) %>%
     select(contains("scales")) %>%
-    filterD(complete.cases(.))
+    filter(complete.cases(.))
   
   ap1 <- agePrecision(~scales_R1+scales_R2+scales_R3,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -54,9 +54,9 @@ for (i in (ly)) {
   extra_suffix <- i
   
   df1 <- df %>%
-    filterD(locyr==i) %>%
+    filter(locyr==i) %>%
     select(contains("otoliths")) %>%
-    filterD(complete.cases(.))
+    filter(complete.cases(.))
   
   ap1 <- agePrecision(~otoliths_R1+otoliths_R2+otoliths_R3,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,

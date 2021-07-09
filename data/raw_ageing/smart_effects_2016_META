@@ -1,0 +1,11 @@
+SOURCE: Smart, J.J., A. Chin, L. Baje, M.E. Green, S.A. Appleyard, A.J. Tobin, C.A. Simpfendorfer, and W.T. White. 2016. Effects of Including Misidentified Sharks in Life History Analyses: A Case Study on the Grey Reef Shark Carcharhinus amblyrhynchos from Papua New Guinea. PLOS ONE 11(4): e0153116.
+
+VARIABLES:
+id: Unique tag number
+tl: Total length (cm)
+sex: Sex
+reader1: Estimated age of the structure by the first reader
+reader2: Estimated age of the structure by the second reader
+
+NOTES:
+* File generated from "AML reads.xlsx" file provided by Michael Grant.

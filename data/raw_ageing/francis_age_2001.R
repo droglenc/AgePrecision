@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014")
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "francis_age_2001"       ## Name of study (actually name of file)
 atype <- "between"
@@ -18,7 +18,7 @@ proc <- "Sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="Rough Skate")
+  filter(species=="Rough Skate")
 
 ap1 <- agePrecision(~vertebrae_R1+vertebrae_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -48,7 +48,7 @@ proc <- "Sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="Smooth Skate")
+  filter(species=="Smooth Skate")
 
 ap1 <- agePrecision(~vertebrae_R1+vertebrae_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

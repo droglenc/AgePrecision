@@ -1,11 +1,11 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "long_evaluation_2018"
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv")) %>%
-  filterD(mon=="May")  ## Just Spring fish as suggested by Jim Long
+  filter(mon=="May")  ## Just Spring fish as suggested by Jim Long
 
 ## find duplicated IDs and make sure they are duplicates ... looks like they are
 dupes <- which(duplicated(df$id))
@@ -25,7 +25,7 @@ extra_suffix <- "R1"
 
 df1 <- df %>%
   select(scales_AT_1,scales_AT_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~scales_AT_1+scales_AT_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
@@ -56,7 +56,7 @@ extra_suffix <- "R2"
 
 df1 <- df %>%
   select(scales_CH_1,scales_CH_2) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 ap1 <- agePrecision(~scales_CH_1+scales_CH_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
                        structure=strux,structure2=strux2,process=proc,
@@ -88,7 +88,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("2")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scales_AT_2+scales_CH_2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

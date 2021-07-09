@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014")
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "koenigs_validation_2015"
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,7 +18,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_Ryan+otoliths_Eli,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -49,7 +49,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("spines")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap2 <- agePrecision(~spines_Ryan+spines_Jack,data=df)
 pt2SD <- precisionData(ap2,studyID=nm,species=species,

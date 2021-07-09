@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014")
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "dembkowski_walleye_2017"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))

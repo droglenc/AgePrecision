@@ -7,4 +7,4 @@ strux: Calcified structure (otoliths or spines)
 year: Year of capture
 
 NOTES:
-* File generated from "CCAT age data_Ogle request .xlsx" file provided by Tony Barad.
+* File generated from "CCAT age data_Ogle request .xlsx" file provided by Tony Barada.

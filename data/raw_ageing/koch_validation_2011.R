@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "koch_validation_2011"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -17,7 +17,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("spines")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spines_JK+spines_MP+spines_KS,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

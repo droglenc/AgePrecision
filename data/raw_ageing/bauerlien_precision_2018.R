@@ -1,6 +1,6 @@
 #### SETUP #####################################################################
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "bauerlien_precision_2018"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv")) %>%
@@ -17,7 +17,7 @@ strux2 <- "anal"     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Anal",complete.cases(.))
+  filter(Structure=="Anal",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -45,7 +45,7 @@ strux2 <- ""     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "whole"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Cleithra",complete.cases(.))
+  filter(Structure=="Cleithra",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -73,7 +73,7 @@ strux2 <- ""     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Sectioned Cleithra",complete.cases(.))
+  filter(Structure=="Sectioned Cleithra",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -101,7 +101,7 @@ strux2 <- "dorsal"     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Dorsal",complete.cases(.))
+  filter(Structure=="Dorsal",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -129,7 +129,7 @@ strux2 <- ""     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Otolith",complete.cases(.))
+  filter(Structure=="Otolith",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -157,7 +157,7 @@ strux2 <- "pectoral"     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Pectoral",complete.cases(.))
+  filter(Structure=="Pectoral",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -185,7 +185,7 @@ strux2 <- "pelvic"     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- "sectioned"  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Pelvic",complete.cases(.))
+  filter(Structure=="Pelvic",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -213,7 +213,7 @@ strux2 <- ""     ## More about scturcture (e.g., dorsal, pectoral)
 proc <- ""  ## Process info (e.g., sectioned, crackburn, whole)
 
 df1 <- df %>%  ## Isolate the variables containing the ages
-  filterD(Structure=="Scales",complete.cases(.))
+  filter(Structure=="Scales",complete.cases(.))
 
 ap1 <- agePrecision(~Cory+Emily+Mike+Rin,data=df1)   ## include the variable names here
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

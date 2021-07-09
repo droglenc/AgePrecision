@@ -1,0 +1,10 @@
+SOURCE: Rigby, C.L., R.K. Daley, and C.A. Simpfendorfer. 2016. Comparison of life histories of two deep-water sharks from eastern Australia: the piked spurdog and the Philippine spurdog. Marine and Freshwater Research 67:1546-1561.
+
+VARIABLES:
+id: Unique id number
+read1: First estimated age of the structure
+read2: Second estimated age of the structure
+read3: Third estimated age of the structure
+
+NOTES:
+* File generated from "IAPE for S meg within reader 1 and between reader.xlsx" file and "Within Reader" tab provided by Michael Grant.

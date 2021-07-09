@@ -1,0 +1,38 @@
+ /*SITE SPECIFIC CSS*/
+
+.featurePanel {
+	background-image: url(//academic.oup.com/data/sitebuilderassetsoriginals/images/icesjms/icesjms_feature_panel.jpg);
+}
+.navbar {
+	background-color: #172e61;
+}
+.featurePanel .featurePanelInner {
+	background: rgba(13, 36, 87, .8);
+}
+.featurePanel p {
+	color: #f6f6f6 !important;
+}
+.featurePanel h3 {
+	color: #f6f6f6 !important;
+}
+.featurePanel a {
+	color: #f6f6f6 !important;
+}
+.featurePanel a:hover {
+	color: #f6f6f6 !important;
+}
+.journal-bg {
+	background-color: #1F3E81;
+}
+.journal-header .journal-logo {
+	width: 260px;	 
+}
+.journal-header .society-logo {
+	width: 250px;
+}
+.journal-footer.journal-bg {
+	background-color: #172e61;
+}
+img.journal-footer-affiliations-logo {
+	width: 260px;
+}

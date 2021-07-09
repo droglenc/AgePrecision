@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "neves_modelling_2017"       ## Name of study (actually name of file)
 
@@ -18,7 +18,7 @@ extra_suffix <- "between"
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_R1+otoliths_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -52,7 +52,7 @@ extra_suffix <- "within"
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_R2+otoliths_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

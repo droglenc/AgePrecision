@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 ## To more closely match Klein et al. (2014), remove the five lines that have
 ##   some missing data for some of the structures. This is not necessary for
@@ -25,7 +25,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(branchio_MT,branchio_ZK) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~branchio_MT+branchio_ZK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -57,7 +57,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(finrays_MT,finrays_ZK) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~finrays_MT+finrays_ZK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -89,7 +89,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(otoliths_MT,otoliths_ZK) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_MT+otoliths_ZK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

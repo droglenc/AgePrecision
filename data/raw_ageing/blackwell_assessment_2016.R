@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "blackwell_assessment_2016"
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,7 +18,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("cleithra_section")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~cleithra_section_R1+cleithra_section_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,7 +50,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("cleithra_whole")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~cleithra_whole_R1+cleithra_whole_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,7 +82,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_R1+otoliths_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -114,7 +114,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("scales")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scales_R1+scales_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -146,7 +146,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("metap")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~metapt_R1+metapt_R2,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

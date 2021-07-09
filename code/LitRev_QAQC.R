@@ -20,7 +20,7 @@ xtabs(~process+structure,data=LR)
 xtabs(~process2+structure,data=LR)
 xtabs(~type,data=LR)
 xtabs(~checkbias,data=LR)
-xtabs(~biasmethod+checkbias,data=LR)  # "no" column should be empty
+xtabs(~biasmethod+checkbias,data=LR,addNA=TRUE)  # "no" and NA columns should be empty
 xtabs(~bias_usedplot,data=LR)
 xtabs(~bias_usedregression,data=LR)
 xtabs(~bias_usedsymtest,data=LR)

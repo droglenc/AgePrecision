@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "long_precision_2001"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,9 +18,9 @@ proc <- "pressed"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("scales")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scales_R1+scales_R2+scales_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,9 +50,9 @@ proc <- "whole"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("wholeoto")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~wholeoto_R1+wholeoto_R2+wholeoto_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,9 +82,9 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("sectoto")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_R1+sectoto_R2+sectoto_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -115,9 +115,9 @@ proc <- "pressed"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="SPB") %>%
+  filter(species=="SPB") %>%
   select(contains("scales")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scales_R1+scales_R2+scales_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -147,9 +147,9 @@ proc <- "whole"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="SPB") %>%
+  filter(species=="SPB") %>%
   select(contains("wholeoto")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~wholeoto_R1+wholeoto_R2+wholeoto_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -179,9 +179,9 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="SPB") %>%
+  filter(species=="SPB") %>%
   select(contains("sectoto")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_R1+sectoto_R2+sectoto_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

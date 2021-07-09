@@ -62,9 +62,8 @@ structures2 <- c("sagittae","lapillae","asterisci","statoliths",
                  "sphenoid","subopercular","vomerine tooth plate")
 structures2 <- FSA::capFirst(structures2,which="first")
 
-processes2 <- c("whole","ground/sectioned","cracked","etched",
-                "other","unknown")
-processes2 <- FSA::capFirst(processes2,which="first")
+processes2 <- c("Whole","Ground/\nSectioned","Cracked","Etched",
+                "Other","Unknown")
 
 unique(res$R)
 Rs <- data.frame(
@@ -76,35 +75,33 @@ Rs <- data.frame(
 summary(res$n,na.rm=TRUE)
 ns <- data.frame(
   old=c(0,50,200,400,4000),
-  new=c("1-50","51-199","200-399","400+","400+")
+  new=c("1-49","5-199","200-399","400+","400+")
 )
 
 summary(res$agemax,na.rm=TRUE)
+maxages <- tibble::tibble(
+  old=c(0,10,20,30,200),
+  new=c("1-9","10-19","20-29","30+","200+")
+)
+
 ageranges <- tibble::tibble(
   old=seq(0,140,10),
   new=paste(old,c(old[-1],max(old)+10),sep="-")
 )
 
 tmp <- unique(study$country)
-countries <- data.frame(
+countries <- tibble(
   old=tmp[order(tmp)],
-  new1=c("Africa","Africa","other","SCAmer","Aus/NZ","Europe","Africa",
-         "SCAmer","Europe","USA/Can","Asia","SCAmer","Europe","SCAmer",
-         "Africa","Africa","SCAmer","Europe","SCAmer","Europe","Europe",
-         "SCAmer","Asia","Asia","Europe","Europe","Asia","Africa",
-         "SCAmer","Aus/NZ","Europe","Asia","Aus/NZ","Europe","Europe",
-         "Africa","Europe","Europe","Africa","Asia","Europe","Europe",
-         "Asia","Asia","Africa","Europe","Africa","Europe","USA/Can"),
-  new2=c("other","other","other","other","Aus/NZ","Eur/Asia","other",
-         "other","Eur/Asia","USA/Can","Eur/Asia","other","Eur/Asia","other",
-         "other","other","other","Eur/Asia","other","Eur/Asia","Eur/Asia",
-         "other","Eur/Asia","Eur/Asia","Eur/Asia","Eur/Asia","Eur/Asia","other",
-         "other","Aus/NZ","Eur/Asia","Eur/Asia","Aus/NZ","Eur/Asia","Eur/Asia",
-         "other","Eur/Asia","Eur/Asia","other","Eur/Asia","Eur/Asia","Eur/Asia",
-         "Eur/Asia","Eur/Asia","other","Eur/Asia","other","Eur/Asia","USA/Can")
-)
-unique(countries$new2)
-lvls_country <- c("USA/Can","Eur/Asia","Aus/NZ","other")
+  new1=c("Africa","S. America","Australia","Africa","S. America",
+         "Europe","N. America","Asia","S. America","Europe",
+         "S. America","Africa","Africa","S. America","Europe",
+         "S. America","Europe","Europe","Asia","Asia",
+         "Europe","Europe","Asia","N. America","Australia",
+         "Europe","Asia","Australia","Europe","Europe",
+         "Africa","Europe","Africa","Asia","Europe",
+         "Europe","Asia","Asia","Africa","Europe",
+         "Africa","Europe","N. America"))
+countries
 
 lvls_yn <- c("yes","no")
 
@@ -130,15 +127,14 @@ res2 <- res %>%
     structure2=factor(structure2,levels=structures2),
     
     process2=case_when(
-      stringr::str_starts(process,"cracked") ~ "cracked",
-      stringr::str_starts(process,"ground") ~ "ground/sectioned",
-      stringr::str_starts(process,"sectioned") ~ "ground/sectioned",
-      stringr::str_starts(process,"whole") ~ "whole",
-      stringr::str_starts(process,"etched") ~ "etched",
-      stringr::str_starts(process,"unknown") ~ "unknown",
-      TRUE ~ "other"
+      stringr::str_starts(process,"cracked") ~ "Cracked",
+      stringr::str_starts(process,"ground") ~ "Ground/\nSectioned",
+      stringr::str_starts(process,"sectioned") ~ "Ground/\nSectioned",
+      stringr::str_starts(process,"whole") ~ "Whole",
+      stringr::str_starts(process,"etched") ~ "Etched",
+      stringr::str_starts(process,"unknown") ~ "Unknown",
+      TRUE ~ "Other"
     ),
-    process2=FSA::capFirst(process2,which="first"),
     process2=factor(process2,levels=processes2),
     
     Rcat3=plyr::mapvalues(R,from=Rs$old,to=Rs$new3),
@@ -146,10 +142,13 @@ res2 <- res %>%
     
     ncat=plyr::mapvalues(FSA::lencat(n,breaks=ns$old),from=ns$old,to=ns$new),
     
-    agemaxcat=FSA::lencat(agemax,w=10,as.fact=TRUE),
+    agemaxcat=plyr::mapvalues(FSA::lencat(agemax,breaks=maxages$old),
+                              from=maxages$old,to=maxages$new),
     agerange=agemax-agemin,
-    agerangecat=plyr::mapvalues(FSA::lencat(agerange,w=10),
+    agerangecat=plyr::mapvalues(FSA::lencat(agerange,breaks=ageranges$old),
                                 from=ageranges$old,to=ageranges$new),
+    
+    nperage=n/agerange,
     
     ACVused=factor(ifelse(!is.na(ACV),"yes","no"),levels=lvls_yn),
     ## determine if both ACV and APE were used
@@ -189,8 +188,7 @@ study2 <- study %>%
     marine=factor(marine,levels=lvls_yn),
     exprnc=factor(exprnc,levels=lvls_yn),
     continent=plyr::mapvalues(country,from=countries$old,to=countries$new1),
-    continent2=plyr::mapvalues(country,from=countries$old,to=countries$new2),
-    continent2=factor(continent2,levels=lvls_country)
+    USA=ifelse(country=="USA","USA","Other")
   )
 
 ### Combine all three together into one data.frame
@@ -208,11 +206,11 @@ LR <- tmp %>%
                 pubyear5=factor(pubyear5,levels=c("1996-2000","2001-05","2006-10",
                                                   "2011-15","2016-20"))) %>%
   dplyr::select(
-    studyID,pubyear,pubyear5,country,continent,continent2,marine,exprnc,
+    studyID,pubyear,pubyear5,country,continent,USA,marine,exprnc,
     species,family,order,class,class1,
     structure,structure2,process,process2,
     agemin,agemax,agemaxcat,agerange,agerangecat,
-    type,R,Rcat3,Rcat4,n,ncat,
+    type,R,Rcat3,Rcat4,n,ncat,nperage,
     APE,ACV,ACVmod,
     ACVused,ACVmodused,bothACVnAPEused,
     PA0,PA1,PAother,ASD,AAD,APE2,ACV2,AD,

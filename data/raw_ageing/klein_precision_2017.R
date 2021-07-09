@@ -1,13 +1,13 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "klein_precision_2017"       ## Name of study (actually name of file)
 
 ## Reduced to only fish with a true age to match Klein
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv")) %>%
-  filterD(!is.na(true_Age)) 
+  filter(!is.na(true_Age)) 
 str(df) 
 
 #### XXXXXX ####################################################################
@@ -23,7 +23,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_Tim+otoliths_Bryant,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -55,7 +55,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("anal")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~anal_MQ+anal_ZK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -87,7 +87,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("dorsal")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~dorsal_MQ+dorsal_ZK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "barada_bias_2011"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -17,9 +17,9 @@ proc <- "burnt-and-ground"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(strux=="otoliths") %>%
+  filter(strux=="otoliths") %>%
   select(contains("age")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~age_Aaron+age_Tony,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,9 +50,9 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(strux=="spines") %>%
+  filter(strux=="spines") %>%
   select(contains("age")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~age_Aaron+age_Tony,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

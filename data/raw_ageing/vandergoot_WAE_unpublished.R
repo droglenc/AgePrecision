@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "vandergoot_WAE_unpublished"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -17,7 +17,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_CV+otoliths_RZ+otoliths_LB,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -48,7 +48,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("scales")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scales_IR+scales_KK,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -79,7 +79,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("spines")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spines_WF+spines_TS,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

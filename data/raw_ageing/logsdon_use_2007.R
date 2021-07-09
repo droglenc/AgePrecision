@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "logsdon_use_2007"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -17,9 +17,9 @@ proc <- "cracked"
 extra_suffix <- "URL"
 
 df1 <- df %>%
-  filterD(loc=="East Upper Red") %>%
+  filter(loc=="East Upper Red") %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_Dale+otoliths_Mgmt,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -49,9 +49,9 @@ proc <- "cracked"
 extra_suffix <- "ML"
 
 df1 <- df %>%
-  filterD(loc=="Mille Lacs") %>%
+  filter(loc=="Mille Lacs") %>%
   select(contains("otoliths")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otoliths_Dale+otoliths_Mgmt,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,9 +82,9 @@ proc <- "ground"
 extra_suffix <- "URL"
 
 df1 <- df %>%
-  filterD(loc=="East Upper Red") %>%
+  filter(loc=="East Upper Red") %>%
   select(contains("spines")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spines_Dale+spines_Steve,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -114,9 +114,9 @@ proc <- "ground"
 extra_suffix <- "ML"
 
 df1 <- df %>%
-  filterD(loc=="Mille Lacs") %>%
+  filter(loc=="Mille Lacs") %>%
   select(contains("spines")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spines_Dale+spines_Steve,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

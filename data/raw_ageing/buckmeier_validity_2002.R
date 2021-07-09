@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "buckmeier_validity_2002"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -18,7 +18,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("artic")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~artic_John+artic_Bob,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,7 +50,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("otolith")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otolith_John+otolith_Bob,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,7 +82,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("spine")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spine_John+spine_Bob,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

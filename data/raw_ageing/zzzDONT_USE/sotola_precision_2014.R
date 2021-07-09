@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "sotola_precision_2014"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -16,9 +16,9 @@ proc <- "whole"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("opercle")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~opercle_R1+opercle_R2+opercle_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -47,9 +47,9 @@ proc <- "cut-and-burnt"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("otolith")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~otolith_R1+otolith_R2+otolith_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -78,9 +78,9 @@ proc <- "sectioned"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("spine")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~spine_R1+spine_R2+spine_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -109,9 +109,9 @@ proc <- "mounted"
 extra_suffix <- ""
 
 df1 <- df %>%
-  filterD(species=="LMB") %>%
+  filter(species=="LMB") %>%
   select(contains("scale")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~scale_R1+scale_R2+scale_R3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

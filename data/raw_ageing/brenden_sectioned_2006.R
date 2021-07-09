@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014")
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "brenden_sectioned_2006"
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -16,7 +16,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("finrays")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~finrays_Brenden+finrays_Hale+finrays_Staples,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,

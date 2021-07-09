@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "morehouse_estimating_2013"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"),stringsAsFactors=FALSE)
@@ -21,9 +21,9 @@ for (i in lk) {
   cat(i,"\n")
   extra_suffix <- i
   df1 <- df %>%
-    filterD(loc==i) %>%
+    filter(loc==i) %>%
     select(scales_Steve,scales_Angie,scales_Reid) %>%
-    filterD(complete.cases(.))
+    filter(complete.cases(.))
   ap1 <- agePrecision(~scales_Steve+scales_Angie+scales_Reid,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,
@@ -55,9 +55,9 @@ for (i in lk) {
   cat(i,"\n")
   extra_suffix <- i
   df1 <- df %>%
-    filterD(loc==i) %>%
+    filter(loc==i) %>%
     select(finrays_Steve,finrays_Angie,finrays_Reid) %>%
-    filterD(complete.cases(.))
+    filter(complete.cases(.))
   ap1 <- agePrecision(~finrays_Steve+finrays_Angie+finrays_Reid,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,
@@ -90,9 +90,9 @@ for (i in lk) {
   cat(i,"\n")
   extra_suffix <- i
   df1 <- df %>%
-    filterD(loc==i) %>%
+    filter(loc==i) %>%
     select(spines_Steve,spines_Angie,spines_Reid) %>%
-    filterD(complete.cases(.))
+    filter(complete.cases(.))
   ap1 <- agePrecision(~spines_Steve+spines_Angie+spines_Reid,data=df1)
   pt1SD <- precisionData(ap1,studyID=nm,species=species,
                          structure=strux,structure2=strux2,process=proc,

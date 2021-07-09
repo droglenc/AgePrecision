@@ -1,7 +1,7 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "gallagher_comparison_2016"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv"))
@@ -20,7 +20,7 @@ extra_suffix <- "RW"
 
 df1 <- df %>%
   select(contains("whoto_RW")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~whoto_RW_1+whoto_RW_2+whoto_RW_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -51,7 +51,7 @@ extra_suffix <- "RW"
 
 df1 <- df %>%
   select(contains("sectoto_RW")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_RW_1+sectoto_RW_2+sectoto_RW_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -82,7 +82,7 @@ extra_suffix <- "RW"
 
 df1 <- df %>%
   select(contains("pectoral_RW")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~pectoral_RW_1+pectoral_RW_2+pectoral_RW_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -113,7 +113,7 @@ extra_suffix <- "RW"
 
 df1 <- df %>%
   select(contains("pelvic_RW")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~pelvic_RW_1+pelvic_RW_2+pelvic_RW_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -147,7 +147,7 @@ extra_suffix <- "NSC"
 
 df1 <- df %>%
   select(contains("whoto_NSC")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~whoto_NSC_1+whoto_NSC_2+whoto_NSC_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -178,7 +178,7 @@ extra_suffix <- "NSC"
 
 df1 <- df %>%
   select(contains("sectoto_NSC")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~sectoto_NSC_1+sectoto_NSC_2+sectoto_NSC_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -209,7 +209,7 @@ extra_suffix <- "NSC"
 
 df1 <- df %>%
   select(contains("pectoral_NSC")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~pectoral_NSC_1+pectoral_NSC_2+pectoral_NSC_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -240,7 +240,7 @@ extra_suffix <- "NSC"
 
 df1 <- df %>%
   select(contains("pelvic_NSC")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~pelvic_NSC_1+pelvic_NSC_2+pelvic_NSC_3,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -275,7 +275,7 @@ extra_suffix <- ""
 
 df1 <- df %>%
   select(contains("whoto")) %>%
-  filterD(complete.cases(.)) %>%
+  filter(complete.cases(.)) %>%
   mutate(whoto_RW=rowMeans(select(.,contains("RW"))),
          whoto_NSC=rowMeans(select(.,contains("NSC"))))
 

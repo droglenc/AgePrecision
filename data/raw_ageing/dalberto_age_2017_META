@@ -1,0 +1,10 @@
+SOURCE: D'Alberto, B.M., A. Chin, J.J. Smart, L. Baje, W.T. White, and C.A. Simpfendorfer. 2016. Age, growth and maturity of oceanic whitetip shark (Carcharhinus longimanus) from Papua New Guinea. Marine and Freshwater Research 68:1118-1129.
+
+VARIABLES:
+id: Unique tag number
+length: Total length (cm)
+reader1: Estimated age of the structure by the first reader
+reader2: Estimated age of the structure by the second reader
+
+NOTES:
+* File generated from "B.D'Alberto_APE Analysis_and_Consensus Data_OCS_PNG.xls" file provided by Michael Grant.

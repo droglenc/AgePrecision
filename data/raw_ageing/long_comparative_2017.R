@@ -1,11 +1,11 @@
 #### SETUP #####################################################################
 cat("\014"); rm(list=ls())
 setwd(here::here())
-source("code/precisionData.R")
+source("code/ExtAn_Helper_PrecisionData.R")
 
 nm <- "long_comparative_2017"       ## Name of study (actually name of file)
 df <- read.csv(paste0("data/raw_ageing/",nm,".csv")) %>%
-  filterD(sex!="U")  ## as in the paper
+  filter(sex!="U")  ## as in the paper
 str(df) 
 
 #### GRAND ####################################################################
@@ -17,9 +17,9 @@ proc <- "sectioned"
 extra_suffix <- "Grand"
 
 df1 <- df %>%
-  filterD(loc=="Grand") %>%
+  filter(loc=="Grand") %>%
   select(contains("maxillae")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~maxillae_EB+maxillae_BJ+maxillae_AN,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
@@ -50,9 +50,9 @@ proc <- "sectioned"
 extra_suffix <- "Keystone"
 
 df1 <- df %>%
-  filterD(loc=="Keystone") %>%
+  filter(loc=="Keystone") %>%
   select(contains("maxillae")) %>%
-  filterD(complete.cases(.))
+  filter(complete.cases(.))
 
 ap1 <- agePrecision(~maxillae_EB+maxillae_BJ+maxillae_AN,data=df1)
 pt1SD <- precisionData(ap1,studyID=nm,species=species,
