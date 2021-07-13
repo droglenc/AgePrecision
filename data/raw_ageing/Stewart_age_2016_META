@@ -1,0 +1,11 @@
+SOURCE: Stewart, T.R., D.H. Ogle, O.T. Gorman, and M.R. Vinson. 2016. Age, growth, and size of Lake Superior Pygmy Whitefish (Prosopium coulterii). American Midland Naturalist 175:24-36.
+
+VARIABLES:
+id: Identification number unique to each fish
+tl: total length (cm)
+reader1: Estimated age from reader 1
+reader2: Estimated age from reader 2
+strutue: Calcified structure (otoliths or scales)
+
+NOTES:
+* File generated from "PWF 2013.xlsx" file provided by Derek Ogle.
