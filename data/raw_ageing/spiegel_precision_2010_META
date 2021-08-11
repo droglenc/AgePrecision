@@ -1,0 +1,10 @@
+SOURCE: Spiegel, J. R., M. C. Quist, & J. E. Morris. 2010. Precision of scales and pectoral fin rays for estimating age of Highfin Carpsucker, Quillback Carpsucker, and River Carpsucker. Journal of Freshwater Ecology 25:271–278.
+
+VARIABLES:
+read1: Ages estimated by first reader.
+read2: Ages estimated by second reader.
+structure: Calcified structure type (Scales, Finrays)
+species: Species of fish (Highfin Carpsucker, Quillback Carpsucker, River Carpsucker)
+
+NOTES:
+* File generated from "Spiegel et al 2010_Data_Scott.xlsx" file which was constructued from results in the original paper.

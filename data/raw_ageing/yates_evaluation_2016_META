@@ -1,0 +1,9 @@
+SOURCE: Yates, J. R., C. J. Watkins, and M. C. Quist. 2016. Evaluation of hard structures used to estimate age of Common Carp. Northwest Science 90:195–205.
+
+VARIABLES:
+read1: Ages estimated by first reader.
+read2: Ages estimated by second reader.
+structure: Calcified structure type (Otoliths, Scales, [Pectoral] Finrays, [Dorsal Fin] Spines)
+
+NOTES:
+* File generated from "Yates et al 2016_Data_Scott.xlsx" file which was constructued from results in the original paper.

@@ -1,0 +1,1001 @@
+structure,read1,read2
+Fin Rays,1,2
+Fin Rays,1,2
+Fin Rays,2,1
+Fin Rays,2,1
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,2
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,2,3
+Fin Rays,3,2
+Fin Rays,3,2
+Fin Rays,3,2
+Fin Rays,3,2
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,3
+Fin Rays,3,4
+Fin Rays,3,4
+Fin Rays,3,4
+Fin Rays,3,4
+Fin Rays,3,4
+Fin Rays,4,3
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,4
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,4,5
+Fin Rays,5,4
+Fin Rays,5,4
+Fin Rays,5,4
+Fin Rays,5,4
+Fin Rays,5,4
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,5
+Fin Rays,5,6
+Fin Rays,5,6
+Fin Rays,5,6
+Fin Rays,5,6
+Fin Rays,6,5
+Fin Rays,6,5
+Fin Rays,6,5
+Fin Rays,6,5
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,6
+Fin Rays,6,7
+Fin Rays,6,7
+Fin Rays,6,7
+Fin Rays,6,7
+Fin Rays,7,6
+Fin Rays,7,6
+Fin Rays,7,6
+Fin Rays,7,6
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,7
+Fin Rays,7,8
+Fin Rays,8,6
+Fin Rays,8,7
+Fin Rays,8,7
+Fin Rays,8,7
+Fin Rays,8,7
+Fin Rays,8,8
+Fin Rays,8,8
+Fin Rays,8,8
+Fin Rays,8,8
+Fin Rays,8,8
+Fin Rays,8,9
+Fin Rays,9,7
+Fin Rays,9,8
+Fin Rays,9,8
+Fin Rays,9,8
+Fin Rays,9,8
+Fin Rays,9,9
+Fin Rays,10,8
+Fin Rays,10,8
+Fin Rays,11,9
+Fin Rays,11,11
+Fin Rays,11,11
+Fin Rays,12,12
+Scales,2,1
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,2
+Scales,2,3
+Scales,2,3
+Scales,2,3
+Scales,2,3
+Scales,2,3
+Scales,2,4
+Scales,3,1
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,2
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,3
+Scales,3,4
+Scales,3,4
+Scales,3,4
+Scales,3,4
+Scales,3,4
+Scales,3,4
+Scales,3,4
+Scales,3,5
+Scales,3,5
+Scales,3,5
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,3
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,4
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,5
+Scales,4,6
+Scales,4,7
+Scales,4,7
+Scales,5,2
+Scales,5,3
+Scales,5,3
+Scales,5,3
+Scales,5,3
+Scales,5,3
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,4
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,5
+Scales,5,6
+Scales,5,6
+Scales,5,6
+Scales,5,6
+Scales,5,6
+Scales,5,6
+Scales,5,6
+Scales,5,7
+Scales,6,4
+Scales,6,4
+Scales,6,4
+Scales,6,4
+Scales,6,4
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,5
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,6
+Scales,6,7
+Scales,6,7
+Scales,6,7
+Scales,6,7
+Scales,6,7
+Scales,6,7
+Scales,6,7
+Scales,6,8
+Scales,7,4
+Scales,7,6
+Scales,7,6
+Scales,7,6
+Scales,7,6
+Scales,7,6
+Scales,7,6
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,7
+Scales,7,8
+Scales,7,8
+Scales,7,8
+Scales,7,9
+Scales,8,5
+Scales,8,5
+Scales,8,6
+Scales,8,6
+Scales,8,8
+Scales,8,8
+Scales,9,5
+Scales,9,6
+Scales,9,8
+Scales,9,8
+Scales,9,9
+Scales,9,10
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,2
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,3
+Asteriscus,2,4
+Asteriscus,3,1
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,2
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,3
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,4
+Asteriscus,3,5
+Asteriscus,3,5
+Asteriscus,3,6
+Asteriscus,3,7
+Asteriscus,4,2
+Asteriscus,4,2
+Asteriscus,4,2
+Asteriscus,4,2
+Asteriscus,4,2
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,3
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,4
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,5
+Asteriscus,4,6
+Asteriscus,4,6
+Asteriscus,4,7
+Asteriscus,5,3
+Asteriscus,5,3
+Asteriscus,5,3
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,4
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,5
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,6
+Asteriscus,5,7
+Asteriscus,5,9
+Asteriscus,6,3
+Asteriscus,6,4
+Asteriscus,6,4
+Asteriscus,6,4
+Asteriscus,6,4
+Asteriscus,6,4
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,5
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,6
+Asteriscus,6,7
+Asteriscus,6,7
+Asteriscus,6,7
+Asteriscus,6,7
+Asteriscus,6,7
+Asteriscus,6,8
+Asteriscus,7,4
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,5
+Asteriscus,7,6
+Asteriscus,7,6
+Asteriscus,7,6
+Asteriscus,7,6
+Asteriscus,7,7
+Asteriscus,7,7
+Asteriscus,7,7
+Asteriscus,7,7
+Asteriscus,7,7
+Asteriscus,7,8
+Asteriscus,8,6
+Asteriscus,8,6
+Asteriscus,8,6
+Asteriscus,8,6
+Asteriscus,8,7
+Asteriscus,8,7
+Asteriscus,8,8
+Asteriscus,8,8
+Asteriscus,9,6
+Asteriscus,9,8
+Asteriscus,10,5
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,2
+Lapillus,2,3
+Lapillus,2,3
+Lapillus,2,3
+Lapillus,2,3
+Lapillus,2,3
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,2
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,3
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,4
+Lapillus,3,5
+Lapillus,3,5
+Lapillus,3,5
+Lapillus,3,6
+Lapillus,3,6
+Lapillus,4,2
+Lapillus,4,2
+Lapillus,4,2
+Lapillus,4,2
+Lapillus,4,2
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,3
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,4
+Lapillus,4,5
+Lapillus,4,5
+Lapillus,4,5
+Lapillus,4,5
+Lapillus,4,6
+Lapillus,5,2
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,3
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,4
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,5
+Lapillus,5,6
+Lapillus,5,6
+Lapillus,5,6
+Lapillus,5,6
+Lapillus,5,8
+Lapillus,6,4
+Lapillus,6,4
+Lapillus,6,4
+Lapillus,6,4
+Lapillus,6,4
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,5
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,6
+Lapillus,6,7
+Lapillus,6,7
+Lapillus,6,7
+Lapillus,6,7
+Lapillus,6,7
+Lapillus,6,8
+Lapillus,7,3
+Lapillus,7,4
+Lapillus,7,4
+Lapillus,7,5
+Lapillus,7,5
+Lapillus,7,5
+Lapillus,7,6
+Lapillus,7,6
+Lapillus,7,6
+Lapillus,7,7
+Lapillus,7,7
+Lapillus,7,7
+Lapillus,7,7
+Lapillus,7,7
+Lapillus,7,7
+Lapillus,7,8
+Lapillus,7,8
+Lapillus,7,8
+Lapillus,7,8
+Lapillus,7,8
+Lapillus,7,9
+Lapillus,8,5
+Lapillus,8,5
+Lapillus,8,6
+Lapillus,8,7
+Lapillus,8,7
+Lapillus,8,8
+Lapillus,8,8
+Lapillus,8,9
+Lapillus,9,8
+Lapillus,9,8
+Lapillus,9,8
+Lapillus,9,9
+Lapillus,9,9
+Lapillus,10,8
+Lapillus,10,9
+Lapillus,11,10

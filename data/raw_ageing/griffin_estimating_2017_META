@@ -1,0 +1,9 @@
+SOURCE: Griffin, K. M., Z. S. Beard, J. M. Flinders, and M. C. Quist. 2017. Estimating ages of Utah Chubs by use of pectoral fin rays, otoliths, and scales. Western North American Naturalist 77:189–194.
+
+VARIABLES:
+structure: Calcified structure type (Scales, [Pectoral] Finrays, Asteriscus [Otoliths], Lapilus [Otoliths])
+read1: Ages estimated by first reader.
+read2: Ages estimated by second reader.
+
+NOTES:
+* File generated from "Griffin et al 2017_Data_Scott.xlsx" file which was constructued from results in the original paper.

@@ -1,0 +1,9 @@
+SOURCE: Grebel, J. M., and G. M. Cailliet. 2010. Age, growth, and maturity of Cabezon (Scorpaenichthys marmoratus) in California. California Fish and Game 96:36–52.
+
+VARIABLES:
+read1: Ages estimated by first reader.
+read2: Ages estimated by second reader.
+
+NOTES:
+* File generated from "Grebel and Cailliet 2010_Data_Scott.xlsx" file which was constructued from results in the original paper.
+* Data are between three pairs of readers in three separate files each appended with, for example, R1R2.
